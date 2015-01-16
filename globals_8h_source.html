@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>GameEditor:  Fichier source de include/globals.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">GameEditor
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">L&#39;editeur de monde du proletariat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">globals.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="globals_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TOOLS</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define TOOLS</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="globals_8h.html#a9c59e4381c52e7f7ffe3b3f11eaf6675">    4</a></span>&#160;<span class="preprocessor">#define declare(TYPE, NAME) private: TYPE m_ ## NAME; // Déclare une variable membre privée</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="globals_8h.html#aab8d0b41524556265ce434b802a3337d">    6</a></span>&#160;<span class="preprocessor">#define setterBase(TYPE, NAME, COMMAND) Q_SLOT TYPE NAME(TYPE val) {m_ ## NAME = val;COMMAND return NAME();}</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="globals_8h.html#ae5093ebfe19de9457dd90298ce5aed2e">    7</a></span>&#160;<span class="preprocessor">#define setter(TYPE, NAME) setterBase(TYPE, NAME,) // Déclare un setter pour une variable membre</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="globals_8h.html#aaee98f184e3c8496d8198325f04443dc">    8</a></span>&#160;<span class="preprocessor">#define setterSig(TYPE, NAME, SIG) setterBase(TYPE, NAME, emit SIG(NAME());) // Déclare un setter emettant un evenement</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="globals_8h.html#a3dac0e38604eb1630b823e47acfc062c">   10</a></span>&#160;<span class="preprocessor">#define getter(TYPE, NAME) TYPE NAME() const {return m_ ## NAME;} // Déclare un getter pour une variable membre</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="globals_8h.html#a2f4101a13cfefe3f12e4e9564e8449e0">   12</a></span>&#160;<span class="preprocessor">#define propBase(TYPE, NAME) declare(TYPE, NAME) public: getter(TYPE, NAME)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="globals_8h.html#a41eb4920cf776a8865a18986f8ae6008">   13</a></span>&#160;<span class="preprocessor">#define prop(TYPE, NAME) Q_PROPERTY( TYPE NAME WRITE NAME READ NAME ); propBase(TYPE, NAME); setter(TYPE, NAME) // Déclare une variable membre, avec ses getter / setter</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="globals_8h.html#a3817105a974eac78f8920257881698a4">   14</a></span>&#160;<span class="preprocessor">#define propSig(TYPE, NAME, SIG) Q_PROPERTY( TYPE NAME WRITE NAME READ NAME NOTIFY SIG) propBase(TYPE, NAME); setterSig(TYPE, NAME, SIG); Q_SIGNALS: void SIG(TYPE); public: // Déclare une variable membre, avec ses getter / setter et un signal emit a chaque modification</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="globals_8h.html#a7a7a329bd886bfad24c015a3a776d74d">   15</a></span>&#160;<span class="preprocessor">#define propRO(TYPE, NAME) private: Q_PROPERTY(TYPE NAME READ NAME); propBase(TYPE, NAME) // Déclare une variable membre et un getter, mais pas de setter (RO: Read-only)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif // TOOLS</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Vendredi 16 Janvier 2015 09:06:59 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>
