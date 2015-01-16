@@ -93,6 +93,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!--header-->
 <div class="contents">
 
+<p>Definitions globales.  
+<a href="#details">Plus de détails...</a></p>
+
 <p><a href="globals_8h_source.html">Aller au code source de ce fichier.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -110,13 +113,20 @@ Macros</h2></td></tr>
 <tr class="memitem:a2f4101a13cfefe3f12e4e9564e8449e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="globals_8h.html#a2f4101a13cfefe3f12e4e9564e8449e0">propBase</a>(TYPE, NAME)&#160;&#160;&#160;<a class="el" href="globals_8h.html#a9c59e4381c52e7f7ffe3b3f11eaf6675">declare</a>(TYPE, NAME) public: <a class="el" href="globals_8h.html#a3dac0e38604eb1630b823e47acfc062c">getter</a>(TYPE, NAME)</td></tr>
 <tr class="separator:a2f4101a13cfefe3f12e4e9564e8449e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41eb4920cf776a8865a18986f8ae6008"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="globals_8h.html#a41eb4920cf776a8865a18986f8ae6008">prop</a>(TYPE, NAME)&#160;&#160;&#160;Q_PROPERTY( TYPE NAME WRITE NAME READ NAME ); <a class="el" href="globals_8h.html#a2f4101a13cfefe3f12e4e9564e8449e0">propBase</a>(TYPE, NAME); <a class="el" href="globals_8h.html#ae5093ebfe19de9457dd90298ce5aed2e">setter</a>(TYPE, NAME)</td></tr>
+<tr class="memdesc:a41eb4920cf776a8865a18986f8ae6008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare une propriété Déclare une variable membre avec le type TYPE et le nom NAME, ainsi qu'un getter et un setter du même nom. Cette propriété est déclarée dans le système de meta-objet de Qt.  <a href="#a41eb4920cf776a8865a18986f8ae6008">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a41eb4920cf776a8865a18986f8ae6008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3817105a974eac78f8920257881698a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="globals_8h.html#a3817105a974eac78f8920257881698a4">propSig</a>(TYPE, NAME, SIG)&#160;&#160;&#160;Q_PROPERTY( TYPE NAME WRITE NAME READ NAME NOTIFY SIG) <a class="el" href="globals_8h.html#a2f4101a13cfefe3f12e4e9564e8449e0">propBase</a>(TYPE, NAME); <a class="el" href="globals_8h.html#aaee98f184e3c8496d8198325f04443dc">setterSig</a>(TYPE, NAME, SIG); Q_SIGNALS: void SIG(TYPE); public:</td></tr>
+<tr class="memdesc:a3817105a974eac78f8920257881698a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare une propriété emettant un signal quand modifiée Fonctionne de manière similaire a prop, mais la classe emettra le signal SIG lorsque le getter est appelé. Le signal prend la nouvelle valeur en paramètre.  <a href="#a3817105a974eac78f8920257881698a4">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a3817105a974eac78f8920257881698a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a7a329bd886bfad24c015a3a776d74d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="globals_8h.html#a7a7a329bd886bfad24c015a3a776d74d">propRO</a>(TYPE, NAME)&#160;&#160;&#160;private: Q_PROPERTY(TYPE NAME READ NAME); <a class="el" href="globals_8h.html#a2f4101a13cfefe3f12e4e9564e8449e0">propBase</a>(TYPE, NAME)</td></tr>
 <tr class="separator:a7a7a329bd886bfad24c015a3a776d74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des macros</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Definitions globales. </p>
+<p>Contient les macros utilitaires globales au projet. </p>
+
+<p>Définition dans le fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
+</div><h2 class="groupheader">Documentation des macros</h2>
 <a class="anchor" id="a9c59e4381c52e7f7ffe3b3f11eaf6675"></a>
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +151,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00004">4</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00010">10</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -169,7 +179,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00010">10</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00016">16</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -197,7 +207,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00013">13</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
+<p>Declare une propriété Déclare une variable membre avec le type TYPE et le nom NAME, ainsi qu'un getter et un setter du même nom. Cette propriété est déclarée dans le système de meta-objet de Qt. </p>
+
+<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00031">31</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -225,7 +237,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00012">12</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00030">30</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +265,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00015">15</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00033">33</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -287,7 +299,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00014">14</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
+<p>Declare une propriété emettant un signal quand modifiée Fonctionne de manière similaire a prop, mais la classe emettra le signal SIG lorsque le getter est appelé. Le signal prend la nouvelle valeur en paramètre. </p>
+
+<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00032">32</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -315,7 +329,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00007">7</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00013">13</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -349,7 +363,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00006">6</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00012">12</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
 
 </div>
 </div>
@@ -383,14 +397,14 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00008">8</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8h_source.html#l00014">14</a> du fichier <a class="el" href="globals_8h_source.html">globals.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Vendredi 16 Janvier 2015 09:06:59 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Vendredi 16 Janvier 2015 12:49:48 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
