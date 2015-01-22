@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mainwindow',['MainWindow',['../class_main_window.html',1,'']]]
+  ['geometry',['Geometry',['../class_geometry.html',1,'']]],
+  ['group',['Group',['../class_group.html',1,'']]]
 ];

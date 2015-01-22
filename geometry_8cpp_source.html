@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    m_program = <span class="keyword">new</span> QOpenGLShaderProgram(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    m_program-&gt;addShaderFromSourceFile(QOpenGLShader::Vertex, <span class="stringliteral">&quot;:/shaders/unlit.vert&quot;</span>);</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="comment">//m_program-&gt;addShaderFromSourceFile(QOpenGLShader::Geometry, &quot;:/shaders/lit.geom&quot;);</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="comment">//m_program-&gt;addShaderFromSourceFile(QOpenGLShader::Geometry, &quot;:/shaders/unlit.geom&quot;);</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    m_program-&gt;addShaderFromSourceFile(QOpenGLShader::Fragment, <span class="stringliteral">&quot;:/shaders/unlit.frag&quot;</span>);</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    m_program-&gt;link();</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    m_posAttr = m_program-&gt;attributeLocation(<span class="stringliteral">&quot;vertexPosition&quot;</span>);</div>
@@ -258,56 +258,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_geometry.html#a7936dff75c21a4223fd0e2324580f073">transform</a>;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="class_geometry.html#a9a3175bc91d4a43af14e89353750fbf6">  169</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_geometry.html#a9a3175bc91d4a43af14e89353750fbf6">Geometry::draw</a>(QMatrix4x4&amp; View, QMatrix4x4&amp; Projection)</div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="class_geometry.html#a0cbbddd41c475ded59226dc9caf4f17b">  169</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_geometry.html#a0cbbddd41c475ded59226dc9caf4f17b">Geometry::draw</a>(<span class="keyword">const</span> <a class="code" href="struct_draw_info.html">DrawInfo</a> &amp;info)</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;{</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    m_program-&gt;bind();</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keyword">auto</span> Model = <a class="code" href="class_geometry.html#a7936dff75c21a4223fd0e2324580f073">transform</a>();</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    m_program-&gt;setUniformValue(<span class="stringliteral">&quot;model&quot;</span>, Model);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    m_program-&gt;setUniformValue(<span class="stringliteral">&quot;view&quot;</span>, View);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    m_program-&gt;setUniformValue(<span class="stringliteral">&quot;projection&quot;</span>, Projection);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    m_program-&gt;setUniformValue(<span class="stringliteral">&quot;lightPosition&quot;</span>, QVector3D(4.5f, 4.5f, 4.0f));</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    m_program-&gt;setUniformValue(<span class="stringliteral">&quot;lightColor&quot;</span>, QVector3D(1.0f, 1.0f, 1.0f));</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    m_program-&gt;setUniformValue(<span class="stringliteral">&quot;lightPower&quot;</span>, 25.0f);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    m_program-&gt;setUniformValue(<span class="stringliteral">&quot;ambientColor&quot;</span>, QVector3D(0.1f, 0.1f, 0.1f));</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keyword">auto</span> func = QOpenGLContext::currentContext()-&gt;functions();</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    func-&gt;glDrawElements(GL_TRIANGLES, 12 * 3, GL_UNSIGNED_INT, 0);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    m_program-&gt;release();</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment">/*QDataStream&amp; operator&lt;&lt;(QDataStream&amp; stream, const QObject* obj) {</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">    auto metaObject = obj-&gt;metaObject();</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">    for(int i = metaObject-&gt;propertyOffset(); i &lt; metaObject-&gt;propertyCount(); ++i) {</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">        stream &lt;&lt; obj-&gt;property(metaObject-&gt;property(i).name());</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">    }</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">    return stream;</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment">}</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">QDataStream&amp; operator&gt;&gt;(QDataStream&amp; stream, QObject* obj) {</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment">    auto metaObject = obj-&gt;metaObject();</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">    for(int i = metaObject-&gt;propertyOffset(); i &lt; metaObject-&gt;propertyCount(); ++i) {</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">        auto prop = metaObject-&gt;property(i);</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">        QVariant value;</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">        stream &gt;&gt; value;</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">        obj-&gt;setProperty(prop.name(), value);</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">    }</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">    return stream;</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">}*/</span></div>
-<div class="ttc" id="class_geometry_html_a1444f7a334c052f8ba59ae94c917fee3"><div class="ttname"><a href="class_geometry.html#a1444f7a334c052f8ba59ae94c917fee3">Geometry::orientation</a></div><div class="ttdeci">QQuaternion orientation() const </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8h_source.html#l00025">geometry.h:25</a></div></div>
-<div class="ttc" id="class_geometry_html_a27516bc315586aef09c37d45dacd626e"><div class="ttname"><a href="class_geometry.html#a27516bc315586aef09c37d45dacd626e">Geometry::scale</a></div><div class="ttdeci">QVector3D scale() const </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8h_source.html#l00026">geometry.h:26</a></div></div>
-<div class="ttc" id="class_geometry_html_a7d2136104e21fcc6d9ecbb7e3acf5fbf"><div class="ttname"><a href="class_geometry.html#a7d2136104e21fcc6d9ecbb7e3acf5fbf">Geometry::position</a></div><div class="ttdeci">QVector3D position() const </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8h_source.html#l00024">geometry.h:24</a></div></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    m_program-&gt;setUniformValue(<span class="stringliteral">&quot;model&quot;</span>, <a class="code" href="class_geometry.html#a7936dff75c21a4223fd0e2324580f073">transform</a>());</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    m_program-&gt;setUniformValue(<span class="stringliteral">&quot;view&quot;</span>, info.<a class="code" href="struct_draw_info.html#a988e2c6b8b9dfad10eb1e30f8d73211b">View</a>);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    m_program-&gt;setUniformValue(<span class="stringliteral">&quot;projection&quot;</span>, info.<a class="code" href="struct_draw_info.html#abc4f8bc2bd85c796731912929623e001">Projection</a>);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    m_program-&gt;setUniformValue(<span class="stringliteral">&quot;lightPosition&quot;</span>, QVector3D(4.5f, 4.5f, 4.0f));</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    m_program-&gt;setUniformValue(<span class="stringliteral">&quot;lightColor&quot;</span>, QVector3D(1.0f, 1.0f, 1.0f));</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    m_program-&gt;setUniformValue(<span class="stringliteral">&quot;lightPower&quot;</span>, 25.0f);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    m_program-&gt;setUniformValue(<span class="stringliteral">&quot;ambientColor&quot;</span>, QVector3D(0.1f, 0.1f, 0.1f));</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keyword">auto</span> func = QOpenGLContext::currentContext()-&gt;functions();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    func-&gt;glDrawElements(info.<a class="code" href="struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03">mode</a>, 12 * 3, GL_UNSIGNED_INT, 0);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    m_program-&gt;release();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
+<div class="ttc" id="struct_draw_info_html_a5f9ea27d4768c35dbde6e2a2793d5e03"><div class="ttname"><a href="struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03">DrawInfo::mode</a></div><div class="ttdeci">GLenum mode</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8h_source.html#l00015">geometry.h:15</a></div></div>
+<div class="ttc" id="class_geometry_html_a1444f7a334c052f8ba59ae94c917fee3"><div class="ttname"><a href="class_geometry.html#a1444f7a334c052f8ba59ae94c917fee3">Geometry::orientation</a></div><div class="ttdeci">QQuaternion orientation() const </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8h_source.html#l00031">geometry.h:31</a></div></div>
+<div class="ttc" id="class_geometry_html_a27516bc315586aef09c37d45dacd626e"><div class="ttname"><a href="class_geometry.html#a27516bc315586aef09c37d45dacd626e">Geometry::scale</a></div><div class="ttdeci">QVector3D scale() const </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8h_source.html#l00032">geometry.h:32</a></div></div>
+<div class="ttc" id="class_geometry_html_a7d2136104e21fcc6d9ecbb7e3acf5fbf"><div class="ttname"><a href="class_geometry.html#a7d2136104e21fcc6d9ecbb7e3acf5fbf">Geometry::position</a></div><div class="ttdeci">QVector3D position() const </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8h_source.html#l00030">geometry.h:30</a></div></div>
 <div class="ttc" id="viewport_8h_html"><div class="ttname"><a href="viewport_8h.html">viewport.h</a></div></div>
+<div class="ttc" id="struct_draw_info_html"><div class="ttname"><a href="struct_draw_info.html">DrawInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="geometry_8h_source.html#l00012">geometry.h:12</a></div></div>
+<div class="ttc" id="struct_draw_info_html_abc4f8bc2bd85c796731912929623e001"><div class="ttname"><a href="struct_draw_info.html#abc4f8bc2bd85c796731912929623e001">DrawInfo::Projection</a></div><div class="ttdeci">QMatrix4x4 Projection</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8h_source.html#l00014">geometry.h:14</a></div></div>
+<div class="ttc" id="struct_draw_info_html_a988e2c6b8b9dfad10eb1e30f8d73211b"><div class="ttname"><a href="struct_draw_info.html#a988e2c6b8b9dfad10eb1e30f8d73211b">DrawInfo::View</a></div><div class="ttdeci">QMatrix4x4 View</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8h_source.html#l00013">geometry.h:13</a></div></div>
 <div class="ttc" id="class_geometry_html_a7936dff75c21a4223fd0e2324580f073"><div class="ttname"><a href="class_geometry.html#a7936dff75c21a4223fd0e2324580f073">Geometry::transform</a></div><div class="ttdeci">QMatrix4x4 transform()</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8cpp_source.html#l00161">geometry.cpp:161</a></div></div>
 <div class="ttc" id="class_geometry_html_a2ba08868698dc22d50206930933d45e3"><div class="ttname"><a href="class_geometry.html#a2ba08868698dc22d50206930933d45e3">Geometry::Geometry</a></div><div class="ttdeci">Geometry(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8cpp_source.html#l00004">geometry.cpp:4</a></div></div>
-<div class="ttc" id="class_geometry_html_a9a3175bc91d4a43af14e89353750fbf6"><div class="ttname"><a href="class_geometry.html#a9a3175bc91d4a43af14e89353750fbf6">Geometry::draw</a></div><div class="ttdeci">virtual void draw(QMatrix4x4 &amp;View, QMatrix4x4 &amp;Projection)</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8cpp_source.html#l00169">geometry.cpp:169</a></div></div>
 <div class="ttc" id="geometry_8h_html"><div class="ttname"><a href="geometry_8h.html">geometry.h</a></div></div>
+<div class="ttc" id="class_geometry_html_a0cbbddd41c475ded59226dc9caf4f17b"><div class="ttname"><a href="class_geometry.html#a0cbbddd41c475ded59226dc9caf4f17b">Geometry::draw</a></div><div class="ttdeci">virtual void draw(const DrawInfo &amp;info)</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8cpp_source.html#l00169">geometry.cpp:169</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Vendredi 16 Janvier 2015 12:49:48 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Jeudi 22 Janvier 2015 09:36:25 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['vangle',['vAngle',['../class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348',1,'Camera']]],
-  ['vbias',['vBias',['../class_camera.html#a525d61c362ce7e6183905ae4252ed304',1,'Camera']]]
+  ['scale',['scale',['../class_geometry.html#aa1b268c23f990a2aafc3d78172fecdc0',1,'Geometry']]],
+  ['speed',['speed',['../class_camera.html#a2960f533df18fe6d7d574c316c6d217a',1,'Camera']]]
 ];

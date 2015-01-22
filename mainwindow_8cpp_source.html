@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -97,8 +97,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QSpinBox&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QLabel&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db">    8</a></span>&#160;<a class="code" href="class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db">MainWindow::MainWindow</a>(QWidget *parent) :</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    QMainWindow(parent),</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db">    8</a></span>&#160;<a class="code" href="class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db">MainWindow::MainWindow</a>(<a class="code" href="class_q_widget.html">QWidget</a> *parent) :</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_q_main_window.html">QMainWindow</a>(parent),</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    ui(new <a class="code" href="namespace_ui.html">Ui</a>::<a class="code" href="class_main_window.html">MainWindow</a>)</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    ui-&gt;setupUi(<span class="keyword">this</span>);</div>
@@ -148,7 +148,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> QQuaternion(angle, x, y, z);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;QWidget* MainWindow::widgetForVariant(QObject* obj, <span class="keyword">const</span> <span class="keywordtype">char</span>* name) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<a class="code" href="class_q_widget.html">QWidget</a>* MainWindow::widgetForVariant(QObject* obj, <span class="keyword">const</span> <span class="keywordtype">char</span>* name) {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">auto</span> <a class="code" href="globals_8h.html#a41eb4920cf776a8865a18986f8ae6008">prop</a> = obj-&gt;property(name);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">switch</span>(<a class="code" href="globals_8h.html#a41eb4920cf776a8865a18986f8ae6008">prop</a>.type()) {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">case</span> QMetaType::QVector3D: {</div>
@@ -156,7 +156,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keyword">auto</span> value = qvariant_cast&lt;QVector3D&gt;(<a class="code" href="globals_8h.html#a41eb4920cf776a8865a18986f8ae6008">prop</a>);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keyword">auto</span> vector = <span class="keyword">new</span> QVector3D(value);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keyword">auto</span> container = <span class="keyword">new</span> QWidget;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keyword">auto</span> container = <span class="keyword">new</span> <a class="code" href="class_q_widget.html">QWidget</a>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keyword">auto</span> hbox = <span class="keyword">new</span> QHBoxLayout;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            container-&gt;setLayout(hbox);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
@@ -199,7 +199,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keyword">auto</span> value = qvariant_cast&lt;QQuaternion&gt;(<a class="code" href="globals_8h.html#a41eb4920cf776a8865a18986f8ae6008">prop</a>);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keyword">auto</span> quat = <span class="keyword">new</span> QQuaternion(value);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keyword">auto</span> container = <span class="keyword">new</span> QWidget;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keyword">auto</span> container = <span class="keyword">new</span> <a class="code" href="class_q_widget.html">QWidget</a>;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keyword">auto</span> hbox = <span class="keyword">new</span> QHBoxLayout;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            container-&gt;setLayout(hbox);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
@@ -285,17 +285,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        ui-&gt;centralwidget-&gt;save(m_lastFile);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;}</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="keywordtype">void</span> MainWindow::on_actionWireframe_toggled(<span class="keywordtype">bool</span> checked)</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;{</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">if</span>(checked) {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        ui-&gt;centralwidget-&gt;renderMode(GL_LINES);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        ui-&gt;centralwidget-&gt;renderMode(GL_TRIANGLES);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
 <div class="ttc" id="mainwindow_8cpp_html_a3177875391ecce9d9e3f9a481c59c467"><div class="ttname"><a href="mainwindow_8cpp.html#a3177875391ecce9d9e3f9a481c59c467">fromEuler</a></div><div class="ttdeci">QQuaternion fromEuler(const QVector3D &amp;euler)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00032">mainwindow.cpp:32</a></div></div>
 <div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8h_source.html#l00007">mainwindow.h:7</a></div></div>
 <div class="ttc" id="class_main_window_html_ae98d00a93bc118200eeef9f9bba1dba7"><div class="ttname"><a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a></div><div class="ttdeci">~MainWindow()</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00015">mainwindow.cpp:15</a></div></div>
 <div class="ttc" id="mainwindow_8h_html"><div class="ttname"><a href="mainwindow_8h.html">mainwindow.h</a></div></div>
+<div class="ttc" id="class_q_main_window_html"><div class="ttname"><a href="class_q_main_window.html">QMainWindow</a></div></div>
 <div class="ttc" id="class_main_window_html_a8b244be8b7b7db1b08de2a2acb9409db"><div class="ttname"><a href="class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db">MainWindow::MainWindow</a></div><div class="ttdeci">MainWindow(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00008">mainwindow.cpp:8</a></div></div>
 <div class="ttc" id="class_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdoc">Fenetre principale. </div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8h_source.html#l00016">mainwindow.h:16</a></div></div>
-<div class="ttc" id="globals_8h_html_a41eb4920cf776a8865a18986f8ae6008"><div class="ttname"><a href="globals_8h.html#a41eb4920cf776a8865a18986f8ae6008">prop</a></div><div class="ttdeci">#define prop(TYPE, NAME)</div><div class="ttdoc">Declare une propriété Déclare une variable membre avec le type TYPE et le nom NAME, ainsi qu&#39;un getter et un setter du même nom. Cette propriété est déclarée dans le système de meta-objet de Qt. </div><div class="ttdef"><b>Definition:</b> <a href="globals_8h_source.html#l00031">globals.h:31</a></div></div>
+<div class="ttc" id="class_q_widget_html"><div class="ttname"><a href="class_q_widget.html">QWidget</a></div></div>
+<div class="ttc" id="globals_8h_html_a41eb4920cf776a8865a18986f8ae6008"><div class="ttname"><a href="globals_8h.html#a41eb4920cf776a8865a18986f8ae6008">prop</a></div><div class="ttdeci">#define prop(TYPE, NAME)</div><div class="ttdoc">Declare une propriété Déclare une variable membre avec le type TYPE et le nom NAME, ainsi qu&#39;un getter et un setter du même nom. Cette propriété est déclarée dans le système de meta-objet de Qt. </div><div class="ttdef"><b>Definition:</b> <a href="globals_8h_source.html#l00043">globals.h:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Vendredi 16 Janvier 2015 12:49:48 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Jeudi 22 Janvier 2015 09:36:25 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
