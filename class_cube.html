@@ -148,6 +148,9 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="memitem:a7936dff75c21a4223fd0e2324580f073 inherit pro_methods_class_geometry"><td class="memItemLeft" align="right" valign="top">QMatrix4x4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#a7936dff75c21a4223fd0e2324580f073">transform</a> ()</td></tr>
 <tr class="separator:a7936dff75c21a4223fd0e2324580f073 inherit pro_methods_class_geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_methods_class_geometry"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_class_geometry')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées statiques hérités de <a class="el" href="class_geometry.html">Geometry</a></td></tr>
+<tr class="memitem:a0e5faf7799502a113886e321cc0e49f0 inherit pro_static_methods_class_geometry"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0e5faf7799502a113886e321cc0e49f0 inherit pro_static_methods_class_geometry"><td class="memTemplItemLeft" align="right" valign="top">static QOpenGLBuffer *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_geometry.html#a0e5faf7799502a113886e321cc0e49f0">initBuffer</a> (QOpenGLBuffer::Type type, std::vector&lt; T &gt; &amp;data)</td></tr>
+<tr class="separator:a0e5faf7799502a113886e321cc0e49f0 inherit pro_static_methods_class_geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56356e0b967bbe1ccc915ec02baa0fa5 inherit pro_static_methods_class_geometry"><td class="memTemplParams" colspan="2">template&lt;typename Child &gt; </td></tr>
 <tr class="memitem:a56356e0b967bbe1ccc915ec02baa0fa5 inherit pro_static_methods_class_geometry"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_geometry.html#a56356e0b967bbe1ccc915ec02baa0fa5">initProgram</a> (QObject *parent)</td></tr>
 <tr class="memdesc:a56356e0b967bbe1ccc915ec02baa0fa5 inherit pro_static_methods_class_geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise les shaders et alloue les buffer.  <a href="#a56356e0b967bbe1ccc915ec02baa0fa5">Plus de détails...</a><br /></td></tr>
@@ -167,9 +170,6 @@ Membres hérités additionnels</h2></td></tr>
 <a class="anchor" id="a6eceaa075072d4d0396b6bd85872d62b"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Cube::Cube </td>
@@ -179,14 +179,9 @@ Membres hérités additionnels</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="cube_8hpp_source.html#l00007">7</a> du fichier <a class="el" href="cube_8hpp_source.html">cube.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="cube_8cpp_source.html#l00003">3</a> du fichier <a class="el" href="cube_8cpp_source.html">cube.cpp</a>.</p>
 
 </div>
 </div>
@@ -209,33 +204,33 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Valeur initiale :</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    1.0f, 0.0f, 0.0f,</div>
-<div class="line">    1.0f, 0.0f, 0.0f,</div>
-<div class="line">    1.0f, 0.0f, 0.0f,</div>
-<div class="line">    1.0f, 0.0f, 0.0f,</div>
-<div class="line">    1.0f, 1.0f, 0.0f,</div>
-<div class="line">    1.0f, 1.0f, 0.0f,</div>
-<div class="line">    1.0f, 1.0f, 0.0f,</div>
-<div class="line">    1.0f, 1.0f, 0.0f,</div>
-<div class="line">    0.0f, 1.0f, 0.0f,</div>
-<div class="line">    0.0f, 1.0f, 0.0f,</div>
-<div class="line">    0.0f, 1.0f, 0.0f,</div>
-<div class="line">    0.0f, 1.0f, 0.0f,</div>
-<div class="line">    0.0f, 1.0f, 1.0f,</div>
-<div class="line">    0.0f, 1.0f, 1.0f,</div>
-<div class="line">    0.0f, 1.0f, 1.0f,</div>
-<div class="line">    0.0f, 1.0f, 1.0f,</div>
-<div class="line">    0.0f, 0.0f, 1.0f,</div>
-<div class="line">    0.0f, 0.0f, 1.0f,</div>
-<div class="line">    0.0f, 0.0f, 1.0f,</div>
-<div class="line">    0.0f, 0.0f, 1.0f,</div>
-<div class="line">    1.0f, 0.0f, 1.0f,</div>
-<div class="line">    1.0f, 0.0f, 1.0f,</div>
-<div class="line">    1.0f, 0.0f, 1.0f,</div>
-<div class="line">    1.0f, 0.0f, 1.0f,</div>
+<div class="line">    1.0f, 0.0f, 0.0f,  </div>
+<div class="line">    1.0f, 0.0f, 0.0f,  </div>
+<div class="line">    1.0f, 0.0f, 0.0f,  </div>
+<div class="line">    1.0f, 0.0f, 0.0f,  </div>
+<div class="line">    1.0f, 1.0f, 0.0f,  </div>
+<div class="line">    1.0f, 1.0f, 0.0f,  </div>
+<div class="line">    1.0f, 1.0f, 0.0f,  </div>
+<div class="line">    1.0f, 1.0f, 0.0f,  </div>
+<div class="line">    0.0f, 1.0f, 0.0f,  </div>
+<div class="line">    0.0f, 1.0f, 0.0f,  </div>
+<div class="line">    0.0f, 1.0f, 0.0f,  </div>
+<div class="line">    0.0f, 1.0f, 0.0f,  </div>
+<div class="line">    0.0f, 1.0f, 1.0f,  </div>
+<div class="line">    0.0f, 1.0f, 1.0f,  </div>
+<div class="line">    0.0f, 1.0f, 1.0f,  </div>
+<div class="line">    0.0f, 1.0f, 1.0f,  </div>
+<div class="line">    0.0f, 0.0f, 1.0f,  </div>
+<div class="line">    0.0f, 0.0f, 1.0f,  </div>
+<div class="line">    0.0f, 0.0f, 1.0f,  </div>
+<div class="line">    0.0f, 0.0f, 1.0f,  </div>
+<div class="line">    1.0f, 0.0f, 1.0f,  </div>
+<div class="line">    1.0f, 0.0f, 1.0f,  </div>
+<div class="line">    1.0f, 0.0f, 1.0f,  </div>
+<div class="line">    1.0f, 0.0f, 1.0f,  </div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Définition à la ligne <a class="el" href="cube_8hpp_source.html#l00007">7</a> du fichier <a class="el" href="cube_8hpp_source.html">cube.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="cube_8hpp_source.html#l00012">12</a> du fichier <a class="el" href="cube_8hpp_source.html">cube.hpp</a>.</p>
 
 </div>
 </div>
@@ -257,21 +252,21 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Valeur initiale :</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0, 1, 3,</div>
-<div class="line">    3, 1, 2,</div>
-<div class="line">    4, 5, 7,</div>
-<div class="line">    7, 5, 6,</div>
-<div class="line">    8, 9, 11,</div>
-<div class="line">    11, 9, 10,</div>
-<div class="line">    12, 13, 15,</div>
-<div class="line">    15, 13, 14,</div>
-<div class="line">    16, 17, 19,</div>
-<div class="line">    19, 17, 18,</div>
-<div class="line">    20, 21, 23,</div>
-<div class="line">    23, 21, 22,</div>
+<div class="line">    0,  1,  3,   </div>
+<div class="line">    3,  1,  2,   </div>
+<div class="line">    4,  5,  7,   </div>
+<div class="line">    7,  5,  6,   </div>
+<div class="line">    8,  9,  11,  </div>
+<div class="line">    11, 9,  10,  </div>
+<div class="line">    12, 13, 15,  </div>
+<div class="line">    15, 13, 14,  </div>
+<div class="line">    16, 17, 19,  </div>
+<div class="line">    19, 17, 18,  </div>
+<div class="line">    20, 21, 23,  </div>
+<div class="line">    23, 21, 22,  </div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Définition à la ligne <a class="el" href="cube_8hpp_source.html#l00007">7</a> du fichier <a class="el" href="cube_8hpp_source.html">cube.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="cube_8hpp_source.html#l00013">13</a> du fichier <a class="el" href="cube_8hpp_source.html">cube.hpp</a>.</p>
 
 </div>
 </div>
@@ -293,33 +288,30 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Valeur initiale :</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    -1.0f, -1.0f, -1.0f, </div>
-<div class="line">    -1.0f, -1.0f,  1.0f,</div>
-<div class="line">    -1.0f,  1.0f,  1.0f,</div>
-<div class="line">    -1.0f,  1.0f, -1.0f,</div>
-<div class="line">     1.0f, -1.0f, -1.0f, </div>
-<div class="line">     1.0f,  1.0f, -1.0f,</div>
-<div class="line">     1.0f,  1.0f,  1.0f,</div>
-<div class="line">     1.0f, -1.0f,  1.0f,</div>
-<div class="line">    -1.0f, -1.0f, -1.0f, </div>
-<div class="line">     1.0f, -1.0f, -1.0f,</div>
-<div class="line">     1.0f, -1.0f,  1.0f,</div>
-<div class="line">    -1.0f, -1.0f,  1.0f,</div>
-<div class="line">    -1.0f,  1.0f, -1.0f, </div>
-<div class="line">    -1.0f,  1.0f,  1.0f,</div>
-<div class="line">     1.0f,  1.0f,  1.0f,</div>
-<div class="line">     1.0f,  1.0f, -1.0f,</div>
-<div class="line">    -1.0f, -1.0f, -1.0f, </div>
-<div class="line">    -1.0f,  1.0f, -1.0f,</div>
-<div class="line">     1.0f,  1.0f, -1.0f,</div>
-<div class="line">     1.0f, -1.0f, -1.0f,</div>
-<div class="line">    -1.0f, -1.0f,  1.0f, </div>
-<div class="line">     1.0f, -1.0f,  1.0f,</div>
-<div class="line">     1.0f,  1.0f,  1.0f,</div>
-<div class="line">    -1.0f,  1.0f,  1.0f,</div>
+<div class="line">    -1.0f, -1.0f, -1.0f,                      </div>
+<div class="line">    -1.0f, -1.0f, 1.0f,                       </div>
+<div class="line">    -1.0f, 1.0f,  1.0f,                       </div>
+<div class="line">    -1.0f, 1.0f,  -1.0f, 1.0f, -1.0f, -1.0f,  </div>
+<div class="line">    1.0f,  1.0f,  -1.0f,                      </div>
+<div class="line">    1.0f,  1.0f,  1.0f,                       </div>
+<div class="line">    1.0f,  -1.0f, 1.0f,                       </div>
+<div class="line">    -1.0f, -1.0f, -1.0f,                      </div>
+<div class="line">    1.0f,  -1.0f, -1.0f,                      </div>
+<div class="line">    1.0f,  -1.0f, 1.0f,                       </div>
+<div class="line">    -1.0f, -1.0f, 1.0f,                       </div>
+<div class="line">    -1.0f, 1.0f,  -1.0f,                      </div>
+<div class="line">    -1.0f, 1.0f,  1.0f,                       </div>
+<div class="line">    1.0f,  1.0f,  1.0f,                       </div>
+<div class="line">    1.0f,  1.0f,  -1.0f,                      </div>
+<div class="line">    -1.0f, -1.0f, -1.0f,                      </div>
+<div class="line">    -1.0f, 1.0f,  -1.0f,                      </div>
+<div class="line">    1.0f,  1.0f,  -1.0f,                      </div>
+<div class="line">    1.0f,  -1.0f, -1.0f,                      </div>
+<div class="line">    -1.0f, -1.0f, 1.0f,                       </div>
+<div class="line">    1.0f,  -1.0f, 1.0f,  1.0f, 1.0f,  1.0f,  -1.0f, 1.0f, 1.0f,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Définition à la ligne <a class="el" href="cube_8hpp_source.html#l00007">7</a> du fichier <a class="el" href="cube_8hpp_source.html">cube.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="cube_8hpp_source.html#l00011">11</a> du fichier <a class="el" href="cube_8hpp_source.html">cube.hpp</a>.</p>
 
 </div>
 </div>
@@ -330,7 +322,7 @@ Membres hérités additionnels</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Vendredi 23 Janvier 2015 20:36:08 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Vendredi 23 Janvier 2015 23:19:35 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

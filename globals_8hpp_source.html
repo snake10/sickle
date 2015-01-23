@@ -93,37 +93,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a href="globals_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GLOBALS</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GLOBALS</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define declare(TYPE, NAME) private: TYPE m_ ## NAME;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="globals_8hpp.html#aab8d0b41524556265ce434b802a3337d">   25</a></span>&#160;<span class="preprocessor">#define setterBase(TYPE, NAME, COMMAND) Q_SLOT TYPE NAME(TYPE val) {m_ ## NAME = val;COMMAND return NAME();}</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define setter(TYPE, NAME) setterBase(TYPE, NAME,)</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define setterSig(TYPE, NAME, SIG) setterBase(TYPE, NAME, emit SIG(NAME());)</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="globals_8hpp.html#a3dac0e38604eb1630b823e47acfc062c">   32</a></span>&#160;<span class="preprocessor">#define getter(TYPE, NAME) TYPE NAME() const {return m_ ## NAME;}</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="globals_8hpp.html#a2f4101a13cfefe3f12e4e9564e8449e0">   48</a></span>&#160;<span class="preprocessor">#define propBase(TYPE, NAME) declare(TYPE, NAME) public: getter(TYPE, NAME)</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008">   49</a></span>&#160;<span class="preprocessor">#define prop(TYPE, NAME) Q_PROPERTY( TYPE NAME WRITE NAME READ NAME ); propBase(TYPE, NAME); setter(TYPE, NAME)</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="globals_8hpp.html#a3817105a974eac78f8920257881698a4">   50</a></span>&#160;<span class="preprocessor">#define propSig(TYPE, NAME, SIG) Q_PROPERTY( TYPE NAME WRITE NAME READ NAME NOTIFY SIG) propBase(TYPE, NAME); setterSig(TYPE, NAME, SIG); Q_SIGNALS: void SIG(TYPE); public:</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#define propRO(TYPE, NAME) private: Q_PROPERTY(TYPE NAME READ NAME); propBase(TYPE, NAME)</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="globals_8hpp.html#a3da8bf732442abba8a4930651e22d01b">   62</a></span>&#160;<span class="preprocessor">#define DEFINE_GEOMETRY_CLASS(NAME) class NAME : public Geometry \</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">{ \</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">    Q_OBJECT \</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">public: \</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">    NAME(QObject* parent = nullptr) : Geometry(parent) { \</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">        initProgram&lt;NAME&gt;(parent); \</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">    } \</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">    static std::vector&lt;GLfloat&gt; s_vertices; \</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">    static std::vector&lt;GLfloat&gt; s_colors; \</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">    static std::vector&lt;quint32&gt; s_indices; \</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">};</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif // GLOBALS</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define declare(TYPE, NAME) \</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">private:                    \</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">    TYPE m_##NAME;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="globals_8hpp.html#aab8d0b41524556265ce434b802a3337d">   27</a></span>&#160;<span class="preprocessor">#define setterBase(TYPE, NAME, COMMAND) \</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">    Q_SLOT TYPE NAME(TYPE val) {        \</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">        m_##NAME = val;                 \</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">        COMMAND return NAME();          \</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">    }</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#define setter(TYPE, NAME) setterBase(TYPE, NAME, )</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define setterSig(TYPE, NAME, SIG) setterBase(TYPE, NAME, emit SIG(NAME());)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="globals_8hpp.html#a3dac0e38604eb1630b823e47acfc062c">   38</a></span>&#160;<span class="preprocessor">#define getter(TYPE, NAME) \</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">    TYPE NAME() const { return m_##NAME; }</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="globals_8hpp.html#a2f4101a13cfefe3f12e4e9564e8449e0">   55</a></span>&#160;<span class="preprocessor">#define propBase(TYPE, NAME) declare(TYPE, NAME) public : getter(TYPE, NAME)</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008">   56</a></span>&#160;<span class="preprocessor">#define prop(TYPE, NAME)                        \</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    Q_PROPERTY(TYPE NAME WRITE NAME READ NAME); \</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">    propBase(TYPE, NAME);                       \</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">    setter(TYPE, NAME)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="globals_8hpp.html#a3817105a974eac78f8920257881698a4">   60</a></span>&#160;<span class="preprocessor">#define propSig(TYPE, NAME, SIG)                                                \</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">    Q_PROPERTY(TYPE NAME WRITE NAME READ NAME NOTIFY SIG) propBase(TYPE, NAME); \</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">    setterSig(TYPE, NAME, SIG);                                                 \</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">    Q_SIGNALS:                                                                  \</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">    void SIG(TYPE);                                                             \</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">                                                                                \</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">public:</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#define propRO(TYPE, NAME)           \</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">private:                             \</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">    Q_PROPERTY(TYPE NAME READ NAME); \</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">    propBase(TYPE, NAME)</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="globals_8hpp.html#a3da8bf732442abba8a4930651e22d01b">   81</a></span>&#160;<span class="preprocessor">#define DEFINE_GEOMETRY_CLASS(NAME)                                                                         \</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">    class NAME : public Geometry {                                                                          \</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">        Q_OBJECT                                                                                            \</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">    public:                                                                                                 \</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">        NAME(QObject* parent = nullptr) : Geometry(parent) { initProgram&lt;NAME&gt;(parent); }                   \</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">        static std::vector&lt;GLfloat&gt; s_vertices;                                                             \</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">        static std::vector&lt;GLfloat&gt; s_colors;                                                               \</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">        static std::vector&lt;quint32&gt; s_indices;                                                              \</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">    };</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif  // GLOBALS</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Vendredi 23 Janvier 2015 20:36:07 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Vendredi 23 Janvier 2015 23:19:35 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

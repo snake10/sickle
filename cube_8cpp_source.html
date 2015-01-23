@@ -92,80 +92,83 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="contents">
 <a href="cube_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cube_8hpp.html">cube.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">Cube::s_vertices</a> = {</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    -1.0f, -1.0f, -1.0f, <span class="comment">// Face 1</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    -1.0f, -1.0f,  1.0f,</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    -1.0f,  1.0f,  1.0f,</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    -1.0f,  1.0f, -1.0f,</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;     1.0f, -1.0f, -1.0f, <span class="comment">// Face 2</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;     1.0f,  1.0f, -1.0f,</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;     1.0f,  1.0f,  1.0f,</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;     1.0f, -1.0f,  1.0f,</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    -1.0f, -1.0f, -1.0f, <span class="comment">// Face 3</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;     1.0f, -1.0f, -1.0f,</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;     1.0f, -1.0f,  1.0f,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    -1.0f, -1.0f,  1.0f,</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    -1.0f,  1.0f, -1.0f, <span class="comment">// Face 4</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    -1.0f,  1.0f,  1.0f,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;     1.0f,  1.0f,  1.0f,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;     1.0f,  1.0f, -1.0f,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    -1.0f, -1.0f, -1.0f, <span class="comment">// Face 5</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    -1.0f,  1.0f, -1.0f,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;     1.0f,  1.0f, -1.0f,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;     1.0f, -1.0f, -1.0f,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    -1.0f, -1.0f,  1.0f, <span class="comment">// Face 6</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;     1.0f, -1.0f,  1.0f,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;     1.0f,  1.0f,  1.0f,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    -1.0f,  1.0f,  1.0f,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;std::vector&lt;quint32&gt; <a class="code" href="class_cube.html#a15913769adf571b32db693f6b1cd6619">Cube::s_indices</a> = {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    0, 1, 3,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    3, 1, 2,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    4, 5, 7,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    7, 5, 6,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    8, 9, 11,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    11, 9, 10,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    12, 13, 15,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    15, 13, 14,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    16, 17, 19,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    19, 17, 18,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    20, 21, 23,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    23, 21, 22,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">Cube::s_colors</a> = {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    1.0f, 0.0f, 0.0f,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    1.0f, 0.0f, 0.0f,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    1.0f, 0.0f, 0.0f,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    1.0f, 0.0f, 0.0f,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    1.0f, 1.0f, 0.0f,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    1.0f, 1.0f, 0.0f,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    1.0f, 1.0f, 0.0f,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    1.0f, 1.0f, 0.0f,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    0.0f, 1.0f, 0.0f,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    0.0f, 1.0f, 0.0f,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    0.0f, 1.0f, 0.0f,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    0.0f, 1.0f, 0.0f,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    0.0f, 1.0f, 1.0f,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    0.0f, 1.0f, 1.0f,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    0.0f, 1.0f, 1.0f,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    0.0f, 1.0f, 1.0f,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    0.0f, 0.0f, 1.0f,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    0.0f, 0.0f, 1.0f,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    0.0f, 0.0f, 1.0f,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    0.0f, 0.0f, 1.0f,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    1.0f, 0.0f, 1.0f,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    1.0f, 0.0f, 1.0f,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    1.0f, 0.0f, 1.0f,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    1.0f, 0.0f, 1.0f,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
-<div class="ttc" id="class_cube_html_a15913769adf571b32db693f6b1cd6619"><div class="ttname"><a href="class_cube.html#a15913769adf571b32db693f6b1cd6619">Cube::s_indices</a></div><div class="ttdeci">static std::vector&lt; quint32 &gt; s_indices</div><div class="ttdef"><b>Definition:</b> <a href="cube_8hpp_source.html#l00007">cube.hpp:7</a></div></div>
-<div class="ttc" id="class_cube_html_a02228c9ee089f6adb79b8898fb07c981"><div class="ttname"><a href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">Cube::s_vertices</a></div><div class="ttdeci">static std::vector&lt; GLfloat &gt; s_vertices</div><div class="ttdef"><b>Definition:</b> <a href="cube_8hpp_source.html#l00007">cube.hpp:7</a></div></div>
-<div class="ttc" id="class_cube_html_a41cef8fd6fe8a8fe0ada48f0c40a1113"><div class="ttname"><a href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">Cube::s_colors</a></div><div class="ttdeci">static std::vector&lt; GLfloat &gt; s_colors</div><div class="ttdef"><b>Definition:</b> <a href="cube_8hpp_source.html#l00007">cube.hpp:7</a></div></div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_cube.html#a6eceaa075072d4d0396b6bd85872d62b">    3</a></span>&#160;<a class="code" href="class_cube.html#a6eceaa075072d4d0396b6bd85872d62b">Cube::Cube</a>(QObject* parent) : <a class="code" href="class_geometry.html">Geometry</a>(parent) {</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    initProgram&lt;Cube&gt;(parent);</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;}</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">Cube::s_vertices</a> = {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    -1.0f, -1.0f, -1.0f,                      <span class="comment">// Face 1</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    -1.0f, -1.0f, 1.0f,                       <span class="comment">//</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    -1.0f, 1.0f,  1.0f,                       <span class="comment">//</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    -1.0f, 1.0f,  -1.0f, 1.0f, -1.0f, -1.0f,  <span class="comment">// Face 2</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    1.0f,  1.0f,  -1.0f,                      <span class="comment">//</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    1.0f,  1.0f,  1.0f,                       <span class="comment">//</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    1.0f,  -1.0f, 1.0f,                       <span class="comment">//</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    -1.0f, -1.0f, -1.0f,                      <span class="comment">// Face 3</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    1.0f,  -1.0f, -1.0f,                      <span class="comment">//</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    1.0f,  -1.0f, 1.0f,                       <span class="comment">//</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    -1.0f, -1.0f, 1.0f,                       <span class="comment">//</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    -1.0f, 1.0f,  -1.0f,                      <span class="comment">// Face 4</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    -1.0f, 1.0f,  1.0f,                       <span class="comment">//</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    1.0f,  1.0f,  1.0f,                       <span class="comment">//</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    1.0f,  1.0f,  -1.0f,                      <span class="comment">//</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    -1.0f, -1.0f, -1.0f,                      <span class="comment">// Face 5</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    -1.0f, 1.0f,  -1.0f,                      <span class="comment">//</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    1.0f,  1.0f,  -1.0f,                      <span class="comment">//</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    1.0f,  -1.0f, -1.0f,                      <span class="comment">//</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    -1.0f, -1.0f, 1.0f,                       <span class="comment">// Face 6</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    1.0f,  -1.0f, 1.0f,  1.0f, 1.0f,  1.0f,  -1.0f, 1.0f, 1.0f,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;std::vector&lt;quint32&gt; <a class="code" href="class_cube.html#a15913769adf571b32db693f6b1cd6619">Cube::s_indices</a> = {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    0,  1,  3,   <span class="comment">// Face 1</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    3,  1,  2,   <span class="comment">//</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    4,  5,  7,   <span class="comment">// Face 2</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    7,  5,  6,   <span class="comment">//</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    8,  9,  11,  <span class="comment">// Face 3</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    11, 9,  10,  <span class="comment">//</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    12, 13, 15,  <span class="comment">// Face 4</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    15, 13, 14,  <span class="comment">//</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    16, 17, 19,  <span class="comment">// Face 5</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    19, 17, 18,  <span class="comment">//</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    20, 21, 23,  <span class="comment">// Face 6</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    23, 21, 22,  <span class="comment">//</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">Cube::s_colors</a> = {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    1.0f, 0.0f, 0.0f,  <span class="comment">// Face 1</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    1.0f, 0.0f, 0.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    1.0f, 0.0f, 0.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    1.0f, 0.0f, 0.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    1.0f, 1.0f, 0.0f,  <span class="comment">// Face 2</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    1.0f, 1.0f, 0.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    1.0f, 1.0f, 0.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    1.0f, 1.0f, 0.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    0.0f, 1.0f, 0.0f,  <span class="comment">// Face 3</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    0.0f, 1.0f, 0.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    0.0f, 1.0f, 0.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    0.0f, 1.0f, 0.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    0.0f, 1.0f, 1.0f,  <span class="comment">// Face 4</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    0.0f, 1.0f, 1.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    0.0f, 1.0f, 1.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    0.0f, 1.0f, 1.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    0.0f, 0.0f, 1.0f,  <span class="comment">// Face 5</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    0.0f, 0.0f, 1.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    0.0f, 0.0f, 1.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    0.0f, 0.0f, 1.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    1.0f, 0.0f, 1.0f,  <span class="comment">// Face 6</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    1.0f, 0.0f, 1.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    1.0f, 0.0f, 1.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    1.0f, 0.0f, 1.0f,  <span class="comment">//</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="ttc" id="class_cube_html_a15913769adf571b32db693f6b1cd6619"><div class="ttname"><a href="class_cube.html#a15913769adf571b32db693f6b1cd6619">Cube::s_indices</a></div><div class="ttdeci">static std::vector&lt; quint32 &gt; s_indices</div><div class="ttdef"><b>Definition:</b> <a href="cube_8hpp_source.html#l00013">cube.hpp:13</a></div></div>
+<div class="ttc" id="class_cube_html_a02228c9ee089f6adb79b8898fb07c981"><div class="ttname"><a href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">Cube::s_vertices</a></div><div class="ttdeci">static std::vector&lt; GLfloat &gt; s_vertices</div><div class="ttdef"><b>Definition:</b> <a href="cube_8hpp_source.html#l00011">cube.hpp:11</a></div></div>
+<div class="ttc" id="class_geometry_html"><div class="ttname"><a href="class_geometry.html">Geometry</a></div><div class="ttdoc">Base de tous les acteurs. </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00024">geometry.hpp:24</a></div></div>
+<div class="ttc" id="class_cube_html_a41cef8fd6fe8a8fe0ada48f0c40a1113"><div class="ttname"><a href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">Cube::s_colors</a></div><div class="ttdeci">static std::vector&lt; GLfloat &gt; s_colors</div><div class="ttdef"><b>Definition:</b> <a href="cube_8hpp_source.html#l00012">cube.hpp:12</a></div></div>
+<div class="ttc" id="class_cube_html_a6eceaa075072d4d0396b6bd85872d62b"><div class="ttname"><a href="class_cube.html#a6eceaa075072d4d0396b6bd85872d62b">Cube::Cube</a></div><div class="ttdeci">Cube(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="cube_8cpp_source.html#l00003">cube.cpp:3</a></div></div>
 <div class="ttc" id="cube_8hpp_html"><div class="ttname"><a href="cube_8hpp.html">cube.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Vendredi 23 Janvier 2015 20:36:07 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Vendredi 23 Janvier 2015 23:19:35 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
