@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>GameEditor:  Fichier source de include/geometry.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">GameEditor
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">L&#39;editeur de monde du proletariat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">geometry.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="geometry_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GEOMETRY_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GEOMETRY_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QVector3D&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QOpenGLFunctions&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QOpenGLShaderProgram&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QOpenGLBuffer&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="globals_8hpp.html">globals.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_draw_info.html">   12</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_draw_info.html">DrawInfo</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_draw_info.html#a988e2c6b8b9dfad10eb1e30f8d73211b">   13</a></span>&#160;    QMatrix4x4 <a class="code" href="struct_draw_info.html#a988e2c6b8b9dfad10eb1e30f8d73211b">View</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_draw_info.html#abc4f8bc2bd85c796731912929623e001">   14</a></span>&#160;    QMatrix4x4 <a class="code" href="struct_draw_info.html#abc4f8bc2bd85c796731912929623e001">Projection</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03">   15</a></span>&#160;    GLenum <a class="code" href="struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03">mode</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;} <a class="code" href="geometry_8hpp.html#ab9cb9edc1d52b55844706a106904c3fd">DrawInfo</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_geometry.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_geometry.html">Geometry</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_geometry.html#a2ba08868698dc22d50206930933d45e3">Geometry</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_geometry.html#a0cbbddd41c475ded59226dc9caf4f17b">draw</a>(<span class="keyword">const</span> <a class="code" href="struct_draw_info.html">DrawInfo</a> &amp;info);</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_geometry.html#ab9b19920edae3dd56d1e15fb6aaba04e">   30</a></span>&#160;    <a class="code" href="globals_8hpp.html#a3817105a974eac78f8920257881698a4">propSig</a>(QVector3D, <a class="code" href="class_geometry.html#a7d2136104e21fcc6d9ecbb7e3acf5fbf">position</a>, <a class="code" href="class_geometry.html#a7f69059f59300b8d5d02fc14ec908799">moved</a>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_geometry.html#a5caf13a8d181de8575192d6a49e52c6a">   31</a></span>&#160;    <a class="code" href="globals_8hpp.html#a3817105a974eac78f8920257881698a4">propSig</a>(QQuaternion, <a class="code" href="class_geometry.html#a1444f7a334c052f8ba59ae94c917fee3">orientation</a>, <a class="code" href="class_geometry.html#a4b095f3d5d1961f8c300e9492c74ae72">rotated</a>)</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_geometry.html#aaff48e941b7aa2ad8f8e3ff75cfa080a">   32</a></span>&#160;    <a class="code" href="globals_8hpp.html#a3817105a974eac78f8920257881698a4">propSig</a>(QVector3D, <a class="code" href="class_geometry.html#a27516bc315586aef09c37d45dacd626e">scale</a>, <a class="code" href="class_geometry.html#a7abd76a83744284aa4ce68dc013a7392">scaled</a>)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;protected:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QMatrix4x4 <a class="code" href="class_geometry.html#a7936dff75c21a4223fd0e2324580f073">transform</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    template&lt;typename Child&gt;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_geometry.html#a56356e0b967bbe1ccc915ec02baa0fa5">   44</a></span>&#160;    static <span class="keywordtype">void</span> <a class="code" href="class_geometry.html#a56356e0b967bbe1ccc915ec02baa0fa5">initProgram</a>(QObject *parent) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span>(Child::s_instances++ == 0) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            Child::s_program = <span class="keyword">new</span> QOpenGLShaderProgram(parent);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            Child::s_program-&gt;addShaderFromSourceFile(QOpenGLShader::Vertex, <span class="stringliteral">&quot;:/shaders/unlit.vert&quot;</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            Child::s_program-&gt;addShaderFromSourceFile(QOpenGLShader::Fragment, <span class="stringliteral">&quot;:/shaders/unlit.frag&quot;</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            Child::s_program-&gt;link();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keyword">auto</span> posAttr = Child::s_program-&gt;attributeLocation(<span class="stringliteral">&quot;vertexPosition&quot;</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keyword">auto</span> colAttr = Child::s_program-&gt;attributeLocation(<span class="stringliteral">&quot;vertexColor&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            Child::s_vertexBuffer = <span class="keyword">new</span> QOpenGLBuffer(QOpenGLBuffer::VertexBuffer);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            Child::s_vertexBuffer-&gt;create();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            Child::s_vertexBuffer-&gt;setUsagePattern(QOpenGLBuffer::StaticDraw);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span> (!Child::s_vertexBuffer-&gt;bind())</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                qWarning() &lt;&lt; <span class="stringliteral">&quot;Could not bind vertex buffer to the context&quot;</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            Child::s_vertexBuffer-&gt;allocate(&amp;Child::s_vertices[0], Child::s_vertices.size() * <span class="keyword">sizeof</span>(GLfloat));</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            Child::s_colorBuffer = <span class="keyword">new</span> QOpenGLBuffer(QOpenGLBuffer::VertexBuffer);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            Child::s_colorBuffer-&gt;create();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            Child::s_colorBuffer-&gt;setUsagePattern(QOpenGLBuffer::StaticDraw);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span> (!Child::s_colorBuffer-&gt;bind())</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                qWarning() &lt;&lt; <span class="stringliteral">&quot;Could not bind color buffer to the context&quot;</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            Child::s_colorBuffer-&gt;allocate(&amp;Child::s_colors[0], Child::s_colors.size() * <span class="keyword">sizeof</span>(GLfloat));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            Child::s_indexBuffer = <span class="keyword">new</span> QOpenGLBuffer(QOpenGLBuffer::IndexBuffer);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            Child::s_indexBuffer-&gt;create();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            Child::s_indexBuffer-&gt;setUsagePattern(QOpenGLBuffer::StaticDraw);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">if</span> (!Child::s_indexBuffer-&gt;bind())</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                qWarning() &lt;&lt; <span class="stringliteral">&quot;Could not bind index buffer to the context&quot;</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            Child::s_indexBuffer-&gt;allocate(&amp;Child::s_indices[0], Child::s_indices.size() * <span class="keyword">sizeof</span>(GLfloat));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">if</span> (!Child::s_program-&gt;bind())</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;               qWarning() &lt;&lt; <span class="stringliteral">&quot;Could not bind shader to context&quot;</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;               <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            Child::s_vertexBuffer-&gt;bind();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            Child::s_program-&gt;setAttributeBuffer(posAttr, GL_FLOAT, 0, 3);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            Child::s_program-&gt;enableAttributeArray(posAttr);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            Child::s_colorBuffer-&gt;bind();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            Child::s_program-&gt;setAttributeBuffer(colAttr, GL_FLOAT, 0, 3);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            Child::s_program-&gt;enableAttributeArray(colAttr);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// Instances</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> s_instances;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">static</span> QOpenGLShaderProgram* s_program;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">static</span> QOpenGLBuffer* s_vertexBuffer;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">static</span> QOpenGLBuffer* s_colorBuffer;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">static</span> QOpenGLBuffer* s_indexBuffer;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif // GEOMETRY_H</span></div>
+<div class="ttc" id="geometry_8hpp_html_ab9cb9edc1d52b55844706a106904c3fd"><div class="ttname"><a href="geometry_8hpp.html#ab9cb9edc1d52b55844706a106904c3fd">DrawInfo</a></div><div class="ttdeci">struct DrawInfo DrawInfo</div></div>
+<div class="ttc" id="class_geometry_html_a56356e0b967bbe1ccc915ec02baa0fa5"><div class="ttname"><a href="class_geometry.html#a56356e0b967bbe1ccc915ec02baa0fa5">Geometry::initProgram</a></div><div class="ttdeci">static void initProgram(QObject *parent)</div><div class="ttdoc">Initialise les shaders et alloue les buffer. </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00044">geometry.hpp:44</a></div></div>
+<div class="ttc" id="struct_draw_info_html_a5f9ea27d4768c35dbde6e2a2793d5e03"><div class="ttname"><a href="struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03">DrawInfo::mode</a></div><div class="ttdeci">GLenum mode</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00015">geometry.hpp:15</a></div></div>
+<div class="ttc" id="class_geometry_html_a7abd76a83744284aa4ce68dc013a7392"><div class="ttname"><a href="class_geometry.html#a7abd76a83744284aa4ce68dc013a7392">Geometry::scaled</a></div><div class="ttdeci">void scaled(QVector3D)</div></div>
+<div class="ttc" id="class_geometry_html_a7f69059f59300b8d5d02fc14ec908799"><div class="ttname"><a href="class_geometry.html#a7f69059f59300b8d5d02fc14ec908799">Geometry::moved</a></div><div class="ttdeci">void moved(QVector3D)</div></div>
+<div class="ttc" id="class_geometry_html_a1444f7a334c052f8ba59ae94c917fee3"><div class="ttname"><a href="class_geometry.html#a1444f7a334c052f8ba59ae94c917fee3">Geometry::orientation</a></div><div class="ttdeci">QQuaternion orientation() const </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00031">geometry.hpp:31</a></div></div>
+<div class="ttc" id="class_geometry_html_a27516bc315586aef09c37d45dacd626e"><div class="ttname"><a href="class_geometry.html#a27516bc315586aef09c37d45dacd626e">Geometry::scale</a></div><div class="ttdeci">QVector3D scale() const </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00032">geometry.hpp:32</a></div></div>
+<div class="ttc" id="class_geometry_html_a7d2136104e21fcc6d9ecbb7e3acf5fbf"><div class="ttname"><a href="class_geometry.html#a7d2136104e21fcc6d9ecbb7e3acf5fbf">Geometry::position</a></div><div class="ttdeci">QVector3D position() const </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00030">geometry.hpp:30</a></div></div>
+<div class="ttc" id="class_geometry_html_a4b095f3d5d1961f8c300e9492c74ae72"><div class="ttname"><a href="class_geometry.html#a4b095f3d5d1961f8c300e9492c74ae72">Geometry::rotated</a></div><div class="ttdeci">void rotated(QQuaternion)</div></div>
+<div class="ttc" id="struct_draw_info_html"><div class="ttname"><a href="struct_draw_info.html">DrawInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00012">geometry.hpp:12</a></div></div>
+<div class="ttc" id="struct_draw_info_html_abc4f8bc2bd85c796731912929623e001"><div class="ttname"><a href="struct_draw_info.html#abc4f8bc2bd85c796731912929623e001">DrawInfo::Projection</a></div><div class="ttdeci">QMatrix4x4 Projection</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00014">geometry.hpp:14</a></div></div>
+<div class="ttc" id="class_geometry_html"><div class="ttname"><a href="class_geometry.html">Geometry</a></div><div class="ttdoc">Base de tous les acteurs. </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00024">geometry.hpp:24</a></div></div>
+<div class="ttc" id="struct_draw_info_html_a988e2c6b8b9dfad10eb1e30f8d73211b"><div class="ttname"><a href="struct_draw_info.html#a988e2c6b8b9dfad10eb1e30f8d73211b">DrawInfo::View</a></div><div class="ttdeci">QMatrix4x4 View</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00013">geometry.hpp:13</a></div></div>
+<div class="ttc" id="class_geometry_html_a7936dff75c21a4223fd0e2324580f073"><div class="ttname"><a href="class_geometry.html#a7936dff75c21a4223fd0e2324580f073">Geometry::transform</a></div><div class="ttdeci">QMatrix4x4 transform()</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8cpp_source.html#l00014">geometry.cpp:14</a></div></div>
+<div class="ttc" id="class_geometry_html_a2ba08868698dc22d50206930933d45e3"><div class="ttname"><a href="class_geometry.html#a2ba08868698dc22d50206930933d45e3">Geometry::Geometry</a></div><div class="ttdeci">Geometry(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8cpp_source.html#l00010">geometry.cpp:10</a></div></div>
+<div class="ttc" id="globals_8hpp_html_a3817105a974eac78f8920257881698a4"><div class="ttname"><a href="globals_8hpp.html#a3817105a974eac78f8920257881698a4">propSig</a></div><div class="ttdeci">#define propSig(TYPE, NAME, SIG)</div><div class="ttdoc">Declare une propriété emettant un signal quand modifiée. </div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00050">globals.hpp:50</a></div></div>
+<div class="ttc" id="globals_8hpp_html"><div class="ttname"><a href="globals_8hpp.html">globals.hpp</a></div></div>
+<div class="ttc" id="class_geometry_html_a0cbbddd41c475ded59226dc9caf4f17b"><div class="ttname"><a href="class_geometry.html#a0cbbddd41c475ded59226dc9caf4f17b">Geometry::draw</a></div><div class="ttdeci">void draw(const DrawInfo &amp;info)</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8cpp_source.html#l00022">geometry.cpp:22</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Vendredi 23 Janvier 2015 20:36:07 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

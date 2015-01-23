@@ -4,7 +4,7 @@ var searchData=
   ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
   ['mainwindow',['MainWindow',['../class_main_window.html',1,'MainWindow'],['../class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db',1,'MainWindow::MainWindow()']]],
   ['mainwindow_2ecpp',['mainwindow.cpp',['../mainwindow_8cpp.html',1,'']]],
-  ['mainwindow_2eh',['mainwindow.h',['../mainwindow_8h.html',1,'']]],
+  ['mainwindow_2ehpp',['mainwindow.hpp',['../mainwindow_8hpp.html',1,'']]],
   ['minimumsizehint',['minimumSizeHint',['../class_viewport.html#a441cdf7965dd99860d2e1cec72b71081',1,'Viewport']]],
   ['mode',['mode',['../struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03',1,'DrawInfo']]],
   ['mousemoveevent',['mouseMoveEvent',['../class_viewport.html#a082181d6a9b81499f6516ed3a61d4f52',1,'Viewport']]],

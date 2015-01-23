@@ -99,14 +99,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <p>Base de tous les acteurs.  
  <a href="class_geometry.html#details">Plus de détails...</a></p>
 
-<p><code>#include &lt;<a class="el" href="geometry_8h_source.html">geometry.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Graphe d'héritage de Geometry:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_geometry.png" usemap="#Geometry_map" alt=""/>
   <map id="Geometry_map" name="Geometry_map">
-<area href="class_group.html" title="Groupe de geometries. " alt="Group" shape="rect" coords="0,112,66,136"/>
+<area href="class_cube.html" alt="Cube" shape="rect" coords="0,112,66,136"/>
+<area href="class_group.html" title="Groupe de geometries. " alt="Group" shape="rect" coords="76,112,142,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -123,7 +124,7 @@ Signaux</h2></td></tr>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a2ba08868698dc22d50206930933d45e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#a2ba08868698dc22d50206930933d45e3">Geometry</a> (QObject *parent=nullptr)</td></tr>
 <tr class="separator:a2ba08868698dc22d50206930933d45e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cbbddd41c475ded59226dc9caf4f17b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#a0cbbddd41c475ded59226dc9caf4f17b">draw</a> (const <a class="el" href="struct_draw_info.html">DrawInfo</a> &amp;info)</td></tr>
+<tr class="memitem:a0cbbddd41c475ded59226dc9caf4f17b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#a0cbbddd41c475ded59226dc9caf4f17b">draw</a> (const <a class="el" href="struct_draw_info.html">DrawInfo</a> &amp;info)</td></tr>
 <tr class="separator:a0cbbddd41c475ded59226dc9caf4f17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d2136104e21fcc6d9ecbb7e3acf5fbf"><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#a7d2136104e21fcc6d9ecbb7e3acf5fbf">position</a> () const </td></tr>
 <tr class="separator:a7d2136104e21fcc6d9ecbb7e3acf5fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,15 +146,10 @@ Fonctions membres protégées</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Fonctions membres protégées statiques</h2></td></tr>
-<tr class="memitem:aaea2ef6fe70aa0bbecade8eb0e6d0365"><td class="memItemLeft" align="right" valign="top">static const std::shared_ptr<br class="typebreak" />
-&lt; GLfloat * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#aaea2ef6fe70aa0bbecade8eb0e6d0365">getVertices</a> ()</td></tr>
-<tr class="separator:aaea2ef6fe70aa0bbecade8eb0e6d0365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fff5b1f901250951aa4777592565b0d"><td class="memItemLeft" align="right" valign="top">static const std::shared_ptr<br class="typebreak" />
-&lt; GLfloat * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#a0fff5b1f901250951aa4777592565b0d">getColors</a> ()</td></tr>
-<tr class="separator:a0fff5b1f901250951aa4777592565b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab9b39a815a3367c61732672fc46f25"><td class="memItemLeft" align="right" valign="top">static const std::shared_ptr<br class="typebreak" />
-&lt; quint32 * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#a6ab9b39a815a3367c61732672fc46f25">getIndices</a> ()</td></tr>
-<tr class="separator:a6ab9b39a815a3367c61732672fc46f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56356e0b967bbe1ccc915ec02baa0fa5"><td class="memTemplParams" colspan="2">template&lt;typename Child &gt; </td></tr>
+<tr class="memitem:a56356e0b967bbe1ccc915ec02baa0fa5"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_geometry.html#a56356e0b967bbe1ccc915ec02baa0fa5">initProgram</a> (QObject *parent)</td></tr>
+<tr class="memdesc:a56356e0b967bbe1ccc915ec02baa0fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise les shaders et alloue les buffer.  <a href="#a56356e0b967bbe1ccc915ec02baa0fa5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a56356e0b967bbe1ccc915ec02baa0fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Propriétés</h2></td></tr>
@@ -168,7 +164,7 @@ Propriétés</h2></td></tr>
 <div class="textblock"><p>Base de tous les acteurs. </p>
 <p>Cette classe est une base gerant de rendu d'un buffer de vertices. Ses 3 propriétés position, orientation et scale permettent de déplacer l'objet. </p>
 
-<p>Définition à la ligne <a class="el" href="geometry_8h_source.html#l00024">24</a> du fichier <a class="el" href="geometry_8h_source.html">geometry.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00024">24</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="a2ba08868698dc22d50206930933d45e3"></a>
 <div class="memitem">
@@ -184,7 +180,7 @@ Propriétés</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8cpp_source.html#l00004">4</a> du fichier <a class="el" href="geometry_8cpp_source.html">geometry.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8cpp_source.html#l00010">10</a> du fichier <a class="el" href="geometry_8cpp_source.html">geometry.cpp</a>.</p>
 
 </div>
 </div>
@@ -192,9 +188,6 @@ Propriétés</h2></td></tr>
 <a class="anchor" id="a0cbbddd41c475ded59226dc9caf4f17b"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Geometry::draw </td>
@@ -204,85 +197,40 @@ Propriétés</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="class_group.html#a76205f79f8e7466f275286cbf6efb32b">Group</a>.</p>
-
-<p>Définition à la ligne <a class="el" href="geometry_8cpp_source.html#l00169">169</a> du fichier <a class="el" href="geometry_8cpp_source.html">geometry.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8cpp_source.html#l00022">22</a> du fichier <a class="el" href="geometry_8cpp_source.html">geometry.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0fff5b1f901250951aa4777592565b0d"></a>
+<a class="anchor" id="a56356e0b967bbe1ccc915ec02baa0fa5"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename Child &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const std::shared_ptr&lt;GLfloat*&gt; Geometry::getColors </td>
+          <td class="memname">static void Geometry::initProgram </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a6ab9b39a815a3367c61732672fc46f25"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const std::shared_ptr&lt;quint32*&gt; Geometry::getIndices </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Initialise les shaders et alloue les buffer. </p>
+<p>Cette méthode statique est appelée par le constructeur de toutes les classes enfant de <a class="el" href="class_geometry.html" title="Base de tous les acteurs. ">Geometry</a>. Elle n'est exécutée qu'une seule fois par classe gràce a un compteur d'instances. Cela permet de n'utiliser qu'un couple shader / buffer pour l'ensemble des géometries d'une même classe. Elle DOIT se trouver dans le header pour permettre au template d'être parsé corectement. </p>
 
-</div>
-</div>
-<a class="anchor" id="aaea2ef6fe70aa0bbecade8eb0e6d0365"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static const std::shared_ptr&lt;GLfloat*&gt; Geometry::getVertices </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00044">44</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -331,7 +279,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8h_source.html#l00031">31</a> du fichier <a class="el" href="geometry_8h_source.html">geometry.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00031">31</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -357,7 +305,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8h_source.html#l00031">31</a> du fichier <a class="el" href="geometry_8h_source.html">geometry.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00031">31</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -382,7 +330,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8h_source.html#l00030">30</a> du fichier <a class="el" href="geometry_8h_source.html">geometry.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00030">30</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -408,7 +356,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8h_source.html#l00030">30</a> du fichier <a class="el" href="geometry_8h_source.html">geometry.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00030">30</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -457,7 +405,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8h_source.html#l00032">32</a> du fichier <a class="el" href="geometry_8h_source.html">geometry.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00032">32</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -483,7 +431,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8h_source.html#l00032">32</a> du fichier <a class="el" href="geometry_8h_source.html">geometry.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00032">32</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -532,7 +480,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8cpp_source.html#l00161">161</a> du fichier <a class="el" href="geometry_8cpp_source.html">geometry.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8cpp_source.html#l00014">14</a> du fichier <a class="el" href="geometry_8cpp_source.html">geometry.cpp</a>.</p>
 
 </div>
 </div>
@@ -555,7 +503,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8h_source.html#l00031">31</a> du fichier <a class="el" href="geometry_8h_source.html">geometry.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00031">31</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -577,7 +525,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8h_source.html#l00030">30</a> du fichier <a class="el" href="geometry_8h_source.html">geometry.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00030">30</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -599,18 +547,18 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8h_source.html#l00032">32</a> du fichier <a class="el" href="geometry_8h_source.html">geometry.h</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00032">32</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
-<li>include/<a class="el" href="geometry_8h_source.html">geometry.h</a></li>
+<li>include/<a class="el" href="geometry_8hpp_source.html">geometry.hpp</a></li>
 <li>src/<a class="el" href="geometry_8cpp_source.html">geometry.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Jeudi 22 Janvier 2015 09:36:25 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Vendredi 23 Janvier 2015 20:36:08 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
