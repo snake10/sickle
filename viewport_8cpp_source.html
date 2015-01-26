@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00006"></a>00006       m_renderMode(GL_TRIANGLES)  <span class="comment">// GL_LINES</span>
 <a name="l00007"></a>00007 {
 <a name="l00008"></a>00008     <a class="code" href="class_viewport.html#a94dcf877f22c2977a58cd6789144d3ae">resizeGL</a>(width(), height());
-<a name="l00009"></a>00009     m_camera = <span class="keyword">new</span> <a class="code" href="class_camera.html" title="Gestion de la camera.">Camera</a>();
+<a name="l00009"></a>00009     m_camera = <span class="keyword">new</span> <a class="code" href="class_camera.html" title="Gestion de la camera.">Camera</a>(<span class="keyword">this</span>);
 <a name="l00010"></a>00010     setFocusPolicy(Qt::StrongFocus);
 <a name="l00011"></a>00011 }
 <a name="l00012"></a>00012 
@@ -112,7 +112,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00030"></a>00030     glEnable(GL_CULL_FACE);
 <a name="l00031"></a>00031 
 <a name="l00032"></a>00032     <span class="keyword">auto</span> bg = palette().color(QPalette::Background);
-<a name="l00033"></a>00033     glClearColor(bg.red() / 255.0f, bg.green() / 255.0f, bg.blue() / 255.0f, bg.alpha() / 255.0f);
+<a name="l00033"></a>00033     glClearColor(bg.redF(), bg.greenF(), bg.blueF(), bg.alphaF());
 <a name="l00034"></a>00034 }
 <a name="l00035"></a>00035 
 <a name="l00036"></a><a class="code" href="class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5">00036</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5">Viewport::paintGL</a>() {
@@ -160,16 +160,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00078"></a>00078             m_camera-&gt;<a class="code" href="class_camera.html#adb1bda6df954268b8e0fc5531dafeca1">move</a>(-m_camera-&gt;<a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>());
 <a name="l00079"></a>00079             <span class="keywordflow">break</span>;
 <a name="l00080"></a>00080         <span class="keywordflow">case</span> Qt::Key_Z:
-<a name="l00081"></a>00081             m_camera-&gt;<a class="code" href="class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348">vAngle</a>(m_camera-&gt;<a class="code" href="class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348">vAngle</a>() + 0.14f);
+<a name="l00081"></a>00081             m_camera-&gt;vAngle(m_camera-&gt;vAngle() + 0.14f);
 <a name="l00082"></a>00082             <span class="keywordflow">break</span>;
 <a name="l00083"></a>00083         <span class="keywordflow">case</span> Qt::Key_S:
-<a name="l00084"></a>00084             m_camera-&gt;<a class="code" href="class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348">vAngle</a>(m_camera-&gt;<a class="code" href="class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348">vAngle</a>() - 0.14f);
+<a name="l00084"></a>00084             m_camera-&gt;vAngle(m_camera-&gt;vAngle() - 0.14f);
 <a name="l00085"></a>00085             <span class="keywordflow">break</span>;
 <a name="l00086"></a>00086         <span class="keywordflow">case</span> Qt::Key_Q:
-<a name="l00087"></a>00087             m_camera-&gt;<a class="code" href="class_camera.html#abb4ab973081a379e31ca4934dbb46f39">hAngle</a>(m_camera-&gt;<a class="code" href="class_camera.html#abb4ab973081a379e31ca4934dbb46f39">hAngle</a>() + 0.14f);
+<a name="l00087"></a>00087             m_camera-&gt;hAngle(m_camera-&gt;hAngle() + 0.14f);
 <a name="l00088"></a>00088             <span class="keywordflow">break</span>;
 <a name="l00089"></a>00089         <span class="keywordflow">case</span> Qt::Key_D:
-<a name="l00090"></a>00090             m_camera-&gt;<a class="code" href="class_camera.html#abb4ab973081a379e31ca4934dbb46f39">hAngle</a>(m_camera-&gt;<a class="code" href="class_camera.html#abb4ab973081a379e31ca4934dbb46f39">hAngle</a>() - 0.14f);
+<a name="l00090"></a>00090             m_camera-&gt;hAngle(m_camera-&gt;hAngle() - 0.14f);
 <a name="l00091"></a>00091             <span class="keywordflow">break</span>;
 <a name="l00092"></a>00092         <span class="keywordflow">default</span>:
 <a name="l00093"></a>00093             <span class="keyword">event</span>-&gt;ignore();
@@ -198,8 +198,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00116"></a>00116     <span class="keyword">auto</span> deltaX = ((size().width() / 2) - (<span class="keywordtype">float</span>)(<span class="keyword">event</span>-&gt;x())) / size().width();
 <a name="l00117"></a>00117     <span class="keyword">auto</span> deltaY = ((size().height() / 2) - (<span class="keywordtype">float</span>)(<span class="keyword">event</span>-&gt;y())) / size().height();
 <a name="l00118"></a>00118     QCursor::setPos(mapToGlobal(QPoint(size().width() / 2, size().height() / 2)));
-<a name="l00119"></a>00119     m_camera-&gt;<a class="code" href="class_camera.html#abb4ab973081a379e31ca4934dbb46f39">hAngle</a>(m_camera-&gt;<a class="code" href="class_camera.html#abb4ab973081a379e31ca4934dbb46f39">hAngle</a>() + (deltaX * 3.14f));
-<a name="l00120"></a>00120     m_camera-&gt;<a class="code" href="class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348">vAngle</a>(m_camera-&gt;<a class="code" href="class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348">vAngle</a>() + (deltaY * 3.14f));
+<a name="l00119"></a>00119     m_camera-&gt;hAngle(m_camera-&gt;hAngle() + (deltaX * 3.14f));
+<a name="l00120"></a>00120     m_camera-&gt;vAngle(m_camera-&gt;vAngle() + (deltaY * 3.14f));
 <a name="l00121"></a>00121     update();
 <a name="l00122"></a>00122 }
 <a name="l00123"></a>00123 
@@ -294,7 +294,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Lundi Janvier 26 2015 12:53:09 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi Janvier 26 2015 19:50:04 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

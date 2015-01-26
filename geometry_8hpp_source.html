@@ -103,15 +103,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00027"></a>00027     <a class="code" href="class_geometry.html#a2ba08868698dc22d50206930933d45e3">Geometry</a>(QObject* parent = <span class="keyword">nullptr</span>);
 <a name="l00028"></a>00028     <span class="keywordtype">void</span> <a class="code" href="class_geometry.html#a0cbbddd41c475ded59226dc9caf4f17b">draw</a>(<span class="keyword">const</span> <a class="code" href="struct_draw_info.html">DrawInfo</a>&amp; info);
 <a name="l00029"></a>00029 
-<a name="l00030"></a><a class="code" href="class_geometry.html#ab9b19920edae3dd56d1e15fb6aaba04e">00030</a>     <a class="code" href="globals_8hpp.html#a3817105a974eac78f8920257881698a4" title="Declare une propriété emettant un signal quand modifiée.">propSig</a>(QVector3D, <a class="code" href="class_geometry.html#a7d2136104e21fcc6d9ecbb7e3acf5fbf">position</a>, <a class="code" href="class_geometry.html#a6b62d3bf511be78f8dc5b4c76b199274">moved</a>);
-<a name="l00031"></a><a class="code" href="class_geometry.html#aa1b268c23f990a2aafc3d78172fecdc0">00031</a>     <a class="code" href="globals_8hpp.html#a3817105a974eac78f8920257881698a4" title="Declare une propriété emettant un signal quand modifiée.">propSig</a>(QQuaternion, <a class="code" href="class_geometry.html#a1444f7a334c052f8ba59ae94c917fee3">orientation</a>, <a class="code" href="class_geometry.html#a82143fcdcb31c864a9d84b65282e4d1c">rotated</a>);
-<a name="l00032"></a><a class="code" href="class_geometry.html#aaff48e941b7aa2ad8f8e3ff75cfa080a">00032</a>     <a class="code" href="globals_8hpp.html#a3817105a974eac78f8920257881698a4" title="Declare une propriété emettant un signal quand modifiée.">propSig</a>(QVector3D, <a class="code" href="class_geometry.html#a27516bc315586aef09c37d45dacd626e">scale</a>, <a class="code" href="class_geometry.html#ac8accd04f41daad775366aecd8222909">scaled</a>);
+<a name="l00030"></a>00030     <a class="code" href="class_geometry.html#a5b1b325686609ae1530739d5804bc5dd">propSig</a>(QVector3D, position, moved);
+<a name="l00031"></a>00031     <a class="code" href="class_geometry.html#a5b1b325686609ae1530739d5804bc5dd">propSig</a>(QQuaternion, orientation, rotated);
+<a name="l00032"></a>00032     <a class="code" href="class_geometry.html#a5b1b325686609ae1530739d5804bc5dd">propSig</a>(QVector3D, scale, scaled);
 <a name="l00033"></a>00033 
 <a name="l00034"></a>00034 <span class="keyword">protected</span>:
 <a name="l00035"></a>00035     QMatrix4x4 <a class="code" href="class_geometry.html#a7936dff75c21a4223fd0e2324580f073">transform</a>();
 <a name="l00036"></a>00036 
 <a name="l00037"></a>00037     <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;
-<a name="l00038"></a><a class="code" href="class_geometry.html#a0e5faf7799502a113886e321cc0e49f0">00038</a>     <a class="code" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570" title="Empeche une fonction d&#39;être inlinée.">noinline</a> <span class="keyword">static</span> QOpenGLBuffer* <a class="code" href="class_geometry.html#a0e5faf7799502a113886e321cc0e49f0">initBuffer</a>(QOpenGLBuffer::Type type, std::vector&lt;T&gt;&amp; data) {
+<a name="l00038"></a><a class="code" href="class_geometry.html#acac8d605459ed98d641af6c97d37c798">00038</a>     <a class="code" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570" title="Empeche une fonction d&#39;être inlinée.">noinline</a> <span class="keyword">static</span> QOpenGLBuffer* <a class="code" href="class_geometry.html#acac8d605459ed98d641af6c97d37c798">initBuffer</a>(QOpenGLBuffer::Type type, std::vector&lt;T&gt;&amp; data) {
 <a name="l00039"></a>00039         <span class="keyword">auto</span> buffer = <span class="keyword">new</span> QOpenGLBuffer(type);
 <a name="l00040"></a>00040         buffer-&gt;create();
 <a name="l00041"></a>00041         buffer-&gt;setUsagePattern(QOpenGLBuffer::StaticDraw);
@@ -124,7 +124,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00048"></a>00048     }
 <a name="l00049"></a>00049 
 <a name="l00057"></a>00057     <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Child&gt;
-<a name="l00058"></a><a class="code" href="class_geometry.html#a56356e0b967bbe1ccc915ec02baa0fa5">00058</a>     <a class="code" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570" title="Empeche une fonction d&#39;être inlinée.">noinline</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_geometry.html#a56356e0b967bbe1ccc915ec02baa0fa5" title="Initialise les shaders et alloue les buffer.">initProgram</a>(QObject* parent) {
+<a name="l00058"></a><a class="code" href="class_geometry.html#a50bd1d3e6b222c0dc20954955baa7b7e">00058</a>     <a class="code" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570" title="Empeche une fonction d&#39;être inlinée.">noinline</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_geometry.html#a50bd1d3e6b222c0dc20954955baa7b7e" title="Initialise les shaders et alloue les buffer.">initProgram</a>(QObject* parent) {
 <a name="l00059"></a>00059         <span class="keywordflow">if</span> (Child::s_instances++ == 0) {
 <a name="l00060"></a>00060             Child::s_program = <span class="keyword">new</span> QOpenGLShaderProgram(parent);
 <a name="l00061"></a>00061 
@@ -143,13 +143,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00074"></a>00074                 <span class="keywordflow">return</span>;
 <a name="l00075"></a>00075             }
 <a name="l00076"></a>00076 
-<a name="l00077"></a>00077             Child::s_vertexBuffer = <a class="code" href="class_geometry.html#a0e5faf7799502a113886e321cc0e49f0">initBuffer</a>(QOpenGLBuffer::VertexBuffer, Child::s_vertices);
+<a name="l00077"></a>00077             Child::s_vertexBuffer = <a class="code" href="class_geometry.html#acac8d605459ed98d641af6c97d37c798">initBuffer</a>(QOpenGLBuffer::VertexBuffer, Child::s_vertices);
 <a name="l00078"></a>00078             Q_CHECK_PTR(Child::s_vertexBuffer);
 <a name="l00079"></a>00079 
-<a name="l00080"></a>00080             Child::s_colorBuffer = <a class="code" href="class_geometry.html#a0e5faf7799502a113886e321cc0e49f0">initBuffer</a>(QOpenGLBuffer::VertexBuffer, Child::s_colors);
+<a name="l00080"></a>00080             Child::s_colorBuffer = <a class="code" href="class_geometry.html#acac8d605459ed98d641af6c97d37c798">initBuffer</a>(QOpenGLBuffer::VertexBuffer, Child::s_colors);
 <a name="l00081"></a>00081             Q_CHECK_PTR(Child::s_colorBuffer);
 <a name="l00082"></a>00082 
-<a name="l00083"></a>00083             Child::s_indexBuffer = <a class="code" href="class_geometry.html#a0e5faf7799502a113886e321cc0e49f0">initBuffer</a>(QOpenGLBuffer::IndexBuffer, Child::s_indices);
+<a name="l00083"></a>00083             Child::s_indexBuffer = <a class="code" href="class_geometry.html#acac8d605459ed98d641af6c97d37c798">initBuffer</a>(QOpenGLBuffer::IndexBuffer, Child::s_indices);
 <a name="l00084"></a>00084             Q_CHECK_PTR(Child::s_indexBuffer);
 <a name="l00085"></a>00085 
 <a name="l00086"></a>00086             <span class="keywordflow">if</span> (!Child::s_program-&gt;bind()) {
@@ -197,7 +197,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Lundi Janvier 26 2015 12:53:09 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi Janvier 26 2015 19:50:04 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -78,13 +78,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Espaces de nommage</a>  </div>
+<a href="#namespaces">Espaces de nommage</a> &#124;
+<a href="#typedef-members">Définitions de type</a>  </div>
   <div class="headertitle">
 <div class="title">Référence du fichier include/mainwindow.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;QMainWindow&gt;</code><br/>
 <code>#include &lt;QTreeWidgetItem&gt;</code><br/>
+<code>#include &lt;functional&gt;</code><br/>
 </div>
 <p><a href="mainwindow_8hpp_source.html">Aller au code source de ce fichier.</a></p>
 <table class="memberdecls">
@@ -95,7 +97,44 @@ Classes</h2></td></tr>
 <tr><td colspan="2"><h2><a name="namespaces"></a>
 Espaces de nommage</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ui.html">Ui</a></td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::function<br class="typebreak"/>
+&lt; QVariant(void)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8hpp.html#aeb7038d9fece71286bc08e7285cc1213">VarGetter</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(const <br class="typebreak"/>
+QVariant &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8hpp.html#ad82da20360d3b356afc5989031c5d715">VarSetter</a></td></tr>
 </table>
+<hr/><h2>Documentation des définitions de type</h2>
+<a class="anchor" id="aeb7038d9fece71286bc08e7285cc1213"></a><!-- doxytag: member="mainwindow.hpp::VarGetter" ref="aeb7038d9fece71286bc08e7285cc1213" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::function&lt;QVariant(void)&gt; <a class="el" href="mainwindow_8hpp.html#aeb7038d9fece71286bc08e7285cc1213">VarGetter</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="mainwindow_8hpp_source.html#l00008">8</a> du fichier <a class="el" href="mainwindow_8hpp_source.html">mainwindow.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad82da20360d3b356afc5989031c5d715"></a><!-- doxytag: member="mainwindow.hpp::VarSetter" ref="ad82da20360d3b356afc5989031c5d715" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::function&lt;void(const QVariant&amp;)&gt; <a class="el" href="mainwindow_8hpp.html#ad82da20360d3b356afc5989031c5d715">VarSetter</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="mainwindow_8hpp_source.html#l00009">9</a> du fichier <a class="el" href="mainwindow_8hpp_source.html">mainwindow.hpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -114,7 +153,7 @@ Espaces de nommage</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Lundi Janvier 26 2015 12:53:09 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi Janvier 26 2015 19:50:04 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
