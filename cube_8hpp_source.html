@@ -3,36 +3,44 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.8"/>
 <title>GameEditor:  Fichier source de include/cube.hpp</title>
+
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
-<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="top"><!-- do not remove this div! -->
+
+
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  
+  
   <td style="padding-left: 0.5em;">
    <div id="projectname">GameEditor
    &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">L&#39;editeur de monde du proletariat</div>
   </td>
+  
+  
+  
  </tr>
  </tbody>
 </table>
 </div>
-<!-- end header part -->
-<!-- Généré par Doxygen 1.8.8 -->
+
+<!-- Généré par Doxygen 1.7.6.1 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
@@ -66,6 +74,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
       <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">include/cube.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cube_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef CUBE_H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define CUBE_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;<a class="code" href="geometry_8hpp.html">geometry.hpp</a>&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;<a class="code" href="globals_8hpp.html">globals.hpp</a>&gt;</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a><a class="code" href="class_cube.html">00007</a> <span class="keyword">class </span><a class="code" href="class_cube.html">Cube</a> : <span class="keyword">public</span> <a class="code" href="class_geometry.html" title="Base de tous les acteurs.">Geometry</a> {
+<a name="l00008"></a>00008     Q_OBJECT
+<a name="l00009"></a>00009 <span class="keyword">public</span>:
+<a name="l00010"></a>00010     <a class="code" href="class_cube.html#a6eceaa075072d4d0396b6bd85872d62b">Cube</a>(QObject* parent = <span class="keyword">nullptr</span>);
+<a name="l00011"></a><a class="code" href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">00011</a>     <span class="keyword">static</span> std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">s_vertices</a>;
+<a name="l00012"></a><a class="code" href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">00012</a>     <span class="keyword">static</span> std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">s_colors</a>;
+<a name="l00013"></a><a class="code" href="class_cube.html#a15913769adf571b32db693f6b1cd6619">00013</a>     <span class="keyword">static</span> std::vector&lt;quint32&gt; <a class="code" href="class_cube.html#a15913769adf571b32db693f6b1cd6619">s_indices</a>;
+<a name="l00014"></a>00014 };
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <span class="preprocessor">#endif  // CUBE_H</span>
+</pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -80,46 +111,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
-</div>
-</div><!-- top -->
-<div class="header">
-  <div class="headertitle">
-<div class="title">cube.hpp</div>  </div>
-</div><!--header-->
-<div class="contents">
-<a href="cube_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CUBE_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CUBE_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="geometry_8hpp.html">geometry.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="globals_8hpp.html">globals.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_cube.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cube.html">Cube</a> : <span class="keyword">public</span> <a class="code" href="class_geometry.html">Geometry</a> {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_cube.html#a6eceaa075072d4d0396b6bd85872d62b">Cube</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">   11</a></span>&#160;    <span class="keyword">static</span> std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">s_vertices</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">   12</a></span>&#160;    <span class="keyword">static</span> std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">s_colors</a>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_cube.html#a15913769adf571b32db693f6b1cd6619">   13</a></span>&#160;    <span class="keyword">static</span> std::vector&lt;quint32&gt; <a class="code" href="class_cube.html#a15913769adf571b32db693f6b1cd6619">s_indices</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif  // CUBE_H</span></div>
-<div class="ttc" id="geometry_8hpp_html"><div class="ttname"><a href="geometry_8hpp.html">geometry.hpp</a></div></div>
-<div class="ttc" id="class_cube_html_a15913769adf571b32db693f6b1cd6619"><div class="ttname"><a href="class_cube.html#a15913769adf571b32db693f6b1cd6619">Cube::s_indices</a></div><div class="ttdeci">static std::vector&lt; quint32 &gt; s_indices</div><div class="ttdef"><b>Definition:</b> <a href="cube_8hpp_source.html#l00013">cube.hpp:13</a></div></div>
-<div class="ttc" id="class_cube_html_a02228c9ee089f6adb79b8898fb07c981"><div class="ttname"><a href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">Cube::s_vertices</a></div><div class="ttdeci">static std::vector&lt; GLfloat &gt; s_vertices</div><div class="ttdef"><b>Definition:</b> <a href="cube_8hpp_source.html#l00011">cube.hpp:11</a></div></div>
-<div class="ttc" id="class_geometry_html"><div class="ttname"><a href="class_geometry.html">Geometry</a></div><div class="ttdoc">Base de tous les acteurs. </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00024">geometry.hpp:24</a></div></div>
-<div class="ttc" id="class_cube_html_a41cef8fd6fe8a8fe0ada48f0c40a1113"><div class="ttname"><a href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">Cube::s_colors</a></div><div class="ttdeci">static std::vector&lt; GLfloat &gt; s_colors</div><div class="ttdef"><b>Definition:</b> <a href="cube_8hpp_source.html#l00012">cube.hpp:12</a></div></div>
-<div class="ttc" id="class_cube_html"><div class="ttname"><a href="class_cube.html">Cube</a></div><div class="ttdef"><b>Definition:</b> <a href="cube_8hpp_source.html#l00007">cube.hpp:7</a></div></div>
-<div class="ttc" id="class_cube_html_a6eceaa075072d4d0396b6bd85872d62b"><div class="ttname"><a href="class_cube.html#a6eceaa075072d4d0396b6bd85872d62b">Cube::Cube</a></div><div class="ttdeci">Cube(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="cube_8cpp_source.html#l00003">cube.cpp:3</a></div></div>
-<div class="ttc" id="globals_8hpp_html"><div class="ttname"><a href="globals_8hpp.html">globals.hpp</a></div></div>
-</div><!-- fragment --></div><!-- contents -->
-<!-- start footer part -->
+
+
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi 24 Janvier 2015 14:31:00 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi Janvier 26 2015 08:59:48 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.8
+</a> 1.7.6.1
 </small></address>
+
 </body>
 </html>

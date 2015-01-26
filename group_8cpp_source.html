@@ -3,36 +3,44 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.8"/>
 <title>GameEditor:  Fichier source de src/group.cpp</title>
+
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
-<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="top"><!-- do not remove this div! -->
+
+
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  
+  
   <td style="padding-left: 0.5em;">
    <div id="projectname">GameEditor
    &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">L&#39;editeur de monde du proletariat</div>
   </td>
+  
+  
+  
  </tr>
  </tbody>
 </table>
 </div>
-<!-- end header part -->
-<!-- Généré par Doxygen 1.8.8 -->
+
+<!-- Généré par Doxygen 1.7.6.1 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
@@ -66,6 +74,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
       <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">src/group.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="group_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &lt;<a class="code" href="group_8hpp.html">group.hpp</a>&gt;</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a><a class="code" href="class_group.html#aa4f7757d93556ad14ef32962bf776a3b">00003</a> <a class="code" href="class_group.html#aa4f7757d93556ad14ef32962bf776a3b">Group::Group</a>(QObject* parent) : <a class="code" href="class_geometry.html" title="Base de tous les acteurs.">Geometry</a>(parent) {
+<a name="l00004"></a>00004 }
+<a name="l00005"></a>00005 
+<a name="l00006"></a><a class="code" href="class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2">00006</a> <span class="keywordtype">void</span> <a class="code" href="class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2">Group::draw</a>(<span class="keyword">const</span> <a class="code" href="struct_draw_info.html">DrawInfo</a>&amp; info) {
+<a name="l00007"></a>00007     <span class="keyword">auto</span> localView = info.<a class="code" href="struct_draw_info.html#a988e2c6b8b9dfad10eb1e30f8d73211b">View</a> * <a class="code" href="class_geometry.html#a7936dff75c21a4223fd0e2324580f073">transform</a>();
+<a name="l00008"></a>00008     <a class="code" href="struct_draw_info.html">DrawInfo</a> localInfo{localView, info.<a class="code" href="struct_draw_info.html#abc4f8bc2bd85c796731912929623e001">Projection</a>, info.<a class="code" href="struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03">mode</a>};
+<a name="l00009"></a>00009     <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : children()) {
+<a name="l00010"></a>00010         <span class="keyword">auto</span> child = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_geometry.html" title="Base de tous les acteurs.">Geometry</a>*<span class="keyword">&gt;</span>(i);
+<a name="l00011"></a>00011         <span class="keywordflow">if</span> (child) child-&gt;<a class="code" href="class_geometry.html#a0cbbddd41c475ded59226dc9caf4f17b">draw</a>(localInfo);
+<a name="l00012"></a>00012     }
+<a name="l00013"></a>00013 }
+</pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -80,45 +108,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
-</div>
-</div><!-- top -->
-<div class="header">
-  <div class="headertitle">
-<div class="title">group.cpp</div>  </div>
-</div><!--header-->
-<div class="contents">
-<a href="group_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="group_8hpp.html">group.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_group.html#aa4f7757d93556ad14ef32962bf776a3b">    3</a></span>&#160;<a class="code" href="class_group.html#aa4f7757d93556ad14ef32962bf776a3b">Group::Group</a>(QObject* parent) : <a class="code" href="class_geometry.html">Geometry</a>(parent) {</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;}</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2">    6</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2">Group::draw</a>(<span class="keyword">const</span> <a class="code" href="struct_draw_info.html">DrawInfo</a>&amp; info) {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">auto</span> localView = info.<a class="code" href="struct_draw_info.html#a988e2c6b8b9dfad10eb1e30f8d73211b">View</a> * <a class="code" href="class_geometry.html#a7936dff75c21a4223fd0e2324580f073">transform</a>();</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="struct_draw_info.html">DrawInfo</a> localInfo{localView, info.<a class="code" href="struct_draw_info.html#abc4f8bc2bd85c796731912929623e001">Projection</a>, info.<a class="code" href="struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03">mode</a>};</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : children()) {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keyword">auto</span> child = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_geometry.html">Geometry</a>*<span class="keyword">&gt;</span>(i);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordflow">if</span> (child) child-&gt;<a class="code" href="class_geometry.html#a0cbbddd41c475ded59226dc9caf4f17b">draw</a>(localInfo);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    }</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
-<div class="ttc" id="struct_draw_info_html_a5f9ea27d4768c35dbde6e2a2793d5e03"><div class="ttname"><a href="struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03">DrawInfo::mode</a></div><div class="ttdeci">GLenum mode</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00015">geometry.hpp:15</a></div></div>
-<div class="ttc" id="class_group_html_af8d7df31c5fe4f8e22bd022c8735b6b2"><div class="ttname"><a href="class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2">Group::draw</a></div><div class="ttdeci">void draw(const DrawInfo &amp;info)</div><div class="ttdef"><b>Definition:</b> <a href="group_8cpp_source.html#l00006">group.cpp:6</a></div></div>
-<div class="ttc" id="struct_draw_info_html"><div class="ttname"><a href="struct_draw_info.html">DrawInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00012">geometry.hpp:12</a></div></div>
-<div class="ttc" id="struct_draw_info_html_abc4f8bc2bd85c796731912929623e001"><div class="ttname"><a href="struct_draw_info.html#abc4f8bc2bd85c796731912929623e001">DrawInfo::Projection</a></div><div class="ttdeci">QMatrix4x4 Projection</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00014">geometry.hpp:14</a></div></div>
-<div class="ttc" id="class_geometry_html"><div class="ttname"><a href="class_geometry.html">Geometry</a></div><div class="ttdoc">Base de tous les acteurs. </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00024">geometry.hpp:24</a></div></div>
-<div class="ttc" id="struct_draw_info_html_a988e2c6b8b9dfad10eb1e30f8d73211b"><div class="ttname"><a href="struct_draw_info.html#a988e2c6b8b9dfad10eb1e30f8d73211b">DrawInfo::View</a></div><div class="ttdeci">QMatrix4x4 View</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00013">geometry.hpp:13</a></div></div>
-<div class="ttc" id="class_geometry_html_a7936dff75c21a4223fd0e2324580f073"><div class="ttname"><a href="class_geometry.html#a7936dff75c21a4223fd0e2324580f073">Geometry::transform</a></div><div class="ttdeci">QMatrix4x4 transform()</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8cpp_source.html#l00013">geometry.cpp:13</a></div></div>
-<div class="ttc" id="class_group_html_aa4f7757d93556ad14ef32962bf776a3b"><div class="ttname"><a href="class_group.html#aa4f7757d93556ad14ef32962bf776a3b">Group::Group</a></div><div class="ttdeci">Group(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="group_8cpp_source.html#l00003">group.cpp:3</a></div></div>
-<div class="ttc" id="group_8hpp_html"><div class="ttname"><a href="group_8hpp.html">group.hpp</a></div></div>
-<div class="ttc" id="class_geometry_html_a0cbbddd41c475ded59226dc9caf4f17b"><div class="ttname"><a href="class_geometry.html#a0cbbddd41c475ded59226dc9caf4f17b">Geometry::draw</a></div><div class="ttdeci">void draw(const DrawInfo &amp;info)</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8cpp_source.html#l00021">geometry.cpp:21</a></div></div>
-</div><!-- fragment --></div><!-- contents -->
-<!-- start footer part -->
+
+
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi 24 Janvier 2015 14:31:00 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi Janvier 26 2015 08:59:48 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.8
+</a> 1.7.6.1
 </small></address>
+
 </body>
 </html>
