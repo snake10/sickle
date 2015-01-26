@@ -87,68 +87,71 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00005"></a>00005 }
 <a name="l00006"></a>00006 
 <a name="l00007"></a>00007 std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">Cube::s_vertices</a> = {
-<a name="l00008"></a>00008     -1.0f, -1.0f, -1.0f,                      <span class="comment">// Face 1</span>
-<a name="l00009"></a>00009     -1.0f, -1.0f, 1.0f,                       <span class="comment">//</span>
-<a name="l00010"></a>00010     -1.0f, 1.0f,  1.0f,                       <span class="comment">//</span>
-<a name="l00011"></a>00011     -1.0f, 1.0f,  -1.0f, 1.0f, -1.0f, -1.0f,  <span class="comment">// Face 2</span>
-<a name="l00012"></a>00012     1.0f,  1.0f,  -1.0f,                      <span class="comment">//</span>
-<a name="l00013"></a>00013     1.0f,  1.0f,  1.0f,                       <span class="comment">//</span>
-<a name="l00014"></a>00014     1.0f,  -1.0f, 1.0f,                       <span class="comment">//</span>
-<a name="l00015"></a>00015     -1.0f, -1.0f, -1.0f,                      <span class="comment">// Face 3</span>
-<a name="l00016"></a>00016     1.0f,  -1.0f, -1.0f,                      <span class="comment">//</span>
-<a name="l00017"></a>00017     1.0f,  -1.0f, 1.0f,                       <span class="comment">//</span>
-<a name="l00018"></a>00018     -1.0f, -1.0f, 1.0f,                       <span class="comment">//</span>
-<a name="l00019"></a>00019     -1.0f, 1.0f,  -1.0f,                      <span class="comment">// Face 4</span>
-<a name="l00020"></a>00020     -1.0f, 1.0f,  1.0f,                       <span class="comment">//</span>
-<a name="l00021"></a>00021     1.0f,  1.0f,  1.0f,                       <span class="comment">//</span>
-<a name="l00022"></a>00022     1.0f,  1.0f,  -1.0f,                      <span class="comment">//</span>
-<a name="l00023"></a>00023     -1.0f, -1.0f, -1.0f,                      <span class="comment">// Face 5</span>
-<a name="l00024"></a>00024     -1.0f, 1.0f,  -1.0f,                      <span class="comment">//</span>
-<a name="l00025"></a>00025     1.0f,  1.0f,  -1.0f,                      <span class="comment">//</span>
-<a name="l00026"></a>00026     1.0f,  -1.0f, -1.0f,                      <span class="comment">//</span>
-<a name="l00027"></a>00027     -1.0f, -1.0f, 1.0f,                       <span class="comment">// Face 6</span>
-<a name="l00028"></a>00028     1.0f,  -1.0f, 1.0f,  1.0f, 1.0f,  1.0f,  -1.0f, 1.0f, 1.0f,
-<a name="l00029"></a>00029 };
-<a name="l00030"></a>00030 std::vector&lt;quint32&gt; <a class="code" href="class_cube.html#a15913769adf571b32db693f6b1cd6619">Cube::s_indices</a> = {
-<a name="l00031"></a>00031     0,  1,  3,   <span class="comment">// Face 1</span>
-<a name="l00032"></a>00032     3,  1,  2,   <span class="comment">//</span>
-<a name="l00033"></a>00033     4,  5,  7,   <span class="comment">// Face 2</span>
-<a name="l00034"></a>00034     7,  5,  6,   <span class="comment">//</span>
-<a name="l00035"></a>00035     8,  9,  11,  <span class="comment">// Face 3</span>
-<a name="l00036"></a>00036     11, 9,  10,  <span class="comment">//</span>
-<a name="l00037"></a>00037     12, 13, 15,  <span class="comment">// Face 4</span>
-<a name="l00038"></a>00038     15, 13, 14,  <span class="comment">//</span>
-<a name="l00039"></a>00039     16, 17, 19,  <span class="comment">// Face 5</span>
-<a name="l00040"></a>00040     19, 17, 18,  <span class="comment">//</span>
-<a name="l00041"></a>00041     20, 21, 23,  <span class="comment">// Face 6</span>
-<a name="l00042"></a>00042     23, 21, 22,  <span class="comment">//</span>
-<a name="l00043"></a>00043 };
-<a name="l00044"></a>00044 std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">Cube::s_colors</a> = {
-<a name="l00045"></a>00045     1.0f, 0.0f, 0.0f,  <span class="comment">// Face 1</span>
-<a name="l00046"></a>00046     1.0f, 0.0f, 0.0f,  <span class="comment">//</span>
-<a name="l00047"></a>00047     1.0f, 0.0f, 0.0f,  <span class="comment">//</span>
-<a name="l00048"></a>00048     1.0f, 0.0f, 0.0f,  <span class="comment">//</span>
-<a name="l00049"></a>00049     1.0f, 1.0f, 0.0f,  <span class="comment">// Face 2</span>
-<a name="l00050"></a>00050     1.0f, 1.0f, 0.0f,  <span class="comment">//</span>
-<a name="l00051"></a>00051     1.0f, 1.0f, 0.0f,  <span class="comment">//</span>
-<a name="l00052"></a>00052     1.0f, 1.0f, 0.0f,  <span class="comment">//</span>
-<a name="l00053"></a>00053     0.0f, 1.0f, 0.0f,  <span class="comment">// Face 3</span>
-<a name="l00054"></a>00054     0.0f, 1.0f, 0.0f,  <span class="comment">//</span>
-<a name="l00055"></a>00055     0.0f, 1.0f, 0.0f,  <span class="comment">//</span>
-<a name="l00056"></a>00056     0.0f, 1.0f, 0.0f,  <span class="comment">//</span>
-<a name="l00057"></a>00057     0.0f, 1.0f, 1.0f,  <span class="comment">// Face 4</span>
-<a name="l00058"></a>00058     0.0f, 1.0f, 1.0f,  <span class="comment">//</span>
-<a name="l00059"></a>00059     0.0f, 1.0f, 1.0f,  <span class="comment">//</span>
-<a name="l00060"></a>00060     0.0f, 1.0f, 1.0f,  <span class="comment">//</span>
-<a name="l00061"></a>00061     0.0f, 0.0f, 1.0f,  <span class="comment">// Face 5</span>
-<a name="l00062"></a>00062     0.0f, 0.0f, 1.0f,  <span class="comment">//</span>
-<a name="l00063"></a>00063     0.0f, 0.0f, 1.0f,  <span class="comment">//</span>
-<a name="l00064"></a>00064     0.0f, 0.0f, 1.0f,  <span class="comment">//</span>
-<a name="l00065"></a>00065     1.0f, 0.0f, 1.0f,  <span class="comment">// Face 6</span>
-<a name="l00066"></a>00066     1.0f, 0.0f, 1.0f,  <span class="comment">//</span>
-<a name="l00067"></a>00067     1.0f, 0.0f, 1.0f,  <span class="comment">//</span>
-<a name="l00068"></a>00068     1.0f, 0.0f, 1.0f,  <span class="comment">//</span>
-<a name="l00069"></a>00069 };
+<a name="l00008"></a>00008     -1.0f, -1.0f, -1.0f,    <span class="comment">// Face 1</span>
+<a name="l00009"></a>00009     -1.0f, -1.0f,  1.0f,    <span class="comment">//</span>
+<a name="l00010"></a>00010     -1.0f,  1.0f,  1.0f,    <span class="comment">//</span>
+<a name="l00011"></a>00011     -1.0f,  1.0f, -1.0f,    <span class="comment">//</span>
+<a name="l00012"></a>00012      1.0f, -1.0f, -1.0f,    <span class="comment">// Face 2</span>
+<a name="l00013"></a>00013      1.0f,  1.0f, -1.0f,    <span class="comment">//</span>
+<a name="l00014"></a>00014      1.0f,  1.0f,  1.0f,    <span class="comment">//</span>
+<a name="l00015"></a>00015      1.0f, -1.0f,  1.0f,    <span class="comment">//</span>
+<a name="l00016"></a>00016     -1.0f, -1.0f, -1.0f,    <span class="comment">// Face 3</span>
+<a name="l00017"></a>00017      1.0f, -1.0f, -1.0f,    <span class="comment">//</span>
+<a name="l00018"></a>00018      1.0f, -1.0f,  1.0f,    <span class="comment">//</span>
+<a name="l00019"></a>00019     -1.0f, -1.0f,  1.0f,    <span class="comment">//</span>
+<a name="l00020"></a>00020     -1.0f,  1.0f, -1.0f,    <span class="comment">// Face 4</span>
+<a name="l00021"></a>00021     -1.0f,  1.0f,  1.0f,    <span class="comment">//</span>
+<a name="l00022"></a>00022      1.0f,  1.0f,  1.0f,    <span class="comment">//</span>
+<a name="l00023"></a>00023      1.0f,  1.0f, -1.0f,    <span class="comment">//</span>
+<a name="l00024"></a>00024     -1.0f, -1.0f, -1.0f,    <span class="comment">// Face 5</span>
+<a name="l00025"></a>00025     -1.0f,  1.0f, -1.0f,    <span class="comment">//</span>
+<a name="l00026"></a>00026      1.0f,  1.0f, -1.0f,    <span class="comment">//</span>
+<a name="l00027"></a>00027      1.0f, -1.0f, -1.0f,    <span class="comment">//</span>
+<a name="l00028"></a>00028     -1.0f, -1.0f,  1.0f,    <span class="comment">// Face 6</span>
+<a name="l00029"></a>00029      1.0f, -1.0f,  1.0f,    <span class="comment">//</span>
+<a name="l00030"></a>00030      1.0f,  1.0f,  1.0f,    <span class="comment">//</span>
+<a name="l00031"></a>00031     -1.0f,  1.0f,  1.0f,    <span class="comment">//</span>
+<a name="l00032"></a>00032 };
+<a name="l00033"></a>00033 std::vector&lt;quint32&gt; <a class="code" href="class_cube.html#a15913769adf571b32db693f6b1cd6619">Cube::s_indices</a> = {
+<a name="l00034"></a>00034     0,  1,  3,   <span class="comment">// Face 1</span>
+<a name="l00035"></a>00035     3,  1,  2,   <span class="comment">//</span>
+<a name="l00036"></a>00036     4,  5,  7,   <span class="comment">// Face 2</span>
+<a name="l00037"></a>00037     7,  5,  6,   <span class="comment">//</span>
+<a name="l00038"></a>00038     8,  9,  11,  <span class="comment">// Face 3</span>
+<a name="l00039"></a>00039     11, 9,  10,  <span class="comment">//</span>
+<a name="l00040"></a>00040     12, 13, 15,  <span class="comment">// Face 4</span>
+<a name="l00041"></a>00041     15, 13, 14,  <span class="comment">//</span>
+<a name="l00042"></a>00042     16, 17, 19,  <span class="comment">// Face 5</span>
+<a name="l00043"></a>00043     19, 17, 18,  <span class="comment">//</span>
+<a name="l00044"></a>00044     20, 21, 23,  <span class="comment">// Face 6</span>
+<a name="l00045"></a>00045     23, 21, 22,  <span class="comment">//</span>
+<a name="l00046"></a>00046 };
+<a name="l00047"></a>00047 std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">Cube::s_colors</a> = {
+<a name="l00048"></a>00048     1.0f, 0.0f, 0.0f,  <span class="comment">// Face 1</span>
+<a name="l00049"></a>00049     1.0f, 0.0f, 0.0f,  <span class="comment">//</span>
+<a name="l00050"></a>00050     1.0f, 0.0f, 0.0f,  <span class="comment">//</span>
+<a name="l00051"></a>00051     1.0f, 0.0f, 0.0f,  <span class="comment">//</span>
+<a name="l00052"></a>00052     1.0f, 1.0f, 0.0f,  <span class="comment">// Face 2</span>
+<a name="l00053"></a>00053     1.0f, 1.0f, 0.0f,  <span class="comment">//</span>
+<a name="l00054"></a>00054     1.0f, 1.0f, 0.0f,  <span class="comment">//</span>
+<a name="l00055"></a>00055     1.0f, 1.0f, 0.0f,  <span class="comment">//</span>
+<a name="l00056"></a>00056     0.0f, 1.0f, 0.0f,  <span class="comment">// Face 3</span>
+<a name="l00057"></a>00057     0.0f, 1.0f, 0.0f,  <span class="comment">//</span>
+<a name="l00058"></a>00058     0.0f, 1.0f, 0.0f,  <span class="comment">//</span>
+<a name="l00059"></a>00059     0.0f, 1.0f, 0.0f,  <span class="comment">//</span>
+<a name="l00060"></a>00060     0.0f, 1.0f, 1.0f,  <span class="comment">// Face 4</span>
+<a name="l00061"></a>00061     0.0f, 1.0f, 1.0f,  <span class="comment">//</span>
+<a name="l00062"></a>00062     0.0f, 1.0f, 1.0f,  <span class="comment">//</span>
+<a name="l00063"></a>00063     0.0f, 1.0f, 1.0f,  <span class="comment">//</span>
+<a name="l00064"></a>00064     0.0f, 0.0f, 1.0f,  <span class="comment">// Face 5</span>
+<a name="l00065"></a>00065     0.0f, 0.0f, 1.0f,  <span class="comment">//</span>
+<a name="l00066"></a>00066     0.0f, 0.0f, 1.0f,  <span class="comment">//</span>
+<a name="l00067"></a>00067     0.0f, 0.0f, 1.0f,  <span class="comment">//</span>
+<a name="l00068"></a>00068     1.0f, 0.0f, 1.0f,  <span class="comment">// Face 6</span>
+<a name="l00069"></a>00069     1.0f, 0.0f, 1.0f,  <span class="comment">//</span>
+<a name="l00070"></a>00070     1.0f, 0.0f, 1.0f,  <span class="comment">//</span>
+<a name="l00071"></a>00071     1.0f, 0.0f, 1.0f,  <span class="comment">//</span>
+<a name="l00072"></a>00072 };
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -167,7 +170,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Lundi Janvier 26 2015 09:33:15 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi Janvier 26 2015 10:41:24 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
