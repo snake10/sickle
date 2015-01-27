@@ -117,7 +117,7 @@ Fonctions membres protégées</h2></td></tr>
 <tr><td colspan="2"><h2><a name="pro-static-methods"></a>
 Fonctions membres protégées statiques</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570">noinline</a> QOpenGLBuffer *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_geometry.html#acac8d605459ed98d641af6c97d37c798">initBuffer</a> (QOpenGLBuffer::Type type, std::vector&lt; T &gt; &amp;data)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570">noinline</a> QOpenGLBuffer *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_geometry.html#a67968e7898b981ad53d1cac382dd4318">initBuffer</a> (QOpenGLBuffer::Type type, const std::vector&lt; T &gt; &amp;data)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename Child &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570">noinline</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_geometry.html#a50bd1d3e6b222c0dc20954955baa7b7e">initProgram</a> (QObject *parent)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise les shaders et alloue les buffer.  <a href="#a50bd1d3e6b222c0dc20954955baa7b7e"></a><br/></td></tr>
@@ -126,7 +126,7 @@ Fonctions membres protégées statiques</h2></td></tr>
 <div class="textblock"><p>Base de tous les acteurs. </p>
 <p>Cette classe est une base gerant de rendu d'un buffer de vertices. Ses 3 propriétés position, orientation et scale permettent de déplacer l'objet. </p>
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00024">24</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00027">27</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 </div><hr/><h2>Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="a2ba08868698dc22d50206930933d45e3"></a><!-- doxytag: member="Geometry::Geometry" ref="a2ba08868698dc22d50206930933d45e3" args="(QObject *parent=nullptr)" -->
 <div class="memitem">
@@ -137,13 +137,13 @@ Fonctions membres protégées statiques</h2></td></tr>
           <td>(</td>
           <td class="paramtype">QObject *&#160;</td>
           <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
-          <td></td>
+          <td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8cpp_source.html#l00010">10</a> du fichier <a class="el" href="geometry_8cpp_source.html">geometry.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8cpp_source.html#l00012">12</a> du fichier <a class="el" href="geometry_8cpp_source.html">geometry.cpp</a>.</p>
 
 </div>
 </div>
@@ -165,18 +165,18 @@ Fonctions membres protégées statiques</h2></td></tr>
 
 <p>Réimplémentée dans <a class="el" href="class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2">Group</a>.</p>
 
-<p>Définition à la ligne <a class="el" href="geometry_8cpp_source.html#l00021">21</a> du fichier <a class="el" href="geometry_8cpp_source.html">geometry.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8cpp_source.html#l00023">23</a> du fichier <a class="el" href="geometry_8cpp_source.html">geometry.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acac8d605459ed98d641af6c97d37c798"></a><!-- doxytag: member="Geometry::initBuffer" ref="acac8d605459ed98d641af6c97d37c798" args="(QOpenGLBuffer::Type type, std::vector&lt; T &gt; &amp;data)" -->
+<a class="anchor" id="a67968e7898b981ad53d1cac382dd4318"></a><!-- doxytag: member="Geometry::initBuffer" ref="a67968e7898b981ad53d1cac382dd4318" args="(QOpenGLBuffer::Type type, const std::vector&lt; T &gt; &amp;data)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570">noinline</a> QOpenGLBuffer* <a class="el" href="class_geometry.html#acac8d605459ed98d641af6c97d37c798">Geometry::initBuffer</a> </td>
+          <td class="memname">static <a class="el" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570">noinline</a> QOpenGLBuffer* <a class="el" href="class_geometry.html#a67968e7898b981ad53d1cac382dd4318">Geometry::initBuffer</a> </td>
           <td>(</td>
           <td class="paramtype">QOpenGLBuffer::Type&#160;</td>
           <td class="paramname"><em>type</em>, </td>
@@ -184,7 +184,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>data</em>&#160;</td>
         </tr>
         <tr>
@@ -196,7 +196,7 @@ template&lt;typename T &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00038">38</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00042">42</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -220,7 +220,7 @@ template&lt;typename Child &gt; </div>
 <p>Initialise les shaders et alloue les buffer. </p>
 <p>Cette méthode statique est appelée par le constructeur de toutes les classes enfant de <a class="el" href="class_geometry.html" title="Base de tous les acteurs.">Geometry</a>. Elle n'est exécutée qu'une seule fois par classe gràce a un compteur d'instances. Cela permet de n'utiliser qu'un couple shader / buffer pour l'ensemble des géometries d'une même classe. Elle DOIT se trouver dans le header pour permettre au template d'être parsé corectement. </p>
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00058">58</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00062">62</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -337,7 +337,7 @@ template&lt;typename Child &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8cpp_source.html#l00013">13</a> du fichier <a class="el" href="geometry_8cpp_source.html">geometry.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8cpp_source.html#l00015">15</a> du fichier <a class="el" href="geometry_8cpp_source.html">geometry.cpp</a>.</p>
 
 </div>
 </div>
@@ -363,7 +363,7 @@ template&lt;typename Child &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Janvier 27 2015 12:55:05 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mardi Janvier 27 2015 15:04:48 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
