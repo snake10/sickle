@@ -232,76 +232,77 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00150"></a>00150                     <span class="keywordflow">return</span> list-&gt;at(i);
 <a name="l00151"></a>00151                 }, [=] (<span class="keyword">const</span> QVariant&amp; val) {
 <a name="l00152"></a>00152                     list-&gt;operator[](i) = val;
-<a name="l00153"></a>00153                 });
-<a name="l00154"></a>00154 
-<a name="l00155"></a>00155                 line-&gt;treeWidget()-&gt;setItemWidget(item, 1, widget);
-<a name="l00156"></a>00156             }
-<a name="l00157"></a>00157 
-<a name="l00158"></a>00158             <span class="keywordflow">break</span>;
-<a name="l00159"></a>00159         }
-<a name="l00160"></a>00160         <span class="keywordflow">case</span> QMetaType::QQuaternion: {
-<a name="l00161"></a>00161             <span class="comment">//TODO</span>
-<a name="l00162"></a>00162             <span class="keywordflow">break</span>;
-<a name="l00163"></a>00163         }
-<a name="l00164"></a>00164         <span class="keywordflow">default</span>:
-<a name="l00165"></a>00165             qDebug() &lt;&lt; <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.type();
-<a name="l00166"></a>00166             <span class="keywordflow">return</span> <span class="keyword">new</span> QLabel(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.toString());
-<a name="l00167"></a>00167     }
-<a name="l00168"></a>00168 
-<a name="l00169"></a>00169     <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;
-<a name="l00170"></a>00170 }
-<a name="l00171"></a>00171 
-<a name="l00172"></a>00172 <span class="keywordtype">void</span> MainWindow::on_actorList_currentItemChanged(QTreeWidgetItem *current)
-<a name="l00173"></a>00173 {
-<a name="l00174"></a>00174     <span class="keyword">auto</span> ptr = current-&gt;data(0, Qt::UserRole);
-<a name="l00175"></a>00175     <span class="keywordflow">if</span> (ptr.isValid() &amp;&amp; <span class="keyword">static_cast&lt;</span>QMetaType::Type<span class="keyword">&gt;</span>(ptr.type()) == QMetaType::QObjectStar) {
-<a name="l00176"></a>00176         QObject* obj = qvariant_cast&lt;QObject*&gt;(ptr);
-<a name="l00177"></a>00177         <span class="keywordflow">if</span> (obj) {
-<a name="l00178"></a>00178             <span class="keyword">auto</span> info = ui-&gt;infoWidget;
-<a name="l00179"></a>00179             <span class="keyword">auto</span> metaObject = obj-&gt;metaObject();
-<a name="l00180"></a>00180             <span class="keyword">auto</span> count = metaObject-&gt;propertyCount();
-<a name="l00181"></a>00181             info-&gt;clear();
-<a name="l00182"></a>00182             <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; count; i++) {
-<a name="l00183"></a>00183                 <span class="keyword">auto</span> <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a> = metaObject-&gt;property(i).name();
-<a name="l00184"></a>00184                 <span class="keyword">auto</span> line = <span class="keyword">new</span> QTreeWidgetItem;
-<a name="l00185"></a>00185                 line-&gt;setText(0, <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>);
-<a name="l00186"></a>00186                 info-&gt;addTopLevelItem(line);
-<a name="l00187"></a>00187                 info-&gt;setItemWidget(line, 1, widgetForVariant(line, [=] () {
-<a name="l00188"></a>00188                     <span class="keywordflow">return</span> obj-&gt;property(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>);
-<a name="l00189"></a>00189                 }, [=] (<span class="keyword">const</span> QVariant&amp; val) {
-<a name="l00190"></a>00190                     obj-&gt;setProperty(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>, val);
-<a name="l00191"></a>00191                 }));
-<a name="l00192"></a>00192             }
-<a name="l00193"></a>00193         }
-<a name="l00194"></a>00194     }
-<a name="l00195"></a>00195 }
-<a name="l00196"></a>00196 
-<a name="l00197"></a>00197 <span class="keywordtype">void</span> MainWindow::on_actionOpen_triggered() {
-<a name="l00198"></a>00198     <span class="keyword">auto</span> fileName = QFileDialog::getOpenFileName(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Open World&quot;</span>), QString(), tr(<span class="stringliteral">&quot;World File (*.wld)&quot;</span>));
-<a name="l00199"></a>00199     ui-&gt;viewport-&gt;load(fileName);
-<a name="l00200"></a>00200     m_lastFile = fileName;
-<a name="l00201"></a>00201 }
-<a name="l00202"></a>00202 
-<a name="l00203"></a>00203 <span class="keywordtype">void</span> MainWindow::on_actionSave_as_triggered() {
-<a name="l00204"></a>00204     <span class="keyword">auto</span> fileName = QFileDialog::getSaveFileName(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Save World&quot;</span>), QString(), tr(<span class="stringliteral">&quot;World File (*.wld)&quot;</span>));
-<a name="l00205"></a>00205     ui-&gt;viewport-&gt;save(fileName);
-<a name="l00206"></a>00206     m_lastFile = fileName;
-<a name="l00207"></a>00207 }
-<a name="l00208"></a>00208 
-<a name="l00209"></a>00209 <span class="keywordtype">void</span> MainWindow::on_action_Save_triggered() {
-<a name="l00210"></a>00210     <span class="keywordflow">if</span> (m_lastFile.isEmpty())
-<a name="l00211"></a>00211         on_actionSave_as_triggered();
-<a name="l00212"></a>00212     <span class="keywordflow">else</span>
-<a name="l00213"></a>00213         ui-&gt;viewport-&gt;save(m_lastFile);
-<a name="l00214"></a>00214 }
-<a name="l00215"></a>00215 
-<a name="l00216"></a>00216 <span class="keywordtype">void</span> MainWindow::on_actionWireframe_toggled(<span class="keywordtype">bool</span> checked) {
-<a name="l00217"></a>00217     <span class="keywordflow">if</span> (checked) {
-<a name="l00218"></a>00218         ui-&gt;viewport-&gt;renderMode(GL_LINES);
-<a name="l00219"></a>00219     } <span class="keywordflow">else</span> {
-<a name="l00220"></a>00220         ui-&gt;viewport-&gt;renderMode(GL_TRIANGLES);
-<a name="l00221"></a>00221     }
-<a name="l00222"></a>00222 }
+<a name="l00153"></a>00153                     <span class="keyword">set</span>(*list);
+<a name="l00154"></a>00154                 });
+<a name="l00155"></a>00155 
+<a name="l00156"></a>00156                 line-&gt;treeWidget()-&gt;setItemWidget(item, 1, widget);
+<a name="l00157"></a>00157             }
+<a name="l00158"></a>00158 
+<a name="l00159"></a>00159             <span class="keywordflow">break</span>;
+<a name="l00160"></a>00160         }
+<a name="l00161"></a>00161         <span class="keywordflow">case</span> QMetaType::QQuaternion: {
+<a name="l00162"></a>00162             <span class="comment">//TODO</span>
+<a name="l00163"></a>00163             <span class="keywordflow">break</span>;
+<a name="l00164"></a>00164         }
+<a name="l00165"></a>00165         <span class="keywordflow">default</span>:
+<a name="l00166"></a>00166             qDebug() &lt;&lt; <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.type();
+<a name="l00167"></a>00167             <span class="keywordflow">return</span> <span class="keyword">new</span> QLabel(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.toString());
+<a name="l00168"></a>00168     }
+<a name="l00169"></a>00169 
+<a name="l00170"></a>00170     <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;
+<a name="l00171"></a>00171 }
+<a name="l00172"></a>00172 
+<a name="l00173"></a>00173 <span class="keywordtype">void</span> MainWindow::on_actorList_currentItemChanged(QTreeWidgetItem *current)
+<a name="l00174"></a>00174 {
+<a name="l00175"></a>00175     <span class="keyword">auto</span> ptr = current-&gt;data(0, Qt::UserRole);
+<a name="l00176"></a>00176     <span class="keywordflow">if</span> (ptr.isValid() &amp;&amp; <span class="keyword">static_cast&lt;</span>QMetaType::Type<span class="keyword">&gt;</span>(ptr.type()) == QMetaType::QObjectStar) {
+<a name="l00177"></a>00177         QObject* obj = qvariant_cast&lt;QObject*&gt;(ptr);
+<a name="l00178"></a>00178         <span class="keywordflow">if</span> (obj) {
+<a name="l00179"></a>00179             <span class="keyword">auto</span> info = ui-&gt;infoWidget;
+<a name="l00180"></a>00180             <span class="keyword">auto</span> metaObject = obj-&gt;metaObject();
+<a name="l00181"></a>00181             <span class="keyword">auto</span> count = metaObject-&gt;propertyCount();
+<a name="l00182"></a>00182             info-&gt;clear();
+<a name="l00183"></a>00183             <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; count; i++) {
+<a name="l00184"></a>00184                 <span class="keyword">auto</span> <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a> = metaObject-&gt;property(i).name();
+<a name="l00185"></a>00185                 <span class="keyword">auto</span> line = <span class="keyword">new</span> QTreeWidgetItem;
+<a name="l00186"></a>00186                 line-&gt;setText(0, <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>);
+<a name="l00187"></a>00187                 info-&gt;addTopLevelItem(line);
+<a name="l00188"></a>00188                 info-&gt;setItemWidget(line, 1, widgetForVariant(line, [=] () {
+<a name="l00189"></a>00189                     <span class="keywordflow">return</span> obj-&gt;property(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>);
+<a name="l00190"></a>00190                 }, [=] (<span class="keyword">const</span> QVariant&amp; val) {
+<a name="l00191"></a>00191                     obj-&gt;setProperty(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>, val);
+<a name="l00192"></a>00192                 }));
+<a name="l00193"></a>00193             }
+<a name="l00194"></a>00194         }
+<a name="l00195"></a>00195     }
+<a name="l00196"></a>00196 }
+<a name="l00197"></a>00197 
+<a name="l00198"></a>00198 <span class="keywordtype">void</span> MainWindow::on_actionOpen_triggered() {
+<a name="l00199"></a>00199     <span class="keyword">auto</span> fileName = QFileDialog::getOpenFileName(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Open World&quot;</span>), QString(), tr(<span class="stringliteral">&quot;World File (*.wld)&quot;</span>));
+<a name="l00200"></a>00200     ui-&gt;viewport-&gt;load(fileName);
+<a name="l00201"></a>00201     m_lastFile = fileName;
+<a name="l00202"></a>00202 }
+<a name="l00203"></a>00203 
+<a name="l00204"></a>00204 <span class="keywordtype">void</span> MainWindow::on_actionSave_as_triggered() {
+<a name="l00205"></a>00205     <span class="keyword">auto</span> fileName = QFileDialog::getSaveFileName(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Save World&quot;</span>), QString(), tr(<span class="stringliteral">&quot;World File (*.wld)&quot;</span>));
+<a name="l00206"></a>00206     ui-&gt;viewport-&gt;save(fileName);
+<a name="l00207"></a>00207     m_lastFile = fileName;
+<a name="l00208"></a>00208 }
+<a name="l00209"></a>00209 
+<a name="l00210"></a>00210 <span class="keywordtype">void</span> MainWindow::on_action_Save_triggered() {
+<a name="l00211"></a>00211     <span class="keywordflow">if</span> (m_lastFile.isEmpty())
+<a name="l00212"></a>00212         on_actionSave_as_triggered();
+<a name="l00213"></a>00213     <span class="keywordflow">else</span>
+<a name="l00214"></a>00214         ui-&gt;viewport-&gt;save(m_lastFile);
+<a name="l00215"></a>00215 }
+<a name="l00216"></a>00216 
+<a name="l00217"></a>00217 <span class="keywordtype">void</span> MainWindow::on_actionWireframe_toggled(<span class="keywordtype">bool</span> checked) {
+<a name="l00218"></a>00218     <span class="keywordflow">if</span> (checked) {
+<a name="l00219"></a>00219         ui-&gt;viewport-&gt;renderMode(GL_LINES);
+<a name="l00220"></a>00220     } <span class="keywordflow">else</span> {
+<a name="l00221"></a>00221         ui-&gt;viewport-&gt;renderMode(GL_TRIANGLES);
+<a name="l00222"></a>00222     }
+<a name="l00223"></a>00223 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -320,7 +321,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Lundi Janvier 26 2015 19:50:04 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mardi Janvier 27 2015 11:19:39 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
