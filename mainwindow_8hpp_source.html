@@ -102,22 +102,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00025"></a>00025 <span class="keyword">public</span>:
 <a name="l00026"></a>00026     <span class="keyword">explicit</span> <a class="code" href="class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db">MainWindow</a>(<a class="code" href="class_q_widget.html">QWidget</a> *parent = 0);
 <a name="l00027"></a>00027     <a class="code" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a>();
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029 <span class="keyword">private</span> slots:
-<a name="l00030"></a>00030     <span class="keywordtype">void</span> on_actorList_currentItemChanged(QTreeWidgetItem *current);
-<a name="l00031"></a>00031     <span class="keywordtype">void</span> on_actionOpen_triggered();
-<a name="l00032"></a>00032     <span class="keywordtype">void</span> on_actionSave_as_triggered();
-<a name="l00033"></a>00033     <span class="keywordtype">void</span> on_action_Save_triggered();
-<a name="l00034"></a>00034     <span class="keywordtype">void</span> on_actionWireframe_toggled(<span class="keywordtype">bool</span> arg1);
-<a name="l00035"></a>00035     <span class="keywordtype">void</span> on_viewport_childAdded(QObject *obj);
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037 <span class="keyword">private</span>:
-<a name="l00038"></a>00038     <a class="code" href="class_q_widget.html">QWidget</a>* widgetForVariant(QTreeWidgetItem* line, <a class="code" href="mainwindow_8hpp.html#aeb7038d9fece71286bc08e7285cc1213">VarGetter</a> <span class="keyword">get</span>, <a class="code" href="mainwindow_8hpp.html#ad82da20360d3b356afc5989031c5d715">VarSetter</a> <span class="keyword">set</span>);
-<a name="l00039"></a>00039     QString m_lastFile;
-<a name="l00040"></a>00040     Ui::MainWindow *ui;
-<a name="l00041"></a>00041 };
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043 <span class="preprocessor">#endif  // TESTMAIN_H</span>
+<a name="l00028"></a><a class="code" href="class_main_window.html#aae7d869ff89159371c34a0f3611b841c">00028</a>     Ui::MainWindow* <a class="code" href="class_main_window.html#aae7d869ff89159371c34a0f3611b841c">getUI</a>() { <span class="keywordflow">return</span> ui; }
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 <span class="keyword">private</span> slots:
+<a name="l00031"></a>00031     <span class="keywordtype">void</span> on_actorList_currentItemChanged(QTreeWidgetItem *current);
+<a name="l00032"></a>00032     <span class="keywordtype">void</span> on_actionOpen_triggered();
+<a name="l00033"></a>00033     <span class="keywordtype">void</span> on_actionSave_as_triggered();
+<a name="l00034"></a>00034     <span class="keywordtype">void</span> on_action_Save_triggered();
+<a name="l00035"></a>00035     <span class="keywordtype">void</span> on_actionWireframe_toggled(<span class="keywordtype">bool</span> arg1);
+<a name="l00036"></a>00036     <span class="keywordtype">void</span> on_viewport_childAdded(QObject *obj);
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038     <span class="keywordtype">void</span> on_newGeo_triggered();
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 <span class="keyword">private</span>:
+<a name="l00041"></a>00041     <a class="code" href="class_q_widget.html">QWidget</a>* widgetForVariant(QTreeWidgetItem* line, <a class="code" href="mainwindow_8hpp.html#aeb7038d9fece71286bc08e7285cc1213">VarGetter</a> <span class="keyword">get</span>, <a class="code" href="mainwindow_8hpp.html#ad82da20360d3b356afc5989031c5d715">VarSetter</a> <span class="keyword">set</span>);
+<a name="l00042"></a>00042     QString m_lastFile;
+<a name="l00043"></a>00043     Ui::MainWindow* ui;
+<a name="l00044"></a>00044 };
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 <span class="preprocessor">#endif  // TESTMAIN_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -136,7 +139,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Janvier 27 2015 15:04:48 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mardi Janvier 27 2015 20:05:08 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

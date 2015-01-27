@@ -108,7 +108,6 @@ Graphe d'héritage de Viewport:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-slots"></a>
 Connecteurs publics</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_geometry.html">Geometry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a463e6cc03f6338f958a4fe06cf478b36">addChild</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a94ce1a503f6e3c10d27e7289e6f8607c">save</a> (QString name)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a94489fe1044fd859a2a3b2eb2f1cc2ae">load</a> (QString name)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#ab6bea61fac9caf74cf37fe91861b42e3">clearLevel</a> ()</td></tr>
@@ -121,6 +120,8 @@ Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a1e18a1ff4a52be33ef63d25034561850">~Viewport</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a441cdf7965dd99860d2e1cec72b71081">minimumSizeHint</a> () const Q_DECL_OVERRIDE</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a5fba6e917c9da4d7edd9cef5d6f22be0">sizeHint</a> () const Q_DECL_OVERRIDE</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_viewport.html#ab3309b168e0513b488163d1f1d69984c">addChild</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a4b1a438a86e883c72d98feb3c3a658d6">camera</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#abc07993d5b94463a1a23d0436842b59c">renderMode</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">Q_SLOT GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a67be1e5d617872c61c61afbf57d678d3">renderMode</a> (GLenum val)</td></tr>
@@ -185,21 +186,23 @@ Propriétés</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a463e6cc03f6338f958a4fe06cf478b36"></a><!-- doxytag: member="Viewport::addChild" ref="a463e6cc03f6338f958a4fe06cf478b36" args="()" -->
+<a class="anchor" id="ab3309b168e0513b488163d1f1d69984c"></a><!-- doxytag: member="Viewport::addChild" ref="ab3309b168e0513b488163d1f1d69984c" args="()" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_geometry.html">Geometry</a>* <a class="el" href="class_viewport.html#a463e6cc03f6338f958a4fe06cf478b36">Viewport::addChild</a> </td>
+          <td class="memname">T* <a class="el" href="class_viewport.html#ab3309b168e0513b488163d1f1d69984c">Viewport::addChild</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline, slot]</code></td>
+          <td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00044">44</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00034">34</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -217,7 +220,7 @@ Propriétés</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00032">32</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00044">44</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -270,7 +273,7 @@ Propriétés</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00070">70</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00073">73</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -289,7 +292,7 @@ Propriétés</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00069">69</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00072">72</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -456,7 +459,7 @@ Propriétés</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00033">33</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00045">45</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -475,7 +478,7 @@ Propriétés</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00033">33</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00045">45</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -576,7 +579,7 @@ Propriétés</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00032">32</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00044">44</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -591,7 +594,7 @@ Propriétés</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00032">32</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00044">44</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -617,7 +620,7 @@ Propriétés</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Janvier 27 2015 15:04:48 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mardi Janvier 27 2015 20:05:08 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
