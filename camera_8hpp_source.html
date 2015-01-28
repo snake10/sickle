@@ -90,28 +90,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00008"></a>00008 <span class="preprocessor">#include &lt;QMatrix4x4&gt;</span>
 <a name="l00009"></a>00009 <span class="preprocessor">#include &lt;<a class="code" href="globals_8hpp.html">globals.hpp</a>&gt;</span>
 <a name="l00010"></a>00010 <span class="preprocessor">#include &lt;QMetaProperty&gt;</span>
-<a name="l00011"></a>00011 
-<a name="l00021"></a><a class="code" href="class_camera.html">00021</a> <span class="keyword">class </span><a class="code" href="class_camera.html" title="Gestion de la camera.">Camera</a> : <span class="keyword">public</span> QObject {
-<a name="l00022"></a>00022     Q_OBJECT
-<a name="l00023"></a>00023 <span class="keyword">public</span>:
-<a name="l00024"></a>00024     <span class="keyword">explicit</span> <a class="code" href="class_camera.html#ae3aa4afd7a3d9ddc2bf710bc74dc293e">Camera</a>(QObject* parent = <span class="keyword">nullptr</span>);
-<a name="l00025"></a>00025     <span class="keyword">explicit</span> <a class="code" href="class_camera.html#ae3aa4afd7a3d9ddc2bf710bc74dc293e">Camera</a>(<a class="code" href="class_camera.html" title="Gestion de la camera.">Camera</a>* copy);
-<a name="l00026"></a>00026     <a class="code" href="class_camera.html#ad1897942d0ccf91052386388a497349f">~Camera</a>();
-<a name="l00027"></a>00027     <span class="keywordtype">void</span> <a class="code" href="class_camera.html#ae068edc8a9da46c0062af05b2434fb63">resetBias</a>();
-<a name="l00028"></a>00028     QVector3D <a class="code" href="class_camera.html#adb1bda6df954268b8e0fc5531dafeca1">move</a>(QVector3D val);
-<a name="l00029"></a>00029     QVector3D <a class="code" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a>();
-<a name="l00030"></a>00030     QVector3D <a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>();
-<a name="l00031"></a>00031     QVector3D <a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>();
-<a name="l00032"></a>00032     QMatrix4x4 <a class="code" href="class_camera.html#af81adf3ba7f63429a9d5356c218da78f">view</a>();
-<a name="l00033"></a>00033     <a class="code" href="class_camera.html#a2af2534ff9206eb60054fc0a8ae30ac8">propSig</a>(QVector3D, position, moved);
-<a name="l00034"></a>00034     <a class="code" href="class_camera.html#aa4cef89e781f5b3c8f2c975d7c9757fd">prop</a>(<span class="keywordtype">float</span>, vAngle);
-<a name="l00035"></a>00035     <a class="code" href="class_camera.html#aa4cef89e781f5b3c8f2c975d7c9757fd">prop</a>(<span class="keywordtype">float</span>, vBias);
-<a name="l00036"></a>00036     <a class="code" href="class_camera.html#aa4cef89e781f5b3c8f2c975d7c9757fd">prop</a>(<span class="keywordtype">float</span>, hAngle);
-<a name="l00037"></a>00037     <a class="code" href="class_camera.html#aa4cef89e781f5b3c8f2c975d7c9757fd">prop</a>(<span class="keywordtype">float</span>, hBias);
-<a name="l00038"></a>00038     <a class="code" href="class_camera.html#aa4cef89e781f5b3c8f2c975d7c9757fd">prop</a>(<span class="keywordtype">float</span>, speed);
-<a name="l00039"></a>00039 };
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041 <span class="preprocessor">#endif  // CAMERA_H</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;QPropertyAnimation&gt;</span>
+<a name="l00012"></a>00012 
+<a name="l00022"></a><a class="code" href="class_camera.html">00022</a> <span class="keyword">class </span><a class="code" href="class_camera.html" title="Gestion de la camera.">Camera</a> : <span class="keyword">public</span> QObject {
+<a name="l00023"></a>00023     Q_OBJECT
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025 <span class="keyword">public</span>:
+<a name="l00026"></a>00026     <span class="keyword">explicit</span> <a class="code" href="class_camera.html#ae3aa4afd7a3d9ddc2bf710bc74dc293e">Camera</a>(QObject* parent = <span class="keyword">nullptr</span>);
+<a name="l00027"></a>00027     <span class="keyword">explicit</span> <a class="code" href="class_camera.html#ae3aa4afd7a3d9ddc2bf710bc74dc293e">Camera</a>(<a class="code" href="class_camera.html" title="Gestion de la camera.">Camera</a>* copy);
+<a name="l00028"></a>00028     <a class="code" href="class_camera.html#ad1897942d0ccf91052386388a497349f">~Camera</a>();
+<a name="l00029"></a>00029     <span class="keywordtype">void</span> <a class="code" href="class_camera.html#ae068edc8a9da46c0062af05b2434fb63">resetBias</a>();
+<a name="l00030"></a>00030     QVector3D <a class="code" href="class_camera.html#adb1bda6df954268b8e0fc5531dafeca1">move</a>(QVector3D val);
+<a name="l00031"></a>00031     QVector3D <a class="code" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a>();
+<a name="l00032"></a>00032     QVector3D <a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>();
+<a name="l00033"></a>00033     QVector3D <a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>();
+<a name="l00034"></a>00034     QMatrix4x4 <a class="code" href="class_camera.html#af81adf3ba7f63429a9d5356c218da78f">view</a>();
+<a name="l00035"></a><a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">00035</a>     <span class="keywordtype">void</span> <a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(QVector3D v) {
+<a name="l00036"></a>00036         QPropertyAnimation *animation = <span class="keyword">new</span> QPropertyAnimation(<span class="keyword">this</span>, <span class="stringliteral">&quot;position&quot;</span>);
+<a name="l00037"></a>00037         animation-&gt;setDuration(100);
+<a name="l00038"></a>00038         animation-&gt;setStartValue(position());
+<a name="l00039"></a>00039         animation-&gt;setEndValue(position() + (v * speed()));
+<a name="l00040"></a>00040         animation-&gt;start();
+<a name="l00041"></a>00041     }
+<a name="l00042"></a>00042     <a class="code" href="class_camera.html#a2af2534ff9206eb60054fc0a8ae30ac8">propSig</a>(QVector3D, position, moved);
+<a name="l00043"></a>00043     <a class="code" href="class_camera.html#aa4cef89e781f5b3c8f2c975d7c9757fd">prop</a>(<span class="keywordtype">float</span>, vAngle);
+<a name="l00044"></a>00044     <a class="code" href="class_camera.html#aa4cef89e781f5b3c8f2c975d7c9757fd">prop</a>(<span class="keywordtype">float</span>, vBias);
+<a name="l00045"></a>00045     <a class="code" href="class_camera.html#aa4cef89e781f5b3c8f2c975d7c9757fd">prop</a>(<span class="keywordtype">float</span>, hAngle);
+<a name="l00046"></a>00046     <a class="code" href="class_camera.html#aa4cef89e781f5b3c8f2c975d7c9757fd">prop</a>(<span class="keywordtype">float</span>, hBias);
+<a name="l00047"></a>00047     <a class="code" href="class_camera.html#aa4cef89e781f5b3c8f2c975d7c9757fd">prop</a>(<span class="keywordtype">float</span>, speed);
+<a name="l00048"></a>00048 };
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050 <span class="preprocessor">#endif  // CAMERA_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -130,7 +139,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Janvier 27 2015 21:14:59 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Janvier 28 2015 19:08:01 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -141,22 +141,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00059"></a><a class="code" href="class_viewport.html#ae3b6b681561ee1ef2bdb96d27bd2a1f0">00059</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#ae3b6b681561ee1ef2bdb96d27bd2a1f0">Viewport::keyPressEvent</a>(QKeyEvent* event) {
 <a name="l00060"></a>00060     <span class="keywordflow">switch</span> (event-&gt;key()) {
 <a name="l00061"></a>00061         <span class="keywordflow">case</span> Qt::Key_Up:
-<a name="l00062"></a>00062             m_camera-&gt;<a class="code" href="class_camera.html#adb1bda6df954268b8e0fc5531dafeca1">move</a>(m_camera-&gt;<a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>());
+<a name="l00062"></a>00062             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(m_camera-&gt;<a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>());
 <a name="l00063"></a>00063             <span class="keywordflow">break</span>;
 <a name="l00064"></a>00064         <span class="keywordflow">case</span> Qt::Key_Down:
-<a name="l00065"></a>00065             m_camera-&gt;<a class="code" href="class_camera.html#adb1bda6df954268b8e0fc5531dafeca1">move</a>(-m_camera-&gt;<a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>());
+<a name="l00065"></a>00065             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>());
 <a name="l00066"></a>00066             <span class="keywordflow">break</span>;
 <a name="l00067"></a>00067         <span class="keywordflow">case</span> Qt::Key_Right:
-<a name="l00068"></a>00068             m_camera-&gt;<a class="code" href="class_camera.html#adb1bda6df954268b8e0fc5531dafeca1">move</a>(m_camera-&gt;<a class="code" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a>());
+<a name="l00068"></a>00068             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(m_camera-&gt;<a class="code" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a>());
 <a name="l00069"></a>00069             <span class="keywordflow">break</span>;
 <a name="l00070"></a>00070         <span class="keywordflow">case</span> Qt::Key_Left:
-<a name="l00071"></a>00071             m_camera-&gt;<a class="code" href="class_camera.html#adb1bda6df954268b8e0fc5531dafeca1">move</a>(-m_camera-&gt;<a class="code" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a>());
+<a name="l00071"></a>00071             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a>());
 <a name="l00072"></a>00072             <span class="keywordflow">break</span>;
 <a name="l00073"></a>00073         <span class="keywordflow">case</span> Qt::Key_PageUp:
-<a name="l00074"></a>00074             m_camera-&gt;<a class="code" href="class_camera.html#adb1bda6df954268b8e0fc5531dafeca1">move</a>(m_camera-&gt;<a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>());
+<a name="l00074"></a>00074             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(m_camera-&gt;<a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>());
 <a name="l00075"></a>00075             <span class="keywordflow">break</span>;
 <a name="l00076"></a>00076         <span class="keywordflow">case</span> Qt::Key_PageDown:
-<a name="l00077"></a>00077             m_camera-&gt;<a class="code" href="class_camera.html#adb1bda6df954268b8e0fc5531dafeca1">move</a>(-m_camera-&gt;<a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>());
+<a name="l00077"></a>00077             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>());
 <a name="l00078"></a>00078             <span class="keywordflow">break</span>;
 <a name="l00079"></a>00079         <span class="keywordflow">case</span> Qt::Key_Z:
 <a name="l00080"></a>00080             m_camera-&gt;vAngle(m_camera-&gt;vAngle() + 0.14f);
@@ -293,7 +293,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Janvier 27 2015 21:14:59 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Janvier 28 2015 19:08:01 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

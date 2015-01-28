@@ -103,6 +103,7 @@ Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">QMatrix4x4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#af81adf3ba7f63429a9d5356c218da78f">view</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a> (QVector3D v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a2af2534ff9206eb60054fc0a8ae30ac8">propSig</a> (QVector3D, position, moved)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#aa4cef89e781f5b3c8f2c975d7c9757fd">prop</a> (float, vAngle)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#aebbd0293d5c94e70f145afa3e5ec7baa">prop</a> (float, vBias)</td></tr>
@@ -114,7 +115,7 @@ Fonctions membres publiques</h2></td></tr>
 <div class="textblock"><p>Gestion de la camera. </p>
 <p>Permet de calculer la matrice view d'une camera a partir de 2 angles (vertical et horizontal) et une position. Les propriétés bias permettent de déclaer les angles pour eviter que la caméra ne retourne a son point de départ lorsque l'utilisateur la tourne. La propriété speed correspond a la vitesse de déplacement de la caméra. </p>
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00021">21</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00022">22</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 </div><hr/><h2>Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="ae3aa4afd7a3d9ddc2bf710bc74dc293e"></a><!-- doxytag: member="Camera::Camera" ref="ae3aa4afd7a3d9ddc2bf710bc74dc293e" args="(QObject *parent=nullptr)" -->
 <div class="memitem">
@@ -150,7 +151,7 @@ Fonctions membres publiques</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00014">14</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00010">10</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -168,7 +169,7 @@ Fonctions membres publiques</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00023">23</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00019">19</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -187,7 +188,7 @@ Fonctions membres publiques</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00039">39</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00035">35</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -206,7 +207,7 @@ Fonctions membres publiques</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00031">31</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00027">27</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -392,7 +393,7 @@ Fonctions membres publiques</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00026">26</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00022">22</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -410,7 +411,7 @@ Fonctions membres publiques</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00035">35</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00031">31</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -428,7 +429,26 @@ Fonctions membres publiques</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00043">43</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00039">39</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a071a1295b79f2650b01e6d933b1ff2"></a><!-- doxytag: member="Camera::velocity" ref="a2a071a1295b79f2650b01e6d933b1ff2" args="(QVector3D v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">Camera::velocity</a> </td>
+          <td>(</td>
+          <td class="paramtype">QVector3D&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00035">35</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -446,7 +466,7 @@ Fonctions membres publiques</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00047">47</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00043">43</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -472,7 +492,7 @@ Fonctions membres publiques</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Janvier 27 2015 21:14:59 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Janvier 28 2015 19:08:01 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
