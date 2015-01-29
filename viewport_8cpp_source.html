@@ -108,173 +108,186 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00026"></a>00026     glEnable(GL_DEPTH_TEST);
 <a name="l00027"></a>00027     glDepthFunc(GL_LESS);
 <a name="l00028"></a>00028     glEnable(GL_CULL_FACE);
-<a name="l00029"></a>00029     glEnable(GL_MULTISAMPLE);
-<a name="l00030"></a>00030 
-<a name="l00031"></a>00031     <span class="keyword">auto</span> bg = palette().color(QPalette::Background);
-<a name="l00032"></a>00032     glClearColor(bg.redF(), bg.greenF(), bg.blueF(), bg.alphaF());
-<a name="l00033"></a>00033 }
-<a name="l00034"></a>00034 
-<a name="l00035"></a><a class="code" href="class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5">00035</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5">Viewport::paintGL</a>() {
-<a name="l00036"></a>00036     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 <span class="preprocessor">#ifdef GL_MULTISAMPLE</span>
+<a name="l00031"></a>00031 <span class="preprocessor"></span>    glEnable(GL_MULTISAMPLE);
+<a name="l00032"></a>00032 <span class="preprocessor">#endif</span>
+<a name="l00033"></a>00033 <span class="preprocessor"></span>
+<a name="l00034"></a>00034     <span class="keyword">auto</span> bg = palette().color(QPalette::Background);
+<a name="l00035"></a>00035     glClearColor(bg.redF(), bg.greenF(), bg.blueF(), bg.alphaF());
+<a name="l00036"></a>00036 }
 <a name="l00037"></a>00037 
-<a name="l00038"></a>00038     QMatrix4x4 view = m_camera-&gt;<a class="code" href="class_camera.html#af81adf3ba7f63429a9d5356c218da78f">view</a>();
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040     <a class="code" href="struct_draw_info.html">DrawInfo</a> info{view, m_projection, m_renderMode};
-<a name="l00041"></a>00041     <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : children()) {
-<a name="l00042"></a>00042         <span class="keyword">auto</span> child = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_geometry.html" title="Base de tous les acteurs.">Geometry</a>*<span class="keyword">&gt;</span>(i);
-<a name="l00043"></a>00043         <span class="keywordflow">if</span> (child) child-&gt;<a class="code" href="class_geometry.html#a0cbbddd41c475ded59226dc9caf4f17b">draw</a>(info);
-<a name="l00044"></a>00044     }
-<a name="l00045"></a>00045 }
-<a name="l00046"></a>00046 
-<a name="l00047"></a><a class="code" href="class_viewport.html#a94dcf877f22c2977a58cd6789144d3ae">00047</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a94dcf877f22c2977a58cd6789144d3ae">Viewport::resizeGL</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h) {
-<a name="l00048"></a>00048     <span class="keywordflow">if</span> (QOpenGLFunctions::isInitialized(QOpenGLFunctions::d_ptr)) glViewport(0, 0, w, h);
-<a name="l00049"></a>00049     m_projection.setToIdentity();
-<a name="l00050"></a>00050     m_projection.perspective(45.0f, static_cast&lt;float&gt;(w) / static_cast&lt;float&gt;(h), 0.1f, 1000.0f);
-<a name="l00051"></a>00051 }
-<a name="l00052"></a>00052 
-<a name="l00053"></a><a class="code" href="class_viewport.html#a884441d496cf615dcd1456df15db4f2a">00053</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a884441d496cf615dcd1456df15db4f2a">Viewport::wheelEvent</a>(QWheelEvent* event) {
-<a name="l00054"></a>00054     m_camera-&gt;<a class="code" href="class_camera.html#adb1bda6df954268b8e0fc5531dafeca1">move</a>(m_camera-&gt;<a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>() * (<span class="keyword">event</span>-&gt;delta() / 120));
-<a name="l00055"></a>00055     update();
-<a name="l00056"></a>00056     <span class="keyword">event</span>-&gt;accept();
-<a name="l00057"></a>00057 }
-<a name="l00058"></a>00058 
-<a name="l00059"></a><a class="code" href="class_viewport.html#ae3b6b681561ee1ef2bdb96d27bd2a1f0">00059</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#ae3b6b681561ee1ef2bdb96d27bd2a1f0">Viewport::keyPressEvent</a>(QKeyEvent* event) {
-<a name="l00060"></a>00060     <span class="keywordflow">switch</span> (event-&gt;key()) {
-<a name="l00061"></a>00061         <span class="keywordflow">case</span> Qt::Key_Up:
-<a name="l00062"></a>00062             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(m_camera-&gt;<a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>());
-<a name="l00063"></a>00063             <span class="keywordflow">break</span>;
-<a name="l00064"></a>00064         <span class="keywordflow">case</span> Qt::Key_Down:
-<a name="l00065"></a>00065             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>());
+<a name="l00038"></a><a class="code" href="class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5">00038</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5">Viewport::paintGL</a>() {
+<a name="l00039"></a>00039     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041     QMatrix4x4 view = m_camera-&gt;<a class="code" href="class_camera.html#af81adf3ba7f63429a9d5356c218da78f">view</a>();
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043     <a class="code" href="struct_draw_info.html">DrawInfo</a> info{view, m_projection, m_renderMode};
+<a name="l00044"></a>00044     <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : children()) {
+<a name="l00045"></a>00045         <span class="keyword">auto</span> child = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_geometry.html" title="Base de tous les acteurs.">Geometry</a>*<span class="keyword">&gt;</span>(i);
+<a name="l00046"></a>00046         <span class="keywordflow">if</span> (child) child-&gt;<a class="code" href="class_geometry.html#a0cbbddd41c475ded59226dc9caf4f17b">draw</a>(info);
+<a name="l00047"></a>00047     }
+<a name="l00048"></a>00048 }
+<a name="l00049"></a>00049 
+<a name="l00050"></a><a class="code" href="class_viewport.html#a94dcf877f22c2977a58cd6789144d3ae">00050</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a94dcf877f22c2977a58cd6789144d3ae">Viewport::resizeGL</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h) {
+<a name="l00051"></a>00051     <span class="keywordflow">if</span> (QOpenGLFunctions::isInitialized(QOpenGLFunctions::d_ptr)) glViewport(0, 0, w, h);
+<a name="l00052"></a>00052     m_projection.setToIdentity();
+<a name="l00053"></a>00053     m_projection.perspective(45.0f, static_cast&lt;float&gt;(w) / static_cast&lt;float&gt;(h), 0.1f, 1000.0f);
+<a name="l00054"></a>00054 }
+<a name="l00055"></a>00055 
+<a name="l00056"></a><a class="code" href="class_viewport.html#a884441d496cf615dcd1456df15db4f2a">00056</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a884441d496cf615dcd1456df15db4f2a">Viewport::wheelEvent</a>(QWheelEvent* event) {
+<a name="l00057"></a>00057     m_camera-&gt;<a class="code" href="class_camera.html#adb1bda6df954268b8e0fc5531dafeca1">move</a>(m_camera-&gt;<a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>() * (<span class="keyword">event</span>-&gt;delta() / 120));
+<a name="l00058"></a>00058     update();
+<a name="l00059"></a>00059     <span class="keyword">event</span>-&gt;accept();
+<a name="l00060"></a>00060 }
+<a name="l00061"></a>00061 
+<a name="l00062"></a><a class="code" href="class_viewport.html#ae3b6b681561ee1ef2bdb96d27bd2a1f0">00062</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#ae3b6b681561ee1ef2bdb96d27bd2a1f0">Viewport::keyPressEvent</a>(QKeyEvent* event) {
+<a name="l00063"></a>00063     <span class="keywordflow">switch</span> (event-&gt;key()) {
+<a name="l00064"></a>00064         <span class="keywordflow">case</span> Qt::Key_Up:
+<a name="l00065"></a>00065             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(m_camera-&gt;<a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>());
 <a name="l00066"></a>00066             <span class="keywordflow">break</span>;
-<a name="l00067"></a>00067         <span class="keywordflow">case</span> Qt::Key_Right:
-<a name="l00068"></a>00068             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(m_camera-&gt;<a class="code" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a>());
+<a name="l00067"></a>00067         <span class="keywordflow">case</span> Qt::Key_Down:
+<a name="l00068"></a>00068             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>());
 <a name="l00069"></a>00069             <span class="keywordflow">break</span>;
-<a name="l00070"></a>00070         <span class="keywordflow">case</span> Qt::Key_Left:
-<a name="l00071"></a>00071             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a>());
+<a name="l00070"></a>00070         <span class="keywordflow">case</span> Qt::Key_Right:
+<a name="l00071"></a>00071             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(m_camera-&gt;<a class="code" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a>());
 <a name="l00072"></a>00072             <span class="keywordflow">break</span>;
-<a name="l00073"></a>00073         <span class="keywordflow">case</span> Qt::Key_PageUp:
-<a name="l00074"></a>00074             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(m_camera-&gt;<a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>());
+<a name="l00073"></a>00073         <span class="keywordflow">case</span> Qt::Key_Left:
+<a name="l00074"></a>00074             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a>());
 <a name="l00075"></a>00075             <span class="keywordflow">break</span>;
-<a name="l00076"></a>00076         <span class="keywordflow">case</span> Qt::Key_PageDown:
-<a name="l00077"></a>00077             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>());
+<a name="l00076"></a>00076         <span class="keywordflow">case</span> Qt::Key_PageUp:
+<a name="l00077"></a>00077             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(m_camera-&gt;<a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>());
 <a name="l00078"></a>00078             <span class="keywordflow">break</span>;
-<a name="l00079"></a>00079         <span class="keywordflow">case</span> Qt::Key_Z:
-<a name="l00080"></a>00080             m_camera-&gt;vAngle(m_camera-&gt;vAngle() + 0.14f);
+<a name="l00079"></a>00079         <span class="keywordflow">case</span> Qt::Key_PageDown:
+<a name="l00080"></a>00080             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>());
 <a name="l00081"></a>00081             <span class="keywordflow">break</span>;
-<a name="l00082"></a>00082         <span class="keywordflow">case</span> Qt::Key_S:
-<a name="l00083"></a>00083             m_camera-&gt;vAngle(m_camera-&gt;vAngle() - 0.14f);
+<a name="l00082"></a>00082         <span class="keywordflow">case</span> Qt::Key_Z:
+<a name="l00083"></a>00083             m_camera-&gt;vAngle(m_camera-&gt;vAngle() + 0.14f);
 <a name="l00084"></a>00084             <span class="keywordflow">break</span>;
-<a name="l00085"></a>00085         <span class="keywordflow">case</span> Qt::Key_Q:
-<a name="l00086"></a>00086             m_camera-&gt;hAngle(m_camera-&gt;hAngle() + 0.14f);
+<a name="l00085"></a>00085         <span class="keywordflow">case</span> Qt::Key_S:
+<a name="l00086"></a>00086             m_camera-&gt;vAngle(m_camera-&gt;vAngle() - 0.14f);
 <a name="l00087"></a>00087             <span class="keywordflow">break</span>;
-<a name="l00088"></a>00088         <span class="keywordflow">case</span> Qt::Key_D:
-<a name="l00089"></a>00089             m_camera-&gt;hAngle(m_camera-&gt;hAngle() - 0.14f);
+<a name="l00088"></a>00088         <span class="keywordflow">case</span> Qt::Key_Q:
+<a name="l00089"></a>00089             m_camera-&gt;hAngle(m_camera-&gt;hAngle() + 0.14f);
 <a name="l00090"></a>00090             <span class="keywordflow">break</span>;
-<a name="l00091"></a>00091         <span class="keywordflow">default</span>:
-<a name="l00092"></a>00092             <span class="keyword">event</span>-&gt;ignore();
-<a name="l00093"></a>00093     }
-<a name="l00094"></a>00094     <span class="keywordflow">if</span> (event-&gt;isAccepted()) update();
-<a name="l00095"></a>00095 }
-<a name="l00096"></a>00096 
-<a name="l00097"></a><a class="code" href="class_viewport.html#a16ba3ca4c621d3dad146c0ad3f9a48cc">00097</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a16ba3ca4c621d3dad146c0ad3f9a48cc">Viewport::mousePressEvent</a>(QMouseEvent* event) {
-<a name="l00098"></a>00098     <span class="keyword">event</span>-&gt;accept();
-<a name="l00099"></a>00099     grabMouse();
-<a name="l00100"></a>00100     setCursor(QCursor(Qt::BlankCursor));
-<a name="l00101"></a>00101     m_cursor = <span class="keyword">event</span>-&gt;globalPos();
-<a name="l00102"></a>00102     QCursor::setPos(mapToGlobal(QPoint(size().width() / 2, size().height() / 2)));
-<a name="l00103"></a>00103     m_camera-&gt;<a class="code" href="class_camera.html#ae068edc8a9da46c0062af05b2434fb63">resetBias</a>();
-<a name="l00104"></a>00104 }
-<a name="l00105"></a>00105 
-<a name="l00106"></a><a class="code" href="class_viewport.html#a07dd05ef39c86d3963285ea4466d77e2">00106</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a07dd05ef39c86d3963285ea4466d77e2">Viewport::mouseReleaseEvent</a>(QMouseEvent* event) {
-<a name="l00107"></a>00107     <span class="keyword">event</span>-&gt;accept();
-<a name="l00108"></a>00108     releaseMouse();
-<a name="l00109"></a>00109     QCursor::setPos(m_cursor);
-<a name="l00110"></a>00110     setCursor(QCursor(Qt::ArrowCursor));
-<a name="l00111"></a>00111 }
-<a name="l00112"></a>00112 
-<a name="l00113"></a><a class="code" href="class_viewport.html#a082181d6a9b81499f6516ed3a61d4f52">00113</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a082181d6a9b81499f6516ed3a61d4f52">Viewport::mouseMoveEvent</a>(QMouseEvent* event) {
-<a name="l00114"></a>00114     <span class="keyword">event</span>-&gt;accept();
-<a name="l00115"></a>00115     <span class="keyword">auto</span> deltaX = ((size().width() / 2) - static_cast&lt;float&gt;(event-&gt;x())) / size().width();
-<a name="l00116"></a>00116     <span class="keyword">auto</span> deltaY = ((size().height() / 2) - static_cast&lt;float&gt;(event-&gt;y())) / size().height();
-<a name="l00117"></a>00117     QCursor::setPos(mapToGlobal(QPoint(size().width() / 2, size().height() / 2)));
-<a name="l00118"></a>00118     m_camera-&gt;hAngle(m_camera-&gt;hAngle() + (deltaX * 3.14f));
-<a name="l00119"></a>00119     m_camera-&gt;vAngle(m_camera-&gt;vAngle() + (deltaY * 3.14f));
-<a name="l00120"></a>00120     update();
-<a name="l00121"></a>00121 }
-<a name="l00122"></a>00122 
-<a name="l00123"></a><a class="code" href="class_viewport.html#a94ce1a503f6e3c10d27e7289e6f8607c">00123</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a94ce1a503f6e3c10d27e7289e6f8607c">Viewport::save</a>(QString name) {
-<a name="l00124"></a>00124     QFile file(name);
-<a name="l00125"></a>00125     file.open(QIODevice::WriteOnly);
-<a name="l00126"></a>00126     QDataStream out(&amp;file);
-<a name="l00127"></a>00127     out &lt;&lt; static_cast&lt;quint32&gt;(0xB00B1E5);  <span class="comment">// Magic number</span>
-<a name="l00128"></a>00128 
-<a name="l00129"></a>00129     <span class="keyword">auto</span> version = QDataStream::Qt_5_4;  <span class="comment">// Format version</span>
-<a name="l00130"></a>00130     out &lt;&lt; static_cast&lt;qint32&gt;(version);
-<a name="l00131"></a>00131     out.setVersion(version);
-<a name="l00132"></a>00132 
-<a name="l00133"></a>00133     <span class="comment">// Data</span>
-<a name="l00134"></a>00134     out &lt;&lt; *<a class="code" href="class_viewport.html#a4b1a438a86e883c72d98feb3c3a658d6">camera</a>();
-<a name="l00135"></a>00135     <span class="keyword">auto</span> childList = findChildren&lt;Geometry*&gt;();
-<a name="l00136"></a>00136     out &lt;&lt; static_cast&lt;quint32&gt;(childList.size());
-<a name="l00137"></a>00137     <span class="keywordflow">for</span> (<span class="keyword">auto</span> obj : childList) {
-<a name="l00138"></a>00138         out &lt;&lt; *obj;
-<a name="l00139"></a>00139     }
-<a name="l00140"></a>00140 }
-<a name="l00141"></a>00141 
-<a name="l00142"></a><a class="code" href="class_viewport.html#ab6bea61fac9caf74cf37fe91861b42e3">00142</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#ab6bea61fac9caf74cf37fe91861b42e3">Viewport::clearLevel</a>() {
-<a name="l00143"></a>00143     <span class="keyword">auto</span> childList = findChildren&lt;Geometry*&gt;();
-<a name="l00144"></a>00144     <span class="keywordflow">for</span> (<span class="keyword">auto</span> obj : childList) {
-<a name="l00145"></a>00145         <span class="keyword">delete</span> obj;
-<a name="l00146"></a>00146     }
-<a name="l00147"></a>00147 }
-<a name="l00148"></a>00148 
-<a name="l00149"></a><a class="code" href="class_viewport.html#a94489fe1044fd859a2a3b2eb2f1cc2ae">00149</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a94489fe1044fd859a2a3b2eb2f1cc2ae">Viewport::load</a>(QString name) {
-<a name="l00150"></a>00150     QFile file(name);
-<a name="l00151"></a>00151     file.open(QIODevice::ReadOnly);
-<a name="l00152"></a>00152     QDataStream in(&amp;file);
-<a name="l00153"></a>00153     quint32 magic;
-<a name="l00154"></a>00154     in &gt;&gt; magic;  <span class="comment">// Magic number</span>
-<a name="l00155"></a>00155 
-<a name="l00156"></a>00156     qint32 version;  <span class="comment">// Format version</span>
-<a name="l00157"></a>00157     in &gt;&gt; version;
-<a name="l00158"></a>00158     in.setVersion(version);
-<a name="l00159"></a>00159 
-<a name="l00160"></a>00160     <a class="code" href="class_viewport.html#ab6bea61fac9caf74cf37fe91861b42e3">clearLevel</a>();
+<a name="l00091"></a>00091         <span class="keywordflow">case</span> Qt::Key_D:
+<a name="l00092"></a>00092             m_camera-&gt;hAngle(m_camera-&gt;hAngle() - 0.14f);
+<a name="l00093"></a>00093             <span class="keywordflow">break</span>;
+<a name="l00094"></a>00094         <span class="keywordflow">default</span>:
+<a name="l00095"></a>00095             <span class="keyword">event</span>-&gt;ignore();
+<a name="l00096"></a>00096     }
+<a name="l00097"></a>00097     <span class="keywordflow">if</span> (event-&gt;isAccepted()) update();
+<a name="l00098"></a>00098 }
+<a name="l00099"></a>00099 
+<a name="l00100"></a><a class="code" href="class_viewport.html#a16ba3ca4c621d3dad146c0ad3f9a48cc">00100</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a16ba3ca4c621d3dad146c0ad3f9a48cc">Viewport::mousePressEvent</a>(QMouseEvent* event) {
+<a name="l00101"></a>00101     <span class="keyword">event</span>-&gt;accept();
+<a name="l00102"></a>00102     grabMouse();
+<a name="l00103"></a>00103     setCursor(QCursor(Qt::BlankCursor));
+<a name="l00104"></a>00104     m_cursor = <span class="keyword">event</span>-&gt;globalPos();
+<a name="l00105"></a>00105     QCursor::setPos(mapToGlobal(QPoint(size().width() / 2, size().height() / 2)));
+<a name="l00106"></a>00106     m_camera-&gt;<a class="code" href="class_camera.html#ae068edc8a9da46c0062af05b2434fb63">resetBias</a>();
+<a name="l00107"></a>00107 }
+<a name="l00108"></a>00108 
+<a name="l00109"></a><a class="code" href="class_viewport.html#a07dd05ef39c86d3963285ea4466d77e2">00109</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a07dd05ef39c86d3963285ea4466d77e2">Viewport::mouseReleaseEvent</a>(QMouseEvent* event) {
+<a name="l00110"></a>00110     <span class="keyword">event</span>-&gt;accept();
+<a name="l00111"></a>00111     releaseMouse();
+<a name="l00112"></a>00112     QCursor::setPos(m_cursor);
+<a name="l00113"></a>00113     setCursor(QCursor(Qt::ArrowCursor));
+<a name="l00114"></a>00114 }
+<a name="l00115"></a>00115 
+<a name="l00116"></a><a class="code" href="class_viewport.html#a082181d6a9b81499f6516ed3a61d4f52">00116</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a082181d6a9b81499f6516ed3a61d4f52">Viewport::mouseMoveEvent</a>(QMouseEvent* event) {
+<a name="l00117"></a>00117     <span class="keyword">event</span>-&gt;accept();
+<a name="l00118"></a>00118     <span class="keyword">auto</span> deltaX = ((size().width() / 2) - static_cast&lt;float&gt;(event-&gt;x())) / size().width();
+<a name="l00119"></a>00119     <span class="keyword">auto</span> deltaY = ((size().height() / 2) - static_cast&lt;float&gt;(event-&gt;y())) / size().height();
+<a name="l00120"></a>00120     QCursor::setPos(mapToGlobal(QPoint(size().width() / 2, size().height() / 2)));
+<a name="l00121"></a>00121     m_camera-&gt;hAngle(m_camera-&gt;hAngle() + (deltaX * 3.14f));
+<a name="l00122"></a>00122     m_camera-&gt;vAngle(m_camera-&gt;vAngle() + (deltaY * 3.14f));
+<a name="l00123"></a>00123     update();
+<a name="l00124"></a>00124 }
+<a name="l00125"></a>00125 
+<a name="l00126"></a><a class="code" href="class_viewport.html#a94ce1a503f6e3c10d27e7289e6f8607c">00126</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a94ce1a503f6e3c10d27e7289e6f8607c">Viewport::save</a>(QString name) {
+<a name="l00127"></a>00127     QFile file(name);
+<a name="l00128"></a>00128     file.open(QIODevice::WriteOnly);
+<a name="l00129"></a>00129     QDataStream out(&amp;file);
+<a name="l00130"></a>00130     out &lt;&lt; static_cast&lt;quint32&gt;(0xB00B1E5);  <span class="comment">// Magic number</span>
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132     <span class="keyword">auto</span> version = QDataStream::Qt_5_4;  <span class="comment">// Format version</span>
+<a name="l00133"></a>00133     out &lt;&lt; static_cast&lt;qint32&gt;(version);
+<a name="l00134"></a>00134     out.setVersion(version);
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136     <span class="comment">// Data</span>
+<a name="l00137"></a>00137     out &lt;&lt; *<a class="code" href="class_viewport.html#a4b1a438a86e883c72d98feb3c3a658d6">camera</a>();
+<a name="l00138"></a>00138     <span class="keyword">auto</span> childList = findChildren&lt;Geometry*&gt;();
+<a name="l00139"></a>00139     out &lt;&lt; static_cast&lt;quint32&gt;(childList.size());
+<a name="l00140"></a>00140     <span class="keywordflow">for</span> (<span class="keyword">auto</span> obj : childList) {
+<a name="l00141"></a>00141         <span class="keyword">auto</span> info = obj-&gt;metaObject()-&gt;classInfo(0);
+<a name="l00142"></a>00142         qDebug() &lt;&lt; <span class="stringliteral">&quot;Object of class&quot;</span> &lt;&lt; info.name() &lt;&lt; info.value();
+<a name="l00143"></a>00143         out &lt;&lt; QString(info.value());
+<a name="l00144"></a>00144         out &lt;&lt; *obj;
+<a name="l00145"></a>00145     }
+<a name="l00146"></a>00146 }
+<a name="l00147"></a>00147 
+<a name="l00148"></a><a class="code" href="class_viewport.html#ab6bea61fac9caf74cf37fe91861b42e3">00148</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#ab6bea61fac9caf74cf37fe91861b42e3">Viewport::clearLevel</a>() {
+<a name="l00149"></a>00149     <span class="keyword">auto</span> childList = findChildren&lt;Geometry*&gt;();
+<a name="l00150"></a>00150     <span class="keywordflow">for</span> (<span class="keyword">auto</span> obj : childList) {
+<a name="l00151"></a>00151         <span class="keyword">delete</span> obj;
+<a name="l00152"></a>00152     }
+<a name="l00153"></a>00153 }
+<a name="l00154"></a>00154 
+<a name="l00155"></a><a class="code" href="class_viewport.html#a94489fe1044fd859a2a3b2eb2f1cc2ae">00155</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a94489fe1044fd859a2a3b2eb2f1cc2ae">Viewport::load</a>(QString name) {
+<a name="l00156"></a>00156     QFile file(name);
+<a name="l00157"></a>00157     file.open(QIODevice::ReadOnly);
+<a name="l00158"></a>00158     QDataStream in(&amp;file);
+<a name="l00159"></a>00159     quint32 magic;
+<a name="l00160"></a>00160     in &gt;&gt; magic;  <span class="comment">// Magic number</span>
 <a name="l00161"></a>00161 
-<a name="l00162"></a>00162     <span class="comment">// Data</span>
-<a name="l00163"></a>00163     in &gt;&gt; *<a class="code" href="class_viewport.html#a4b1a438a86e883c72d98feb3c3a658d6">camera</a>();
-<a name="l00164"></a>00164     quint32 size;
-<a name="l00165"></a>00165     in &gt;&gt; size;
-<a name="l00166"></a>00166     qDebug() &lt;&lt; size;
-<a name="l00167"></a>00167     <span class="keywordflow">for</span> (quint32 i = 0; i &lt; size; i++) {
-<a name="l00168"></a>00168         <span class="keyword">auto</span> obj = addChild&lt;Geometry&gt;();
-<a name="l00169"></a>00169         in &gt;&gt; *obj;
-<a name="l00170"></a>00170     }
-<a name="l00171"></a>00171 }
-<a name="l00172"></a>00172 
-<a name="l00173"></a><a class="code" href="viewport_8hpp.html#a01cf740c5e20abbb6aa4ccf17236cd8b">00173</a> QDataStream&amp; <a class="code" href="viewport_8cpp.html#aaf60c2d4feac61526a52675bc794465c">operator&lt;&lt;</a>(QDataStream&amp; stream, <span class="keyword">const</span> QObject&amp; obj) {
-<a name="l00174"></a>00174     <span class="keyword">auto</span> metaObject = obj.metaObject();
-<a name="l00175"></a>00175     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; metaObject-&gt;propertyCount(); ++i) {
-<a name="l00176"></a>00176         <span class="keyword">auto</span> <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a> = metaObject-&gt;property(i);
-<a name="l00177"></a>00177         qDebug() &lt;&lt; <span class="stringliteral">&quot;Saving &quot;</span> &lt;&lt; <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.name();
-<a name="l00178"></a>00178         <span class="keywordflow">if</span> (static_cast&lt;QMetaType::Type&gt;(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.type()) != QMetaType::QObjectStar) stream &lt;&lt; obj.property(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.name());
-<a name="l00179"></a>00179     }
-<a name="l00180"></a>00180     <span class="keywordflow">return</span> stream;
-<a name="l00181"></a>00181 }
-<a name="l00182"></a>00182 
-<a name="l00183"></a><a class="code" href="viewport_8hpp.html#a48efbb80ebceb0d47fc8d9084562f597">00183</a> QDataStream&amp; <a class="code" href="viewport_8cpp.html#a58818c50613f41b12137dac46d31cf86">operator&gt;&gt;</a>(QDataStream&amp; stream, QObject&amp; obj) {
-<a name="l00184"></a>00184     <span class="keyword">auto</span> metaObject = obj.metaObject();
-<a name="l00185"></a>00185     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; metaObject-&gt;propertyCount(); ++i) {
-<a name="l00186"></a>00186         <span class="keyword">auto</span> <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a> = metaObject-&gt;property(i);
-<a name="l00187"></a>00187         qDebug() &lt;&lt; <span class="stringliteral">&quot;Restoring &quot;</span> &lt;&lt; <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.name();
-<a name="l00188"></a>00188         <span class="keywordflow">if</span> (static_cast&lt;QMetaType::Type&gt;(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.type()) != QMetaType::QObjectStar) {
-<a name="l00189"></a>00189             QVariant value;
-<a name="l00190"></a>00190             stream &gt;&gt; value;
-<a name="l00191"></a>00191             obj.setProperty(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.name(), value);
-<a name="l00192"></a>00192         }
-<a name="l00193"></a>00193     }
-<a name="l00194"></a>00194     <span class="keywordflow">return</span> stream;
-<a name="l00195"></a>00195 }
+<a name="l00162"></a>00162     qint32 version;  <span class="comment">// Format version</span>
+<a name="l00163"></a>00163     in &gt;&gt; version;
+<a name="l00164"></a>00164     in.setVersion(version);
+<a name="l00165"></a>00165 
+<a name="l00166"></a>00166     <a class="code" href="class_viewport.html#ab6bea61fac9caf74cf37fe91861b42e3">clearLevel</a>();
+<a name="l00167"></a>00167 
+<a name="l00168"></a>00168     <span class="comment">// Data</span>
+<a name="l00169"></a>00169     in &gt;&gt; *<a class="code" href="class_viewport.html#a4b1a438a86e883c72d98feb3c3a658d6">camera</a>();
+<a name="l00170"></a>00170     quint32 size;
+<a name="l00171"></a>00171     in &gt;&gt; size;
+<a name="l00172"></a>00172     qDebug() &lt;&lt; size;
+<a name="l00173"></a>00173     <span class="keywordflow">for</span> (quint32 i = 0; i &lt; size; i++) {
+<a name="l00174"></a>00174         QString id;
+<a name="l00175"></a>00175         in &gt;&gt; id;
+<a name="l00176"></a>00176         <a class="code" href="class_geometry.html" title="Base de tous les acteurs.">Geometry</a>* obj = <span class="keyword">nullptr</span>;
+<a name="l00177"></a>00177         <span class="keywordflow">if</span>(<span class="keywordtype">id</span> == <span class="stringliteral">&quot;Cube&quot;</span>) {
+<a name="l00178"></a>00178             obj = addChild&lt;Cube&gt;();
+<a name="l00179"></a>00179         } <span class="keywordflow">else</span> {
+<a name="l00180"></a>00180             qWarning() &lt;&lt; <span class="stringliteral">&quot;Unknown type&quot;</span> &lt;&lt; id;
+<a name="l00181"></a>00181         }
+<a name="l00182"></a>00182         in &gt;&gt; *obj;
+<a name="l00183"></a>00183     }
+<a name="l00184"></a>00184 }
+<a name="l00185"></a>00185 
+<a name="l00186"></a><a class="code" href="viewport_8hpp.html#a01cf740c5e20abbb6aa4ccf17236cd8b">00186</a> QDataStream&amp; <a class="code" href="viewport_8cpp.html#aaf60c2d4feac61526a52675bc794465c">operator&lt;&lt;</a>(QDataStream&amp; stream, <span class="keyword">const</span> QObject&amp; obj) {
+<a name="l00187"></a>00187     <span class="keyword">auto</span> metaObject = obj.metaObject();
+<a name="l00188"></a>00188     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; metaObject-&gt;propertyCount(); ++i) {
+<a name="l00189"></a>00189         <span class="keyword">auto</span> <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a> = metaObject-&gt;property(i);
+<a name="l00190"></a>00190         qDebug() &lt;&lt; <span class="stringliteral">&quot;Saving &quot;</span> &lt;&lt; <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.name();
+<a name="l00191"></a>00191         <span class="keywordflow">if</span> (static_cast&lt;QMetaType::Type&gt;(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.type()) != QMetaType::QObjectStar) stream &lt;&lt; obj.property(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.name());
+<a name="l00192"></a>00192     }
+<a name="l00193"></a>00193     <span class="keywordflow">return</span> stream;
+<a name="l00194"></a>00194 }
+<a name="l00195"></a>00195 
+<a name="l00196"></a><a class="code" href="viewport_8hpp.html#a48efbb80ebceb0d47fc8d9084562f597">00196</a> QDataStream&amp; <a class="code" href="viewport_8cpp.html#a58818c50613f41b12137dac46d31cf86">operator&gt;&gt;</a>(QDataStream&amp; stream, QObject&amp; obj) {
+<a name="l00197"></a>00197     <span class="keyword">auto</span> metaObject = obj.metaObject();
+<a name="l00198"></a>00198     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; metaObject-&gt;propertyCount(); ++i) {
+<a name="l00199"></a>00199         <span class="keyword">auto</span> <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a> = metaObject-&gt;property(i);
+<a name="l00200"></a>00200         qDebug() &lt;&lt; <span class="stringliteral">&quot;Restoring &quot;</span> &lt;&lt; <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.name();
+<a name="l00201"></a>00201         <span class="keywordflow">if</span> (static_cast&lt;QMetaType::Type&gt;(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.type()) != QMetaType::QObjectStar) {
+<a name="l00202"></a>00202             QVariant value;
+<a name="l00203"></a>00203             stream &gt;&gt; value;
+<a name="l00204"></a>00204             obj.setProperty(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>.name(), value);
+<a name="l00205"></a>00205         }
+<a name="l00206"></a>00206     }
+<a name="l00207"></a>00207     <span class="keywordflow">return</span> stream;
+<a name="l00208"></a>00208 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -293,7 +306,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mercredi Janvier 28 2015 19:08:01 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Jeudi Janvier 29 2015 11:15:02 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

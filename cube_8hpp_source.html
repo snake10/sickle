@@ -92,15 +92,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00010"></a>00010 
 <a name="l00011"></a><a class="code" href="class_cube.html">00011</a> <span class="keyword">class </span><a class="code" href="class_cube.html">Cube</a> : <span class="keyword">public</span> <a class="code" href="class_geometry.html" title="Base de tous les acteurs.">Geometry</a> {
 <a name="l00012"></a>00012     Q_OBJECT
-<a name="l00013"></a>00013 <span class="keyword">public</span>:
-<a name="l00014"></a>00014     <span class="keyword">explicit</span> <a class="code" href="class_cube.html#a6eceaa075072d4d0396b6bd85872d62b">Cube</a>(QObject* parent = <span class="keyword">nullptr</span>);
-<a name="l00015"></a>00015     <a class="code" href="class_cube.html#aecf795d543bc7493b8181b7437a4e851">prop</a>(QVariantList, colors);
-<a name="l00016"></a><a class="code" href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">00016</a>     <span class="keyword">static</span> std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">s_vertices</a>;
-<a name="l00017"></a><a class="code" href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">00017</a>     <span class="keyword">static</span> std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">s_colors</a>;
-<a name="l00018"></a><a class="code" href="class_cube.html#a15913769adf571b32db693f6b1cd6619">00018</a>     <span class="keyword">static</span> std::vector&lt;quint32&gt; <a class="code" href="class_cube.html#a15913769adf571b32db693f6b1cd6619">s_indices</a>;
-<a name="l00019"></a>00019 };
-<a name="l00020"></a>00020 
-<a name="l00021"></a>00021 <span class="preprocessor">#endif  // CUBE_H</span>
+<a name="l00013"></a>00013     Q_CLASSINFO(<span class="stringliteral">&quot;Type&quot;</span>, <span class="stringliteral">&quot;Cube&quot;</span>)
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <span class="keyword">public</span>:
+<a name="l00016"></a>00016     <span class="keyword">explicit</span> <a class="code" href="class_cube.html#a6eceaa075072d4d0396b6bd85872d62b">Cube</a>(QObject* parent = <span class="keyword">nullptr</span>);
+<a name="l00017"></a>00017     <a class="code" href="class_cube.html#aecf795d543bc7493b8181b7437a4e851">prop</a>(QVariantList, colors);
+<a name="l00018"></a><a class="code" href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">00018</a>     <span class="keyword">static</span> std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">s_vertices</a>;
+<a name="l00019"></a><a class="code" href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">00019</a>     <span class="keyword">static</span> std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">s_colors</a>;
+<a name="l00020"></a><a class="code" href="class_cube.html#a15913769adf571b32db693f6b1cd6619">00020</a>     <span class="keyword">static</span> std::vector&lt;quint32&gt; <a class="code" href="class_cube.html#a15913769adf571b32db693f6b1cd6619">s_indices</a>;
+<a name="l00021"></a>00021 };
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023 <span class="preprocessor">#endif  // CUBE_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -119,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mercredi Janvier 28 2015 19:08:01 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Jeudi Janvier 29 2015 11:15:02 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
