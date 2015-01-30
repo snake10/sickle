@@ -5,7 +5,7 @@ var searchData=
   ['camera_2ehpp',['camera.hpp',['../camera_8hpp.html',1,'']]],
   ['childadded',['childAdded',['../class_viewport.html#ab4df59614a5201f8e2e5a63c2c0ec73e',1,'Viewport']]],
   ['clearlevel',['clearLevel',['../class_viewport.html#ab6bea61fac9caf74cf37fe91861b42e3',1,'Viewport']]],
-  ['cube',['Cube',['../class_cube.html',1,'Cube'],['../class_cube.html#a6eceaa075072d4d0396b6bd85872d62b',1,'Cube::Cube()']]],
+  ['cube',['Cube',['../class_cube.html',1,'Cube'],['../class_cube.html#a6eceaa075072d4d0396b6bd85872d62b',1,'Cube::Cube(QObject *parent=nullptr)'],['../class_cube.html#adc5112566b50c77cab1a1738662a0b27',1,'Cube::Cube(const Cube &amp;copy)']]],
   ['cube_2ecpp',['cube.cpp',['../cube_8cpp.html',1,'']]],
   ['cube_2ehpp',['cube.hpp',['../cube_8hpp.html',1,'']]]
 ];
