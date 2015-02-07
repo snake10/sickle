@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GameEditor:  Fichier source de include/viewport.hpp</title>
+<title>Sickle:  Fichier source de include/viewport.hpp</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GameEditor
+   <div id="projectname">Sickle
    &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">L&#39;editeur de monde du proletariat</div>
@@ -112,53 +112,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00035"></a>00035         makeCurrent();
 <a name="l00036"></a>00036         <span class="keyword">auto</span> child = <span class="keyword">new</span> T(<span class="keyword">this</span>);
 <a name="l00037"></a>00037         doneCurrent();
-<a name="l00038"></a>00038         <span class="comment">// auto name = QString(tr(&quot;New Object %1&quot;)).arg(findChildren&lt;Geometry&gt;().length());</span>
-<a name="l00039"></a>00039         child-&gt;setObjectName(tr(<span class="stringliteral">&quot;New Object&quot;</span>));
-<a name="l00040"></a>00040         emit <a class="code" href="class_viewport.html#ab4df59614a5201f8e2e5a63c2c0ec73e">childAdded</a>(child);
-<a name="l00041"></a>00041         <span class="keywordflow">return</span> child;
-<a name="l00042"></a>00042     }
-<a name="l00043"></a>00043 
-<a name="l00044"></a><a class="code" href="class_viewport.html#a22094a6d9a518b12832d078cf2af2373">00044</a>     <a class="code" href="globals_8hpp.html#a7a7a329bd886bfad24c015a3a776d74d" title="Déclare une variable membre et un getter, mais pas de setter (RO: Read-only)">propRO</a>(<a class="code" href="class_camera.html" title="Gestion de la camera.">Camera</a>*, <a class="code" href="class_viewport.html#a4b1a438a86e883c72d98feb3c3a658d6">camera</a>);
-<a name="l00045"></a><a class="code" href="class_viewport.html#a67be1e5d617872c61c61afbf57d678d3">00045</a>     <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>(GLenum, <a class="code" href="class_viewport.html#abc07993d5b94463a1a23d0436842b59c">renderMode</a>);
-<a name="l00046"></a>00046 
-<a name="l00047"></a>00047 <span class="preprocessor">#ifdef QT_QTTEST_MODULE_H</span>
-<a name="l00048"></a>00048 <span class="preprocessor"></span>    <span class="keywordtype">void</span> updateNow() {
-<a name="l00049"></a>00049         makeCurrent();
-<a name="l00050"></a>00050         <a class="code" href="class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5">paintGL</a>();
-<a name="l00051"></a>00051         doneCurrent();
-<a name="l00052"></a>00052     }
-<a name="l00053"></a>00053 <span class="preprocessor">#endif</span>
-<a name="l00054"></a>00054 <span class="preprocessor"></span>
-<a name="l00055"></a>00055 <span class="keyword">public</span> slots:
-<a name="l00056"></a>00056     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a94ce1a503f6e3c10d27e7289e6f8607c">save</a>(QString name);
-<a name="l00057"></a>00057     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a94489fe1044fd859a2a3b2eb2f1cc2ae">load</a>(QString name);
-<a name="l00058"></a>00058     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#ab6bea61fac9caf74cf37fe91861b42e3">clearLevel</a>();
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060 signals:
-<a name="l00061"></a>00061     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#ab4df59614a5201f8e2e5a63c2c0ec73e">childAdded</a>(QObject* child);
-<a name="l00062"></a>00062     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a8e171b09ee779137433c427746441554">initialized</a>();
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064 <span class="keyword">protected</span>:
-<a name="l00065"></a>00065     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a747eb6bce25dd9d205f3e5b99817d5cd">initializeGL</a>() Q_DECL_OVERRIDE;
-<a name="l00066"></a>00066     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5">paintGL</a>() Q_DECL_OVERRIDE;
-<a name="l00067"></a>00067     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a94dcf877f22c2977a58cd6789144d3ae">resizeGL</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h) Q_DECL_OVERRIDE;
-<a name="l00068"></a>00068     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a884441d496cf615dcd1456df15db4f2a">wheelEvent</a>(QWheelEvent* event) Q_DECL_OVERRIDE;
-<a name="l00069"></a>00069     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#ae3b6b681561ee1ef2bdb96d27bd2a1f0">keyPressEvent</a>(QKeyEvent* event) Q_DECL_OVERRIDE;
-<a name="l00070"></a>00070     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a16ba3ca4c621d3dad146c0ad3f9a48cc">mousePressEvent</a>(QMouseEvent* event) Q_DECL_OVERRIDE;
-<a name="l00071"></a>00071     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a07dd05ef39c86d3963285ea4466d77e2">mouseReleaseEvent</a>(QMouseEvent* event) Q_DECL_OVERRIDE;
-<a name="l00072"></a>00072     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a082181d6a9b81499f6516ed3a61d4f52">mouseMoveEvent</a>(QMouseEvent* event) Q_DECL_OVERRIDE;
-<a name="l00073"></a><a class="code" href="class_viewport.html#a76398c42a636bc05e388b307155080d5">00073</a>     <span class="keywordtype">int</span> <a class="code" href="class_viewport.html#a76398c42a636bc05e388b307155080d5">heightForWidth</a>(<span class="keywordtype">int</span> w)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> w; }
-<a name="l00074"></a><a class="code" href="class_viewport.html#a5f35cf38abecb45d9cb61605ef2cd52c">00074</a>     <span class="keywordtype">bool</span> <a class="code" href="class_viewport.html#a5f35cf38abecb45d9cb61605ef2cd52c">hasHeightForWidth</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }
-<a name="l00075"></a>00075 
-<a name="l00076"></a>00076 <span class="keyword">private</span>:
-<a name="l00077"></a>00077     QMatrix4x4 m_projection;
-<a name="l00078"></a>00078     QPoint m_cursor;
-<a name="l00079"></a>00079 };
-<a name="l00080"></a>00080 
-<a name="l00081"></a>00081 QDataStream&amp; <a class="code" href="viewport_8cpp.html#aaf60c2d4feac61526a52675bc794465c">operator&lt;&lt;</a>(QDataStream&amp;, <span class="keyword">const</span> QObject&amp;);
-<a name="l00082"></a>00082 QDataStream&amp; <a class="code" href="viewport_8cpp.html#a58818c50613f41b12137dac46d31cf86">operator&gt;&gt;</a>(QDataStream&amp;, QObject&amp;);
-<a name="l00083"></a>00083 
-<a name="l00084"></a>00084 <span class="preprocessor">#endif</span>
+<a name="l00038"></a>00038         emit <a class="code" href="class_viewport.html#ab4df59614a5201f8e2e5a63c2c0ec73e">childAdded</a>(child);
+<a name="l00039"></a>00039         <span class="keywordflow">return</span> child;
+<a name="l00040"></a>00040     }
+<a name="l00041"></a>00041 
+<a name="l00042"></a><a class="code" href="class_viewport.html#a22094a6d9a518b12832d078cf2af2373">00042</a>     <a class="code" href="globals_8hpp.html#a7a7a329bd886bfad24c015a3a776d74d" title="Déclare une variable membre et un getter, mais pas de setter (RO: Read-only)">propRO</a>(<a class="code" href="class_camera.html" title="Gestion de la camera.">Camera</a>*, <a class="code" href="class_viewport.html#a4b1a438a86e883c72d98feb3c3a658d6">camera</a>);
+<a name="l00043"></a><a class="code" href="class_viewport.html#a67be1e5d617872c61c61afbf57d678d3">00043</a>     <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008" title="Declare une propriété">prop</a>(GLenum, <a class="code" href="class_viewport.html#abc07993d5b94463a1a23d0436842b59c">renderMode</a>);
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045 <span class="preprocessor">#ifdef QT_QTTEST_MODULE_H</span>
+<a name="l00046"></a>00046 <span class="preprocessor"></span>    <span class="keywordtype">void</span> updateNow() {
+<a name="l00047"></a>00047         makeCurrent();
+<a name="l00048"></a>00048         <a class="code" href="class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5">paintGL</a>();
+<a name="l00049"></a>00049         doneCurrent();
+<a name="l00050"></a>00050     }
+<a name="l00051"></a>00051 <span class="preprocessor">#endif</span>
+<a name="l00052"></a>00052 <span class="preprocessor"></span>
+<a name="l00053"></a>00053 <span class="keyword">public</span> slots:
+<a name="l00054"></a>00054     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a94ce1a503f6e3c10d27e7289e6f8607c">save</a>(QString name);
+<a name="l00055"></a>00055     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a94489fe1044fd859a2a3b2eb2f1cc2ae">load</a>(QString name);
+<a name="l00056"></a>00056     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#ab6bea61fac9caf74cf37fe91861b42e3">clearLevel</a>();
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058 signals:
+<a name="l00059"></a>00059     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#ab4df59614a5201f8e2e5a63c2c0ec73e">childAdded</a>(QObject* child);
+<a name="l00060"></a>00060     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a8e171b09ee779137433c427746441554">initialized</a>();
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062 <span class="keyword">protected</span>:
+<a name="l00063"></a>00063     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a747eb6bce25dd9d205f3e5b99817d5cd">initializeGL</a>() Q_DECL_OVERRIDE;
+<a name="l00064"></a>00064     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5">paintGL</a>() Q_DECL_OVERRIDE;
+<a name="l00065"></a>00065     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a94dcf877f22c2977a58cd6789144d3ae">resizeGL</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h) Q_DECL_OVERRIDE;
+<a name="l00066"></a>00066     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a884441d496cf615dcd1456df15db4f2a">wheelEvent</a>(QWheelEvent* event) Q_DECL_OVERRIDE;
+<a name="l00067"></a>00067     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#ae3b6b681561ee1ef2bdb96d27bd2a1f0">keyPressEvent</a>(QKeyEvent* event) Q_DECL_OVERRIDE;
+<a name="l00068"></a>00068     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a16ba3ca4c621d3dad146c0ad3f9a48cc">mousePressEvent</a>(QMouseEvent* event) Q_DECL_OVERRIDE;
+<a name="l00069"></a>00069     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a07dd05ef39c86d3963285ea4466d77e2">mouseReleaseEvent</a>(QMouseEvent* event) Q_DECL_OVERRIDE;
+<a name="l00070"></a>00070     <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a082181d6a9b81499f6516ed3a61d4f52">mouseMoveEvent</a>(QMouseEvent* event) Q_DECL_OVERRIDE;
+<a name="l00071"></a><a class="code" href="class_viewport.html#a76398c42a636bc05e388b307155080d5">00071</a>     <span class="keywordtype">int</span> <a class="code" href="class_viewport.html#a76398c42a636bc05e388b307155080d5">heightForWidth</a>(<span class="keywordtype">int</span> w)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> w; }
+<a name="l00072"></a><a class="code" href="class_viewport.html#a5f35cf38abecb45d9cb61605ef2cd52c">00072</a>     <span class="keywordtype">bool</span> <a class="code" href="class_viewport.html#a5f35cf38abecb45d9cb61605ef2cd52c">hasHeightForWidth</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; }
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074 <span class="keyword">private</span>:
+<a name="l00075"></a>00075     QMatrix4x4 m_projection;
+<a name="l00076"></a>00076     QPoint m_cursor;
+<a name="l00077"></a>00077 };
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079 QDataStream&amp; <a class="code" href="viewport_8cpp.html#aaf60c2d4feac61526a52675bc794465c">operator&lt;&lt;</a>(QDataStream&amp;, <span class="keyword">const</span> QObject&amp;);
+<a name="l00080"></a>00080 QDataStream&amp; <a class="code" href="viewport_8cpp.html#a58818c50613f41b12137dac46d31cf86">operator&gt;&gt;</a>(QDataStream&amp;, QObject&amp;);
+<a name="l00081"></a>00081 
+<a name="l00082"></a>00082 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -177,7 +175,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Vendredi Janvier 30 2015 11:17:51 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi Février 7 2015 15:10:14 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GameEditor:  Fichier source de src/viewport.cpp</title>
+<title>Sickle:  Fichier source de src/viewport.cpp</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GameEditor
+   <div id="projectname">Sickle
    &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">L&#39;editeur de monde du proletariat</div>
@@ -128,8 +128,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00046"></a>00046 
 <a name="l00047"></a>00047     <a class="code" href="struct_draw_info.html">DrawInfo</a> info{view, m_projection, m_renderMode};
 <a name="l00048"></a>00048     <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : children()) {
-<a name="l00049"></a>00049         <span class="keyword">auto</span> child = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_geometry.html" title="Base de tous les acteurs.">Geometry</a>*<span class="keyword">&gt;</span>(i);
-<a name="l00050"></a>00050         <span class="keywordflow">if</span> (child) child-&gt;<a class="code" href="class_geometry.html#a0cbbddd41c475ded59226dc9caf4f17b">draw</a>(info);
+<a name="l00049"></a>00049         <span class="keyword">auto</span> child = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_actor.html">Actor</a>*<span class="keyword">&gt;</span>(i);
+<a name="l00050"></a>00050         <span class="keywordflow">if</span> (child) child-&gt;<a class="code" href="class_actor.html#ac35dab598ae9f9a936418ec22fadf138">draw</a>(info);
 <a name="l00051"></a>00051     }
 <a name="l00052"></a>00052 }
 <a name="l00053"></a>00053 
@@ -148,22 +148,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00066"></a><a class="code" href="class_viewport.html#ae3b6b681561ee1ef2bdb96d27bd2a1f0">00066</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#ae3b6b681561ee1ef2bdb96d27bd2a1f0">Viewport::keyPressEvent</a>(QKeyEvent* event) {
 <a name="l00067"></a>00067     <span class="keywordflow">switch</span> (event-&gt;key()) {
 <a name="l00068"></a>00068         <span class="keywordflow">case</span> Qt::Key_Up:
-<a name="l00069"></a>00069             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(m_camera-&gt;<a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>());
+<a name="l00069"></a>00069             m_camera-&gt;<a class="code" href="class_camera.html#a0f05f8f991fadc2fd6cd8318122e5235">velocity</a>(m_camera-&gt;<a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>());
 <a name="l00070"></a>00070             <span class="keywordflow">break</span>;
 <a name="l00071"></a>00071         <span class="keywordflow">case</span> Qt::Key_Down:
-<a name="l00072"></a>00072             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>());
+<a name="l00072"></a>00072             m_camera-&gt;<a class="code" href="class_camera.html#a0f05f8f991fadc2fd6cd8318122e5235">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>());
 <a name="l00073"></a>00073             <span class="keywordflow">break</span>;
 <a name="l00074"></a>00074         <span class="keywordflow">case</span> Qt::Key_Right:
-<a name="l00075"></a>00075             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(m_camera-&gt;<a class="code" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a>());
+<a name="l00075"></a>00075             m_camera-&gt;<a class="code" href="class_camera.html#a0f05f8f991fadc2fd6cd8318122e5235">velocity</a>(m_camera-&gt;<a class="code" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a>());
 <a name="l00076"></a>00076             <span class="keywordflow">break</span>;
 <a name="l00077"></a>00077         <span class="keywordflow">case</span> Qt::Key_Left:
-<a name="l00078"></a>00078             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a>());
+<a name="l00078"></a>00078             m_camera-&gt;<a class="code" href="class_camera.html#a0f05f8f991fadc2fd6cd8318122e5235">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a>());
 <a name="l00079"></a>00079             <span class="keywordflow">break</span>;
 <a name="l00080"></a>00080         <span class="keywordflow">case</span> Qt::Key_PageUp:
-<a name="l00081"></a>00081             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(m_camera-&gt;<a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>());
+<a name="l00081"></a>00081             m_camera-&gt;<a class="code" href="class_camera.html#a0f05f8f991fadc2fd6cd8318122e5235">velocity</a>(m_camera-&gt;<a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>());
 <a name="l00082"></a>00082             <span class="keywordflow">break</span>;
 <a name="l00083"></a>00083         <span class="keywordflow">case</span> Qt::Key_PageDown:
-<a name="l00084"></a>00084             m_camera-&gt;<a class="code" href="class_camera.html#a2a071a1295b79f2650b01e6d933b1ff2">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>());
+<a name="l00084"></a>00084             m_camera-&gt;<a class="code" href="class_camera.html#a0f05f8f991fadc2fd6cd8318122e5235">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>());
 <a name="l00085"></a>00085             <span class="keywordflow">break</span>;
 <a name="l00086"></a>00086         <span class="keywordflow">case</span> Qt::Key_Z:
 <a name="l00087"></a>00087             m_camera-&gt;vAngle(m_camera-&gt;vAngle() + 0.14f);
@@ -222,7 +222,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00140"></a>00140 
 <a name="l00141"></a>00141     <span class="comment">// Data</span>
 <a name="l00142"></a>00142     out &lt;&lt; *<a class="code" href="class_viewport.html#a4b1a438a86e883c72d98feb3c3a658d6">camera</a>();
-<a name="l00143"></a>00143     <span class="keyword">auto</span> childList = findChildren&lt;Geometry*&gt;();
+<a name="l00143"></a>00143     <span class="keyword">auto</span> childList = findChildren&lt;Actor*&gt;();
 <a name="l00144"></a>00144     out &lt;&lt; static_cast&lt;quint32&gt;(childList.size());
 <a name="l00145"></a>00145     <span class="keywordflow">for</span> (<span class="keyword">auto</span> obj : childList) {
 <a name="l00146"></a>00146         <span class="keywordtype">int</span> type = QMetaType::type(obj-&gt;metaObject()-&gt;className());
@@ -232,7 +232,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00150"></a>00150 }
 <a name="l00151"></a>00151 
 <a name="l00152"></a><a class="code" href="class_viewport.html#ab6bea61fac9caf74cf37fe91861b42e3">00152</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#ab6bea61fac9caf74cf37fe91861b42e3">Viewport::clearLevel</a>() {
-<a name="l00153"></a>00153     <span class="keyword">auto</span> childList = findChildren&lt;Geometry*&gt;();
+<a name="l00153"></a>00153     <span class="keyword">auto</span> childList = findChildren&lt;Actor*&gt;();
 <a name="l00154"></a>00154     <span class="keywordflow">for</span> (<span class="keyword">auto</span> obj : childList) {
 <a name="l00155"></a>00155         <span class="keyword">delete</span> obj;
 <a name="l00156"></a>00156     }
@@ -271,7 +271,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00189"></a>00189     <span class="keywordflow">for</span> (quint32 i = 0; i &lt; size; i++) {
 <a name="l00190"></a>00190         <span class="keywordtype">int</span> id;
 <a name="l00191"></a>00191         in &gt;&gt; id;
-<a name="l00192"></a>00192         <span class="keyword">auto</span> obj = <span class="keyword">static_cast&lt;</span><a class="code" href="class_geometry.html" title="Base de tous les acteurs.">Geometry</a>*<span class="keyword">&gt;</span>(QMetaType::create(<span class="keywordtype">id</span>));
+<a name="l00192"></a>00192         <span class="keyword">auto</span> obj = <span class="keyword">static_cast&lt;</span><a class="code" href="class_actor.html">Actor</a>*<span class="keyword">&gt;</span>(QMetaType::create(<span class="keywordtype">id</span>));
 <a name="l00193"></a>00193         qDebug() &lt;&lt; <span class="stringliteral">&quot;Restoring object of type&quot;</span> &lt;&lt; QMetaType::typeName(<span class="keywordtype">id</span>);
 <a name="l00194"></a>00194         in &gt;&gt; *obj;
 <a name="l00195"></a>00195         obj-&gt;setParent(<span class="keyword">this</span>);
@@ -321,7 +321,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Vendredi Janvier 30 2015 11:17:51 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi Février 7 2015 15:10:14 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

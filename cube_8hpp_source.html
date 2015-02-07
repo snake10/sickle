@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GameEditor:  Fichier source de include/cube.hpp</title>
+<title>Sickle:  Fichier source de include/cube.hpp</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GameEditor
+   <div id="projectname">Sickle
    &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">L&#39;editeur de monde du proletariat</div>
@@ -86,33 +86,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define CUBE_H</span>
 <a name="l00005"></a>00005 <span class="preprocessor"></span>
 <a name="l00006"></a>00006 <span class="preprocessor">#include &lt;<a class="code" href="geometry_8hpp.html">geometry.hpp</a>&gt;</span>
-<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;<a class="code" href="globals_8hpp.html">globals.hpp</a>&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;<a class="code" href="globals_8hpp.html" title="Definitions globales.">globals.hpp</a>&gt;</span>
 <a name="l00008"></a>00008 <span class="preprocessor">#include &lt;QColor&gt;</span>
 <a name="l00009"></a>00009 <span class="preprocessor">#include &lt;QMetaProperty&gt;</span>
 <a name="l00010"></a>00010 <span class="preprocessor">#include &lt;vector&gt;</span>
 <a name="l00011"></a>00011 
-<a name="l00012"></a><a class="code" href="class_cube.html">00012</a> <span class="keyword">class </span><a class="code" href="class_cube.html">Cube</a> : <span class="keyword">public</span> <a class="code" href="class_geometry.html" title="Base de tous les acteurs.">Geometry</a> {
+<a name="l00012"></a><a class="code" href="class_cube.html">00012</a> <span class="keyword">class </span><a class="code" href="class_cube.html">Cube</a> : <span class="keyword">public</span> <a class="code" href="class_geometry.html" title="Base de toutes les géometries.">Geometry</a>&lt;Cube&gt; {
 <a name="l00013"></a>00013     Q_OBJECT
 <a name="l00014"></a>00014 
 <a name="l00015"></a>00015 <span class="keyword">public</span>:
 <a name="l00016"></a>00016     <span class="keyword">explicit</span> <a class="code" href="class_cube.html#a6eceaa075072d4d0396b6bd85872d62b">Cube</a>(QObject* parent = <span class="keyword">nullptr</span>);
-<a name="l00017"></a><a class="code" href="class_cube.html#adc5112566b50c77cab1a1738662a0b27">00017</a>     <a class="code" href="class_cube.html#adc5112566b50c77cab1a1738662a0b27">Cube</a>(<span class="keyword">const</span> <a class="code" href="class_cube.html">Cube</a>&amp; copy) :<a class="code" href="class_geometry.html" title="Base de tous les acteurs.">Geometry</a>(copy.parent()) {
-<a name="l00018"></a>00018         initProgram&lt;Cube&gt;(copy.parent());
-<a name="l00019"></a>00019         <span class="keyword">auto</span> metaObject = copy.metaObject();
-<a name="l00020"></a>00020         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; metaObject-&gt;propertyCount(); ++i) {
-<a name="l00021"></a>00021             <span class="keyword">auto</span> <a class="code" href="class_cube.html#aecf795d543bc7493b8181b7437a4e851">prop</a> = metaObject-&gt;property(i);
-<a name="l00022"></a>00022             setProperty(<a class="code" href="class_cube.html#aecf795d543bc7493b8181b7437a4e851">prop</a>.name(), copy.property(<a class="code" href="class_cube.html#aecf795d543bc7493b8181b7437a4e851">prop</a>.name()));
-<a name="l00023"></a>00023         }
-<a name="l00024"></a>00024     }
-<a name="l00025"></a>00025     <a class="code" href="class_cube.html#aecf795d543bc7493b8181b7437a4e851">prop</a>(QVariantList, colors);
-<a name="l00026"></a><a class="code" href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">00026</a>     <span class="keyword">static</span> std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a02228c9ee089f6adb79b8898fb07c981">s_vertices</a>;
-<a name="l00027"></a><a class="code" href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">00027</a>     <span class="keyword">static</span> std::vector&lt;GLfloat&gt; <a class="code" href="class_cube.html#a41cef8fd6fe8a8fe0ada48f0c40a1113">s_colors</a>;
-<a name="l00028"></a><a class="code" href="class_cube.html#a15913769adf571b32db693f6b1cd6619">00028</a>     <span class="keyword">static</span> std::vector&lt;quint32&gt; <a class="code" href="class_cube.html#a15913769adf571b32db693f6b1cd6619">s_indices</a>;
-<a name="l00029"></a>00029 };
-<a name="l00030"></a>00030 
-<a name="l00031"></a>00031 Q_DECLARE_METATYPE(<a class="code" href="class_cube.html">Cube</a>)
-<a name="l00032"></a>00032 
-<a name="l00033"></a>00033 <span class="preprocessor">#endif  // CUBE_H</span>
+<a name="l00017"></a><a class="code" href="class_cube.html#adc5112566b50c77cab1a1738662a0b27">00017</a>     <a class="code" href="class_cube.html#adc5112566b50c77cab1a1738662a0b27">Cube</a>(<span class="keyword">const</span> <a class="code" href="class_cube.html">Cube</a>&amp; copy) : <a class="code" href="class_geometry.html" title="Base de toutes les géometries.">Geometry</a>(copy.parent()) {
+<a name="l00018"></a>00018         <span class="keyword">auto</span> metaObject = copy.metaObject();
+<a name="l00019"></a>00019         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; metaObject-&gt;propertyCount(); ++i) {
+<a name="l00020"></a>00020             <span class="keyword">auto</span> <a class="code" href="class_cube.html#aecf795d543bc7493b8181b7437a4e851">prop</a> = metaObject-&gt;property(i);
+<a name="l00021"></a>00021             setProperty(<a class="code" href="class_cube.html#aecf795d543bc7493b8181b7437a4e851">prop</a>.name(), copy.property(<a class="code" href="class_cube.html#aecf795d543bc7493b8181b7437a4e851">prop</a>.name()));
+<a name="l00022"></a>00022         }
+<a name="l00023"></a>00023     }
+<a name="l00024"></a>00024     <a class="code" href="class_cube.html#aecf795d543bc7493b8181b7437a4e851">prop</a>(QVariantList, colors);
+<a name="l00025"></a><a class="code" href="class_cube.html#af832047631c3682aabab3c62d0e01e5e">00025</a>     <span class="keyword">typedef</span> <a class="code" href="class_geometry.html">Geometry&lt;Cube&gt;</a> <a class="code" href="class_cube.html#af832047631c3682aabab3c62d0e01e5e">tBase</a>;
+<a name="l00026"></a>00026 };
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 Q_DECLARE_METATYPE(<a class="code" href="class_cube.html">Cube</a>)
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 <span class="preprocessor">#endif  // CUBE_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -131,7 +128,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Vendredi Janvier 30 2015 11:17:51 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi Février 7 2015 15:10:14 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

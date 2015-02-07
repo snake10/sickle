@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>GameEditor:  Fichier source de include/geometry.hpp</title>
+<title>Sickle:  Fichier source de include/geometry.hpp</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">GameEditor
+   <div id="projectname">Sickle
    &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">L&#39;editeur de monde du proletariat</div>
@@ -90,99 +90,108 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00008"></a>00008 <span class="preprocessor">#include &lt;QOpenGLFunctions&gt;</span>
 <a name="l00009"></a>00009 <span class="preprocessor">#include &lt;QOpenGLShaderProgram&gt;</span>
 <a name="l00010"></a>00010 <span class="preprocessor">#include &lt;QOpenGLBuffer&gt;</span>
-<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;<a class="code" href="globals_8hpp.html">globals.hpp</a>&gt;</span>
-<a name="l00012"></a>00012 <span class="preprocessor">#include &lt;memory&gt;</span>
-<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;vector&gt;</span>
-<a name="l00014"></a>00014 
-<a name="l00015"></a><a class="code" href="struct_draw_info.html">00015</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_draw_info.html">DrawInfo</a> {
-<a name="l00016"></a><a class="code" href="struct_draw_info.html#a988e2c6b8b9dfad10eb1e30f8d73211b">00016</a>     QMatrix4x4 <a class="code" href="struct_draw_info.html#a988e2c6b8b9dfad10eb1e30f8d73211b">View</a>;
-<a name="l00017"></a><a class="code" href="struct_draw_info.html#abc4f8bc2bd85c796731912929623e001">00017</a>     QMatrix4x4 <a class="code" href="struct_draw_info.html#abc4f8bc2bd85c796731912929623e001">Projection</a>;
-<a name="l00018"></a><a class="code" href="struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03">00018</a>     GLenum <a class="code" href="struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03">mode</a>;
-<a name="l00019"></a>00019 } <a class="code" href="geometry_8hpp.html#ab9cb9edc1d52b55844706a106904c3fd">DrawInfo</a>;
-<a name="l00020"></a>00020 
-<a name="l00027"></a><a class="code" href="class_geometry.html">00027</a> <span class="keyword">class </span><a class="code" href="class_geometry.html" title="Base de tous les acteurs.">Geometry</a> : <span class="keyword">public</span> QObject {
-<a name="l00028"></a>00028     Q_OBJECT
-<a name="l00029"></a>00029 
-<a name="l00030"></a>00030 <span class="keyword">public</span>:
-<a name="l00031"></a>00031     <span class="keyword">explicit</span> <a class="code" href="class_geometry.html#a2ba08868698dc22d50206930933d45e3">Geometry</a>(QObject* parent = <span class="keyword">nullptr</span>);
-<a name="l00032"></a>00032     <span class="keywordtype">void</span> <a class="code" href="class_geometry.html#a0cbbddd41c475ded59226dc9caf4f17b">draw</a>(<span class="keyword">const</span> <a class="code" href="struct_draw_info.html">DrawInfo</a>&amp; info);
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;QOpenGLVertexArrayObject&gt;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &lt;<a class="code" href="globals_8hpp.html" title="Definitions globales.">globals.hpp</a>&gt;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;<a class="code" href="actor_8hpp.html">actor.hpp</a>&gt;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &lt;memory&gt;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &lt;vector&gt;</span>
+<a name="l00016"></a>00016 
+<a name="l00024"></a>00024 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Child&gt;
+<a name="l00025"></a><a class="code" href="class_geometry.html">00025</a> <span class="keyword">class </span><a class="code" href="class_geometry.html" title="Base de toutes les géometries.">Geometry</a> : <span class="keyword">public</span> <a class="code" href="class_actor.html">Actor</a> {
+<a name="l00026"></a>00026 <span class="keyword">public</span>:
+<a name="l00027"></a><a class="code" href="class_geometry.html#abd87f05d818b3653f856813b32677494">00027</a>     <span class="keyword">explicit</span> <a class="code" href="class_geometry.html#abd87f05d818b3653f856813b32677494">Geometry</a>(QObject* parent = <span class="keyword">nullptr</span>) : <a class="code" href="class_actor.html">Actor</a>(parent) {
+<a name="l00028"></a>00028         <a class="code" href="class_geometry.html#a7b82901a9c731b4fb1e127f287b28394" title="Initialise les shaders et alloue les buffer.">initProgram</a>(<span class="keyword">this</span>);
+<a name="l00029"></a>00029     }
+<a name="l00030"></a><a class="code" href="class_geometry.html#a999bb5d2827866b58fe4ded7dbd0668d">00030</a>     <a class="code" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570" title="Empeche une fonction d&#39;être inlinée.">noinline</a> <span class="keywordtype">void</span> <a class="code" href="class_geometry.html#a999bb5d2827866b58fe4ded7dbd0668d">draw</a>(<span class="keyword">const</span> <a class="code" href="struct_draw_info.html">DrawInfo</a>&amp; info) {
+<a name="l00031"></a>00031         Child::s_program-&gt;bind();
+<a name="l00032"></a>00032         Child::s_vao-&gt;bind();
 <a name="l00033"></a>00033 
-<a name="l00034"></a>00034     <a class="code" href="class_geometry.html#a5b1b325686609ae1530739d5804bc5dd">propSig</a>(QVector3D, position, moved);
-<a name="l00035"></a>00035     <a class="code" href="class_geometry.html#a5b1b325686609ae1530739d5804bc5dd">propSig</a>(QQuaternion, orientation, rotated);
-<a name="l00036"></a>00036     <a class="code" href="class_geometry.html#a5b1b325686609ae1530739d5804bc5dd">propSig</a>(QVector3D, scale, scaled);
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038 <span class="keyword">protected</span>:
-<a name="l00039"></a>00039     QMatrix4x4 <a class="code" href="class_geometry.html#a7936dff75c21a4223fd0e2324580f073">transform</a>();
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041     <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;
-<a name="l00042"></a><a class="code" href="class_geometry.html#a67968e7898b981ad53d1cac382dd4318">00042</a>     <a class="code" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570" title="Empeche une fonction d&#39;être inlinée.">noinline</a> <span class="keyword">static</span> QOpenGLBuffer* <a class="code" href="class_geometry.html#a67968e7898b981ad53d1cac382dd4318">initBuffer</a>(QOpenGLBuffer::Type type, <span class="keyword">const</span> std::vector&lt;T&gt;&amp; data) {
-<a name="l00043"></a>00043         <span class="keyword">auto</span> buffer = <span class="keyword">new</span> QOpenGLBuffer(type);
-<a name="l00044"></a>00044         buffer-&gt;create();
-<a name="l00045"></a>00045         buffer-&gt;setUsagePattern(QOpenGLBuffer::StaticDraw);
-<a name="l00046"></a>00046         <span class="keywordflow">if</span> (!buffer-&gt;bind()) {
-<a name="l00047"></a>00047             qCritical(<span class="stringliteral">&quot;Could not bind buffer to the context&quot;</span>);
-<a name="l00048"></a>00048             <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;
-<a name="l00049"></a>00049         }
-<a name="l00050"></a>00050         buffer-&gt;allocate(&amp;data[0], data.size() * <span class="keyword">sizeof</span>(T));
-<a name="l00051"></a>00051         <span class="keywordflow">return</span> buffer;
-<a name="l00052"></a>00052     }
-<a name="l00053"></a>00053 
-<a name="l00061"></a>00061     <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Child&gt;
-<a name="l00062"></a><a class="code" href="class_geometry.html#a50bd1d3e6b222c0dc20954955baa7b7e">00062</a>     <a class="code" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570" title="Empeche une fonction d&#39;être inlinée.">noinline</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_geometry.html#a50bd1d3e6b222c0dc20954955baa7b7e" title="Initialise les shaders et alloue les buffer.">initProgram</a>(QObject* parent) {
-<a name="l00063"></a>00063         <span class="keywordflow">if</span> (Child::s_instances++ == 0) {
-<a name="l00064"></a>00064             Child::s_program = <span class="keyword">new</span> QOpenGLShaderProgram(parent);
-<a name="l00065"></a>00065 
-<a name="l00066"></a>00066             <span class="keywordflow">if</span> (!Child::s_program-&gt;addShaderFromSourceFile(QOpenGLShader::Vertex, <span class="stringliteral">&quot;:/shaders/unlit.vert&quot;</span>)) {
-<a name="l00067"></a>00067                 qCritical() &lt;&lt; <span class="stringliteral">&quot;Could not load vertex shader:&quot;</span> &lt;&lt; Child::s_program-&gt;log();
-<a name="l00068"></a>00068                 <span class="keywordflow">return</span>;
-<a name="l00069"></a>00069             }
-<a name="l00070"></a>00070 
-<a name="l00071"></a>00071             <span class="keywordflow">if</span> (!Child::s_program-&gt;addShaderFromSourceFile(QOpenGLShader::Fragment, <span class="stringliteral">&quot;:/shaders/unlit.frag&quot;</span>)) {
-<a name="l00072"></a>00072                 qCritical() &lt;&lt; <span class="stringliteral">&quot;Could not load fragment shader:&quot;</span> &lt;&lt; Child::s_program-&gt;log();
-<a name="l00073"></a>00073                 <span class="keywordflow">return</span>;
-<a name="l00074"></a>00074             }
-<a name="l00075"></a>00075 
-<a name="l00076"></a>00076             <span class="keywordflow">if</span> (!Child::s_program-&gt;link()) {
-<a name="l00077"></a>00077                 qCritical() &lt;&lt; <span class="stringliteral">&quot;Could not link shaders:&quot;</span> &lt;&lt; Child::s_program-&gt;log();
-<a name="l00078"></a>00078                 <span class="keywordflow">return</span>;
-<a name="l00079"></a>00079             }
-<a name="l00080"></a>00080 
-<a name="l00081"></a>00081             Child::s_vertexBuffer = <a class="code" href="class_geometry.html#a67968e7898b981ad53d1cac382dd4318">initBuffer</a>(QOpenGLBuffer::VertexBuffer, Child::s_vertices);
-<a name="l00082"></a>00082             Q_CHECK_PTR(Child::s_vertexBuffer);
-<a name="l00083"></a>00083 
-<a name="l00084"></a>00084             Child::s_colorBuffer = <a class="code" href="class_geometry.html#a67968e7898b981ad53d1cac382dd4318">initBuffer</a>(QOpenGLBuffer::VertexBuffer, Child::s_colors);
-<a name="l00085"></a>00085             Q_CHECK_PTR(Child::s_colorBuffer);
+<a name="l00034"></a>00034         <span class="keyword">auto</span> MVP = info.<a class="code" href="struct_draw_info.html#abc4f8bc2bd85c796731912929623e001">Projection</a> * info.<a class="code" href="struct_draw_info.html#a988e2c6b8b9dfad10eb1e30f8d73211b">View</a> * <a class="code" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">transform</a>();
+<a name="l00035"></a>00035         Child::s_program-&gt;setUniformValue(<span class="stringliteral">&quot;MVP&quot;</span>, MVP);
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037         <span class="keyword">auto</span> func = QOpenGLContext::currentContext()-&gt;functions();
+<a name="l00038"></a>00038         func-&gt;glDrawElements(info.<a class="code" href="struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03">mode</a>, Child::s_indexBuffer-&gt;size() / <span class="keyword">sizeof</span>(GLfloat), GL_UNSIGNED_INT, 0);
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040         Child::s_program-&gt;release();
+<a name="l00041"></a>00041     }
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043 <span class="keyword">protected</span>:
+<a name="l00044"></a>00044     <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;
+<a name="l00045"></a><a class="code" href="class_geometry.html#a099a5282b39e88fef5601492e0d22ebf">00045</a>     <a class="code" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570" title="Empeche une fonction d&#39;être inlinée.">noinline</a> <span class="keyword">static</span> QOpenGLBuffer* <a class="code" href="class_geometry.html#a099a5282b39e88fef5601492e0d22ebf">initBuffer</a>(QOpenGLBuffer::Type type, <span class="keyword">const</span> std::vector&lt;T&gt;&amp; data) {
+<a name="l00046"></a>00046         <span class="keyword">auto</span> buffer = <span class="keyword">new</span> QOpenGLBuffer(type);
+<a name="l00047"></a>00047         buffer-&gt;create();
+<a name="l00048"></a>00048         buffer-&gt;setUsagePattern(QOpenGLBuffer::StaticDraw);
+<a name="l00049"></a>00049         <span class="keywordflow">if</span> (!buffer-&gt;bind()) {
+<a name="l00050"></a>00050             qCritical(<span class="stringliteral">&quot;Could not bind buffer to the context&quot;</span>);
+<a name="l00051"></a>00051             <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;
+<a name="l00052"></a>00052         }
+<a name="l00053"></a>00053         buffer-&gt;allocate(&amp;data[0], data.size() * <span class="keyword">sizeof</span>(T));
+<a name="l00054"></a>00054         <span class="keywordflow">return</span> buffer;
+<a name="l00055"></a>00055     }
+<a name="l00056"></a>00056 
+<a name="l00064"></a><a class="code" href="class_geometry.html#a7b82901a9c731b4fb1e127f287b28394">00064</a>     <a class="code" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570" title="Empeche une fonction d&#39;être inlinée.">noinline</a> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_geometry.html#a7b82901a9c731b4fb1e127f287b28394" title="Initialise les shaders et alloue les buffer.">initProgram</a>(QObject* parent) {
+<a name="l00065"></a>00065         <span class="keywordflow">if</span> (Child::s_instances++ == 0) {
+<a name="l00066"></a>00066             Child::s_program = <span class="keyword">new</span> QOpenGLShaderProgram(parent);
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068             Child::s_vao = <span class="keyword">new</span> QOpenGLVertexArrayObject(parent);
+<a name="l00069"></a>00069             Child::s_vao-&gt;create();
+<a name="l00070"></a>00070             Child::s_vao-&gt;bind();
+<a name="l00071"></a>00071 
+<a name="l00072"></a>00072             <span class="keywordflow">if</span> (!Child::s_program-&gt;addShaderFromSourceFile(QOpenGLShader::Vertex, <span class="stringliteral">&quot;:/shaders/unlit.vert&quot;</span>)) {
+<a name="l00073"></a>00073                 qCritical() &lt;&lt; <span class="stringliteral">&quot;Could not load vertex shader:&quot;</span> &lt;&lt; Child::s_program-&gt;log();
+<a name="l00074"></a>00074                 <span class="keywordflow">return</span>;
+<a name="l00075"></a>00075             }
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077             <span class="keywordflow">if</span> (!Child::s_program-&gt;addShaderFromSourceFile(QOpenGLShader::Fragment, <span class="stringliteral">&quot;:/shaders/unlit.frag&quot;</span>)) {
+<a name="l00078"></a>00078                 qCritical() &lt;&lt; <span class="stringliteral">&quot;Could not load fragment shader:&quot;</span> &lt;&lt; Child::s_program-&gt;log();
+<a name="l00079"></a>00079                 <span class="keywordflow">return</span>;
+<a name="l00080"></a>00080             }
+<a name="l00081"></a>00081 
+<a name="l00082"></a>00082             <span class="keywordflow">if</span> (!Child::s_program-&gt;link()) {
+<a name="l00083"></a>00083                 qCritical() &lt;&lt; <span class="stringliteral">&quot;Could not link shaders:&quot;</span> &lt;&lt; Child::s_program-&gt;log();
+<a name="l00084"></a>00084                 <span class="keywordflow">return</span>;
+<a name="l00085"></a>00085             }
 <a name="l00086"></a>00086 
-<a name="l00087"></a>00087             Child::s_indexBuffer = <a class="code" href="class_geometry.html#a67968e7898b981ad53d1cac382dd4318">initBuffer</a>(QOpenGLBuffer::IndexBuffer, Child::s_indices);
-<a name="l00088"></a>00088             Q_CHECK_PTR(Child::s_indexBuffer);
-<a name="l00089"></a>00089 
-<a name="l00090"></a>00090             <span class="keywordflow">if</span> (!Child::s_program-&gt;bind()) {
-<a name="l00091"></a>00091                 qCritical() &lt;&lt; <span class="stringliteral">&quot;Could not bind shader to context&quot;</span>;
-<a name="l00092"></a>00092                 <span class="keywordflow">return</span>;
-<a name="l00093"></a>00093             }
+<a name="l00087"></a>00087             <span class="keywordflow">if</span> (!Child::s_program-&gt;bind()) {
+<a name="l00088"></a>00088                 qCritical() &lt;&lt; <span class="stringliteral">&quot;Could not bind shader to context&quot;</span>;
+<a name="l00089"></a>00089                 <span class="keywordflow">return</span>;
+<a name="l00090"></a>00090             }
+<a name="l00091"></a>00091 
+<a name="l00092"></a>00092             Child::s_vertexBuffer = <a class="code" href="class_geometry.html#a099a5282b39e88fef5601492e0d22ebf">initBuffer</a>(QOpenGLBuffer::VertexBuffer, Child::s_vertices);
+<a name="l00093"></a>00093             Q_CHECK_PTR(Child::s_vertexBuffer);
 <a name="l00094"></a>00094 
-<a name="l00095"></a>00095             <span class="keyword">auto</span> posAttr = Child::s_program-&gt;attributeLocation(<span class="stringliteral">&quot;vertexPosition&quot;</span>);
-<a name="l00096"></a>00096             Child::s_vertexBuffer-&gt;bind();
-<a name="l00097"></a>00097             Child::s_program-&gt;setAttributeBuffer(posAttr, GL_FLOAT, 0, 3);
-<a name="l00098"></a>00098             Child::s_program-&gt;enableAttributeArray(posAttr);
-<a name="l00099"></a>00099 
-<a name="l00100"></a>00100             <span class="keyword">auto</span> colAttr = Child::s_program-&gt;attributeLocation(<span class="stringliteral">&quot;vertexColor&quot;</span>);
-<a name="l00101"></a>00101             Child::s_colorBuffer-&gt;bind();
-<a name="l00102"></a>00102             Child::s_program-&gt;setAttributeBuffer(colAttr, GL_FLOAT, 0, 3);
-<a name="l00103"></a>00103             Child::s_program-&gt;enableAttributeArray(colAttr);
-<a name="l00104"></a>00104         }
-<a name="l00105"></a>00105     }
-<a name="l00106"></a>00106 
-<a name="l00107"></a>00107 <span class="keyword">private</span>:
-<a name="l00108"></a>00108     <span class="comment">// Instances</span>
-<a name="l00109"></a>00109     <span class="keyword">static</span> <span class="keywordtype">int</span> s_instances;
-<a name="l00110"></a>00110     <span class="keyword">static</span> QOpenGLShaderProgram* s_program;
-<a name="l00111"></a>00111     <span class="keyword">static</span> QOpenGLBuffer* s_vertexBuffer;
-<a name="l00112"></a>00112     <span class="keyword">static</span> QOpenGLBuffer* s_colorBuffer;
-<a name="l00113"></a>00113     <span class="keyword">static</span> QOpenGLBuffer* s_indexBuffer;
-<a name="l00114"></a>00114 };
-<a name="l00115"></a>00115 
-<a name="l00116"></a>00116 <span class="preprocessor">#endif  // GEOMETRY_H</span>
+<a name="l00095"></a>00095             Child::s_colorBuffer = <a class="code" href="class_geometry.html#a099a5282b39e88fef5601492e0d22ebf">initBuffer</a>(QOpenGLBuffer::VertexBuffer, Child::s_colors);
+<a name="l00096"></a>00096             Q_CHECK_PTR(Child::s_colorBuffer);
+<a name="l00097"></a>00097 
+<a name="l00098"></a>00098             Child::s_indexBuffer = <a class="code" href="class_geometry.html#a099a5282b39e88fef5601492e0d22ebf">initBuffer</a>(QOpenGLBuffer::IndexBuffer, Child::s_indices);
+<a name="l00099"></a>00099             Q_CHECK_PTR(Child::s_indexBuffer);
+<a name="l00100"></a>00100 
+<a name="l00101"></a>00101             <span class="keyword">auto</span> posAttr = Child::s_program-&gt;attributeLocation(<span class="stringliteral">&quot;vertexPosition&quot;</span>);
+<a name="l00102"></a>00102             Child::s_vertexBuffer-&gt;bind();
+<a name="l00103"></a>00103             Child::s_program-&gt;setAttributeBuffer(posAttr, GL_FLOAT, 0, 3);
+<a name="l00104"></a>00104             Child::s_program-&gt;enableAttributeArray(posAttr);
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106             <span class="keyword">auto</span> colAttr = Child::s_program-&gt;attributeLocation(<span class="stringliteral">&quot;vertexColor&quot;</span>);
+<a name="l00107"></a>00107             Child::s_colorBuffer-&gt;bind();
+<a name="l00108"></a>00108             Child::s_program-&gt;setAttributeBuffer(colAttr, GL_FLOAT, 0, 3);
+<a name="l00109"></a>00109             Child::s_program-&gt;enableAttributeArray(colAttr);
+<a name="l00110"></a>00110         }
+<a name="l00111"></a>00111     }
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113 <span class="keyword">protected</span>:
+<a name="l00114"></a>00114     <span class="comment">// Instances</span>
+<a name="l00115"></a><a class="code" href="class_geometry.html#a2a4b5cc631647df7085c635d591313f2">00115</a>     <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_geometry.html#a2a4b5cc631647df7085c635d591313f2">s_instances</a>;
+<a name="l00116"></a><a class="code" href="class_geometry.html#abfdbbbd3be20c6b735930ffcf7343123">00116</a>     <span class="keyword">static</span> QOpenGLShaderProgram* <a class="code" href="class_geometry.html#abfdbbbd3be20c6b735930ffcf7343123">s_program</a>;
+<a name="l00117"></a><a class="code" href="class_geometry.html#aaae8aa56fe2e045444a81c2cedb3da24">00117</a>     <span class="keyword">static</span> QOpenGLVertexArrayObject* <a class="code" href="class_geometry.html#aaae8aa56fe2e045444a81c2cedb3da24">s_vao</a>;
+<a name="l00118"></a><a class="code" href="class_geometry.html#a257b35064612dbe4c87a251e7fe8985a">00118</a>     <span class="keyword">static</span> QOpenGLBuffer* <a class="code" href="class_geometry.html#a257b35064612dbe4c87a251e7fe8985a">s_vertexBuffer</a>;
+<a name="l00119"></a><a class="code" href="class_geometry.html#a3f19c8c3670ffaa2124ec53ebe67708d">00119</a>     <span class="keyword">static</span> QOpenGLBuffer* <a class="code" href="class_geometry.html#a3f19c8c3670ffaa2124ec53ebe67708d">s_colorBuffer</a>;
+<a name="l00120"></a><a class="code" href="class_geometry.html#a61ceb9d088b03512f32acf59d7d19526">00120</a>     <span class="keyword">static</span> QOpenGLBuffer* <a class="code" href="class_geometry.html#a61ceb9d088b03512f32acf59d7d19526">s_indexBuffer</a>;
+<a name="l00121"></a><a class="code" href="class_geometry.html#a41c54fb8aefc934e3cf9ad4fa49735af">00121</a>     <span class="keyword">static</span> std::vector&lt;GLfloat&gt; <a class="code" href="class_geometry.html#a41c54fb8aefc934e3cf9ad4fa49735af">s_vertices</a>;
+<a name="l00122"></a><a class="code" href="class_geometry.html#aa2466cd114bf4c4c6ba27ba75aac9e65">00122</a>     <span class="keyword">static</span> std::vector&lt;GLfloat&gt; <a class="code" href="class_geometry.html#aa2466cd114bf4c4c6ba27ba75aac9e65">s_colors</a>;
+<a name="l00123"></a><a class="code" href="class_geometry.html#ae57dd4ba2f4c00da05cde6b2cb3bf32e">00123</a>     <span class="keyword">static</span> std::vector&lt;quint32&gt; <a class="code" href="class_geometry.html#ae57dd4ba2f4c00da05cde6b2cb3bf32e">s_indices</a>;
+<a name="l00124"></a>00124 };
+<a name="l00125"></a>00125 
+<a name="l00126"></a>00126 <span class="preprocessor">#endif  // GEOMETRY_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -201,7 +210,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Vendredi Janvier 30 2015 11:17:51 pour GameEditor par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi Février 7 2015 15:10:14 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
