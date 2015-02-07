@@ -118,15 +118,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00036"></a>00036     <span class="keyword">auto</span> bg = palette().color(QPalette::Background);
 <a name="l00037"></a>00037     glClearColor(bg.redF(), bg.greenF(), bg.blueF(), bg.alphaF());
 <a name="l00038"></a>00038 
-<a name="l00039"></a>00039     emit <a class="code" href="class_viewport.html#a8e171b09ee779137433c427746441554">initialized</a>();
+<a name="l00039"></a>00039     <a class="code" href="class_viewport.html#a62399e89e032cac31006c5666cc3bbeb">isInitialized</a>(<span class="keyword">true</span>);
 <a name="l00040"></a>00040 }
 <a name="l00041"></a>00041 
 <a name="l00042"></a><a class="code" href="class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5">00042</a> <span class="keywordtype">void</span> <a class="code" href="class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5">Viewport::paintGL</a>() {
 <a name="l00043"></a>00043     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 <a name="l00044"></a>00044 
-<a name="l00045"></a>00045     QMatrix4x4 view = m_camera-&gt;<a class="code" href="class_camera.html#af81adf3ba7f63429a9d5356c218da78f">view</a>();
-<a name="l00046"></a>00046 
-<a name="l00047"></a>00047     <a class="code" href="struct_draw_info.html">DrawInfo</a> info{view, m_projection, m_renderMode};
+<a name="l00045"></a>00045     <span class="keyword">auto</span> view = m_camera-&gt;<a class="code" href="class_camera.html#af81adf3ba7f63429a9d5356c218da78f">view</a>();
+<a name="l00046"></a>00046     <a class="code" href="struct_draw_info.html">DrawInfo</a> info{view, m_projection, m_renderMode, context()};
+<a name="l00047"></a>00047 
 <a name="l00048"></a>00048     <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : children()) {
 <a name="l00049"></a>00049         <span class="keyword">auto</span> child = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_actor.html">Actor</a>*<span class="keyword">&gt;</span>(i);
 <a name="l00050"></a>00050         <span class="keywordflow">if</span> (child) child-&gt;<a class="code" href="class_actor.html#ac35dab598ae9f9a936418ec22fadf138">draw</a>(info);
@@ -321,7 +321,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi Février 7 2015 16:52:52 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi Février 7 2015 18:41:49 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

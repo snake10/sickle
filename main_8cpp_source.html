@@ -96,16 +96,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00014"></a>00014     app.setStyleSheet(style.readAll());
 <a name="l00015"></a>00015 
 <a name="l00016"></a>00016     QTranslator translator;
-<a name="l00017"></a>00017     QString locale = QLocale::system().name();
+<a name="l00017"></a>00017     <span class="keyword">auto</span> locale = QLocale::system().name();
 <a name="l00018"></a>00018     translator.load(QString(<span class="stringliteral">&quot;:/lang/editor_&quot;</span>) + locale);
 <a name="l00019"></a>00019     app.installTranslator(&amp;translator);
 <a name="l00020"></a>00020 
 <a name="l00021"></a>00021     <a class="code" href="class_main_window.html" title="Fenetre principale.">MainWindow</a> window;
-<a name="l00022"></a>00022     window.resize(800, 600);
-<a name="l00023"></a>00023     window.showMaximized();
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025     <span class="keywordflow">return</span> app.exec();
-<a name="l00026"></a>00026 }
+<a name="l00022"></a>00022     window.showMaximized();
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024     <span class="keywordflow">return</span> app.exec();
+<a name="l00025"></a>00025 }
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -124,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi Février 7 2015 16:52:52 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi Février 7 2015 18:41:49 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

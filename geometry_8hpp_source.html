@@ -100,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00025"></a><a class="code" href="class_geometry.html">00025</a> <span class="keyword">class </span><a class="code" href="class_geometry.html" title="Base de toutes les géometries.">Geometry</a> : <span class="keyword">public</span> <a class="code" href="class_actor.html">Actor</a> {
 <a name="l00026"></a>00026 <span class="keyword">public</span>:
 <a name="l00027"></a><a class="code" href="class_geometry.html#abd87f05d818b3653f856813b32677494">00027</a>     <span class="keyword">explicit</span> <a class="code" href="class_geometry.html#abd87f05d818b3653f856813b32677494">Geometry</a>(QObject* parent = <span class="keyword">nullptr</span>) : <a class="code" href="class_actor.html">Actor</a>(parent) {
-<a name="l00028"></a>00028         <a class="code" href="class_geometry.html#a7b82901a9c731b4fb1e127f287b28394" title="Initialise les shaders et alloue les buffer.">initProgram</a>(<span class="keyword">this</span>);
+<a name="l00028"></a>00028         <a class="code" href="class_geometry.html#a7b82901a9c731b4fb1e127f287b28394" title="Initialise les shaders et alloue les buffer.">initProgram</a>(parent);
 <a name="l00029"></a>00029     }
 <a name="l00030"></a><a class="code" href="class_geometry.html#a999bb5d2827866b58fe4ded7dbd0668d">00030</a>     <a class="code" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570" title="Empeche une fonction d&#39;être inlinée.">noinline</a> <span class="keywordtype">void</span> <a class="code" href="class_geometry.html#a999bb5d2827866b58fe4ded7dbd0668d">draw</a>(<span class="keyword">const</span> <a class="code" href="struct_draw_info.html">DrawInfo</a>&amp; info) {
 <a name="l00031"></a>00031         Child::s_program-&gt;bind();
@@ -109,7 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00034"></a>00034         <span class="keyword">auto</span> MVP = info.<a class="code" href="struct_draw_info.html#abc4f8bc2bd85c796731912929623e001">Projection</a> * info.<a class="code" href="struct_draw_info.html#a988e2c6b8b9dfad10eb1e30f8d73211b">View</a> * <a class="code" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">transform</a>();
 <a name="l00035"></a>00035         Child::s_program-&gt;setUniformValue(<span class="stringliteral">&quot;MVP&quot;</span>, MVP);
 <a name="l00036"></a>00036 
-<a name="l00037"></a>00037         <span class="keyword">auto</span> func = QOpenGLContext::currentContext()-&gt;functions();
+<a name="l00037"></a>00037         <span class="keyword">auto</span> func = info.<a class="code" href="struct_draw_info.html#a8beb28d8f204f783d8991ab5038a3170">context</a>-&gt;functions();
 <a name="l00038"></a>00038         func-&gt;glDrawElements(info.<a class="code" href="struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03">mode</a>, Child::s_indexBuffer-&gt;size() / <span class="keyword">sizeof</span>(GLfloat), GL_UNSIGNED_INT, 0);
 <a name="l00039"></a>00039 
 <a name="l00040"></a>00040         Child::s_program-&gt;release();
@@ -210,7 +210,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi Février 7 2015 16:52:52 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi Février 7 2015 18:41:49 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
