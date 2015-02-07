@@ -3,50 +3,43 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
 <title>Sickle:  Fichier source de src/actor.cpp</title>
-
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
-
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div id="top"><!-- do not remove this div! -->
-
-
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  
-  
   <td style="padding-left: 0.5em;">
    <div id="projectname">Sickle
    &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">L&#39;editeur de monde du proletariat</div>
   </td>
-  
-  
-  
  </tr>
  </tbody>
 </table>
 </div>
-
-<!-- Généré par Doxygen 1.7.6.1 -->
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
@@ -74,33 +67,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
       <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
-</div>
-<div class="header">
-  <div class="headertitle">
-<div class="title">src/actor.cpp</div>  </div>
-</div><!--header-->
-<div class="contents">
-<a href="actor_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// Copyright 2015 PsychoLama</span>
-<a name="l00002"></a>00002 
-<a name="l00003"></a>00003 <span class="preprocessor">#include &lt;<a class="code" href="actor_8hpp.html">actor.hpp</a>&gt;</span>
-<a name="l00004"></a>00004 
-<a name="l00005"></a><a class="code" href="class_actor.html#aa0fc674ef09b215b67ff2fff69b79459">00005</a> <a class="code" href="class_actor.html#aa0fc674ef09b215b67ff2fff69b79459">Actor::Actor</a>(QObject* parent) : QObject(parent), m_scale(1, 1, 1) {
-<a name="l00006"></a>00006 }
-<a name="l00007"></a>00007 
-<a name="l00008"></a><a class="code" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">00008</a> QMatrix4x4 <a class="code" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">Actor::transform</a>() {
-<a name="l00009"></a>00009     QMatrix4x4 <a class="code" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">transform</a>;
-<a name="l00010"></a>00010     transform.translate(position());
-<a name="l00011"></a>00011     transform.rotate(orientation());
-<a name="l00012"></a>00012     transform.scale(scale());
-<a name="l00013"></a>00013     <span class="keywordflow">return</span> <a class="code" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">transform</a>;
-<a name="l00014"></a>00014 }
-</pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,13 +81,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </iframe>
 </div>
 
-
-
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">actor.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="actor_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2015 PsychoLama</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="actor_8hpp.html">actor.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_actor.html#aa0fc674ef09b215b67ff2fff69b79459">    5</a></span>&#160;<a class="code" href="class_actor.html#aa0fc674ef09b215b67ff2fff69b79459">Actor::Actor</a>(<a class="code" href="class_q_object.html">QObject</a>* parent) : <a class="code" href="class_q_object.html">QObject</a>(parent), m_scale(1, 1, 1) {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">    8</a></span>&#160;QMatrix4x4 <a class="code" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">Actor::transform</a>() {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    QMatrix4x4 <a class="code" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">transform</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    transform.translate(position());</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    transform.rotate(orientation());</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    transform.scale(scale());</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">transform</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="ttc" id="class_actor_html_abbf942f60996c5df2a8c0a832bd91abc"><div class="ttname"><a href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">Actor::transform</a></div><div class="ttdeci">virtual QMatrix4x4 transform()</div><div class="ttdef"><b>Definition:</b> <a href="actor_8cpp_source.html#l00008">actor.cpp:8</a></div></div>
+<div class="ttc" id="actor_8hpp_html"><div class="ttname"><a href="actor_8hpp.html">actor.hpp</a></div></div>
+<div class="ttc" id="class_q_object_html"><div class="ttname"><a href="class_q_object.html">QObject</a></div></div>
+<div class="ttc" id="class_actor_html_aa0fc674ef09b215b67ff2fff69b79459"><div class="ttname"><a href="class_actor.html#aa0fc674ef09b215b67ff2fff69b79459">Actor::Actor</a></div><div class="ttdeci">Actor(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="actor_8cpp_source.html#l00005">actor.cpp:5</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi Février 7 2015 18:41:49 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi 7 Février 2015 20:23:20 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.7.6.1
+</a> 1.8.6
 </small></address>
-
 </body>
 </html>

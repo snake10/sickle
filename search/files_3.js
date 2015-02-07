@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['viewport_2ecpp',['viewport.cpp',['../viewport_8cpp.html',1,'']]],
-  ['viewport_2ehpp',['viewport.hpp',['../viewport_8hpp.html',1,'']]]
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mainwindow_2ecpp',['mainwindow.cpp',['../mainwindow_8cpp.html',1,'']]],
+  ['mainwindow_2ehpp',['mainwindow.hpp',['../mainwindow_8hpp.html',1,'']]]
 ];

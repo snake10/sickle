@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getter',['getter',['../globals_8hpp.html#a3dac0e38604eb1630b823e47acfc062c',1,'globals.hpp']]]
+  ['file_5fmagic',['FILE_MAGIC',['../globals_8hpp.html#affcbaaa11cf85575200e4a78d1befe7c',1,'globals.hpp']]]
 ];

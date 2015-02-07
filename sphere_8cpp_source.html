@@ -3,50 +3,43 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
 <title>Sickle:  Fichier source de src/sphere.cpp</title>
-
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
-
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div id="top"><!-- do not remove this div! -->
-
-
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  
-  
   <td style="padding-left: 0.5em;">
    <div id="projectname">Sickle
    &#160;<span id="projectnumber">0.1</span>
    </div>
    <div id="projectbrief">L&#39;editeur de monde du proletariat</div>
   </td>
-  
-  
-  
  </tr>
  </tbody>
 </table>
 </div>
-
-<!-- Généré par Doxygen 1.7.6.1 -->
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
@@ -74,102 +67,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
       <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
-</div>
-<div class="header">
-  <div class="headertitle">
-<div class="title">src/sphere.cpp</div>  </div>
-</div><!--header-->
-<div class="contents">
-<a href="sphere_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// Copyright 2015 PsychoLama</span>
-<a name="l00002"></a>00002 
-<a name="l00003"></a>00003 <span class="preprocessor">#include &lt;<a class="code" href="sphere_8hpp.html">sphere.hpp</a>&gt;</span>
-<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;QtMath&gt;</span>
-<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;vector&gt;</span>
-<a name="l00006"></a>00006 
-<a name="l00007"></a>00007 <span class="keyword">template</span>&lt;&gt;
-<a name="l00008"></a>00008 <span class="keywordtype">int</span> <a class="code" href="class_geometry.html#a2a4b5cc631647df7085c635d591313f2">Sphere::tBase::s_instances</a> = 0;
-<a name="l00009"></a>00009 
-<a name="l00010"></a><a class="code" href="class_sphere.html#ad1e284dc3aef66be0a3962e82d3c9e60">00010</a> <a class="code" href="class_sphere.html#ad1e284dc3aef66be0a3962e82d3c9e60">Sphere::Sphere</a>(QObject* parent) : <a class="code" href="class_geometry.html" title="Base de toutes les géometries.">Geometry</a>(parent) {
-<a name="l00011"></a>00011     setObjectName(QString(tr(<span class="stringliteral">&quot;Sphere %1&quot;</span>)).arg(<a class="code" href="class_geometry.html#a2a4b5cc631647df7085c635d591313f2">Sphere::tBase::s_instances</a>));
-<a name="l00012"></a>00012     <a class="code" href="class_sphere.html#ac54dccbd4df8621f36515bc4103d4c4f">colors</a>({
-<a name="l00013"></a>00013         QColor(1, 0, 0)
-<a name="l00014"></a>00014     });
-<a name="l00015"></a>00015 }
-<a name="l00016"></a>00016 
-<a name="l00017"></a>00017 <span class="keyword">template</span>&lt;&gt;
-<a name="l00018"></a>00018 QOpenGLVertexArrayObject* <a class="code" href="class_geometry.html#aaae8aa56fe2e045444a81c2cedb3da24">Sphere::tBase::s_vao</a> = <span class="keyword">nullptr</span>;
-<a name="l00019"></a>00019 <span class="keyword">template</span>&lt;&gt;
-<a name="l00020"></a>00020 QOpenGLShaderProgram* <a class="code" href="class_geometry.html#abfdbbbd3be20c6b735930ffcf7343123">Sphere::tBase::s_program</a> = <span class="keyword">nullptr</span>;
-<a name="l00021"></a>00021 <span class="keyword">template</span>&lt;&gt;
-<a name="l00022"></a>00022 QOpenGLBuffer* <a class="code" href="class_geometry.html#a257b35064612dbe4c87a251e7fe8985a">Sphere::tBase::s_vertexBuffer</a> = <span class="keyword">nullptr</span>;
-<a name="l00023"></a>00023 <span class="keyword">template</span>&lt;&gt;
-<a name="l00024"></a>00024 QOpenGLBuffer* <a class="code" href="class_geometry.html#a3f19c8c3670ffaa2124ec53ebe67708d">Sphere::tBase::s_colorBuffer</a> = <span class="keyword">nullptr</span>;
-<a name="l00025"></a>00025 <span class="keyword">template</span>&lt;&gt;
-<a name="l00026"></a>00026 QOpenGLBuffer* <a class="code" href="class_geometry.html#a61ceb9d088b03512f32acf59d7d19526">Sphere::tBase::s_indexBuffer</a> = <span class="keyword">nullptr</span>;
-<a name="l00027"></a>00027 
-<a name="l00028"></a><a class="code" href="sphere_8cpp.html#a1eb100bca171d873467834d9261c273f">00028</a> std::vector&lt;GLfloat&gt; <a class="code" href="sphere_8cpp.html#a1eb100bca171d873467834d9261c273f">calcVertices</a>(quint32 rings, quint32 sectors) {
-<a name="l00029"></a>00029     <span class="keyword">const</span> <span class="keyword">auto</span> R = 1. / (qreal)(rings - 1);
-<a name="l00030"></a>00030     <span class="keyword">const</span> <span class="keyword">auto</span> S = 1. / (qreal)(sectors - 1);
-<a name="l00031"></a>00031     std::vector&lt;GLfloat&gt; vertices;
-<a name="l00032"></a>00032     vertices.resize(rings * sectors * 3);
-<a name="l00033"></a>00033 
-<a name="l00034"></a>00034     <span class="keyword">auto</span> v = vertices.begin();
-<a name="l00035"></a>00035     <span class="keywordflow">for</span> (quint32 r = 0; r &lt; rings; r++) <span class="keywordflow">for</span> (quint32 s = 0; s &lt; sectors; s++) {
-<a name="l00036"></a>00036         <span class="keywordtype">float</span> <span class="keyword">const</span> y = qSin(-M_PI_2 + M_PI * r * R);
-<a name="l00037"></a>00037         <span class="keywordtype">float</span> <span class="keyword">const</span> x = qCos(2 * M_PI * s * S) * qSin(M_PI * r * R);
-<a name="l00038"></a>00038         <span class="keywordtype">float</span> <span class="keyword">const</span> z = qSin(2 * M_PI * s * S) * qSin(M_PI * r * R);
-<a name="l00039"></a>00039         *v++ = x;
-<a name="l00040"></a>00040         *v++ = y;
-<a name="l00041"></a>00041         *v++ = z;
-<a name="l00042"></a>00042     }
-<a name="l00043"></a>00043 
-<a name="l00044"></a>00044     <span class="keywordflow">return</span> vertices;
-<a name="l00045"></a>00045 }
-<a name="l00046"></a>00046 
-<a name="l00047"></a>00047 <span class="keyword">template</span>&lt;&gt;
-<a name="l00048"></a>00048 std::vector&lt;GLfloat&gt; <a class="code" href="class_geometry.html#a41c54fb8aefc934e3cf9ad4fa49735af">Sphere::tBase::s_vertices</a> = <a class="code" href="sphere_8cpp.html#a1eb100bca171d873467834d9261c273f">calcVertices</a>(12, 24);
-<a name="l00049"></a>00049 
-<a name="l00050"></a><a class="code" href="sphere_8cpp.html#a42a3fcea7b206ddd3cd8e0dde9c495ca">00050</a> std::vector&lt;quint32&gt; <a class="code" href="sphere_8cpp.html#a42a3fcea7b206ddd3cd8e0dde9c495ca">calcIndices</a>(quint32 rings, quint32 sectors) {
-<a name="l00051"></a>00051     std::vector&lt;quint32&gt; indices;
-<a name="l00052"></a>00052     indices.resize(rings * sectors * 6);
-<a name="l00053"></a>00053     <span class="keyword">auto</span> i = indices.begin();
-<a name="l00054"></a>00054     <span class="keywordflow">for</span> (quint32 r = 0; r &lt; rings; r++) <span class="keywordflow">for</span> (quint32 s = 0; s &lt; sectors; s++) {
-<a name="l00055"></a>00055         <span class="keyword">auto</span> curRow = r * sectors;
-<a name="l00056"></a>00056         <span class="keyword">auto</span> nextRow = (r+1) * sectors;
-<a name="l00057"></a>00057         *i++ = curRow + s;
-<a name="l00058"></a>00058         *i++ = nextRow + s;
-<a name="l00059"></a>00059         *i++ = nextRow + (s + 1);
-<a name="l00060"></a>00060         *i++ = curRow + s;
-<a name="l00061"></a>00061         *i++ = nextRow + (s + 1);
-<a name="l00062"></a>00062         *i++ = curRow + (s + 1);
-<a name="l00063"></a>00063     }
-<a name="l00064"></a>00064     <span class="keywordflow">return</span> indices;
-<a name="l00065"></a>00065 }
-<a name="l00066"></a>00066 
-<a name="l00067"></a>00067 <span class="keyword">template</span>&lt;&gt;
-<a name="l00068"></a>00068 std::vector&lt;quint32&gt; <a class="code" href="class_geometry.html#ae57dd4ba2f4c00da05cde6b2cb3bf32e">Sphere::tBase::s_indices</a> = <a class="code" href="sphere_8cpp.html#a42a3fcea7b206ddd3cd8e0dde9c495ca">calcIndices</a>(12, 24);
-<a name="l00069"></a>00069 
-<a name="l00070"></a><a class="code" href="sphere_8cpp.html#a017d22d74055c5711f743510aaf307e1">00070</a> std::vector&lt;GLfloat&gt; <a class="code" href="sphere_8cpp.html#a017d22d74055c5711f743510aaf307e1">calcColors</a>(quint32 rings, quint32 sectors) {
-<a name="l00071"></a>00071     std::vector&lt;GLfloat&gt; colors;
-<a name="l00072"></a>00072     colors.resize(rings * sectors * 3);
-<a name="l00073"></a>00073     <span class="keyword">auto</span> c = colors.begin();
-<a name="l00074"></a>00074     <span class="keywordflow">for</span> (quint32 r = 0; r &lt; rings; r++) <span class="keywordflow">for</span> (quint32 s = 0; s &lt; sectors; s++) {
-<a name="l00075"></a>00075         *c++ = 1.0f;
-<a name="l00076"></a>00076         *c++ = 0.0f;
-<a name="l00077"></a>00077         *c++ = 0.0f;
-<a name="l00078"></a>00078     }
-<a name="l00079"></a>00079     <span class="keywordflow">return</span> colors;
-<a name="l00080"></a>00080 }
-<a name="l00081"></a>00081 
-<a name="l00082"></a>00082 <span class="keyword">template</span>&lt;&gt;
-<a name="l00083"></a>00083 std::vector&lt;GLfloat&gt; <a class="code" href="class_geometry.html#aa2466cd114bf4c4c6ba27ba75aac9e65">Sphere::tBase::s_colors</a> = <a class="code" href="sphere_8cpp.html#a017d22d74055c5711f743510aaf307e1">calcColors</a>(12, 24);
-</pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -178,13 +81,121 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </iframe>
 </div>
 
-
-
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">sphere.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="sphere_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2015 PsychoLama</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="sphere_8hpp.html">sphere.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QtMath&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_geometry.html#a2a4b5cc631647df7085c635d591313f2">Sphere::tBase::s_instances</a> = 0;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_sphere.html#ad1e284dc3aef66be0a3962e82d3c9e60">   10</a></span>&#160;<a class="code" href="class_sphere.html#ad1e284dc3aef66be0a3962e82d3c9e60">Sphere::Sphere</a>(<a class="code" href="class_q_object.html">QObject</a>* parent) : <a class="code" href="class_geometry.html">Geometry</a>(parent) {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    setObjectName(QString(tr(<span class="stringliteral">&quot;Sphere %1&quot;</span>)).arg(<a class="code" href="class_geometry.html#a2a4b5cc631647df7085c635d591313f2">Sphere::tBase::s_instances</a>));</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    colors({</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        QColor(1, 0, 0)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    });</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;QOpenGLVertexArrayObject* <a class="code" href="class_geometry.html#aaae8aa56fe2e045444a81c2cedb3da24">Sphere::tBase::s_vao</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;QOpenGLShaderProgram* <a class="code" href="class_geometry.html#abfdbbbd3be20c6b735930ffcf7343123">Sphere::tBase::s_program</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;QOpenGLBuffer* <a class="code" href="class_geometry.html#a257b35064612dbe4c87a251e7fe8985a">Sphere::tBase::s_vertexBuffer</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;QOpenGLBuffer* <a class="code" href="class_geometry.html#a3f19c8c3670ffaa2124ec53ebe67708d">Sphere::tBase::s_colorBuffer</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;QOpenGLBuffer* <a class="code" href="class_geometry.html#a61ceb9d088b03512f32acf59d7d19526">Sphere::tBase::s_indexBuffer</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="sphere_8cpp.html#a1eb100bca171d873467834d9261c273f">   28</a></span>&#160;std::vector&lt;GLfloat&gt; <a class="code" href="sphere_8cpp.html#a1eb100bca171d873467834d9261c273f">calcVertices</a>(quint32 rings, quint32 sectors) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> R = 1. / (qreal)(rings - 1);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> S = 1. / (qreal)(sectors - 1);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::vector&lt;GLfloat&gt; vertices;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    vertices.resize(rings * sectors * 3);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">auto</span> v = vertices.begin();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">for</span> (quint32 r = 0; r &lt; rings; r++) <span class="keywordflow">for</span> (quint32 s = 0; s &lt; sectors; s++) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">float</span> <span class="keyword">const</span> y = qSin(-M_PI_2 + M_PI * r * R);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">float</span> <span class="keyword">const</span> x = qCos(2 * M_PI * s * S) * qSin(M_PI * r * R);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">float</span> <span class="keyword">const</span> z = qSin(2 * M_PI * s * S) * qSin(M_PI * r * R);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        *v++ = x;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        *v++ = y;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        *v++ = z;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> vertices;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="sphere_8cpp.html#a42a3fcea7b206ddd3cd8e0dde9c495ca">   47</a></span>&#160;std::vector&lt;quint32&gt; <a class="code" href="sphere_8cpp.html#a42a3fcea7b206ddd3cd8e0dde9c495ca">calcIndices</a>(quint32 rings, quint32 sectors) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::vector&lt;quint32&gt; indices;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    indices.resize(rings * sectors * 6);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">auto</span> i = indices.begin();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span> (quint32 r = 0; r &lt; rings; r++) <span class="keywordflow">for</span> (quint32 s = 0; s &lt; sectors; s++) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">auto</span> currRow = r * sectors;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">auto</span> nextRow = (r+1) * sectors;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        *i++ = nextRow + s;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        *i++ = currRow + (s + 1);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        *i++ = currRow + s;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        *i++ = nextRow + (s + 1);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        *i++ = currRow + (s + 1);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        *i++ = nextRow + s;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> indices;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="sphere_8cpp.html#a017d22d74055c5711f743510aaf307e1">   66</a></span>&#160;std::vector&lt;GLfloat&gt; <a class="code" href="sphere_8cpp.html#a017d22d74055c5711f743510aaf307e1">calcColors</a>(quint32 rings, quint32 sectors) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::vector&lt;GLfloat&gt; colors;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    colors.resize(rings * sectors * 3);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">auto</span> c = colors.begin();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">for</span> (quint32 r = 0; r &lt; rings; r++) <span class="keywordflow">for</span> (quint32 s = 0; s &lt; sectors; s++) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        *c++ = 1.0f;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        *c++ = 0.0f;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        *c++ = 0.0f;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> colors;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;std::vector&lt;GLfloat&gt; <a class="code" href="class_geometry.html#a41c54fb8aefc934e3cf9ad4fa49735af">Sphere::tBase::s_vertices</a> = <a class="code" href="sphere_8cpp.html#a1eb100bca171d873467834d9261c273f">calcVertices</a>(12, 24);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;std::vector&lt;quint32&gt; <a class="code" href="class_geometry.html#ae57dd4ba2f4c00da05cde6b2cb3bf32e">Sphere::tBase::s_indices</a> = <a class="code" href="sphere_8cpp.html#a42a3fcea7b206ddd3cd8e0dde9c495ca">calcIndices</a>(12, 24);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;std::vector&lt;GLfloat&gt; <a class="code" href="class_geometry.html#aa2466cd114bf4c4c6ba27ba75aac9e65">Sphere::tBase::s_colors</a> = <a class="code" href="sphere_8cpp.html#a017d22d74055c5711f743510aaf307e1">calcColors</a>(12, 24);</div>
+<div class="ttc" id="class_geometry_html_aa2466cd114bf4c4c6ba27ba75aac9e65"><div class="ttname"><a href="class_geometry.html#aa2466cd114bf4c4c6ba27ba75aac9e65">Geometry&lt; Sphere &gt;::s_colors</a></div><div class="ttdeci">static std::vector&lt; GLfloat &gt; s_colors</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00125">geometry.hpp:125</a></div></div>
+<div class="ttc" id="class_geometry_html_a257b35064612dbe4c87a251e7fe8985a"><div class="ttname"><a href="class_geometry.html#a257b35064612dbe4c87a251e7fe8985a">Geometry&lt; Sphere &gt;::s_vertexBuffer</a></div><div class="ttdeci">static QOpenGLBuffer * s_vertexBuffer</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00121">geometry.hpp:121</a></div></div>
+<div class="ttc" id="sphere_8cpp_html_a42a3fcea7b206ddd3cd8e0dde9c495ca"><div class="ttname"><a href="sphere_8cpp.html#a42a3fcea7b206ddd3cd8e0dde9c495ca">calcIndices</a></div><div class="ttdeci">std::vector&lt; quint32 &gt; calcIndices(quint32 rings, quint32 sectors)</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8cpp_source.html#l00047">sphere.cpp:47</a></div></div>
+<div class="ttc" id="sphere_8cpp_html_a1eb100bca171d873467834d9261c273f"><div class="ttname"><a href="sphere_8cpp.html#a1eb100bca171d873467834d9261c273f">calcVertices</a></div><div class="ttdeci">std::vector&lt; GLfloat &gt; calcVertices(quint32 rings, quint32 sectors)</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8cpp_source.html#l00028">sphere.cpp:28</a></div></div>
+<div class="ttc" id="class_geometry_html_aaae8aa56fe2e045444a81c2cedb3da24"><div class="ttname"><a href="class_geometry.html#aaae8aa56fe2e045444a81c2cedb3da24">Geometry&lt; Sphere &gt;::s_vao</a></div><div class="ttdeci">static QOpenGLVertexArrayObject * s_vao</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00120">geometry.hpp:120</a></div></div>
+<div class="ttc" id="class_geometry_html"><div class="ttname"><a href="class_geometry.html">Geometry</a></div><div class="ttdoc">Base de toutes les géometries. </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00026">geometry.hpp:26</a></div></div>
+<div class="ttc" id="class_geometry_html_a61ceb9d088b03512f32acf59d7d19526"><div class="ttname"><a href="class_geometry.html#a61ceb9d088b03512f32acf59d7d19526">Geometry&lt; Sphere &gt;::s_indexBuffer</a></div><div class="ttdeci">static QOpenGLBuffer * s_indexBuffer</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00123">geometry.hpp:123</a></div></div>
+<div class="ttc" id="class_geometry_html_a3f19c8c3670ffaa2124ec53ebe67708d"><div class="ttname"><a href="class_geometry.html#a3f19c8c3670ffaa2124ec53ebe67708d">Geometry&lt; Sphere &gt;::s_colorBuffer</a></div><div class="ttdeci">static QOpenGLBuffer * s_colorBuffer</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00122">geometry.hpp:122</a></div></div>
+<div class="ttc" id="class_geometry_html_ae57dd4ba2f4c00da05cde6b2cb3bf32e"><div class="ttname"><a href="class_geometry.html#ae57dd4ba2f4c00da05cde6b2cb3bf32e">Geometry&lt; Sphere &gt;::s_indices</a></div><div class="ttdeci">static std::vector&lt; quint32 &gt; s_indices</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00126">geometry.hpp:126</a></div></div>
+<div class="ttc" id="class_geometry_html_abfdbbbd3be20c6b735930ffcf7343123"><div class="ttname"><a href="class_geometry.html#abfdbbbd3be20c6b735930ffcf7343123">Geometry&lt; Sphere &gt;::s_program</a></div><div class="ttdeci">static QOpenGLShaderProgram * s_program</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00119">geometry.hpp:119</a></div></div>
+<div class="ttc" id="sphere_8cpp_html_a017d22d74055c5711f743510aaf307e1"><div class="ttname"><a href="sphere_8cpp.html#a017d22d74055c5711f743510aaf307e1">calcColors</a></div><div class="ttdeci">std::vector&lt; GLfloat &gt; calcColors(quint32 rings, quint32 sectors)</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8cpp_source.html#l00066">sphere.cpp:66</a></div></div>
+<div class="ttc" id="class_q_object_html"><div class="ttname"><a href="class_q_object.html">QObject</a></div></div>
+<div class="ttc" id="class_geometry_html_a41c54fb8aefc934e3cf9ad4fa49735af"><div class="ttname"><a href="class_geometry.html#a41c54fb8aefc934e3cf9ad4fa49735af">Geometry&lt; Sphere &gt;::s_vertices</a></div><div class="ttdeci">static std::vector&lt; GLfloat &gt; s_vertices</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00124">geometry.hpp:124</a></div></div>
+<div class="ttc" id="class_sphere_html_ad1e284dc3aef66be0a3962e82d3c9e60"><div class="ttname"><a href="class_sphere.html#ad1e284dc3aef66be0a3962e82d3c9e60">Sphere::Sphere</a></div><div class="ttdeci">Sphere(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="sphere_8cpp_source.html#l00010">sphere.cpp:10</a></div></div>
+<div class="ttc" id="class_geometry_html_a2a4b5cc631647df7085c635d591313f2"><div class="ttname"><a href="class_geometry.html#a2a4b5cc631647df7085c635d591313f2">Geometry&lt; Sphere &gt;::s_instances</a></div><div class="ttdeci">static int s_instances</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00118">geometry.hpp:118</a></div></div>
+<div class="ttc" id="sphere_8hpp_html"><div class="ttname"><a href="sphere_8hpp.html">sphere.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi Février 7 2015 18:41:49 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi 7 Février 2015 20:23:20 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.7.6.1
+</a> 1.8.6
 </small></address>
-
 </body>
 </html>

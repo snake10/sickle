@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['projection',['Projection',['../struct_draw_info.html#abc4f8bc2bd85c796731912929623e001',1,'DrawInfo']]]
+  ['mode',['mode',['../struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03',1,'DrawInfo']]]
 ];

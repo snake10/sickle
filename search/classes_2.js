@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['geometry',['Geometry',['../class_geometry.html',1,'']]],
-  ['group',['Group',['../class_group.html',1,'']]]
+  ['drawinfo',['DrawInfo',['../struct_draw_info.html',1,'']]]
 ];
