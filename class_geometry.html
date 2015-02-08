@@ -139,9 +139,10 @@ Fonctions membres protégées</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Fonctions membres protégées statiques</h2></td></tr>
-<tr class="memitem:a099a5282b39e88fef5601492e0d22ebf"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a099a5282b39e88fef5601492e0d22ebf"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570">noinline</a> QOpenGLBuffer *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_geometry.html#a099a5282b39e88fef5601492e0d22ebf">initBuffer</a> (QOpenGLBuffer::Type type, const std::vector&lt; T &gt; &amp;data)</td></tr>
-<tr class="separator:a099a5282b39e88fef5601492e0d22ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f42e98b617f4d758a79963385a58e3"><td class="memItemLeft" align="right" valign="top">static QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#ad5f42e98b617f4d758a79963385a58e3">triangle</a> (int id)</td></tr>
+<tr class="separator:ad5f42e98b617f4d758a79963385a58e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4389efcaf0828d36a5f7f08b201181"><td class="memItemLeft" align="right" valign="top">static QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#a3e4389efcaf0828d36a5f7f08b201181">vertex</a> (int id)</td></tr>
+<tr class="separator:a3e4389efcaf0828d36a5f7f08b201181"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b82901a9c731b4fb1e127f287b28394"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570">noinline</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#a7b82901a9c731b4fb1e127f287b28394">initProgram</a> (<a class="el" href="class_q_object.html">QObject</a> *parent)</td></tr>
 <tr class="memdesc:a7b82901a9c731b4fb1e127f287b28394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise les shaders et alloue les buffer.  <a href="#a7b82901a9c731b4fb1e127f287b28394">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a7b82901a9c731b4fb1e127f287b28394"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,14 +159,18 @@ Attributs protégés statiques</h2></td></tr>
 <tr class="separator:a257b35064612dbe4c87a251e7fe8985a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f19c8c3670ffaa2124ec53ebe67708d"><td class="memItemLeft" align="right" valign="top">static QOpenGLBuffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#a3f19c8c3670ffaa2124ec53ebe67708d">s_colorBuffer</a></td></tr>
 <tr class="separator:a3f19c8c3670ffaa2124ec53ebe67708d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d070dc1bbee73d84b2528954e8561f"><td class="memItemLeft" align="right" valign="top">static QOpenGLBuffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#ae4d070dc1bbee73d84b2528954e8561f">s_normalBuffer</a></td></tr>
+<tr class="separator:ae4d070dc1bbee73d84b2528954e8561f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61ceb9d088b03512f32acf59d7d19526"><td class="memItemLeft" align="right" valign="top">static QOpenGLBuffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#a61ceb9d088b03512f32acf59d7d19526">s_indexBuffer</a></td></tr>
 <tr class="separator:a61ceb9d088b03512f32acf59d7d19526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41c54fb8aefc934e3cf9ad4fa49735af"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; GLfloat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#a41c54fb8aefc934e3cf9ad4fa49735af">s_vertices</a></td></tr>
-<tr class="separator:a41c54fb8aefc934e3cf9ad4fa49735af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2466cd114bf4c4c6ba27ba75aac9e65"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; GLfloat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#aa2466cd114bf4c4c6ba27ba75aac9e65">s_colors</a></td></tr>
-<tr class="separator:aa2466cd114bf4c4c6ba27ba75aac9e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae57dd4ba2f4c00da05cde6b2cb3bf32e"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; quint32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#ae57dd4ba2f4c00da05cde6b2cb3bf32e">s_indices</a></td></tr>
-<tr class="separator:ae57dd4ba2f4c00da05cde6b2cb3bf32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a412bd134c12917d332183cfc80e658de"><td class="memItemLeft" align="right" valign="top">static QVector&lt; GLfloat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#a412bd134c12917d332183cfc80e658de">s_vertices</a></td></tr>
+<tr class="separator:a412bd134c12917d332183cfc80e658de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30266ede5f6071fcf15dfc6894c26b8e"><td class="memItemLeft" align="right" valign="top">static QVector&lt; GLfloat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#a30266ede5f6071fcf15dfc6894c26b8e">s_colors</a></td></tr>
+<tr class="separator:a30266ede5f6071fcf15dfc6894c26b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d900038727403c3fcbcd490b5288be"><td class="memItemLeft" align="right" valign="top">static QVector&lt; GLfloat &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#ad8d900038727403c3fcbcd490b5288be">s_normals</a></td></tr>
+<tr class="separator:ad8d900038727403c3fcbcd490b5288be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2c507886aa0a70500b12b5970a61e8"><td class="memItemLeft" align="right" valign="top">static QVector&lt; quint32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometry.html#ace2c507886aa0a70500b12b5970a61e8">s_indices</a></td></tr>
+<tr class="separator:ace2c507886aa0a70500b12b5970a61e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><h3>template&lt;typename Child&gt;<br/>
@@ -241,46 +246,6 @@ template&lt;typename Child&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a099a5282b39e88fef5601492e0d22ebf"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Child&gt; </div>
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570">noinline</a> QOpenGLBuffer* <a class="el" href="class_geometry.html">Geometry</a>&lt; Child &gt;::initBuffer </td>
-          <td>(</td>
-          <td class="paramtype">QOpenGLBuffer::Type&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00046">46</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a7b82901a9c731b4fb1e127f287b28394"></a>
 <div class="memitem">
 <div class="memproto">
@@ -308,7 +273,7 @@ template&lt;typename Child&gt; </div>
 <p>Initialise les shaders et alloue les buffer. </p>
 <p>Cette méthode statique est appelée par le constructeur de toutes les classes enfant de <a class="el" href="class_geometry.html" title="Base de toutes les géometries. ">Geometry</a>. Elle n'est exécutée qu'une seule fois par classe gràce a un compteur d'instances. Cela permet de n'utiliser qu'un couple shader / buffer pour l'ensemble des géometries d'une même classe. Elle DOIT se trouver dans le header pour permettre au template d'être parsé corectement. </p>
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00065">65</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00071">71</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -348,6 +313,62 @@ template&lt;typename Child&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ad5f42e98b617f4d758a79963385a58e3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Child&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static QVector3D <a class="el" href="class_geometry.html">Geometry</a>&lt; Child &gt;::triangle </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00050">50</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e4389efcaf0828d36a5f7f08b201181"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Child&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static QVector3D <a class="el" href="class_geometry.html">Geometry</a>&lt; Child &gt;::vertex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00057">57</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Documentation des données membres</h2>
 <a class="anchor" id="a3f19c8c3670ffaa2124ec53ebe67708d"></a>
 <div class="memitem">
@@ -369,11 +390,11 @@ template&lt;typename Child&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00122">122</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00141">141</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa2466cd114bf4c4c6ba27ba75aac9e65"></a>
+<a class="anchor" id="a30266ede5f6071fcf15dfc6894c26b8e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -383,7 +404,7 @@ template&lt;typename Child&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;GLfloat&gt; <a class="el" href="class_geometry.html">Geometry</a>&lt; Child &gt;::s_colors</td>
+          <td class="memname">QVector&lt;GLfloat&gt; <a class="el" href="class_geometry.html">Geometry</a>&lt; Child &gt;::s_colors</td>
         </tr>
       </table>
   </td>
@@ -393,7 +414,7 @@ template&lt;typename Child&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00125">125</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00145">145</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -417,11 +438,11 @@ template&lt;typename Child&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00123">123</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00143">143</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae57dd4ba2f4c00da05cde6b2cb3bf32e"></a>
+<a class="anchor" id="ace2c507886aa0a70500b12b5970a61e8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -431,7 +452,7 @@ template&lt;typename Child&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;quint32&gt; <a class="el" href="class_geometry.html">Geometry</a>&lt; Child &gt;::s_indices</td>
+          <td class="memname">QVector&lt;quint32&gt; <a class="el" href="class_geometry.html">Geometry</a>&lt; Child &gt;::s_indices</td>
         </tr>
       </table>
   </td>
@@ -441,7 +462,7 @@ template&lt;typename Child&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00126">126</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00147">147</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -465,7 +486,55 @@ template&lt;typename Child&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00118">118</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00137">137</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4d070dc1bbee73d84b2528954e8561f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Child&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QOpenGLBuffer* <a class="el" href="class_geometry.html">Geometry</a>&lt; Child &gt;::s_normalBuffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00142">142</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8d900038727403c3fcbcd490b5288be"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Child&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;GLfloat&gt; <a class="el" href="class_geometry.html">Geometry</a>&lt; Child &gt;::s_normals</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00146">146</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -489,7 +558,7 @@ template&lt;typename Child&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00119">119</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00138">138</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -513,7 +582,7 @@ template&lt;typename Child&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00120">120</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00139">139</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -537,11 +606,11 @@ template&lt;typename Child&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00121">121</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00140">140</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a41c54fb8aefc934e3cf9ad4fa49735af"></a>
+<a class="anchor" id="a412bd134c12917d332183cfc80e658de"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -551,7 +620,7 @@ template&lt;typename Child&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;GLfloat&gt; <a class="el" href="class_geometry.html">Geometry</a>&lt; Child &gt;::s_vertices</td>
+          <td class="memname">QVector&lt;GLfloat&gt; <a class="el" href="class_geometry.html">Geometry</a>&lt; Child &gt;::s_vertices</td>
         </tr>
       </table>
   </td>
@@ -561,7 +630,7 @@ template&lt;typename Child&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00124">124</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00144">144</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -571,7 +640,7 @@ template&lt;typename Child&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi 7 Février 2015 20:23:20 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Dimanche 8 Février 2015 14:53:00 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
