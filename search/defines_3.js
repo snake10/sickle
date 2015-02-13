@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['noinline',['noinline',['../globals_8hpp.html#afb04fed0d9040c896727b9326d634570',1,'globals.hpp']]]
+  ['getter',['getter',['../globals_8hpp.html#a3dac0e38604eb1630b823e47acfc062c',1,'globals.hpp']]]
 ];

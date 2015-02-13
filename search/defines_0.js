@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['declare',['declare',['../globals_8hpp.html#a9c59e4381c52e7f7ffe3b3f11eaf6675',1,'globals.hpp']]]
+  ['anim_5fdur',['ANIM_DUR',['../camera_8hpp.html#aa460173f1912a3a1c84ed469e1181c35',1,'camera.hpp']]]
 ];

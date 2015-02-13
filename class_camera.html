@@ -113,8 +113,6 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="separator:ae3aa4afd7a3d9ddc2bf710bc74dc293e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a331ca64e608858596deb5da25c357"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ad8a331ca64e608858596deb5da25c357">Camera</a> (<a class="el" href="class_camera.html">Camera</a> *copy)</td></tr>
 <tr class="separator:ad8a331ca64e608858596deb5da25c357"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1897942d0ccf91052386388a497349f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ad1897942d0ccf91052386388a497349f">~Camera</a> ()</td></tr>
-<tr class="separator:ad1897942d0ccf91052386388a497349f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae068edc8a9da46c0062af05b2434fb63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ae068edc8a9da46c0062af05b2434fb63">resetBias</a> ()</td></tr>
 <tr class="separator:ae068edc8a9da46c0062af05b2434fb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb1bda6df954268b8e0fc5531dafeca1"><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#adb1bda6df954268b8e0fc5531dafeca1">move</a> (QVector3D val)</td></tr>
@@ -127,8 +125,8 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="separator:a9936c788ad482b40b5a3548bf5e97247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af81adf3ba7f63429a9d5356c218da78f"><td class="memItemLeft" align="right" valign="top">QMatrix4x4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#af81adf3ba7f63429a9d5356c218da78f">view</a> ()</td></tr>
 <tr class="separator:af81adf3ba7f63429a9d5356c218da78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f05f8f991fadc2fd6cd8318122e5235"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a0f05f8f991fadc2fd6cd8318122e5235">velocity</a> (QVector3D v, int dur=0)</td></tr>
-<tr class="separator:a0f05f8f991fadc2fd6cd8318122e5235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600387791d90bfb6578ea050e3f60ae3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a600387791d90bfb6578ea050e3f60ae3">velocity</a> (QVector3D v, int dur=100)</td></tr>
+<tr class="separator:a600387791d90bfb6578ea050e3f60ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2af2534ff9206eb60054fc0a8ae30ac8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a2af2534ff9206eb60054fc0a8ae30ac8">propSig</a> (QVector3D, position, moved)</td></tr>
 <tr class="separator:a2af2534ff9206eb60054fc0a8ae30ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4cef89e781f5b3c8f2c975d7c9757fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#aa4cef89e781f5b3c8f2c975d7c9757fd">prop</a> (float, vAngle)</td></tr>
@@ -146,7 +144,7 @@ Fonctions membres publiques</h2></td></tr>
 <div class="textblock"><p>Gestion de la camera. </p>
 <p>Permet de calculer la matrice view d'une camera a partir de 2 angles (vertical et horizontal) et une position. Les propriétés bias permettent de déclaer les angles pour eviter que la caméra ne retourne a son point de départ lorsque l'utilisateur la tourne. La propriété speed correspond a la vitesse de déplacement de la caméra. </p>
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00020">20</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00026">26</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="ae3aa4afd7a3d9ddc2bf710bc74dc293e"></a>
 <div class="memitem">
@@ -200,23 +198,6 @@ Fonctions membres publiques</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad1897942d0ccf91052386388a497349f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Camera::~Camera </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00019">19</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
 <a class="anchor" id="a7276761c5214ec94f6ac35e5804f6719"></a>
 <div class="memitem">
@@ -231,7 +212,7 @@ Fonctions membres publiques</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00035">35</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00032">32</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -249,7 +230,7 @@ Fonctions membres publiques</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00027">27</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00024">24</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -428,7 +409,7 @@ Fonctions membres publiques</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00022">22</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00019">19</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -445,7 +426,7 @@ Fonctions membres publiques</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00031">31</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00028">28</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -462,16 +443,13 @@ Fonctions membres publiques</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00039">39</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00036">36</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0f05f8f991fadc2fd6cd8318122e5235"></a>
+<a class="anchor" id="a600387791d90bfb6578ea050e3f60ae3"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Camera::velocity </td>
@@ -483,7 +461,7 @@ Fonctions membres publiques</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dur</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>dur</em> = <code>100</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -491,14 +469,9 @@ Fonctions membres publiques</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00033">33</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00040">40</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -515,7 +488,7 @@ Fonctions membres publiques</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00043">43</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00048">48</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -526,7 +499,7 @@ Fonctions membres publiques</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Dimanche 8 Février 2015 14:53:00 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Vendredi 13 Février 2015 18:10:17 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

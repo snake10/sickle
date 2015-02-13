@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['setter',['setter',['../globals_8hpp.html#ae5093ebfe19de9457dd90298ce5aed2e',1,'globals.hpp']]],
-  ['setterbase',['setterBase',['../globals_8hpp.html#aab8d0b41524556265ce434b802a3337d',1,'globals.hpp']]],
-  ['settersig',['setterSig',['../globals_8hpp.html#aaee98f184e3c8496d8198325f04443dc',1,'globals.hpp']]]
+  ['prop',['prop',['../globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008',1,'globals.hpp']]],
+  ['propbase',['propBase',['../globals_8hpp.html#a2f4101a13cfefe3f12e4e9564e8449e0',1,'globals.hpp']]],
+  ['propro',['propRO',['../globals_8hpp.html#a7a7a329bd886bfad24c015a3a776d74d',1,'globals.hpp']]],
+  ['propsig',['propSig',['../globals_8hpp.html#a3817105a974eac78f8920257881698a4',1,'globals.hpp']]]
 ];
