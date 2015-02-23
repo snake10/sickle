@@ -196,7 +196,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keyword">auto</span> value = qvariant_cast&lt;QVector3D&gt;(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008">prop</a>);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keyword">auto</span> vector = <span class="keyword">new</span> QVector3D(value);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keyword">auto</span> label = <span class="keyword">new</span> QLabel(<a class="code" href="mainwindow_8cpp.html#a44233f9cd2c7740a27db2cb9bcdc51b2">toString</a>(*vector));</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            QString axis[] = {<span class="stringliteral">&quot;X&quot;</span>, <span class="stringliteral">&quot;Y&quot;</span>, <span class="stringliteral">&quot;Z&quot;</span>};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keyword">const</span> QString axis[] = {<span class="stringliteral">&quot;X&quot;</span>, <span class="stringliteral">&quot;Y&quot;</span>, <span class="stringliteral">&quot;Z&quot;</span>};</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keyword">auto</span> item = <span class="keyword">new</span> QTreeWidgetItem;</div>
@@ -260,7 +260,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keyword">auto</span> quat = <span class="keyword">new</span> QQuaternion(value);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keyword">auto</span> vector = <a class="code" href="mainwindow_8cpp.html#a3ed8a1338f74af6075250d4bb6755364">toEuler</a>(*quat);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keyword">auto</span> label = <span class="keyword">new</span> QLabel(<a class="code" href="mainwindow_8cpp.html#a44233f9cd2c7740a27db2cb9bcdc51b2">toString</a>(*vector));</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            QString axis[] = {<span class="stringliteral">&quot;Pitch&quot;</span>, <span class="stringliteral">&quot;Yaw&quot;</span>, <span class="stringliteral">&quot;Roll&quot;</span>};</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keyword">const</span> QString axis[] = {<span class="stringliteral">&quot;Pitch&quot;</span>, <span class="stringliteral">&quot;Yaw&quot;</span>, <span class="stringliteral">&quot;Roll&quot;</span>};</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <span class="keyword">auto</span> item = <span class="keyword">new</span> QTreeWidgetItem;</div>
@@ -377,7 +377,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Vendredi 13 Février 2015 18:10:17 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi 23 Février 2015 12:45:05 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

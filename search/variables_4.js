@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['s_5fbitangentbuffer',['s_bitangentBuffer',['../class_geometry.html#a5e0773bba791d63960b97aee4c39db07',1,'Geometry']]],
+  ['s_5fbitangents',['s_bitangents',['../class_geometry.html#a264844784f7f6e323c8647b637196750',1,'Geometry']]],
   ['s_5fcolorbuffer',['s_colorBuffer',['../class_geometry.html#a3f19c8c3670ffaa2124ec53ebe67708d',1,'Geometry']]],
   ['s_5fcolors',['s_colors',['../class_geometry.html#a30266ede5f6071fcf15dfc6894c26b8e',1,'Geometry']]],
   ['s_5findexbuffer',['s_indexBuffer',['../class_geometry.html#a61ceb9d088b03512f32acf59d7d19526',1,'Geometry']]],
@@ -8,6 +10,10 @@ var searchData=
   ['s_5fnormalbuffer',['s_normalBuffer',['../class_geometry.html#ae4d070dc1bbee73d84b2528954e8561f',1,'Geometry']]],
   ['s_5fnormals',['s_normals',['../class_geometry.html#ad8d900038727403c3fcbcd490b5288be',1,'Geometry']]],
   ['s_5fprogram',['s_program',['../class_geometry.html#abfdbbbd3be20c6b735930ffcf7343123',1,'Geometry']]],
+  ['s_5ftangentbuffer',['s_tangentBuffer',['../class_geometry.html#a7b83ebb2b03aa6988a85a7c9c32c9e8d',1,'Geometry']]],
+  ['s_5ftangents',['s_tangents',['../class_geometry.html#a39c604ccc49fdc8f9371677636a2ec47',1,'Geometry']]],
+  ['s_5fuv',['s_uv',['../class_geometry.html#acae9da124a979f88d13e23302ca294b7',1,'Geometry']]],
+  ['s_5fuvbuffer',['s_UVBuffer',['../class_geometry.html#ae0fdc04693f7a951776a5d5c2776bda0',1,'Geometry']]],
   ['s_5fvao',['s_vao',['../class_geometry.html#aaae8aa56fe2e045444a81c2cedb3da24',1,'Geometry']]],
   ['s_5fvertexbuffer',['s_vertexBuffer',['../class_geometry.html#a257b35064612dbe4c87a251e7fe8985a',1,'Geometry']]],
   ['s_5fvertices',['s_vertices',['../class_geometry.html#a412bd134c12917d332183cfc80e658de',1,'Geometry']]],
