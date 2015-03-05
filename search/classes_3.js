@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fileloaderinterface',['FileLoaderInterface',['../class_file_loader_interface.html',1,'']]]
+  ['fileloader',['FileLoader',['../class_file_loader.html',1,'']]]
 ];

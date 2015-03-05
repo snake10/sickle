@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Sickle: Référence de la classe QWidget</title>
+<title>Sickle: Référence de la classe FileLoader</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,27 +85,130 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="class_file_loader-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
-<div class="title">Référence de la classe QWidget</div>  </div>
+<div class="title">Référence de la classe FileLoader<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="globals_8hpp_source.html">globals.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Graphe d'héritage de QWidget:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_q_widget.png" usemap="#QWidget_map" alt=""/>
-  <map id="QWidget_map" name="QWidget_map">
-<area href="class_q_object.html" alt="QObject" shape="rect" coords="58,0,165,24"/>
-<area href="class_q_main_window.html" alt="QMainWindow" shape="rect" coords="0,112,107,136"/>
-<area href="class_q_open_g_l_widget.html" alt="QOpenGLWidget" shape="rect" coords="117,112,224,136"/>
-<area href="class_main_window.html" title="Fenetre principale. " alt="MainWindow" shape="rect" coords="0,168,107,192"/>
-<area href="class_viewport.html" title="Cadre de vue 3D. " alt="Viewport" shape="rect" coords="117,168,224,192"/>
-</map>
- </div></div>
+<p>Interface de gestion des fichiers.  
+ <a href="class_file_loader.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="fileloader_8hpp_source.html">fileloader.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a3e9444022cd5cc90535917ae3687c69e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_loader.html#a3e9444022cd5cc90535917ae3687c69e">~FileLoader</a> ()</td></tr>
+<tr class="separator:a3e9444022cd5cc90535917ae3687c69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7ec4b5e44b84b37fa75dffa5a5c78cf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_loader.html#ac7ec4b5e44b84b37fa75dffa5a5c78cf">save</a> (<a class="el" href="class_viewport.html">Viewport</a> *, const QString &amp;)=0</td></tr>
+<tr class="separator:ac7ec4b5e44b84b37fa75dffa5a5c78cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac40f8fd94ed92bff539c65eecb8a53f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_loader.html#aac40f8fd94ed92bff539c65eecb8a53f">load</a> (<a class="el" href="class_viewport.html">Viewport</a> *, const QString &amp;)=0</td></tr>
+<tr class="separator:aac40f8fd94ed92bff539c65eecb8a53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Interface de gestion des fichiers. </p>
+<p>Les classes implémentant cette interface permettent d'utiliser un certain format de fichier. </p>
+
+<p>Définition à la ligne <a class="el" href="fileloader_8hpp_source.html#l00015">15</a> du fichier <a class="el" href="fileloader_8hpp_source.html">fileloader.hpp</a>.</p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a3e9444022cd5cc90535917ae3687c69e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual FileLoader::~FileLoader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="fileloader_8hpp_source.html#l00017">17</a> du fichier <a class="el" href="fileloader_8hpp_source.html">fileloader.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="aac40f8fd94ed92bff539c65eecb8a53f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void FileLoader::load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_viewport.html">Viewport</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac7ec4b5e44b84b37fa75dffa5a5c78cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void FileLoader::save </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_viewport.html">Viewport</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
-<li>include/<a class="el" href="globals_8hpp_source.html">globals.hpp</a></li>
+<li>include/<a class="el" href="fileloader_8hpp_source.html">fileloader.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
