@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['viewport_2ecpp',['viewport.cpp',['../viewport_8cpp.html',1,'']]],
-  ['viewport_2ehpp',['viewport.hpp',['../viewport_8hpp.html',1,'']]]
+  ['sphere_2ecpp',['sphere.cpp',['../sphere_8cpp.html',1,'']]],
+  ['sphere_2ehpp',['sphere.hpp',['../sphere_8hpp.html',1,'']]]
 ];

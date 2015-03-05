@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Sickle: Référence du fichier include/viewport.hpp</title>
+<title>Sickle: Référence de la classe FileLoaderInterface</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -41,8 +41,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -63,8 +63,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
-      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="hierarchy.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -81,57 +83,79 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Fonctions</a>  </div>
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="class_file_loader_interface-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
-<div class="title">Référence du fichier viewport.hpp</div>  </div>
+<div class="title">Référence de la classe FileLoaderInterface<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;QOpenGLWidget&gt;</code><br/>
-<code>#include &lt;QOpenGLFunctions&gt;</code><br/>
-<code>#include &lt;QWheelEvent&gt;</code><br/>
-<code>#include &lt;QKeyEvent&gt;</code><br/>
-<code>#include &lt;<a class="el" href="camera_8hpp_source.html">camera.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="cube_8hpp_source.html">cube.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="sphere_8hpp_source.html">sphere.hpp</a>&gt;</code><br/>
-</div>
-<p><a href="viewport_8hpp_source.html">Aller au code source de ce fichier.</a></p>
+
+<p>Interface de gestion des fichiers.  
+ <a href="class_file_loader_interface.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="fileloader_8hpp_source.html">fileloader.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html">Viewport</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cadre de vue 3D.  <a href="class_viewport.html#details">Plus de détails...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Fonctions</h2></td></tr>
-<tr class="memitem:a01cf740c5e20abbb6aa4ccf17236cd8b"><td class="memItemLeft" align="right" valign="top">QDataStream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8hpp.html#a01cf740c5e20abbb6aa4ccf17236cd8b">operator&lt;&lt;</a> (QDataStream &amp;, const <a class="el" href="class_q_object.html">QObject</a> &amp;)</td></tr>
-<tr class="separator:a01cf740c5e20abbb6aa4ccf17236cd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48efbb80ebceb0d47fc8d9084562f597"><td class="memItemLeft" align="right" valign="top">QDataStream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewport_8hpp.html#a48efbb80ebceb0d47fc8d9084562f597">operator&gt;&gt;</a> (QDataStream &amp;, <a class="el" href="class_q_object.html">QObject</a> &amp;)</td></tr>
-<tr class="separator:a48efbb80ebceb0d47fc8d9084562f597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a8f5648d4e8d45788ee9fac9c9ccf44c3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_loader_interface.html#a8f5648d4e8d45788ee9fac9c9ccf44c3">~FileLoaderInterface</a> ()</td></tr>
+<tr class="separator:a8f5648d4e8d45788ee9fac9c9ccf44c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0acc42ff36918119849dae6ec514de2f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_loader_interface.html#a0acc42ff36918119849dae6ec514de2f">save</a> (<a class="el" href="class_viewport.html">Viewport</a> *, const QString &amp;)=0</td></tr>
+<tr class="separator:a0acc42ff36918119849dae6ec514de2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ac336cb46ff4f50d218ac760c22755"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_loader_interface.html#af5ac336cb46ff4f50d218ac760c22755">load</a> (<a class="el" href="class_viewport.html">Viewport</a> *, const QString &amp;)=0</td></tr>
+<tr class="separator:af5ac336cb46ff4f50d218ac760c22755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des fonctions</h2>
-<a class="anchor" id="a01cf740c5e20abbb6aa4ccf17236cd8b"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Interface de gestion des fichiers. </p>
+<p>Les classes implémentant cette interface permettent d'utiliser un certain format de fichier. </p>
+
+<p>Définition à la ligne <a class="el" href="fileloader_8hpp_source.html#l00015">15</a> du fichier <a class="el" href="fileloader_8hpp_source.html">fileloader.hpp</a>.</p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a8f5648d4e8d45788ee9fac9c9ccf44c3"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QDataStream&amp; operator&lt;&lt; </td>
+          <td class="memname">virtual FileLoaderInterface::~FileLoaderInterface </td>
           <td>(</td>
-          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="fileloader_8hpp_source.html#l00017">17</a> du fichier <a class="el" href="fileloader_8hpp_source.html">fileloader.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="af5ac336cb46ff4f50d218ac760c22755"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void FileLoaderInterface::load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_viewport.html">Viewport</a> *&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_q_object.html">QObject</a> &amp;&#160;</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -140,26 +164,32 @@ Fonctions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00140">140</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a48efbb80ebceb0d47fc8d9084562f597"></a>
+<a class="anchor" id="a0acc42ff36918119849dae6ec514de2f"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QDataStream&amp; operator&gt;&gt; </td>
+          <td class="memname">virtual void FileLoaderInterface::save </td>
           <td>(</td>
-          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_viewport.html">Viewport</a> *&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_q_object.html">QObject</a> &amp;&#160;</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -168,12 +198,18 @@ Fonctions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00150">150</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
-
 </div>
 </div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>include/<a class="el" href="fileloader_8hpp_source.html">fileloader.hpp</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
