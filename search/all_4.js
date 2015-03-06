@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['geobase',['GeoBase',['../class_geo_base.html',1,'GeoBase'],['../class_geo_base.html#a64d0302a4d85b1fe7946df7ebfaa2e33',1,'GeoBase::GeoBase()']]],
   ['geometry',['Geometry',['../class_geometry.html',1,'Geometry&lt; Child &gt;'],['../class_geometry.html#abd87f05d818b3653f856813b32677494',1,'Geometry::Geometry()']]],
   ['geometry_2ecpp',['geometry.cpp',['../geometry_8cpp.html',1,'']]],
   ['geometry_2ehpp',['geometry.hpp',['../geometry_8hpp.html',1,'']]],

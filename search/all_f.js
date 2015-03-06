@@ -17,7 +17,7 @@ var searchData=
   ['s_5fvao',['s_vao',['../class_geometry.html#aaae8aa56fe2e045444a81c2cedb3da24',1,'Geometry']]],
   ['s_5fvertexbuffer',['s_vertexBuffer',['../class_geometry.html#a257b35064612dbe4c87a251e7fe8985a',1,'Geometry']]],
   ['s_5fvertices',['s_vertices',['../class_geometry.html#a412bd134c12917d332183cfc80e658de',1,'Geometry']]],
-  ['save',['save',['../class_file_loader.html#ac7ec4b5e44b84b37fa75dffa5a5c78cf',1,'FileLoader']]],
+  ['save',['save',['../class_viewport.html#a94ce1a503f6e3c10d27e7289e6f8607c',1,'Viewport']]],
   ['sectors',['sectors',['../sphere_8cpp.html#a3222155a03a3c1c31e85081626b891cb',1,'sphere.cpp']]],
   ['setter',['setter',['../globals_8hpp.html#ae5093ebfe19de9457dd90298ce5aed2e',1,'globals.hpp']]],
   ['setterbase',['setterBase',['../globals_8hpp.html#aab8d0b41524556265ce434b802a3337d',1,'globals.hpp']]],

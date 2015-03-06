@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Sickle: Référence du fichier src/actor.cpp</title>
+<title>Sickle: Liste des membres</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -41,8 +41,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -63,8 +63,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
-      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="hierarchy.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -81,20 +83,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Référence du fichier actor.cpp</div>  </div>
+<div class="title">GeoBase Liste des membres</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="actor_8hpp_source.html">actor.hpp</a>&gt;</code><br/>
-</div>
-<p><a href="actor_8cpp_source.html">Aller au code source de ce fichier.</a></p>
-</div><!-- contents -->
+
+<p>Liste complète des membres de <a class="el" href="class_geo_base.html">GeoBase</a>, y compris les membres hérités :</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="class_actor.html#aa0fc674ef09b215b67ff2fff69b79459">Actor</a>(QObject *parent=nullptr)</td><td class="entry"><a class="el" href="class_actor.html">Actor</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_actor.html#aefb2c1d280c3db70df28a59b50a32294">Actor</a>(const Actor &amp;copy)</td><td class="entry"><a class="el" href="class_actor.html">Actor</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_actor.html#ac35dab598ae9f9a936418ec22fadf138">draw</a>(const DrawInfo &amp;info)=0</td><td class="entry"><a class="el" href="class_actor.html">Actor</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_geo_base.html#a64d0302a4d85b1fe7946df7ebfaa2e33">GeoBase</a>(QObject *parent=nullptr)</td><td class="entry"><a class="el" href="class_geo_base.html">GeoBase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_geo_base.html#acaef3fe091c47a85cdbb9defa841fc95">prop</a>(QVariantList, colors)</td><td class="entry"><a class="el" href="class_geo_base.html">GeoBase</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_geo_base.html#a5257d677aa614ba8f54a909ef1c8d745">prop</a>(QObject *, material)</td><td class="entry"><a class="el" href="class_geo_base.html">GeoBase</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_actor.html#a632a7a715b7182ff6718b0cd3857d0a6">propSig</a>(QVector3D, position, moved)</td><td class="entry"><a class="el" href="class_actor.html">Actor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_actor.html#a244be9efa347f87dac46dd4dc536767f">propSig</a>(QQuaternion, orientation, rotated)</td><td class="entry"><a class="el" href="class_actor.html">Actor</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_actor.html#aa2826ca2df8ea9b626fb3a0bd6799900">propSig</a>(QVector3D, scale, scaled)</td><td class="entry"><a class="el" href="class_actor.html">Actor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">transform</a>()</td><td class="entry"><a class="el" href="class_actor.html">Actor</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
+</table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Généré le Vendredi 6 Mars 2015 13:08:58 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
