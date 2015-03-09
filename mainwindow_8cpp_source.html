@@ -330,59 +330,57 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <span class="keywordflow">if</span> (obj != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                <span class="keyword">auto</span> metaObject = obj-&gt;metaObject();</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                <span class="keyword">auto</span> count = metaObject-&gt;propertyCount();</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                qDebug() &lt;&lt; metaObject-&gt;className() &lt;&lt; count;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; count; i++) {</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                    <span class="keyword">auto</span> <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008">prop</a> = metaObject-&gt;property(i).name();</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                    qDebug() &lt;&lt; i &lt;&lt; <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008">prop</a>;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                    <span class="keyword">auto</span> line = <span class="keyword">new</span> QTreeWidgetItem;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                    line-&gt;setText(0, prop);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                    ui-&gt;infoWidget-&gt;addTopLevelItem(line);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                    ui-&gt;infoWidget-&gt;setItemWidget(</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                        line, 1, widgetForVariant(line, [=]() {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                        <span class="keywordflow">return</span> obj-&gt;property(prop);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                    }, [=](<span class="keyword">const</span> QVariant&amp; val) {</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                        obj-&gt;setProperty(prop, val);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                    }));</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                }</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            }</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        }</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;}</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keywordtype">void</span> MainWindow::on_actionOpen_triggered() {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keyword">auto</span> fileName = QFileDialog::getOpenFileName(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Open World&quot;</span>), QString(), tr(<span class="stringliteral">&quot;Sickle World (*.wld)&quot;</span>));</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    ui-&gt;viewport-&gt;load(fileName);</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    m_lastFile = fileName;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;}</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="keywordtype">void</span> MainWindow::on_actionSave_as_triggered() {</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keyword">auto</span> fileName = QFileDialog::getSaveFileName(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Save World&quot;</span>), QString(), tr(<span class="stringliteral">&quot;Sickle World (*.wld)&quot;</span>));</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    ui-&gt;viewport-&gt;save(fileName);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    m_lastFile = fileName;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keywordtype">void</span> MainWindow::on_action_Save_triggered() {</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">if</span> (m_lastFile.isEmpty())</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        on_actionSave_as_triggered();</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        ui-&gt;viewport-&gt;save(m_lastFile);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;}</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keywordtype">void</span> MainWindow::on_actionWireframe_toggled(<span class="keywordtype">bool</span> checked) {</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">if</span> (checked) {</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        ui-&gt;viewport-&gt;renderMode(GL_LINES);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        ui-&gt;viewport-&gt;renderMode(GL_TRIANGLES);</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    }</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;}</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="keywordtype">void</span> MainWindow::on_newCube_triggered() {</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    ui-&gt;viewport-&gt;addChild&lt;<a class="code" href="class_cube.html">Cube</a>&gt;();</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;}</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keywordtype">void</span> MainWindow::on_newSphere_triggered() {</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    ui-&gt;viewport-&gt;addChild&lt;<a class="code" href="class_sphere.html">Sphere</a>&gt;();</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; count; i++) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                    <span class="keyword">auto</span> <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008">prop</a> = metaObject-&gt;property(i).name();</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                    <span class="keyword">auto</span> line = <span class="keyword">new</span> QTreeWidgetItem;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                    line-&gt;setText(0, <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008">prop</a>);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                    ui-&gt;infoWidget-&gt;addTopLevelItem(line);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                    ui-&gt;infoWidget-&gt;setItemWidget(</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                        line, 1, widgetForVariant(line, [=]() {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                        <span class="keywordflow">return</span> obj-&gt;property(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008">prop</a>);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                    }, [=](<span class="keyword">const</span> QVariant&amp; val) {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                        obj-&gt;setProperty(<a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008">prop</a>, val);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                    }));</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;}</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keywordtype">void</span> MainWindow::on_actionOpen_triggered() {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keyword">auto</span> fileName = QFileDialog::getOpenFileName(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Open World&quot;</span>), QString(), tr(<span class="stringliteral">&quot;Sickle World (*.wld)&quot;</span>));</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    ui-&gt;viewport-&gt;load(fileName);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    m_lastFile = fileName;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keywordtype">void</span> MainWindow::on_actionSave_as_triggered() {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keyword">auto</span> fileName = QFileDialog::getSaveFileName(<span class="keyword">this</span>, tr(<span class="stringliteral">&quot;Save World&quot;</span>), QString(), tr(<span class="stringliteral">&quot;Sickle World (*.wld)&quot;</span>));</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    ui-&gt;viewport-&gt;save(fileName);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    m_lastFile = fileName;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;}</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keywordtype">void</span> MainWindow::on_action_Save_triggered() {</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">if</span> (m_lastFile.isEmpty())</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        on_actionSave_as_triggered();</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        ui-&gt;viewport-&gt;save(m_lastFile);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;}</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="keywordtype">void</span> MainWindow::on_actionWireframe_toggled(<span class="keywordtype">bool</span> checked) {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">if</span> (checked) {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        ui-&gt;viewport-&gt;renderMode(GL_LINES);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        ui-&gt;viewport-&gt;renderMode(GL_TRIANGLES);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="keywordtype">void</span> MainWindow::on_newCube_triggered() {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    ui-&gt;viewport-&gt;addChild&lt;<a class="code" href="class_cube.html">Cube</a>&gt;();</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;}</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keywordtype">void</span> MainWindow::on_newSphere_triggered() {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    ui-&gt;viewport-&gt;addChild&lt;<a class="code" href="class_sphere.html">Sphere</a>&gt;();</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div>
 <div class="ttc" id="mainwindow_8cpp_html_a3177875391ecce9d9e3f9a481c59c467"><div class="ttname"><a href="mainwindow_8cpp.html#a3177875391ecce9d9e3f9a481c59c467">fromEuler</a></div><div class="ttdeci">QQuaternion fromEuler(const QVector3D &amp;euler)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00063">mainwindow.cpp:63</a></div></div>
 <div class="ttc" id="class_main_window_html_ae98d00a93bc118200eeef9f9bba1dba7"><div class="ttname"><a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a></div><div class="ttdeci">~MainWindow()</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00042">mainwindow.cpp:42</a></div></div>
 <div class="ttc" id="mainwindow_8hpp_html_ad82da20360d3b356afc5989031c5d715"><div class="ttname"><a href="mainwindow_8hpp.html#ad82da20360d3b356afc5989031c5d715">VarSetter</a></div><div class="ttdeci">std::function&lt; void(const QVariant &amp;)&gt; VarSetter</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hpp_source.html#l00011">mainwindow.hpp:11</a></div></div>
@@ -403,7 +401,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Vendredi 6 Mars 2015 13:08:58 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi 9 Mars 2015 20:10:12 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
