@@ -1,0 +1,8 @@
+<map id="Viewport::keyPressEvent" name="Viewport::keyPressEvent">
+<area shape="rect" id="node3" href="$class_camera.html#a600387791d90bfb6578ea050e3f60ae3" title="Camera::velocity" alt="" coords="225,52,345,81"/>
+<area shape="rect" id="node9" href="$class_camera.html#a7276761c5214ec94f6ac35e5804f6719" title="Camera::direction" alt="" coords="395,119,520,148"/>
+<area shape="rect" id="node11" href="$class_camera.html#ac68fa914dd8737de1ec7558fc9281a68" title="Camera::right" alt="" coords="407,184,508,213"/>
+<area shape="rect" id="node13" href="$class_camera.html#a9936c788ad482b40b5a3548bf5e97247" title="Camera::up" alt="" coords="240,156,331,185"/>
+<area shape="rect" id="node5" href="$class_camera.html#a4e6b5818c84025d176c13c84991ef568" title="Camera::position" alt="" coords="397,5,517,35"/>
+<area shape="rect" id="node7" href="$class_camera.html#a9d5f5bfa927044db06ce687b0c00173e" title="Camera::speed" alt="" coords="403,59,512,88"/>
+</map>

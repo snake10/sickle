@@ -180,16 +180,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            m_camera-&gt;<a class="code" href="class_camera.html#a600387791d90bfb6578ea050e3f60ae3">velocity</a>(-m_camera-&gt;<a class="code" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>());</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">case</span> Qt::Key_Z:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            m_camera-&gt;vAngle(m_camera-&gt;vAngle() + 0.14f);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            m_camera-&gt;<a class="code" href="class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348">vAngle</a>(m_camera-&gt;<a class="code" href="class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348">vAngle</a>() + 0.14f);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">case</span> Qt::Key_S:</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            m_camera-&gt;vAngle(m_camera-&gt;vAngle() - 0.14f);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            m_camera-&gt;<a class="code" href="class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348">vAngle</a>(m_camera-&gt;<a class="code" href="class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348">vAngle</a>() - 0.14f);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">case</span> Qt::Key_Q:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            m_camera-&gt;hAngle(m_camera-&gt;hAngle() + 0.14f);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            m_camera-&gt;<a class="code" href="class_camera.html#abb4ab973081a379e31ca4934dbb46f39">hAngle</a>(m_camera-&gt;<a class="code" href="class_camera.html#abb4ab973081a379e31ca4934dbb46f39">hAngle</a>() + 0.14f);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">case</span> Qt::Key_D:</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            m_camera-&gt;hAngle(m_camera-&gt;hAngle() - 0.14f);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            m_camera-&gt;<a class="code" href="class_camera.html#abb4ab973081a379e31ca4934dbb46f39">hAngle</a>(m_camera-&gt;<a class="code" href="class_camera.html#abb4ab973081a379e31ca4934dbb46f39">hAngle</a>() - 0.14f);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keyword">event</span>-&gt;ignore();</div>
@@ -218,8 +218,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">auto</span> deltaX = ((size().width() / 2) - static_cast&lt;float&gt;(event-&gt;x())) / size().width();</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">auto</span> deltaY = ((size().height() / 2) - static_cast&lt;float&gt;(event-&gt;y())) / size().height();</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    QCursor::setPos(mapToGlobal(QPoint(size().width() / 2, size().height() / 2)));</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    m_camera-&gt;hAngle(m_camera-&gt;hAngle() + (deltaX * 3.14f));</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    m_camera-&gt;vAngle(m_camera-&gt;vAngle() + (deltaY * 3.14f));</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    m_camera-&gt;<a class="code" href="class_camera.html#abb4ab973081a379e31ca4934dbb46f39">hAngle</a>(m_camera-&gt;<a class="code" href="class_camera.html#abb4ab973081a379e31ca4934dbb46f39">hAngle</a>() + (deltaX * 3.14f));</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    m_camera-&gt;<a class="code" href="class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348">vAngle</a>(m_camera-&gt;<a class="code" href="class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348">vAngle</a>() + (deltaY * 3.14f));</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    update();</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
@@ -343,6 +343,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="ttc" id="globals_8hpp_html_a41eb4920cf776a8865a18986f8ae6008"><div class="ttname"><a href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008">prop</a></div><div class="ttdeci">#define prop(TYPE, NAME)</div><div class="ttdoc">Declare une propriété </div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00063">globals.hpp:63</a></div></div>
 <div class="ttc" id="class_viewport_html_a16ba3ca4c621d3dad146c0ad3f9a48cc"><div class="ttname"><a href="class_viewport.html#a16ba3ca4c621d3dad146c0ad3f9a48cc">Viewport::mousePressEvent</a></div><div class="ttdeci">void mousePressEvent(QMouseEvent *event) Q_DECL_OVERRIDE</div><div class="ttdef"><b>Definition:</b> <a href="viewport_8cpp_source.html#l00107">viewport.cpp:107</a></div></div>
 <div class="ttc" id="viewport_8cpp_html_aaf60c2d4feac61526a52675bc794465c"><div class="ttname"><a href="viewport_8cpp.html#aaf60c2d4feac61526a52675bc794465c">operator&lt;&lt;</a></div><div class="ttdeci">QDataStream &amp; operator&lt;&lt;(QDataStream &amp;stream, const QObject &amp;obj)</div><div class="ttdef"><b>Definition:</b> <a href="viewport_8cpp_source.html#l00204">viewport.cpp:204</a></div></div>
+<div class="ttc" id="class_camera_html_ad1b9707e9e5dcf7f2048ee6ab9000348"><div class="ttname"><a href="class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348">Camera::vAngle</a></div><div class="ttdeci">float vAngle</div><div class="ttdef"><b>Definition:</b> <a href="camera_8hpp_source.html#l00039">camera.hpp:39</a></div></div>
+<div class="ttc" id="class_camera_html_abb4ab973081a379e31ca4934dbb46f39"><div class="ttname"><a href="class_camera.html#abb4ab973081a379e31ca4934dbb46f39">Camera::hAngle</a></div><div class="ttdeci">float hAngle</div><div class="ttdef"><b>Definition:</b> <a href="camera_8hpp_source.html#l00041">camera.hpp:41</a></div></div>
 <div class="ttc" id="class_q_object_html"><div class="ttname"><a href="class_q_object.html">QObject</a></div></div>
 <div class="ttc" id="class_viewport_html_a94ce1a503f6e3c10d27e7289e6f8607c"><div class="ttname"><a href="class_viewport.html#a94ce1a503f6e3c10d27e7289e6f8607c">Viewport::save</a></div><div class="ttdeci">void save(QString name)</div><div class="ttdef"><b>Definition:</b> <a href="viewport_8cpp_source.html#l00133">viewport.cpp:133</a></div></div>
 <div class="ttc" id="class_camera_html_adb1bda6df954268b8e0fc5531dafeca1"><div class="ttname"><a href="class_camera.html#adb1bda6df954268b8e0fc5531dafeca1">Camera::move</a></div><div class="ttdeci">QVector3D move(QVector3D val)</div><div class="ttdef"><b>Definition:</b> <a href="camera_8cpp_source.html#l00024">camera.cpp:24</a></div></div>
@@ -355,7 +357,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi 21 Mars 2015 18:04:48 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi 4 Avril 2015 20:36:29 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

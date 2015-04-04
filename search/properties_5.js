@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['vangle',['vAngle',['../class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348',1,'Camera']]],
-  ['vbias',['vBias',['../class_camera.html#a525d61c362ce7e6183905ae4252ed304',1,'Camera']]]
+  ['orientation',['orientation',['../class_actor.html#aa5ee88c6a64f6574b4d8d03db6e103b8',1,'Actor']]]
 ];

@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
       <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
-      <li><a href="hierarchy.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
       <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
     </ul>
   </div>
@@ -92,21 +92,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 <p>Liste complète des membres de <a class="el" href="struct_material.html">Material</a>, y compris les membres hérités :</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#a137e987401b63eb7c6c27c3e38bc74b5">Material</a>()</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="struct_material.html#ae80b7f83d9f45a4680d4668b66651729">prop</a>(float, metallic)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#af18a10b22741d52d084461dcf1f4849e">prop</a>(float, subsurface)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="struct_material.html#ad8ee7745aba4d32c15b54f7be4128a8c">prop</a>(float, specular)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#a5ce470262015d773e704a5e5c8ef1b38">prop</a>(float, roughness)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="struct_material.html#a25256b574b507dd181535e8bd4feb43c">prop</a>(float, specularTint)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#a163f5ef8464ebe4433a372f8c5945e37">prop</a>(float, anisotropic)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="struct_material.html#a505eb2821729480cf3000169937c6905">prop</a>(float, sheen)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#a487170a60c361e1e77f9efae1a111929">prop</a>(float, sheenTint)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="struct_material.html#a2592d7bb4fc88d975e6db5fd214baade">prop</a>(float, clearcoat)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#a0cb3fd517e9f046546b9783813cbc0dc">prop</a>(float, clearcoatGloss)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#a831a4fafdece225386991f0c89ae51eb">anisotropic</a></td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_material.html#a8ae1e7ea8ead043fc3e23614b9e779c9">anisotropic</a>() const </td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#afb55bbe3b068609aa91e123c2a478327">anisotropic</a>(float val)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_material.html#ac94c15c884837ded458305afc372382e">clearcoat</a></td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#a37c6662da47fb03eb3f473684eb178c5">clearcoat</a>() const </td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_material.html#aa7209287b89480fe4f8208b98c9a943d">clearcoat</a>(float val)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#abed523b76374c88fd00c4761e12f856f">clearcoatGloss</a></td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_material.html#af681093095dfcf0d30b7c167b65bec68">clearcoatGloss</a>() const </td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#a5cb52009ca6911d752897bbfc470a0a6">clearcoatGloss</a>(float val)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_material.html#a137e987401b63eb7c6c27c3e38bc74b5">Material</a>()</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#a97fc4551763505f23dac24a9901cee88">metallic</a></td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_material.html#a6fcaf0217d837a565a1f01392ebeffc0">metallic</a>() const </td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#ab7ff628208726ce527783e8662bac96b">metallic</a>(float val)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_material.html#abbaeac8374986ca82670ff0d7749c566">roughness</a></td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#a051abec46a2846d2a1797c1bc38f8fff">roughness</a>() const </td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_material.html#ae4d889db2c61ec10c99f4e85aa8e3d4c">roughness</a>(float val)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#a7f243db4328cb0329558c8a1fff337fd">sheen</a></td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_material.html#a653591d22bc43838513f7f07a2795a91">sheen</a>() const </td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#ac13e38c3b3ae204d6d243afdbb754c8a">sheen</a>(float val)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_material.html#a57ffd789fdf907cff12d7eddec2be5bb">sheenTint</a></td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#af58edf39cd7d361dd313198c5cff895e">sheenTint</a>() const </td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_material.html#aa8d2e40a6aad8f4a55c29d6f22b53e4a">sheenTint</a>(float val)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#a8cb88ff425239410cd0e8dd8c938ec0c">specular</a></td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_material.html#a8830760a0824b92e2a5151642a5e011c">specular</a>() const </td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#a68ac3a811572f99a7f185dd7150cb3be">specular</a>(float val)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_material.html#a5a2213dafb30a663f717e6b0ead2a1e4">specularTint</a></td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#ada089be63cad34944a1ee4ecfe932041">specularTint</a>() const </td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_material.html#a7dcaae120f1f5c26de5d0a57e237d135">specularTint</a>(float val)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#a5ee671c7408ffa168c4cff1b100bce8f">subsurface</a></td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="struct_material.html#afd4490f8191f989d10ad77b5b7fed54e">subsurface</a>() const </td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="struct_material.html#aad7afb59f8270b81e06c2d0f4e527fe8">subsurface</a>(float val)</td><td class="entry"><a class="el" href="struct_material.html">Material</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi 21 Mars 2015 18:04:48 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi 4 Avril 2015 20:36:30 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

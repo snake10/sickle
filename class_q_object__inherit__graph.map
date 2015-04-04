@@ -1,0 +1,17 @@
+<map id="QObject" name="QObject">
+<area shape="rect" id="node3" href="$class_actor.html" title="Base de tous les objets de la scène. " alt="" coords="179,85,232,115"/>
+<area shape="rect" id="node21" href="$class_camera.html" title="Gestion de la camera. " alt="" coords="256,85,323,115"/>
+<area shape="rect" id="node23" href="$struct_material.html" title="Définit les propriétés d&#39;un materiau. " alt="" coords="347,85,413,115"/>
+<area shape="rect" id="node25" href="$class_q_widget.html" title="QWidget" alt="" coords="437,85,509,115"/>
+<area shape="rect" id="node5" href="$class_geo_base.html" title="Base pour la classe Geometry. " alt="" coords="128,165,203,195"/>
+<area shape="rect" id="node19" href="$class_group.html" title="Groupe de geometries. " alt="" coords="227,165,283,195"/>
+<area shape="rect" id="node7" href="$class_geometry.html" title="Base de toutes les géometries. " alt="" coords="99,245,232,275"/>
+<area shape="rect" id="node9" href="$class_geometry.html" title="Geometry\&lt; Cube \&gt;" alt="" coords="193,341,327,371"/>
+<area shape="rect" id="node13" href="$class_geometry.html" title="Geometry\&lt; Sphere \&gt;" alt="" coords="5,341,149,371"/>
+<area shape="rect" id="node11" href="$class_cube.html" title="Un simple cube. " alt="" coords="233,421,287,451"/>
+<area shape="rect" id="node15" href="$class_sphere.html" title="Une simple sphere. " alt="" coords="47,421,108,451"/>
+<area shape="rect" id="node27" href="$class_q_main_window.html" title="QMainWindow" alt="" coords="340,165,447,195"/>
+<area shape="rect" id="node31" href="$class_q_open_g_l_widget.html" title="QOpenGLWidget" alt="" coords="471,165,591,195"/>
+<area shape="rect" id="node29" href="$class_main_window.html" title="Fenetre principale. " alt="" coords="345,245,441,275"/>
+<area shape="rect" id="node33" href="$class_viewport.html" title="Cadre de vue 3D. " alt="" coords="495,245,567,275"/>
+</map>

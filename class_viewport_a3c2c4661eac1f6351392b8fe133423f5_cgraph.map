@@ -1,0 +1,8 @@
+<map id="Viewport::paintGL" name="Viewport::paintGL">
+<area shape="rect" id="node3" href="$class_camera.html#af81adf3ba7f63429a9d5356c218da78f" title="Camera::view" alt="" coords="183,57,284,87"/>
+<area shape="rect" id="node14" href="$class_actor.html#ac35dab598ae9f9a936418ec22fadf138" title="Actor::draw" alt="" coords="189,111,277,140"/>
+<area shape="rect" id="node5" href="$class_camera.html#a4e6b5818c84025d176c13c84991ef568" title="Camera::position" alt="" coords="335,5,455,35"/>
+<area shape="rect" id="node7" href="$class_camera.html#a7276761c5214ec94f6ac35e5804f6719" title="Camera::direction" alt="" coords="504,57,629,87"/>
+<area shape="rect" id="node9" href="$class_camera.html#a9936c788ad482b40b5a3548bf5e97247" title="Camera::up" alt="" coords="349,109,440,139"/>
+<area shape="rect" id="node11" href="$class_camera.html#ac68fa914dd8737de1ec7558fc9281a68" title="Camera::right" alt="" coords="516,111,617,140"/>
+</map>

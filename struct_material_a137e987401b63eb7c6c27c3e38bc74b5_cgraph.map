@@ -1,0 +1,6 @@
+<map id="Material::Material" name="Material::Material">
+<area shape="rect" id="node3" href="$struct_material.html#a8830760a0824b92e2a5151642a5e011c" title="Material::specular" alt="" coords="195,5,320,35"/>
+<area shape="rect" id="node5" href="$struct_material.html#a051abec46a2846d2a1797c1bc38f8fff" title="Material::roughness" alt="" coords="189,59,325,88"/>
+<area shape="rect" id="node7" href="$struct_material.html#af58edf39cd7d361dd313198c5cff895e" title="Material::sheenTint" alt="" coords="191,112,324,141"/>
+<area shape="rect" id="node9" href="$struct_material.html#af681093095dfcf0d30b7c167b65bec68" title="Material::clearcoatGloss" alt="" coords="176,165,339,195"/>
+</map>

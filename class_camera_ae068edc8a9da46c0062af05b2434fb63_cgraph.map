@@ -1,0 +1,6 @@
+<map id="Camera::resetBias" name="Camera::resetBias">
+<area shape="rect" id="node3" href="$class_camera.html#a5b69d67a787c3ec58111b7638ba0b8c7" title="Camera::hBias" alt="" coords="188,5,297,35"/>
+<area shape="rect" id="node5" href="$class_camera.html#a5fcdf451c1711531dfabd2c9692c9c24" title="Camera::hAngle" alt="" coords="185,59,300,88"/>
+<area shape="rect" id="node7" href="$class_camera.html#a7a2feb5000cd1f4497cb7ea95a257de8" title="Camera::vBias" alt="" coords="188,112,297,141"/>
+<area shape="rect" id="node9" href="$class_camera.html#aa343f196240a4cf6b56512726f77c7ed" title="Camera::vAngle" alt="" coords="185,165,300,195"/>
+</map>

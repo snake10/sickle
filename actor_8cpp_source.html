@@ -100,19 +100,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">    8</a></span>&#160;QMatrix4x4 <a class="code" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">Actor::transform</a>() {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    QMatrix4x4 <a class="code" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">transform</a>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    transform.translate(position());</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    transform.rotate(orientation());</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    transform.scale(scale());</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    transform.translate(<a class="code" href="class_actor.html#acdab84246959258bbde6eb050d340e67">position</a>());</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    transform.rotate(<a class="code" href="class_actor.html#a748e07c73196050bfb0d51a14608aeae">orientation</a>());</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    transform.scale(<a class="code" href="class_actor.html#a9f365fe7550acb05cb6de6813035d780">scale</a>());</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">transform</a>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
 <div class="ttc" id="class_actor_html_abbf942f60996c5df2a8c0a832bd91abc"><div class="ttname"><a href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">Actor::transform</a></div><div class="ttdeci">virtual QMatrix4x4 transform()</div><div class="ttdef"><b>Definition:</b> <a href="actor_8cpp_source.html#l00008">actor.cpp:8</a></div></div>
+<div class="ttc" id="class_actor_html_a9f365fe7550acb05cb6de6813035d780"><div class="ttname"><a href="class_actor.html#a9f365fe7550acb05cb6de6813035d780">Actor::scale</a></div><div class="ttdeci">QVector3D scale() const </div><div class="ttdef"><b>Definition:</b> <a href="actor_8hpp_source.html#l00048">actor.hpp:48</a></div></div>
+<div class="ttc" id="class_actor_html_acdab84246959258bbde6eb050d340e67"><div class="ttname"><a href="class_actor.html#acdab84246959258bbde6eb050d340e67">Actor::position</a></div><div class="ttdeci">QVector3D position() const </div><div class="ttdef"><b>Definition:</b> <a href="actor_8hpp_source.html#l00046">actor.hpp:46</a></div></div>
 <div class="ttc" id="actor_8hpp_html"><div class="ttname"><a href="actor_8hpp.html">actor.hpp</a></div></div>
+<div class="ttc" id="class_actor_html_a748e07c73196050bfb0d51a14608aeae"><div class="ttname"><a href="class_actor.html#a748e07c73196050bfb0d51a14608aeae">Actor::orientation</a></div><div class="ttdeci">QQuaternion orientation() const </div><div class="ttdef"><b>Definition:</b> <a href="actor_8hpp_source.html#l00047">actor.hpp:47</a></div></div>
 <div class="ttc" id="class_q_object_html"><div class="ttname"><a href="class_q_object.html">QObject</a></div></div>
 <div class="ttc" id="class_actor_html_aa0fc674ef09b215b67ff2fff69b79459"><div class="ttname"><a href="class_actor.html#aa0fc674ef09b215b67ff2fff69b79459">Actor::Actor</a></div><div class="ttdeci">Actor(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="actor_8cpp_source.html#l00005">actor.cpp:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi 21 Mars 2015 18:04:48 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi 4 Avril 2015 20:36:29 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

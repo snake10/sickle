@@ -1,0 +1,7 @@
+<map id="Camera::direction" name="Camera::direction">
+<area shape="rect" id="node3" href="$class_camera.html#a9936c788ad482b40b5a3548bf5e97247" title="Camera::up" alt="" coords="208,44,299,73"/>
+<area shape="rect" id="node5" href="$class_camera.html#af81adf3ba7f63429a9d5356c218da78f" title="Camera::view" alt="" coords="411,5,512,35"/>
+<area shape="rect" id="node9" href="$class_viewport.html#ae3b6b681561ee1ef2bdb96d27bd2a1f0" title="Viewport::keyPressEvent" alt="" coords="376,71,547,100"/>
+<area shape="rect" id="node12" href="$class_viewport.html#a884441d496cf615dcd1456df15db4f2a" title="Viewport::wheelEvent" alt="" coords="179,148,328,177"/>
+<area shape="rect" id="node7" href="$class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5" title="Viewport::paintGL" alt="" coords="596,5,721,35"/>
+</map>

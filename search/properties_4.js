@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['scale',['scale',['../class_geometry.html#aa1b268c23f990a2aafc3d78172fecdc0',1,'Geometry']]],
-  ['speed',['speed',['../class_camera.html#a2960f533df18fe6d7d574c316c6d217a',1,'Camera']]]
+  ['material',['material',['../class_geo_base.html#a03c962245decd8e1b69b20f672355e8d',1,'GeoBase']]],
+  ['metallic',['metallic',['../struct_material.html#a97fc4551763505f23dac24a9901cee88',1,'Material']]]
 ];

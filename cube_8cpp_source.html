@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_cube.html#a6eceaa075072d4d0396b6bd85872d62b">    9</a></span>&#160;<a class="code" href="class_cube.html#a6eceaa075072d4d0396b6bd85872d62b">Cube::Cube</a>(<a class="code" href="class_q_object.html">QObject</a>* parent) : <a class="code" href="class_geometry.html">Geometry</a>(parent) {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    setObjectName(QString(tr(<span class="stringliteral">&quot;Cube %1&quot;</span>)).arg(<a class="code" href="class_geometry.html#a2a4b5cc631647df7085c635d591313f2">Cube::tBase::s_instances</a>));</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    colors({</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_geo_base.html#a64e242b389200b0dce495fd41c270da3">colors</a>({</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        QColor(1, 0, 0),</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        QColor(1, 1, 0),</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        QColor(0, 1, 0),</div>
@@ -246,6 +246,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="ttc" id="class_geometry_html"><div class="ttname"><a href="class_geometry.html">Geometry</a></div><div class="ttdoc">Base de toutes les géometries. </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00078">geometry.hpp:78</a></div></div>
 <div class="ttc" id="class_geometry_html_ace2c507886aa0a70500b12b5970a61e8"><div class="ttname"><a href="class_geometry.html#ace2c507886aa0a70500b12b5970a61e8">Geometry&lt; Cube &gt;::s_indices</a></div><div class="ttdeci">static QVector&lt; quint32 &gt; s_indices</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00241">geometry.hpp:241</a></div></div>
 <div class="ttc" id="class_geometry_html_a39c604ccc49fdc8f9371677636a2ec47"><div class="ttname"><a href="class_geometry.html#a39c604ccc49fdc8f9371677636a2ec47">Geometry&lt; Cube &gt;::s_tangents</a></div><div class="ttdeci">static QVector&lt; GLfloat &gt; s_tangents</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00239">geometry.hpp:239</a></div></div>
+<div class="ttc" id="class_geo_base_html_a64e242b389200b0dce495fd41c270da3"><div class="ttname"><a href="class_geo_base.html#a64e242b389200b0dce495fd41c270da3">GeoBase::colors</a></div><div class="ttdeci">QVariantList colors() const </div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00060">geometry.hpp:60</a></div></div>
 <div class="ttc" id="class_geometry_html_acae9da124a979f88d13e23302ca294b7"><div class="ttname"><a href="class_geometry.html#acae9da124a979f88d13e23302ca294b7">Geometry&lt; Cube &gt;::s_uv</a></div><div class="ttdeci">static QVector&lt; GLfloat &gt; s_uv</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00237">geometry.hpp:237</a></div></div>
 <div class="ttc" id="class_geometry_html_a61ceb9d088b03512f32acf59d7d19526"><div class="ttname"><a href="class_geometry.html#a61ceb9d088b03512f32acf59d7d19526">Geometry&lt; Cube &gt;::s_indexBuffer</a></div><div class="ttdeci">static QOpenGLBuffer * s_indexBuffer</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00234">geometry.hpp:234</a></div></div>
 <div class="ttc" id="class_geometry_html_ae4d070dc1bbee73d84b2528954e8561f"><div class="ttname"><a href="class_geometry.html#ae4d070dc1bbee73d84b2528954e8561f">Geometry&lt; Cube &gt;::s_normalBuffer</a></div><div class="ttdeci">static QOpenGLBuffer * s_normalBuffer</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8hpp_source.html#l00230">geometry.hpp:230</a></div></div>
@@ -260,7 +261,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi 21 Mars 2015 18:04:48 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi 4 Avril 2015 20:36:29 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

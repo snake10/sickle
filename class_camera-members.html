@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
       <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
-      <li><a href="hierarchy.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
       <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
     </ul>
   </div>
@@ -95,22 +95,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <tr class="even"><td class="entry"><a class="el" href="class_camera.html#ae3aa4afd7a3d9ddc2bf710bc74dc293e">Camera</a>(QObject *parent=nullptr)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_camera.html#ad8a331ca64e608858596deb5da25c357">Camera</a>(Camera *copy)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a>()</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_camera.html#abb4ab973081a379e31ca4934dbb46f39">hAngle</a></td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#a5fcdf451c1711531dfabd2c9692c9c24">hAngle</a>() const </td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_camera.html#ac0376ee5d730951eb7c646f1143b79f4">hAngle</a>(float val)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#a6539a2a1696bd797c789a74fc0127269">hBias</a></td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_camera.html#a5b69d67a787c3ec58111b7638ba0b8c7">hBias</a>() const </td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#ab5f8ba001776362bd0776e3d35d98ca8">hBias</a>(float val)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_camera.html#adb1bda6df954268b8e0fc5531dafeca1">move</a>(QVector3D val)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#aa4cef89e781f5b3c8f2c975d7c9757fd">prop</a>(float, vAngle)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_camera.html#aebbd0293d5c94e70f145afa3e5ec7baa">prop</a>(float, vBias)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#a0fc2525ccba7d6a46da6399f21cfb4df">prop</a>(float, hAngle)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_camera.html#ac0585ab9606af4e97629cbbd88e4e287">prop</a>(float, hBias)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#af4dbc041184a75b8652edad21f0f9728">prop</a>(float, speed)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_camera.html#a2af2534ff9206eb60054fc0a8ae30ac8">propSig</a>(QVector3D, position, moved)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#a50485397ac36ca4dafe993730aae904d">moved</a>(const QVector3D &amp;)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"><span class="mlabel">signal</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_camera.html#a4b295d57d345d93aed1532d62d336e38">position</a></td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#a4e6b5818c84025d176c13c84991ef568">position</a>() const </td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_camera.html#ab3e567091f39c95143b9ae0130320dd4">position</a>(QVector3D val)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_camera.html#ae068edc8a9da46c0062af05b2434fb63">resetBias</a>()</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a>()</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>()</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_camera.html#a600387791d90bfb6578ea050e3f60ae3">velocity</a>(QVector3D v, int dur=100)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#af81adf3ba7f63429a9d5356c218da78f">view</a>()</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#a2960f533df18fe6d7d574c316c6d217a">speed</a></td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_camera.html#a9d5f5bfa927044db06ce687b0c00173e">speed</a>() const </td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#a361f2c538fae858fec2b1ca5595631d0">speed</a>(float val)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a>()</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348">vAngle</a></td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_camera.html#aa343f196240a4cf6b56512726f77c7ed">vAngle</a>() const </td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#af0aab55cb25887dd55820f2ea7013437">vAngle</a>(float val)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_camera.html#a525d61c362ce7e6183905ae4252ed304">vBias</a></td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#a7a2feb5000cd1f4497cb7ea95a257de8">vBias</a>() const </td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_camera.html#a069e175411e674b488c5ab42d7801719">vBias</a>(float val)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_camera.html#a600387791d90bfb6578ea050e3f60ae3">velocity</a>(QVector3D v, int dur=100)</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_camera.html#af81adf3ba7f63429a9d5356c218da78f">view</a>()</td><td class="entry"><a class="el" href="class_camera.html">Camera</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi 21 Mars 2015 18:04:48 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi 4 Avril 2015 20:36:29 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

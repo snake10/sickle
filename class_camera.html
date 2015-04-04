@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
       <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
-      <li><a href="hierarchy.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
       <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
     </ul>
   </div>
@@ -86,7 +86,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#signals">Signaux</a> &#124;
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#properties">Propriétés</a> &#124;
 <a href="class_camera-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
 <div class="title">Référence de la classe Camera</div>  </div>
@@ -100,13 +102,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="dynheader">
 Graphe d'héritage de Camera:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_camera.png" usemap="#Camera_map" alt=""/>
-  <map id="Camera_map" name="Camera_map">
-<area href="class_q_object.html" alt="QObject" shape="rect" coords="0,0,59,24"/>
-</map>
- </div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera__inherit__graph.svg" width="80" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+<div class="dynheader">
+Graphe de collaboration de Camera:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera__coll__graph.svg" width="80" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signaux</h2></td></tr>
+<tr class="memitem:a50485397ac36ca4dafe993730aae904d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a50485397ac36ca4dafe993730aae904d">moved</a> (const QVector3D &amp;)</td></tr>
+<tr class="separator:a50485397ac36ca4dafe993730aae904d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:ae3aa4afd7a3d9ddc2bf710bc74dc293e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ae3aa4afd7a3d9ddc2bf710bc74dc293e">Camera</a> (<a class="el" href="class_q_object.html">QObject</a> *parent=nullptr)</td></tr>
@@ -127,18 +137,45 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="separator:af81adf3ba7f63429a9d5356c218da78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a600387791d90bfb6578ea050e3f60ae3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a600387791d90bfb6578ea050e3f60ae3">velocity</a> (QVector3D v, int dur=100)</td></tr>
 <tr class="separator:a600387791d90bfb6578ea050e3f60ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2af2534ff9206eb60054fc0a8ae30ac8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a2af2534ff9206eb60054fc0a8ae30ac8">propSig</a> (QVector3D, position, moved)</td></tr>
-<tr class="separator:a2af2534ff9206eb60054fc0a8ae30ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4cef89e781f5b3c8f2c975d7c9757fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#aa4cef89e781f5b3c8f2c975d7c9757fd">prop</a> (float, vAngle)</td></tr>
-<tr class="separator:aa4cef89e781f5b3c8f2c975d7c9757fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebbd0293d5c94e70f145afa3e5ec7baa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#aebbd0293d5c94e70f145afa3e5ec7baa">prop</a> (float, vBias)</td></tr>
-<tr class="separator:aebbd0293d5c94e70f145afa3e5ec7baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fc2525ccba7d6a46da6399f21cfb4df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a0fc2525ccba7d6a46da6399f21cfb4df">prop</a> (float, hAngle)</td></tr>
-<tr class="separator:a0fc2525ccba7d6a46da6399f21cfb4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0585ab9606af4e97629cbbd88e4e287"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ac0585ab9606af4e97629cbbd88e4e287">prop</a> (float, hBias)</td></tr>
-<tr class="separator:ac0585ab9606af4e97629cbbd88e4e287"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4dbc041184a75b8652edad21f0f9728"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#af4dbc041184a75b8652edad21f0f9728">prop</a> (float, speed)</td></tr>
-<tr class="separator:af4dbc041184a75b8652edad21f0f9728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6b5818c84025d176c13c84991ef568"><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a4e6b5818c84025d176c13c84991ef568">position</a> () const </td></tr>
+<tr class="separator:a4e6b5818c84025d176c13c84991ef568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e567091f39c95143b9ae0130320dd4"><td class="memItemLeft" align="right" valign="top">Q_SLOT QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ab3e567091f39c95143b9ae0130320dd4">position</a> (QVector3D val)</td></tr>
+<tr class="separator:ab3e567091f39c95143b9ae0130320dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa343f196240a4cf6b56512726f77c7ed"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#aa343f196240a4cf6b56512726f77c7ed">vAngle</a> () const </td></tr>
+<tr class="separator:aa343f196240a4cf6b56512726f77c7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0aab55cb25887dd55820f2ea7013437"><td class="memItemLeft" align="right" valign="top">Q_SLOT float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#af0aab55cb25887dd55820f2ea7013437">vAngle</a> (float val)</td></tr>
+<tr class="separator:af0aab55cb25887dd55820f2ea7013437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a2feb5000cd1f4497cb7ea95a257de8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a7a2feb5000cd1f4497cb7ea95a257de8">vBias</a> () const </td></tr>
+<tr class="separator:a7a2feb5000cd1f4497cb7ea95a257de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a069e175411e674b488c5ab42d7801719"><td class="memItemLeft" align="right" valign="top">Q_SLOT float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a069e175411e674b488c5ab42d7801719">vBias</a> (float val)</td></tr>
+<tr class="separator:a069e175411e674b488c5ab42d7801719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fcdf451c1711531dfabd2c9692c9c24"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a5fcdf451c1711531dfabd2c9692c9c24">hAngle</a> () const </td></tr>
+<tr class="separator:a5fcdf451c1711531dfabd2c9692c9c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0376ee5d730951eb7c646f1143b79f4"><td class="memItemLeft" align="right" valign="top">Q_SLOT float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ac0376ee5d730951eb7c646f1143b79f4">hAngle</a> (float val)</td></tr>
+<tr class="separator:ac0376ee5d730951eb7c646f1143b79f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b69d67a787c3ec58111b7638ba0b8c7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a5b69d67a787c3ec58111b7638ba0b8c7">hBias</a> () const </td></tr>
+<tr class="separator:a5b69d67a787c3ec58111b7638ba0b8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f8ba001776362bd0776e3d35d98ca8"><td class="memItemLeft" align="right" valign="top">Q_SLOT float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ab5f8ba001776362bd0776e3d35d98ca8">hBias</a> (float val)</td></tr>
+<tr class="separator:ab5f8ba001776362bd0776e3d35d98ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d5f5bfa927044db06ce687b0c00173e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a9d5f5bfa927044db06ce687b0c00173e">speed</a> () const </td></tr>
+<tr class="separator:a9d5f5bfa927044db06ce687b0c00173e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361f2c538fae858fec2b1ca5595631d0"><td class="memItemLeft" align="right" valign="top">Q_SLOT float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a361f2c538fae858fec2b1ca5595631d0">speed</a> (float val)</td></tr>
+<tr class="separator:a361f2c538fae858fec2b1ca5595631d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Propriétés</h2></td></tr>
+<tr class="memitem:a4b295d57d345d93aed1532d62d336e38"><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a4b295d57d345d93aed1532d62d336e38">position</a></td></tr>
+<tr class="separator:a4b295d57d345d93aed1532d62d336e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b9707e9e5dcf7f2048ee6ab9000348"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ad1b9707e9e5dcf7f2048ee6ab9000348">vAngle</a></td></tr>
+<tr class="separator:ad1b9707e9e5dcf7f2048ee6ab9000348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525d61c362ce7e6183905ae4252ed304"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a525d61c362ce7e6183905ae4252ed304">vBias</a></td></tr>
+<tr class="separator:a525d61c362ce7e6183905ae4252ed304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb4ab973081a379e31ca4934dbb46f39"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#abb4ab973081a379e31ca4934dbb46f39">hAngle</a></td></tr>
+<tr class="separator:abb4ab973081a379e31ca4934dbb46f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6539a2a1696bd797c789a74fc0127269"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a6539a2a1696bd797c789a74fc0127269">hBias</a></td></tr>
+<tr class="separator:a6539a2a1696bd797c789a74fc0127269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2960f533df18fe6d7d574c316c6d217a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a2960f533df18fe6d7d574c316c6d217a">speed</a></td></tr>
+<tr class="separator:a2960f533df18fe6d7d574c316c6d217a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Gestion de la camera. </p>
@@ -170,6 +207,14 @@ Fonctions membres publiques</h2></td></tr>
 
 <p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00005">5</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_ae3aa4afd7a3d9ddc2bf710bc74dc293e_cgraph.svg" width="304" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ad8a331ca64e608858596deb5da25c357"></a>
@@ -196,6 +241,14 @@ Fonctions membres publiques</h2></td></tr>
 
 <p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00010">10</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_ad8a331ca64e608858596deb5da25c357_cgraph.svg" width="304" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
@@ -213,6 +266,132 @@ Fonctions membres publiques</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00032">32</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_camera_a7276761c5214ec94f6ac35e5804f6719_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac0376ee5d730951eb7c646f1143b79f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SLOT float Camera::hAngle </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00042">42</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5fcdf451c1711531dfabd2c9692c9c24"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Camera::hAngle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00042">42</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a5fcdf451c1711531dfabd2c9692c9c24_icgraph.svg" width="544" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b69d67a787c3ec58111b7638ba0b8c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Camera::hBias </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00043">43</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a5b69d67a787c3ec58111b7638ba0b8c7_icgraph.svg" width="536" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5f8ba001776362bd0776e3d35d98ca8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SLOT float Camera::hBias </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00043">43</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -232,167 +411,112 @@ Fonctions membres publiques</h2></td></tr>
 
 <p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00024">24</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_adb1bda6df954268b8e0fc5531dafeca1_cgraph.svg" width="291" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-<a class="anchor" id="aa4cef89e781f5b3c8f2c975d7c9757fd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Camera::prop </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vAngle&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_adb1bda6df954268b8e0fc5531dafeca1_icgraph.svg" width="318" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="aebbd0293d5c94e70f145afa3e5ec7baa"></a>
+<a class="anchor" id="a50485397ac36ca4dafe993730aae904d"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Camera::prop </td>
+          <td class="memname">void Camera::moved </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const QVector3D &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">vBias&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a50485397ac36ca4dafe993730aae904d_icgraph.svg" width="355" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="a0fc2525ccba7d6a46da6399f21cfb4df"></a>
+<a class="anchor" id="a4e6b5818c84025d176c13c84991ef568"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Camera::prop </td>
+          <td class="memname">QVector3D Camera::position </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">hAngle&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00039">39</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a4e6b5818c84025d176c13c84991ef568_icgraph.svg" width="523" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="ac0585ab9606af4e97629cbbd88e4e287"></a>
+<a class="anchor" id="ab3e567091f39c95143b9ae0130320dd4"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Camera::prop </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">hBias&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af4dbc041184a75b8652edad21f0f9728"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Camera::prop </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">speed&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2af2534ff9206eb60054fc0a8ae30ac8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Camera::propSig </td>
+          <td class="memname">Q_SLOT QVector3D Camera::position </td>
           <td>(</td>
           <td class="paramtype">QVector3D&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">position&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">moved&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00039">39</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -411,6 +535,22 @@ Fonctions membres publiques</h2></td></tr>
 
 <p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00019">19</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_ae068edc8a9da46c0062af05b2434fb63_cgraph.svg" width="307" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_ae068edc8a9da46c0062af05b2434fb63_icgraph.svg" width="379" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ac68fa914dd8737de1ec7558fc9281a68"></a>
@@ -428,6 +568,73 @@ Fonctions membres publiques</h2></td></tr>
 
 <p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00028">28</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_ac68fa914dd8737de1ec7558fc9281a68_icgraph.svg" width="646" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a361f2c538fae858fec2b1ca5595631d0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SLOT float Camera::speed </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00044">44</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d5f5bfa927044db06ce687b0c00173e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Camera::speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00044">44</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a9d5f5bfa927044db06ce687b0c00173e_icgraph.svg" width="512" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a9936c788ad482b40b5a3548bf5e97247"></a>
@@ -444,6 +651,140 @@ Fonctions membres publiques</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00036">36</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a9936c788ad482b40b5a3548bf5e97247_cgraph.svg" width="275" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a9936c788ad482b40b5a3548bf5e97247_icgraph.svg" width="496" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa343f196240a4cf6b56512726f77c7ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Camera::vAngle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00040">40</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_aa343f196240a4cf6b56512726f77c7ed_icgraph.svg" width="544" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af0aab55cb25887dd55820f2ea7013437"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SLOT float Camera::vAngle </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00040">40</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a2feb5000cd1f4497cb7ea95a257de8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Camera::vBias </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00041">41</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a7a2feb5000cd1f4497cb7ea95a257de8_icgraph.svg" width="536" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a069e175411e674b488c5ab42d7801719"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SLOT float Camera::vBias </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00041">41</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -473,6 +814,22 @@ Fonctions membres publiques</h2></td></tr>
 
 <p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00040">40</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a600387791d90bfb6578ea050e3f60ae3_cgraph.svg" width="304" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a600387791d90bfb6578ea050e3f60ae3_icgraph.svg" width="352" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="af81adf3ba7f63429a9d5356c218da78f"></a>
@@ -490,6 +847,155 @@ Fonctions membres publiques</h2></td></tr>
 
 <p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00048">48</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_af81adf3ba7f63429a9d5356c218da78f_cgraph.svg" width="459" height="146"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_af81adf3ba7f63429a9d5356c218da78f_icgraph.svg" width="291" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des propriétés</h2>
+<a class="anchor" id="abb4ab973081a379e31ca4934dbb46f39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Camera::hAngle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00041">41</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6539a2a1696bd797c789a74fc0127269"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Camera::hBias</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00042">42</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b295d57d345d93aed1532d62d336e38"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector3D Camera::position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00039">39</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2960f533df18fe6d7d574c316c6d217a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Camera::speed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00043">43</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1b9707e9e5dcf7f2048ee6ab9000348"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Camera::vAngle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00039">39</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a525d61c362ce7e6183905ae4252ed304"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Camera::vBias</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00040">40</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
@@ -499,7 +1005,7 @@ Fonctions membres publiques</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi 21 Mars 2015 18:04:48 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi 4 Avril 2015 20:36:29 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

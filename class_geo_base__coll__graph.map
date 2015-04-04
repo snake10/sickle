@@ -1,0 +1,4 @@
+<map id="GeoBase" name="GeoBase">
+<area shape="rect" id="node2" href="$class_actor.html" title="Base de tous les objets de la scène. " alt="" coords="16,83,69,112"/>
+<area shape="rect" id="node4" href="$class_q_object.html" title="QObject" alt="" coords="8,5,77,35"/>
+</map>

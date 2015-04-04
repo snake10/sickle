@@ -18,12 +18,20 @@ var searchData=
   ['s_5fvertexbuffer',['s_vertexBuffer',['../class_geometry.html#a257b35064612dbe4c87a251e7fe8985a',1,'Geometry']]],
   ['s_5fvertices',['s_vertices',['../class_geometry.html#a412bd134c12917d332183cfc80e658de',1,'Geometry']]],
   ['save',['save',['../class_viewport.html#a94ce1a503f6e3c10d27e7289e6f8607c',1,'Viewport']]],
+  ['scale',['scale',['../class_actor.html#a22ee89ce375cf54c12daa4513973499d',1,'Actor::scale()'],['../class_actor.html#a9f365fe7550acb05cb6de6813035d780',1,'Actor::scale() const '],['../class_actor.html#a3329b9736b983c9b2f3d886d47567c26',1,'Actor::scale(QVector3D val)']]],
+  ['scaled',['scaled',['../class_actor.html#af158c415c51de9bfb9f1173fe6267b98',1,'Actor']]],
   ['sectors',['sectors',['../sphere_8cpp.html#a3222155a03a3c1c31e85081626b891cb',1,'sphere.cpp']]],
   ['setter',['setter',['../globals_8hpp.html#ae5093ebfe19de9457dd90298ce5aed2e',1,'globals.hpp']]],
   ['setterbase',['setterBase',['../globals_8hpp.html#aab8d0b41524556265ce434b802a3337d',1,'globals.hpp']]],
   ['settersig',['setterSig',['../globals_8hpp.html#aaee98f184e3c8496d8198325f04443dc',1,'globals.hpp']]],
+  ['sheen',['sheen',['../struct_material.html#a7f243db4328cb0329558c8a1fff337fd',1,'Material::sheen()'],['../struct_material.html#a653591d22bc43838513f7f07a2795a91',1,'Material::sheen() const '],['../struct_material.html#ac13e38c3b3ae204d6d243afdbb754c8a',1,'Material::sheen(float val)']]],
+  ['sheentint',['sheenTint',['../struct_material.html#a57ffd789fdf907cff12d7eddec2be5bb',1,'Material::sheenTint()'],['../struct_material.html#af58edf39cd7d361dd313198c5cff895e',1,'Material::sheenTint() const '],['../struct_material.html#aa8d2e40a6aad8f4a55c29d6f22b53e4a',1,'Material::sheenTint(float val)']]],
   ['sizehint',['sizeHint',['../class_viewport.html#a5fba6e917c9da4d7edd9cef5d6f22be0',1,'Viewport']]],
+  ['specular',['specular',['../struct_material.html#a8cb88ff425239410cd0e8dd8c938ec0c',1,'Material::specular()'],['../struct_material.html#a8830760a0824b92e2a5151642a5e011c',1,'Material::specular() const '],['../struct_material.html#a68ac3a811572f99a7f185dd7150cb3be',1,'Material::specular(float val)']]],
+  ['speculartint',['specularTint',['../struct_material.html#a5a2213dafb30a663f717e6b0ead2a1e4',1,'Material::specularTint()'],['../struct_material.html#ada089be63cad34944a1ee4ecfe932041',1,'Material::specularTint() const '],['../struct_material.html#a7dcaae120f1f5c26de5d0a57e237d135',1,'Material::specularTint(float val)']]],
+  ['speed',['speed',['../class_camera.html#a2960f533df18fe6d7d574c316c6d217a',1,'Camera::speed()'],['../class_camera.html#a9d5f5bfa927044db06ce687b0c00173e',1,'Camera::speed() const '],['../class_camera.html#a361f2c538fae858fec2b1ca5595631d0',1,'Camera::speed(float val)']]],
   ['sphere',['Sphere',['../class_sphere.html',1,'Sphere'],['../class_sphere.html#ad1e284dc3aef66be0a3962e82d3c9e60',1,'Sphere::Sphere()']]],
   ['sphere_2ecpp',['sphere.cpp',['../sphere_8cpp.html',1,'']]],
-  ['sphere_2ehpp',['sphere.hpp',['../sphere_8hpp.html',1,'']]]
+  ['sphere_2ehpp',['sphere.hpp',['../sphere_8hpp.html',1,'']]],
+  ['subsurface',['subsurface',['../struct_material.html#a5ee671c7408ffa168c4cff1b100bce8f',1,'Material::subsurface()'],['../struct_material.html#afd4490f8191f989d10ad77b5b7fed54e',1,'Material::subsurface() const '],['../struct_material.html#aad7afb59f8270b81e06c2d0f4e527fe8',1,'Material::subsurface(float val)']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['camera',['camera',['../class_viewport.html#ac0af7e2bd057631a4c4798f214893925',1,'Viewport']]]
+  ['anisotropic',['anisotropic',['../struct_material.html#a831a4fafdece225386991f0c89ae51eb',1,'Material']]]
 ];

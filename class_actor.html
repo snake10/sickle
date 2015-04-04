@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
       <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
-      <li><a href="hierarchy.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
       <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
     </ul>
   </div>
@@ -86,8 +86,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#signals">Signaux</a> &#124;
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
 <a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="#properties">Propriétés</a> &#124;
 <a href="class_actor-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
 <div class="title">Référence de la classe Actor<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -101,20 +103,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="dynheader">
 Graphe d'héritage de Actor:</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_actor.png" usemap="#Actor_map" alt=""/>
-  <map id="Actor_map" name="Actor_map">
-<area href="class_q_object.html" alt="QObject" shape="rect" coords="211,0,342,24"/>
-<area href="class_geo_base.html" title="Base pour la classe Geometry. " alt="GeoBase" shape="rect" coords="141,112,272,136"/>
-<area href="class_group.html" title="Groupe de geometries. " alt="Group" shape="rect" coords="282,112,413,136"/>
-<area href="class_geometry.html" title="Base de toutes les géometries. " alt="Geometry&lt; Child &gt;" shape="rect" coords="0,168,131,192"/>
-<area href="class_geometry.html" alt="Geometry&lt; Cube &gt;" shape="rect" coords="141,168,272,192"/>
-<area href="class_geometry.html" alt="Geometry&lt; Sphere &gt;" shape="rect" coords="282,168,413,192"/>
-<area href="class_cube.html" title="Un simple cube. " alt="Cube" shape="rect" coords="141,224,272,248"/>
-<area href="class_sphere.html" title="Une simple sphere. " alt="Sphere" shape="rect" coords="282,224,413,248"/>
-</map>
- </div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor__inherit__graph.svg" width="332" height="456"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+<div class="dynheader">
+Graphe de collaboration de Actor:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor__coll__graph.svg" width="80" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signaux</h2></td></tr>
+<tr class="memitem:abefffb24b0c7ebd4a48e13cf7817bb45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#abefffb24b0c7ebd4a48e13cf7817bb45">moved</a> (const QVector3D &amp;)</td></tr>
+<tr class="separator:abefffb24b0c7ebd4a48e13cf7817bb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e72257974226d31517a5d62424f0ed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a6e72257974226d31517a5d62424f0ed4">rotated</a> (const QQuaternion &amp;)</td></tr>
+<tr class="separator:a6e72257974226d31517a5d62424f0ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af158c415c51de9bfb9f1173fe6267b98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#af158c415c51de9bfb9f1173fe6267b98">scaled</a> (const QVector3D &amp;)</td></tr>
+<tr class="separator:af158c415c51de9bfb9f1173fe6267b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:aa0fc674ef09b215b67ff2fff69b79459"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#aa0fc674ef09b215b67ff2fff69b79459">Actor</a> (<a class="el" href="class_q_object.html">QObject</a> *parent=nullptr)</td></tr>
@@ -123,17 +130,32 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="separator:aefb2c1d280c3db70df28a59b50a32294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac35dab598ae9f9a936418ec22fadf138"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#ac35dab598ae9f9a936418ec22fadf138">draw</a> (const <a class="el" href="struct_draw_info.html">DrawInfo</a> &amp;info)=0</td></tr>
 <tr class="separator:ac35dab598ae9f9a936418ec22fadf138"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a632a7a715b7182ff6718b0cd3857d0a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a632a7a715b7182ff6718b0cd3857d0a6">propSig</a> (QVector3D, position, moved)</td></tr>
-<tr class="separator:a632a7a715b7182ff6718b0cd3857d0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a244be9efa347f87dac46dd4dc536767f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a244be9efa347f87dac46dd4dc536767f">propSig</a> (QQuaternion, orientation, rotated)</td></tr>
-<tr class="separator:a244be9efa347f87dac46dd4dc536767f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2826ca2df8ea9b626fb3a0bd6799900"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#aa2826ca2df8ea9b626fb3a0bd6799900">propSig</a> (QVector3D, scale, scaled)</td></tr>
-<tr class="separator:aa2826ca2df8ea9b626fb3a0bd6799900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdab84246959258bbde6eb050d340e67"><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#acdab84246959258bbde6eb050d340e67">position</a> () const </td></tr>
+<tr class="separator:acdab84246959258bbde6eb050d340e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818360ae5b810a9cece29c573cf66e60"><td class="memItemLeft" align="right" valign="top">Q_SLOT QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a818360ae5b810a9cece29c573cf66e60">position</a> (QVector3D val)</td></tr>
+<tr class="separator:a818360ae5b810a9cece29c573cf66e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a748e07c73196050bfb0d51a14608aeae"><td class="memItemLeft" align="right" valign="top">QQuaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a748e07c73196050bfb0d51a14608aeae">orientation</a> () const </td></tr>
+<tr class="separator:a748e07c73196050bfb0d51a14608aeae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac087d70de7b98ed01967c237ebdbdf16"><td class="memItemLeft" align="right" valign="top">Q_SLOT QQuaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#ac087d70de7b98ed01967c237ebdbdf16">orientation</a> (QQuaternion val)</td></tr>
+<tr class="separator:ac087d70de7b98ed01967c237ebdbdf16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f365fe7550acb05cb6de6813035d780"><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a9f365fe7550acb05cb6de6813035d780">scale</a> () const </td></tr>
+<tr class="separator:a9f365fe7550acb05cb6de6813035d780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3329b9736b983c9b2f3d886d47567c26"><td class="memItemLeft" align="right" valign="top">Q_SLOT QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a3329b9736b983c9b2f3d886d47567c26">scale</a> (QVector3D val)</td></tr>
+<tr class="separator:a3329b9736b983c9b2f3d886d47567c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Fonctions membres protégées</h2></td></tr>
 <tr class="memitem:abbf942f60996c5df2a8c0a832bd91abc"><td class="memItemLeft" align="right" valign="top">virtual QMatrix4x4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">transform</a> ()</td></tr>
 <tr class="separator:abbf942f60996c5df2a8c0a832bd91abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Propriétés</h2></td></tr>
+<tr class="memitem:af7744c7fbd00f834d357638cdd03fedf"><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#af7744c7fbd00f834d357638cdd03fedf">position</a></td></tr>
+<tr class="separator:af7744c7fbd00f834d357638cdd03fedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ee88c6a64f6574b4d8d03db6e103b8"><td class="memItemLeft" align="right" valign="top">QQuaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#aa5ee88c6a64f6574b4d8d03db6e103b8">orientation</a></td></tr>
+<tr class="separator:aa5ee88c6a64f6574b4d8d03db6e103b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ee89ce375cf54c12daa4513973499d"><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a22ee89ce375cf54c12daa4513973499d">scale</a></td></tr>
+<tr class="separator:a22ee89ce375cf54c12daa4513973499d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Base de tous les objets de la scène. </p>
@@ -216,102 +238,263 @@ Fonctions membres protégées</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implémenté dans <a class="el" href="class_geometry.html#a999bb5d2827866b58fe4ded7dbd0668d">Geometry&lt; Child &gt;</a>, <a class="el" href="class_geometry.html#a999bb5d2827866b58fe4ded7dbd0668d">Geometry&lt; Cube &gt;</a>, <a class="el" href="class_geometry.html#a999bb5d2827866b58fe4ded7dbd0668d">Geometry&lt; Sphere &gt;</a>, et <a class="el" href="class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2">Group</a>.</p>
+<p>Implémenté dans <a class="el" href="class_geometry.html#aadfed02c20dfb9306bcf5616e7bf1f43">Geometry&lt; Child &gt;</a>, <a class="el" href="class_geometry.html#aadfed02c20dfb9306bcf5616e7bf1f43">Geometry&lt; Cube &gt;</a>, <a class="el" href="class_geometry.html#aadfed02c20dfb9306bcf5616e7bf1f43">Geometry&lt; Sphere &gt;</a>, et <a class="el" href="class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2">Group</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_ac35dab598ae9f9a936418ec22fadf138_icgraph.svg" width="278" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="a632a7a715b7182ff6718b0cd3857d0a6"></a>
+<a class="anchor" id="abefffb24b0c7ebd4a48e13cf7817bb45"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Actor::propSig </td>
+          <td class="memname">void Actor::moved </td>
           <td>(</td>
-          <td class="paramtype">QVector3D&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const QVector3D &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">position&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">moved&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a244be9efa347f87dac46dd4dc536767f"></a>
+<a class="anchor" id="a748e07c73196050bfb0d51a14608aeae"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Actor::propSig </td>
+          <td class="memname">QQuaternion Actor::orientation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00047">47</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_a748e07c73196050bfb0d51a14608aeae_icgraph.svg" width="491" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac087d70de7b98ed01967c237ebdbdf16"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SLOT QQuaternion Actor::orientation </td>
           <td>(</td>
           <td class="paramtype">QQuaternion&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">orientation&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">rotated&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00047">47</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acdab84246959258bbde6eb050d340e67"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector3D Actor::position </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00046">46</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_acdab84246959258bbde6eb050d340e67_icgraph.svg" width="475" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a818360ae5b810a9cece29c573cf66e60"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SLOT QVector3D Actor::position </td>
+          <td>(</td>
+          <td class="paramtype">QVector3D&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00046">46</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e72257974226d31517a5d62424f0ed4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Actor::rotated </td>
+          <td>(</td>
+          <td class="paramtype">const QQuaternion &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aa2826ca2df8ea9b626fb3a0bd6799900"></a>
+<a class="anchor" id="a9f365fe7550acb05cb6de6813035d780"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Actor::propSig </td>
+          <td class="memname">QVector3D Actor::scale </td>
           <td>(</td>
-          <td class="paramtype">QVector3D&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">scale&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">scaled&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00048">48</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_a9f365fe7550acb05cb6de6813035d780_icgraph.svg" width="462" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3329b9736b983c9b2f3d886d47567c26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SLOT QVector3D Actor::scale </td>
+          <td>(</td>
+          <td class="paramtype">QVector3D&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00048">48</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af158c415c51de9bfb9f1173fe6267b98"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Actor::scaled </td>
+          <td>(</td>
+          <td class="paramtype">const QVector3D &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -339,6 +522,89 @@ Fonctions membres protégées</h2></td></tr>
 
 <p>Définition à la ligne <a class="el" href="actor_8cpp_source.html#l00008">8</a> du fichier <a class="el" href="actor_8cpp_source.html">actor.cpp</a>.</p>
 
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_abbf942f60996c5df2a8c0a832bd91abc_cgraph.svg" width="299" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_abbf942f60996c5df2a8c0a832bd91abc_icgraph.svg" width="320" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des propriétés</h2>
+<a class="anchor" id="aa5ee88c6a64f6574b4d8d03db6e103b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QQuaternion Actor::orientation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00046">46</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af7744c7fbd00f834d357638cdd03fedf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector3D Actor::position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00046">46</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a22ee89ce375cf54c12daa4513973499d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector3D Actor::scale</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00047">47</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
@@ -348,7 +614,7 @@ Fonctions membres protégées</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi 21 Mars 2015 18:04:48 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi 4 Avril 2015 20:36:29 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,0 +1,9 @@
+<map id="GeoBase" name="GeoBase">
+<area shape="rect" id="node7" href="$class_geometry.html" title="Base de toutes les géometries. " alt="" coords="96,245,229,275"/>
+<area shape="rect" id="node9" href="$class_geometry.html" title="Geometry\&lt; Cube \&gt;" alt="" coords="5,341,139,371"/>
+<area shape="rect" id="node13" href="$class_geometry.html" title="Geometry\&lt; Sphere \&gt;" alt="" coords="183,341,327,371"/>
+<area shape="rect" id="node2" href="$class_actor.html" title="Base de tous les objets de la scène. " alt="" coords="136,85,189,115"/>
+<area shape="rect" id="node4" href="$class_q_object.html" title="QObject" alt="" coords="128,5,197,35"/>
+<area shape="rect" id="node11" href="$class_cube.html" title="Un simple cube. " alt="" coords="45,421,99,451"/>
+<area shape="rect" id="node15" href="$class_sphere.html" title="Une simple sphere. " alt="" coords="224,421,285,451"/>
+</map>
