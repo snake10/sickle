@@ -96,6 +96,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="contents">
 <div class="textblock"><code>#include &lt;QString&gt;</code><br/>
 <code>#include &lt;QFile&gt;</code><br/>
+<code>#include &lt;QMetaObject&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de fileloader.hpp:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="fileloader_8hpp__incl.svg" width="278" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="fileloader_8hpp__dep__incl.svg" width="378" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 </div>
 <p><a href="fileloader_8hpp_source.html">Aller au code source de ce fichier.</a></p>
 <table class="memberdecls">
@@ -111,6 +124,10 @@ Fonctions</h2></td></tr>
 class DefaultFileLoader void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileloader_8hpp.html#a3606f281bba1aa03311e06a04abd83f8">load</a> (<a class="el" href="class_viewport.html">Viewport</a> *, const QString &amp;)</td></tr>
 <tr class="memdesc:a3606f281bba1aa03311e06a04abd83f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Chargeur de fichier par defaut.  <a href="#a3606f281bba1aa03311e06a04abd83f8">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a3606f281bba1aa03311e06a04abd83f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01cf740c5e20abbb6aa4ccf17236cd8b"><td class="memItemLeft" align="right" valign="top">QDataStream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileloader_8hpp.html#a01cf740c5e20abbb6aa4ccf17236cd8b">operator&lt;&lt;</a> (QDataStream &amp;, const <a class="el" href="class_q_object.html">QObject</a> &amp;)</td></tr>
+<tr class="separator:a01cf740c5e20abbb6aa4ccf17236cd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48efbb80ebceb0d47fc8d9084562f597"><td class="memItemLeft" align="right" valign="top">QDataStream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileloader_8hpp.html#a48efbb80ebceb0d47fc8d9084562f597">operator&gt;&gt;</a> (QDataStream &amp;, <a class="el" href="class_q_object.html">QObject</a> &amp;)</td></tr>
+<tr class="separator:a48efbb80ebceb0d47fc8d9084562f597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentation des fonctions</h2>
 <a class="anchor" id="a3606f281bba1aa03311e06a04abd83f8"></a>
@@ -150,10 +167,66 @@ class DefaultFileLoader void&#160;</td><td class="memItemRight" valign="bottom">
 
 </div>
 </div>
+<a class="anchor" id="a01cf740c5e20abbb6aa4ccf17236cd8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDataStream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_q_object.html">QObject</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="fileloader_8cpp_source.html#l00075">75</a> du fichier <a class="el" href="fileloader_8cpp_source.html">fileloader.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48efbb80ebceb0d47fc8d9084562f597"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDataStream&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_q_object.html">QObject</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="fileloader_8cpp_source.html#l00089">89</a> du fichier <a class="el" href="fileloader_8cpp_source.html">fileloader.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Jeudi 5 Mars 2015 12:30:17 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi 10 Juin 2015 15:16:17 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -98,39 +98,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QFile&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_viewport.html">Viewport</a>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_file_loader.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_file_loader.html">FileLoader</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_file_loader.html#a3e9444022cd5cc90535917ae3687c69e">   17</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_file_loader.html#a3e9444022cd5cc90535917ae3687c69e">~FileLoader</a>() {}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_file_loader.html#ac7ec4b5e44b84b37fa75dffa5a5c78cf">save</a>(<a class="code" href="class_viewport.html">Viewport</a>*, <span class="keyword">const</span> QString&amp;) = 0;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_file_loader.html#aac40f8fd94ed92bff539c65eecb8a53f">load</a>(<a class="code" href="class_viewport.html">Viewport</a>*, <span class="keyword">const</span> QString&amp;) = 0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;Q_DECLARE_INTERFACE(<a class="code" href="class_file_loader.html">FileLoader</a>, <span class="stringliteral">&quot;com.sup3asc2.sickle.FileLoader/1.0&quot;</span>)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QMetaObject&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="class_viewport.html">Viewport</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_file_loader.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_file_loader.html">FileLoader</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_file_loader.html#a3e9444022cd5cc90535917ae3687c69e">   18</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_file_loader.html#a3e9444022cd5cc90535917ae3687c69e">~FileLoader</a>() {}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_file_loader.html#ac7ec4b5e44b84b37fa75dffa5a5c78cf">save</a>(<a class="code" href="class_viewport.html">Viewport</a>*, <span class="keyword">const</span> QString&amp;) = 0;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_file_loader.html#aac40f8fd94ed92bff539c65eecb8a53f">load</a>(<a class="code" href="class_viewport.html">Viewport</a>*, <span class="keyword">const</span> QString&amp;) = 0;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;Q_DECLARE_INTERFACE(<a class="code" href="class_file_loader.html">FileLoader</a>, <span class="stringliteral">&quot;com.sup3asc2.sickle.FileLoader/1.0&quot;</span>)</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;class DefaultFileLoader : public <a class="code" href="class_q_object.html">QObject</a>, public <a class="code" href="class_file_loader.html">FileLoader</a> {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Q_INTERFACES(FileLoader)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    public:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        virtual <span class="keywordtype">void</span> save(<a class="code" href="class_viewport.html">Viewport</a>*, const QString&amp;);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        virtual <span class="keywordtype">void</span> <a class="code" href="fileloader_8hpp.html#a3606f281bba1aa03311e06a04abd83f8">load</a>(Viewport*, const QString&amp;);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif  // FILELOADER_HPP</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;class DefaultFileLoader : public <a class="code" href="class_q_object.html">QObject</a>, public <a class="code" href="class_file_loader.html">FileLoader</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    Q_INTERFACES(FileLoader)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    public:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        Q_REVISION(2) virtual <span class="keywordtype">void</span> save(<a class="code" href="class_viewport.html">Viewport</a>*, const QString&amp;);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        virtual <span class="keywordtype">void</span> <a class="code" href="fileloader_8hpp.html#a3606f281bba1aa03311e06a04abd83f8">load</a>(Viewport*, const QString&amp;);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;QDataStream&amp; operator&lt;&lt;(QDataStream&amp;, const QObject&amp;);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;QDataStream&amp; operator&gt;&gt;(QDataStream&amp;, QObject&amp;);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif  // FILELOADER_HPP</span></div>
 <div class="ttc" id="class_viewport_html"><div class="ttname"><a href="class_viewport.html">Viewport</a></div><div class="ttdoc">Cadre de vue 3D. </div><div class="ttdef"><b>Definition:</b> <a href="viewport_8hpp_source.html#l00018">viewport.hpp:18</a></div></div>
 <div class="ttc" id="class_file_loader_html_ac7ec4b5e44b84b37fa75dffa5a5c78cf"><div class="ttname"><a href="class_file_loader.html#ac7ec4b5e44b84b37fa75dffa5a5c78cf">FileLoader::save</a></div><div class="ttdeci">virtual void save(Viewport *, const QString &amp;)=0</div></div>
-<div class="ttc" id="class_file_loader_html"><div class="ttname"><a href="class_file_loader.html">FileLoader</a></div><div class="ttdoc">Interface de gestion des fichiers. </div><div class="ttdef"><b>Definition:</b> <a href="fileloader_8hpp_source.html#l00015">fileloader.hpp:15</a></div></div>
+<div class="ttc" id="class_file_loader_html"><div class="ttname"><a href="class_file_loader.html">FileLoader</a></div><div class="ttdoc">Interface de gestion des fichiers. </div><div class="ttdef"><b>Definition:</b> <a href="fileloader_8hpp_source.html#l00016">fileloader.hpp:16</a></div></div>
 <div class="ttc" id="fileloader_8hpp_html_a3606f281bba1aa03311e06a04abd83f8"><div class="ttname"><a href="fileloader_8hpp.html#a3606f281bba1aa03311e06a04abd83f8">load</a></div><div class="ttdeci">virtual Q_DECLARE_INTERFACE(FileLoader,&quot;com.sup3asc2.sickle.FileLoader/1.0&quot;) class DefaultFileLoader void load(Viewport *, const QString &amp;)</div><div class="ttdoc">Chargeur de fichier par defaut. </div></div>
 <div class="ttc" id="class_file_loader_html_aac40f8fd94ed92bff539c65eecb8a53f"><div class="ttname"><a href="class_file_loader.html#aac40f8fd94ed92bff539c65eecb8a53f">FileLoader::load</a></div><div class="ttdeci">virtual void load(Viewport *, const QString &amp;)=0</div></div>
 <div class="ttc" id="class_q_object_html"><div class="ttname"><a href="class_q_object.html">QObject</a></div></div>
-<div class="ttc" id="class_file_loader_html_a3e9444022cd5cc90535917ae3687c69e"><div class="ttname"><a href="class_file_loader.html#a3e9444022cd5cc90535917ae3687c69e">FileLoader::~FileLoader</a></div><div class="ttdeci">virtual ~FileLoader()</div><div class="ttdef"><b>Definition:</b> <a href="fileloader_8hpp_source.html#l00017">fileloader.hpp:17</a></div></div>
+<div class="ttc" id="class_file_loader_html_a3e9444022cd5cc90535917ae3687c69e"><div class="ttname"><a href="class_file_loader.html#a3e9444022cd5cc90535917ae3687c69e">FileLoader::~FileLoader</a></div><div class="ttdeci">virtual ~FileLoader()</div><div class="ttdef"><b>Definition:</b> <a href="fileloader_8hpp_source.html#l00018">fileloader.hpp:18</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Jeudi 5 Mars 2015 12:30:17 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi 10 Juin 2015 15:16:17 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,17 +1,18 @@
 <map id="include/globals.hpp" name="include/globals.hpp">
-<area shape="rect" id="node3" href="$actor_8hpp.html" title="include/actor.hpp" alt="" coords="251,83,371,112"/>
-<area shape="rect" id="node7" href="$geometry_8hpp.html" title="include/geometry.hpp" alt="" coords="287,160,433,189"/>
-<area shape="rect" id="node9" href="$cube_8hpp.html" title="include/cube.hpp" alt="" coords="549,237,669,267"/>
-<area shape="rect" id="node30" href="$camera_8hpp.html" title="include/camera.hpp" alt="" coords="445,83,579,112"/>
-<area shape="rect" id="node5" href="$actor_8cpp.html" title="src/actor.cpp" alt="" coords="164,160,263,189"/>
-<area shape="rect" id="node17" href="$geometry_8cpp.html" title="src/geometry.cpp" alt="" coords="152,237,275,267"/>
-<area shape="rect" id="node19" href="$group_8hpp.html" title="include/group.hpp" alt="" coords="5,237,128,267"/>
-<area shape="rect" id="node23" href="$sphere_8hpp.html" title="include/sphere.hpp" alt="" coords="299,237,429,267"/>
-<area shape="rect" id="node11" href="$cube_8cpp.html" title="src/cube.cpp" alt="" coords="613,315,709,344"/>
-<area shape="rect" id="node13" href="$viewport_8hpp.html" title="include/viewport.hpp" alt="" coords="448,315,589,344"/>
-<area shape="rect" id="node15" href="$viewport_8cpp.html" title="src/viewport.cpp" alt="" coords="460,392,577,421"/>
-<area shape="rect" id="node21" href="$group_8cpp.html" title="src/group.cpp" alt="" coords="16,315,117,344"/>
-<area shape="rect" id="node25" href="$mainwindow_8cpp.html" title="src/mainwindow.cpp" alt="" coords="283,315,424,344"/>
-<area shape="rect" id="node28" href="$sphere_8cpp.html" title="src/sphere.cpp" alt="" coords="152,315,259,344"/>
-<area shape="rect" id="node32" href="$camera_8cpp.html" title="src/camera.cpp" alt="" coords="508,160,620,189"/>
+<area shape="rect" id="node3" href="$actor_8hpp.html" title="include/actor.hpp" alt="" coords="277,83,397,112"/>
+<area shape="rect" id="node7" href="$geometry_8hpp.html" title="include/geometry.hpp" alt="" coords="313,160,460,189"/>
+<area shape="rect" id="node9" href="$cube_8hpp.html" title="include/cube.hpp" alt="" coords="557,237,677,267"/>
+<area shape="rect" id="node32" href="$camera_8hpp.html" title="include/camera.hpp" alt="" coords="472,83,605,112"/>
+<area shape="rect" id="node5" href="$actor_8cpp.html" title="src/actor.cpp" alt="" coords="191,160,289,189"/>
+<area shape="rect" id="node19" href="$sphere_8hpp.html" title="include/sphere.hpp" alt="" coords="183,237,313,267"/>
+<area shape="rect" id="node26" href="$geometry_8cpp.html" title="src/geometry.cpp" alt="" coords="337,237,460,267"/>
+<area shape="rect" id="node28" href="$group_8hpp.html" title="include/group.hpp" alt="" coords="15,237,137,267"/>
+<area shape="rect" id="node11" href="$cube_8cpp.html" title="src/cube.cpp" alt="" coords="592,315,688,344"/>
+<area shape="rect" id="node13" href="$viewport_8hpp.html" title="include/viewport.hpp" alt="" coords="427,315,568,344"/>
+<area shape="rect" id="node15" href="$fileloader_8cpp.html" title="src/fileloader.cpp" alt="" coords="365,392,485,421"/>
+<area shape="rect" id="node17" href="$viewport_8cpp.html" title="src/viewport.cpp" alt="" coords="509,392,627,421"/>
+<area shape="rect" id="node22" href="$mainwindow_8cpp.html" title="src/mainwindow.cpp" alt="" coords="131,315,272,344"/>
+<area shape="rect" id="node24" href="$sphere_8cpp.html" title="src/sphere.cpp" alt="" coords="296,315,403,344"/>
+<area shape="rect" id="node30" href="$group_8cpp.html" title="src/group.cpp" alt="" coords="5,315,107,344"/>
+<area shape="rect" id="node34" href="$camera_8cpp.html" title="src/camera.cpp" alt="" coords="535,160,647,189"/>
 </map>

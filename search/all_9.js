@@ -5,7 +5,7 @@ var searchData=
   ['mainwindow',['MainWindow',['../class_main_window.html',1,'MainWindow'],['../class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db',1,'MainWindow::MainWindow()']]],
   ['mainwindow_2ecpp',['mainwindow.cpp',['../mainwindow_8cpp.html',1,'']]],
   ['mainwindow_2ehpp',['mainwindow.hpp',['../mainwindow_8hpp.html',1,'']]],
-  ['material',['Material',['../struct_material.html',1,'Material'],['../struct_material.html#a137e987401b63eb7c6c27c3e38bc74b5',1,'Material::Material()'],['../class_geo_base.html#a03c962245decd8e1b69b20f672355e8d',1,'GeoBase::material()'],['../class_geo_base.html#a16b4bc39e07b404fa613142e62a89238',1,'GeoBase::material() const '],['../class_geo_base.html#a6bf3bb1dc75c020d6e1759080c1d888f',1,'GeoBase::material(QObject *val)']]],
+  ['material',['Material',['../struct_material.html',1,'Material'],['../class_geo_base.html#a03c962245decd8e1b69b20f672355e8d',1,'GeoBase::material()'],['../class_geo_base.html#a16b4bc39e07b404fa613142e62a89238',1,'GeoBase::material() const '],['../class_geo_base.html#a6bf3bb1dc75c020d6e1759080c1d888f',1,'GeoBase::material(QObject *val)'],['../struct_material.html#a137e987401b63eb7c6c27c3e38bc74b5',1,'Material::Material()']]],
   ['metallic',['metallic',['../struct_material.html#a97fc4551763505f23dac24a9901cee88',1,'Material::metallic()'],['../struct_material.html#a6fcaf0217d837a565a1f01392ebeffc0',1,'Material::metallic() const '],['../struct_material.html#ab7ff628208726ce527783e8662bac96b',1,'Material::metallic(float val)']]],
   ['minimumsizehint',['minimumSizeHint',['../class_viewport.html#a441cdf7965dd99860d2e1cec72b71081',1,'Viewport']]],
   ['mode',['mode',['../struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03',1,'DrawInfo']]],

@@ -1,0 +1,5 @@
+<map id="Camera::orientation" name="Camera::orientation">
+<area shape="rect" id="node3" href="$class_camera.html#a9936c788ad482b40b5a3548bf5e97247" title="Camera::up" alt="" coords="189,44,280,73"/>
+<area shape="rect" id="node5" href="$class_camera.html#ac68fa914dd8737de1ec7558fc9281a68" title="Camera::right" alt="" coords="340,5,441,35"/>
+<area shape="rect" id="node7" href="$class_camera.html#a7276761c5214ec94f6ac35e5804f6719" title="Camera::direction" alt="" coords="328,71,453,100"/>
+</map>

@@ -17,7 +17,7 @@ var searchData=
   ['s_5fvao',['s_vao',['../class_geometry.html#aaae8aa56fe2e045444a81c2cedb3da24',1,'Geometry']]],
   ['s_5fvertexbuffer',['s_vertexBuffer',['../class_geometry.html#a257b35064612dbe4c87a251e7fe8985a',1,'Geometry']]],
   ['s_5fvertices',['s_vertices',['../class_geometry.html#a412bd134c12917d332183cfc80e658de',1,'Geometry']]],
-  ['save',['save',['../class_viewport.html#a94ce1a503f6e3c10d27e7289e6f8607c',1,'Viewport']]],
+  ['save',['save',['../class_file_loader.html#ac7ec4b5e44b84b37fa75dffa5a5c78cf',1,'FileLoader']]],
   ['scale',['scale',['../class_actor.html#a22ee89ce375cf54c12daa4513973499d',1,'Actor::scale()'],['../class_actor.html#a9f365fe7550acb05cb6de6813035d780',1,'Actor::scale() const '],['../class_actor.html#a3329b9736b983c9b2f3d886d47567c26',1,'Actor::scale(QVector3D val)']]],
   ['scaled',['scaled',['../class_actor.html#af158c415c51de9bfb9f1173fe6267b98',1,'Actor']]],
   ['sectors',['sectors',['../sphere_8cpp.html#a3222155a03a3c1c31e85081626b891cb',1,'sphere.cpp']]],

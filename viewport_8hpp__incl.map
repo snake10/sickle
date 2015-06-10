@@ -1,8 +1,8 @@
 <map id="include/viewport.hpp" name="include/viewport.hpp">
-<area shape="rect" id="node11" href="$camera_8hpp.html" title="camera.hpp" alt="" coords="215,160,306,189"/>
-<area shape="rect" id="node25" href="$cube_8hpp.html" title="cube.hpp" alt="" coords="600,83,675,112"/>
-<area shape="rect" id="node54" href="$sphere_8hpp.html" title="sphere.hpp" alt="" coords="758,83,843,112"/>
-<area shape="rect" id="node19" href="$globals_8hpp.html" title="Definitions globales. " alt="" coords="74,315,162,344"/>
-<area shape="rect" id="node27" href="$geometry_8hpp.html" title="geometry.hpp" alt="" coords="644,160,746,189"/>
-<area shape="rect" id="node39" href="$actor_8hpp.html" title="actor.hpp" alt="" coords="684,237,759,267"/>
+<area shape="rect" id="node11" href="$camera_8hpp.html" title="camera.hpp" alt="" coords="273,160,363,189"/>
+<area shape="rect" id="node27" href="$cube_8hpp.html" title="cube.hpp" alt="" coords="703,83,778,112"/>
+<area shape="rect" id="node56" href="$sphere_8hpp.html" title="sphere.hpp" alt="" coords="837,83,922,112"/>
+<area shape="rect" id="node19" href="$globals_8hpp.html" title="Definitions globales. " alt="" coords="514,315,602,344"/>
+<area shape="rect" id="node29" href="$geometry_8hpp.html" title="geometry.hpp" alt="" coords="829,160,930,189"/>
+<area shape="rect" id="node41" href="$actor_8hpp.html" title="actor.hpp" alt="" coords="818,237,893,267"/>
 </map>

@@ -1,5 +1,6 @@
 <map id="include/cube.hpp" name="include/cube.hpp">
 <area shape="rect" id="node3" href="$cube_8cpp.html" title="src/cube.cpp" alt="" coords="5,83,101,112"/>
 <area shape="rect" id="node5" href="$viewport_8hpp.html" title="include/viewport.hpp" alt="" coords="125,83,267,112"/>
-<area shape="rect" id="node7" href="$viewport_8cpp.html" title="src/viewport.cpp" alt="" coords="137,160,255,189"/>
+<area shape="rect" id="node7" href="$fileloader_8cpp.html" title="src/fileloader.cpp" alt="" coords="64,160,184,189"/>
+<area shape="rect" id="node9" href="$viewport_8cpp.html" title="src/viewport.cpp" alt="" coords="208,160,325,189"/>
 </map>

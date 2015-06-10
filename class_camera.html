@@ -125,14 +125,16 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="separator:ae068edc8a9da46c0062af05b2434fb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb1bda6df954268b8e0fc5531dafeca1"><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#adb1bda6df954268b8e0fc5531dafeca1">move</a> (QVector3D val)</td></tr>
 <tr class="separator:adb1bda6df954268b8e0fc5531dafeca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81adf3ba7f63429a9d5356c218da78f"><td class="memItemLeft" align="right" valign="top">QMatrix4x4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#af81adf3ba7f63429a9d5356c218da78f">view</a> ()</td></tr>
+<tr class="separator:af81adf3ba7f63429a9d5356c218da78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac68fa914dd8737de1ec7558fc9281a68"><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#ac68fa914dd8737de1ec7558fc9281a68">right</a> ()</td></tr>
 <tr class="separator:ac68fa914dd8737de1ec7558fc9281a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7276761c5214ec94f6ac35e5804f6719"><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a7276761c5214ec94f6ac35e5804f6719">direction</a> ()</td></tr>
 <tr class="separator:a7276761c5214ec94f6ac35e5804f6719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9936c788ad482b40b5a3548bf5e97247"><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a9936c788ad482b40b5a3548bf5e97247">up</a> ()</td></tr>
 <tr class="separator:a9936c788ad482b40b5a3548bf5e97247"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af81adf3ba7f63429a9d5356c218da78f"><td class="memItemLeft" align="right" valign="top">QMatrix4x4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#af81adf3ba7f63429a9d5356c218da78f">view</a> ()</td></tr>
-<tr class="separator:af81adf3ba7f63429a9d5356c218da78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37709eb62bc8b5ff7fd3087b891fcdf6"><td class="memItemLeft" align="right" valign="top">QQuaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a37709eb62bc8b5ff7fd3087b891fcdf6">orientation</a> ()</td></tr>
+<tr class="separator:a37709eb62bc8b5ff7fd3087b891fcdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a600387791d90bfb6578ea050e3f60ae3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a600387791d90bfb6578ea050e3f60ae3">velocity</a> (QVector3D v, int dur=100)</td></tr>
 <tr class="separator:a600387791d90bfb6578ea050e3f60ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e6b5818c84025d176c13c84991ef568"><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera.html#a4e6b5818c84025d176c13c84991ef568">position</a> () const </td></tr>
@@ -177,9 +179,9 @@ Propriétés</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Gestion de la camera. </p>
-<p>Permet de calculer la matrice view d'une camera a partir de 2 angles (vertical et horizontal) et une position. Les propriétés bias permettent de déclaer les angles pour eviter que la caméra ne retourne a son point de départ lorsque l'utilisateur la tourne. La propriété speed correspond a la vitesse de déplacement de la caméra. </p>
+<p>Permet de calculer la matrice view d'une camera a partir de 2 angles (vertical et horizontal) et une position. Les propriétés bias permettent de décaler les angles pour eviter que la caméra ne retourne a son point de départ lorsque l'utilisateur la tourne. La propriété speed correspond a la vitesse de déplacement de la caméra. </p>
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00026">26</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00027">27</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="ae3aa4afd7a3d9ddc2bf710bc74dc293e"></a>
 <div class="memitem">
@@ -251,6 +253,9 @@ Voici le graphe d'appel pour cette fonction :</div>
 <a class="anchor" id="a7276761c5214ec94f6ac35e5804f6719"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">QVector3D Camera::direction </td>
@@ -259,14 +264,52 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00032">32</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00041">41</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_camera_a7276761c5214ec94f6ac35e5804f6719_icgraph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_camera_a7276761c5214ec94f6ac35e5804f6719_icgraph.svg" width="100%" height="480"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5fcdf451c1711531dfabd2c9692c9c24"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Camera::hAngle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00073">73</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a5fcdf451c1711531dfabd2c9692c9c24_icgraph.svg" width="544" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -294,39 +337,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00042">42</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5fcdf451c1711531dfabd2c9692c9c24"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Camera::hAngle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00042">42</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
-
-<p><div class="dynheader">
-Voici le graphe des appelants de cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a5fcdf451c1711531dfabd2c9692c9c24_icgraph.svg" width="544" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00073">73</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -351,7 +362,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00043">43</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00074">74</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -384,7 +395,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00043">43</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00074">74</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -451,6 +462,39 @@ Voici le graphe des appelants de cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a37709eb62bc8b5ff7fd3087b891fcdf6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QQuaternion Camera::orientation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00049">49</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a37709eb62bc8b5ff7fd3087b891fcdf6_cgraph.svg" width="459" height="106"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a4e6b5818c84025d176c13c84991ef568"></a>
 <div class="memitem">
 <div class="memproto">
@@ -472,7 +516,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00039">39</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00070">70</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -505,7 +549,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00039">39</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00070">70</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -543,6 +587,9 @@ Voici le graphe des appelants de cette fonction :</div>
 <a class="anchor" id="ac68fa914dd8737de1ec7558fc9281a68"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">QVector3D Camera::right </td>
@@ -551,14 +598,52 @@ Voici le graphe des appelants de cette fonction :</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00028">28</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00037">37</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_ac68fa914dd8737de1ec7558fc9281a68_icgraph.svg" width="646" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_ac68fa914dd8737de1ec7558fc9281a68_icgraph.svg" width="646" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d5f5bfa927044db06ce687b0c00173e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Camera::speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00075">75</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a9d5f5bfa927044db06ce687b0c00173e_icgraph.svg" width="512" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -586,11 +671,11 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00044">44</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00075">75</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9d5f5bfa927044db06ce687b0c00173e"></a>
+<a class="anchor" id="a9936c788ad482b40b5a3548bf5e97247"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -598,10 +683,10 @@ Voici le graphe des appelants de cette fonction :</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float Camera::speed </td>
+          <td class="memname">QVector3D Camera::up </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -611,31 +696,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00044">44</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
-
-<p><div class="dynheader">
-Voici le graphe des appelants de cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a9d5f5bfa927044db06ce687b0c00173e_icgraph.svg" width="512" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a9936c788ad482b40b5a3548bf5e97247"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QVector3D Camera::up </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00036">36</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00045">45</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -647,39 +708,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a9936c788ad482b40b5a3548bf5e97247_icgraph.svg" width="496" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_a9936c788ad482b40b5a3548bf5e97247_icgraph.svg" width="496" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="aa343f196240a4cf6b56512726f77c7ed"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Camera::vAngle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00040">40</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
-
-<p><div class="dynheader">
-Voici le graphe des appelants de cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_aa343f196240a4cf6b56512726f77c7ed_icgraph.svg" width="544" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -707,7 +737,39 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00040">40</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00071">71</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa343f196240a4cf6b56512726f77c7ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Camera::vAngle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00071">71</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_camera_aa343f196240a4cf6b56512726f77c7ed_icgraph.svg" width="544" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
 
 </div>
 </div>
@@ -732,7 +794,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00041">41</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00072">72</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
@@ -765,7 +827,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00041">41</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00072">72</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -793,7 +855,7 @@ Voici le graphe des appelants de cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00040">40</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00028">28</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -824,7 +886,7 @@ Voici le graphe des appelants de cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00048">48</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8cpp_source.html#l00036">36</a> du fichier <a class="el" href="camera_8cpp_source.html">camera.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -861,7 +923,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00041">41</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00072">72</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -883,7 +945,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00042">42</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00073">73</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -905,7 +967,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00039">39</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00070">70</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -927,7 +989,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00043">43</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00074">74</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -949,7 +1011,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00039">39</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00070">70</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -971,7 +1033,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00040">40</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="camera_8hpp_source.html#l00071">71</a> du fichier <a class="el" href="camera_8hpp_source.html">camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -982,7 +1044,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Dimanche 7 Juin 2015 17:10:52 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi 10 Juin 2015 15:16:17 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
