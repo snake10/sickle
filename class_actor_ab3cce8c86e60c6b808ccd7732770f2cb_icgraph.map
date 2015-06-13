@@ -1,0 +1,9 @@
+<map id="Actor::viewport" name="Actor::viewport">
+<area shape="rect" id="node3" href="$class_geo_base.html#a357c5534b7ac40df29f504c0e988e52e" title="GeoBase::setParent" alt="" coords="167,5,305,35"/>
+<area shape="rect" id="node7" href="$class_light.html#ad0e59fad13bb6cfadc25b2c477e9ddc7" title="Light::~Light" alt="" coords="189,59,283,88"/>
+<area shape="rect" id="node9" href="$class_light.html#a295eaf1ef5ebd30fa4997d4f7ccbb7e1" title="Light::update" alt="" coords="188,165,284,195"/>
+<area shape="rect" id="node15" href="$class_light.html#ab89261d1fa4fbbeaa61988502da207d3" title="Light::setParent" alt="" coords="179,112,293,141"/>
+<area shape="rect" id="node5" href="$class_geo_base.html#a64d0302a4d85b1fe7946df7ebfaa2e33" title="GeoBase::GeoBase" alt="" coords="355,5,493,35"/>
+<area shape="rect" id="node11" href="$class_light.html#a30538cefe47541035db096b75133442d" title="Light::Light" alt="" coords="381,112,467,141"/>
+<area shape="rect" id="node13" href="$class_spotlight.html#a00b11e643c97326edb0ab6b0dff3425a" title="Spotlight::Spotlight" alt="" coords="359,165,489,195"/>
+</map>

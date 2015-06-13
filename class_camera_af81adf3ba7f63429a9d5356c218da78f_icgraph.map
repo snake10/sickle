@@ -1,3 +1,4 @@
 <map id="Camera::view" name="Camera::view">
-<area shape="rect" id="node3" href="$class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5" title="Viewport::paintGL" alt="" coords="159,5,284,35"/>
+<area shape="rect" id="node3" href="$class_viewport.html#ad0317022a7a6399ee47c199bb9348efc" title="Viewport::renderScene" alt="" coords="157,5,312,35"/>
+<area shape="rect" id="node5" href="$class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5" title="Viewport::paintGL" alt="" coords="361,5,487,35"/>
 </map>

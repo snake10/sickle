@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,74 +95,56 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 <div class="contents">
 &#160;<ul>
+<li>buffer
+: <a class="el" href="struct_draw_info.html#add242268e761b2a56af176ea16fbc4fb">DrawInfo</a>
+</li>
 <li>context
 : <a class="el" href="struct_draw_info.html#a8beb28d8f204f783d8991ab5038a3170">DrawInfo</a>
+</li>
+<li>m_buffer
+: <a class="el" href="class_light.html#adc54718834ba59d73b33a5222d6c6e19">Light</a>
+</li>
+<li>m_projection
+: <a class="el" href="class_light.html#a8881ba22d6a024d0941901a3d464222c">Light</a>
+</li>
+<li>m_texture
+: <a class="el" href="class_light.html#a2f95d0a5ffdc28faeeb112ca2f839477">Light</a>
+</li>
+<li>m_view
+: <a class="el" href="class_light.html#a2d15d31e8d64dfe6726c6b06e4d57387">Light</a>
 </li>
 <li>mode
 : <a class="el" href="struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03">DrawInfo</a>
 </li>
-<li>Projection
-: <a class="el" href="struct_draw_info.html#abc4f8bc2bd85c796731912929623e001">DrawInfo</a>
+<li>s_buffers
+: <a class="el" href="class_geometry.html#a677672dedaa0857de8f74591272e7841">Geometry&lt; Child &gt;</a>
 </li>
-<li>s_bitangentBuffer
-: <a class="el" href="class_geometry.html#a5e0773bba791d63960b97aee4c39db07">Geometry&lt; Child &gt;</a>
-</li>
-<li>s_bitangents
-: <a class="el" href="class_geometry.html#a264844784f7f6e323c8647b637196750">Geometry&lt; Child &gt;</a>
-</li>
-<li>s_colorBuffer
-: <a class="el" href="class_geometry.html#a3f19c8c3670ffaa2124ec53ebe67708d">Geometry&lt; Child &gt;</a>
-</li>
-<li>s_colors
-: <a class="el" href="class_geometry.html#a30266ede5f6071fcf15dfc6894c26b8e">Geometry&lt; Child &gt;</a>
+<li>s_buffersData
+: <a class="el" href="class_geometry.html#afe753b116138f0d2172d9cedab4cbebf">Geometry&lt; Child &gt;</a>
 </li>
 <li>s_indexBuffer
-: <a class="el" href="class_geometry.html#a61ceb9d088b03512f32acf59d7d19526">Geometry&lt; Child &gt;</a>
-</li>
-<li>s_indices
-: <a class="el" href="class_geometry.html#ace2c507886aa0a70500b12b5970a61e8">Geometry&lt; Child &gt;</a>
+: <a class="el" href="class_geometry.html#afca8299d2e996955dbbdec0a24d7b629">Geometry&lt; Child &gt;</a>
 </li>
 <li>s_instances
 : <a class="el" href="class_geometry.html#a2a4b5cc631647df7085c635d591313f2">Geometry&lt; Child &gt;</a>
 </li>
-<li>s_normalBuffer
-: <a class="el" href="class_geometry.html#ae4d070dc1bbee73d84b2528954e8561f">Geometry&lt; Child &gt;</a>
+<li>s_programList
+: <a class="el" href="class_geometry.html#a5f0deff9f9b3124f5fb548cbbd58db55">Geometry&lt; Child &gt;</a>
 </li>
-<li>s_normals
-: <a class="el" href="class_geometry.html#ad8d900038727403c3fcbcd490b5288be">Geometry&lt; Child &gt;</a>
-</li>
-<li>s_program
-: <a class="el" href="class_geometry.html#abfdbbbd3be20c6b735930ffcf7343123">Geometry&lt; Child &gt;</a>
-</li>
-<li>s_tangentBuffer
-: <a class="el" href="class_geometry.html#a7b83ebb2b03aa6988a85a7c9c32c9e8d">Geometry&lt; Child &gt;</a>
-</li>
-<li>s_tangents
-: <a class="el" href="class_geometry.html#a39c604ccc49fdc8f9371677636a2ec47">Geometry&lt; Child &gt;</a>
-</li>
-<li>s_uv
-: <a class="el" href="class_geometry.html#acae9da124a979f88d13e23302ca294b7">Geometry&lt; Child &gt;</a>
-</li>
-<li>s_UVBuffer
-: <a class="el" href="class_geometry.html#ae0fdc04693f7a951776a5d5c2776bda0">Geometry&lt; Child &gt;</a>
+<li>s_shaderList
+: <a class="el" href="class_geo_base.html#a94ce166ac88248c075d8b641ffb8b203">GeoBase</a>
 </li>
 <li>s_vao
 : <a class="el" href="class_geometry.html#aaae8aa56fe2e045444a81c2cedb3da24">Geometry&lt; Child &gt;</a>
 </li>
-<li>s_vertexBuffer
-: <a class="el" href="class_geometry.html#a257b35064612dbe4c87a251e7fe8985a">Geometry&lt; Child &gt;</a>
-</li>
-<li>s_vertices
-: <a class="el" href="class_geometry.html#a412bd134c12917d332183cfc80e658de">Geometry&lt; Child &gt;</a>
-</li>
-<li>View
-: <a class="el" href="struct_draw_info.html#a988e2c6b8b9dfad10eb1e30f8d73211b">DrawInfo</a>
+<li>uniforms
+: <a class="el" href="struct_draw_info.html#a773eb406663e49d53558c5edb56bd5e0">DrawInfo</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Mercredi 10 Juin 2015 15:31:15 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi 13 Juin 2015 14:52:56 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

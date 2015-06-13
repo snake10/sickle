@@ -1,0 +1,5 @@
+<map id="Spotlight::updateView" name="Spotlight::updateView">
+<area shape="rect" id="node3" href="$class_actor.html#acdab84246959258bbde6eb050d340e67" title="Actor::position" alt="" coords="203,5,309,35"/>
+<area shape="rect" id="node5" href="$class_light.html#ab689087cc07b95273f6daae900a42010" title="Light::direction" alt="" coords="203,59,309,88"/>
+<area shape="rect" id="node7" href="$class_actor.html#a748e07c73196050bfb0d51a14608aeae" title="Actor::orientation" alt="" coords="359,59,479,88"/>
+</map>

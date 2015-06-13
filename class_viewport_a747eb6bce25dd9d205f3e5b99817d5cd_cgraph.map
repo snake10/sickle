@@ -1,3 +1,12 @@
 <map id="Viewport::initializeGL" name="Viewport::initializeGL">
-<area shape="rect" id="node3" href="$class_viewport.html#a62399e89e032cac31006c5666cc3bbeb" title="Viewport::isInitialized" alt="" coords="200,5,347,35"/>
+<area shape="rect" id="node3" href="$class_viewport.html#a9062192da88f5586fe32758a5943bf30" title="Viewport::showBuffers" alt="" coords="200,5,355,35"/>
+<area shape="rect" id="node5" href="$class_viewport.html#af2943711480a4f79de798913d1d35f4e" title="Viewport::showMaps" alt="" coords="205,59,349,88"/>
+<area shape="rect" id="node7" href="$class_viewport.html#a13c02ab9dcf9fc9fa0e2031ab1f76642" title="Viewport::ambient" alt="" coords="215,112,340,141"/>
+<area shape="rect" id="node9" href="$class_viewport.html#a4ab9987d64c99b9a4d819b5a2365c9a6" title="Viewport::program" alt="" coords="213,165,341,195"/>
+<area shape="rect" id="node11" href="$class_viewport.html#a21ac795014fc080ab40b39c39c9eab35" title="Viewport::initScene" alt="" coords="211,219,344,248"/>
+<area shape="rect" id="node13" href="$class_viewport.html#a6e17a431c26ab8790cb775e583135298" title="Viewport::initQuad" alt="" coords="213,272,341,301"/>
+<area shape="rect" id="node15" href="$class_viewport.html#a5760eeac13c59b34bd8cc5ba638f9cbd" title="Viewport::catchErrors" alt="" coords="204,325,351,355"/>
+<area shape="rect" id="node17" href="$class_world.html#ad705d80a512244721b55c69bccab5653" title="World::addZone" alt="" coords="220,379,335,408"/>
+<area shape="rect" id="node21" href="$class_viewport.html#a62399e89e032cac31006c5666cc3bbeb" title="Viewport::isInitialized" alt="" coords="204,432,351,461"/>
+<area shape="rect" id="node19" href="$class_world.html#a3362c1031d93b06f02431705adf3f171" title="World::setCurrentZoneId" alt="" coords="403,379,568,408"/>
 </map>

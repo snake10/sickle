@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mode',['mode',['../struct_draw_info.html#a5f9ea27d4768c35dbde6e2a2793d5e03',1,'DrawInfo']]]
+  ['context',['context',['../struct_draw_info.html#a8beb28d8f204f783d8991ab5038a3170',1,'DrawInfo']]]
 ];

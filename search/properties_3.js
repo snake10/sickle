@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isinitialized',['isInitialized',['../class_viewport.html#ae366735439e3621c6576dec6b9a3ca29',1,'Viewport']]]
+  ['farz',['farZ',['../class_light.html#af9e4044962059199d6be578e86afc35e',1,'Light']]]
 ];

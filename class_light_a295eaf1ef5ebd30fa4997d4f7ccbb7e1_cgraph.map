@@ -1,0 +1,8 @@
+<map id="Light::update" name="Light::update">
+<area shape="rect" id="node3" href="$class_light.html#afc11082a5405572dbec76735e73b6647" title="Light::updateProj" alt="" coords="156,5,276,35"/>
+<area shape="rect" id="node5" href="$class_light.html#a123872c9df9d14ae79d4a76fee217e99" title="Light::updateView" alt="" coords="153,59,279,88"/>
+<area shape="rect" id="node11" href="$class_light.html#a747a809f8abf05f41143279abb78df13" title="Light::view" alt="" coords="173,112,259,141"/>
+<area shape="rect" id="node13" href="$class_actor.html#ab3cce8c86e60c6b808ccd7732770f2cb" title="Actor::viewport" alt="" coords="161,165,271,195"/>
+<area shape="rect" id="node7" href="$class_light.html#ab689087cc07b95273f6daae900a42010" title="Light::direction" alt="" coords="328,59,435,88"/>
+<area shape="rect" id="node9" href="$class_actor.html#a748e07c73196050bfb0d51a14608aeae" title="Actor::orientation" alt="" coords="484,59,604,88"/>
+</map>

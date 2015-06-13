@@ -1,0 +1,13 @@
+<map id="Spotlight::Spotlight" name="Spotlight::Spotlight">
+<area shape="rect" id="node3" href="$class_light.html#adca0c1a95ed27e38676aee853420dced" title="Light::nearZ" alt="" coords="213,5,304,35"/>
+<area shape="rect" id="node5" href="$class_light.html#accf379b557fa086c827bae45cd141f3c" title="Light::farZ" alt="" coords="219,59,299,88"/>
+<area shape="rect" id="node7" href="$class_spotlight.html#af8c0a59e8c0814ed2ba49135cf0a592a" title="Spotlight::outerAngle" alt="" coords="188,112,329,141"/>
+<area shape="rect" id="node9" href="$class_spotlight.html#acc96169c59f1e1cf30384f2414350916" title="Spotlight::innerAngle" alt="" coords="188,165,329,195"/>
+<area shape="rect" id="node11" href="$class_light.html#a295eaf1ef5ebd30fa4997d4f7ccbb7e1" title="Light::update" alt="" coords="211,219,307,248"/>
+<area shape="rect" id="node13" href="$class_light.html#afc11082a5405572dbec76735e73b6647" title="Light::updateProj" alt="" coords="383,139,503,168"/>
+<area shape="rect" id="node15" href="$class_light.html#a123872c9df9d14ae79d4a76fee217e99" title="Light::updateView" alt="" coords="380,192,505,221"/>
+<area shape="rect" id="node21" href="$class_light.html#a747a809f8abf05f41143279abb78df13" title="Light::view" alt="" coords="400,245,485,275"/>
+<area shape="rect" id="node23" href="$class_actor.html#ab3cce8c86e60c6b808ccd7732770f2cb" title="Actor::viewport" alt="" coords="388,299,497,328"/>
+<area shape="rect" id="node17" href="$class_light.html#ab689087cc07b95273f6daae900a42010" title="Light::direction" alt="" coords="555,192,661,221"/>
+<area shape="rect" id="node19" href="$class_actor.html#a748e07c73196050bfb0d51a14608aeae" title="Actor::orientation" alt="" coords="711,192,831,221"/>
+</map>

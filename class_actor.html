@@ -74,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -103,7 +103,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="dynheader">
 Graphe d'héritage de Actor:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor__inherit__graph.svg" width="332" height="456"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_actor__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de Actor:</div>
@@ -128,6 +129,10 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="separator:aefb2c1d280c3db70df28a59b50a32294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac35dab598ae9f9a936418ec22fadf138"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#ac35dab598ae9f9a936418ec22fadf138">draw</a> (const <a class="el" href="struct_draw_info.html">DrawInfo</a> &amp;info)=0</td></tr>
 <tr class="separator:ac35dab598ae9f9a936418ec22fadf138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422d0d3c1e343e794357669a34bb59e1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a422d0d3c1e343e794357669a34bb59e1">setParent</a> (<a class="el" href="class_q_object.html">QObject</a> *parent)</td></tr>
+<tr class="separator:a422d0d3c1e343e794357669a34bb59e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad56a870008aaf5dd5a86945918c5ee6a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#ad56a870008aaf5dd5a86945918c5ee6a">event</a> (QEvent *event)</td></tr>
+<tr class="separator:ad56a870008aaf5dd5a86945918c5ee6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdab84246959258bbde6eb050d340e67"><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#acdab84246959258bbde6eb050d340e67">position</a> () const </td></tr>
 <tr class="separator:acdab84246959258bbde6eb050d340e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a818360ae5b810a9cece29c573cf66e60"><td class="memItemLeft" align="right" valign="top">Q_SLOT QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a818360ae5b810a9cece29c573cf66e60">position</a> (QVector3D val)</td></tr>
@@ -145,6 +150,11 @@ Fonctions membres publiques</h2></td></tr>
 Fonctions membres protégées</h2></td></tr>
 <tr class="memitem:abbf942f60996c5df2a8c0a832bd91abc"><td class="memItemLeft" align="right" valign="top">virtual QMatrix4x4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">transform</a> ()</td></tr>
 <tr class="separator:abbf942f60996c5df2a8c0a832bd91abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec7bf11dc8329266433454177c1b56e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2ec7bf11dc8329266433454177c1b56e"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_actor.html#a2ec7bf11dc8329266433454177c1b56e">findParent</a> ()</td></tr>
+<tr class="separator:a2ec7bf11dc8329266433454177c1b56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3cce8c86e60c6b808ccd7732770f2cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_viewport.html">Viewport</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#ab3cce8c86e60c6b808ccd7732770f2cb">viewport</a> ()</td></tr>
+<tr class="separator:ab3cce8c86e60c6b808ccd7732770f2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Propriétés</h2></td></tr>
@@ -159,7 +169,7 @@ Propriétés</h2></td></tr>
 <div class="textblock"><p>Base de tous les objets de la scène. </p>
 <p>Cette classe est la classe de base de tous les acteurs, dont hérite toutes les classes pouvant être ajoutées a un monde. Elle définit les propriétés de bases d'un acteur, un constructeur de copie utilisant les méta-classes de Qt, ainsi que les méthodes virtuelles a implémenter par les classes enfants. </p>
 
-<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00032">32</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00039">39</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="aa0fc674ef09b215b67ff2fff69b79459"></a>
 <div class="memitem">
@@ -183,7 +193,15 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="actor_8cpp_source.html#l00005">5</a> du fichier <a class="el" href="actor_8cpp_source.html">actor.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="actor_8cpp_source.html#l00007">7</a> du fichier <a class="el" href="actor_8cpp_source.html">actor.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_actor_aa0fc674ef09b215b67ff2fff69b79459_cgraph.svg" width="100%" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -209,7 +227,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00037">37</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00044">44</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
 
 </div>
 </div>
@@ -236,14 +254,68 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implémenté dans <a class="el" href="class_geometry.html#aadfed02c20dfb9306bcf5616e7bf1f43">Geometry&lt; Child &gt;</a>, <a class="el" href="class_geometry.html#aadfed02c20dfb9306bcf5616e7bf1f43">Geometry&lt; Cube &gt;</a>, <a class="el" href="class_geometry.html#aadfed02c20dfb9306bcf5616e7bf1f43">Geometry&lt; Sphere &gt;</a>, et <a class="el" href="class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2">Group</a>.</p>
+<p>Implémenté dans <a class="el" href="class_geometry.html#a7cb8ea5e505f3933367d7ff9c6439985">Geometry&lt; Child &gt;</a>, <a class="el" href="class_geometry.html#a7cb8ea5e505f3933367d7ff9c6439985">Geometry&lt; Cube &gt;</a>, <a class="el" href="class_geometry.html#a7cb8ea5e505f3933367d7ff9c6439985">Geometry&lt; Line &gt;</a>, <a class="el" href="class_geometry.html#a7cb8ea5e505f3933367d7ff9c6439985">Geometry&lt; Sphere &gt;</a>, <a class="el" href="class_geometry.html#a7cb8ea5e505f3933367d7ff9c6439985">Geometry&lt; Cylinder &gt;</a>, <a class="el" href="class_geometry.html#a7cb8ea5e505f3933367d7ff9c6439985">Geometry&lt; Pyramide &gt;</a>, <a class="el" href="class_geometry.html#a7cb8ea5e505f3933367d7ff9c6439985">Geometry&lt; Trigger &gt;</a>, <a class="el" href="class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2">Group</a>, <a class="el" href="class_light.html#a5e73b5bef89a0859db55a8dee401f964">Light</a>, <a class="el" href="class_line.html#a7ca8e5c6441d7c49204052e8f9e096c1">Line</a>, et <a class="el" href="class_trigger.html#ae3e4635086dd4d53bbdedd0b02525daa">Trigger</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_ac35dab598ae9f9a936418ec22fadf138_icgraph.svg" width="278" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_ac35dab598ae9f9a936418ec22fadf138_icgraph.svg" width="622" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad56a870008aaf5dd5a86945918c5ee6a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Actor::event </td>
+          <td>(</td>
+          <td class="paramtype">QEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="actor_8cpp_source.html#l00037">37</a> du fichier <a class="el" href="actor_8cpp_source.html">actor.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ec7bf11dc8329266433454177c1b56e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* Actor::findParent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00063">63</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
 
 </div>
 </div>
@@ -269,35 +341,11 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a748e07c73196050bfb0d51a14608aeae"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QQuaternion Actor::orientation </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00047">47</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
-
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_a748e07c73196050bfb0d51a14608aeae_icgraph.svg" width="491" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_abefffb24b0c7ebd4a48e13cf7817bb45_icgraph.svg" width="654" height="226"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -325,7 +373,40 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00047">47</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00056">56</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a748e07c73196050bfb0d51a14608aeae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QQuaternion Actor::orientation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00056">56</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_actor_a748e07c73196050bfb0d51a14608aeae_icgraph.svg" width="100%" height="580"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -350,12 +431,13 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00046">46</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00055">55</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_acdab84246959258bbde6eb050d340e67_icgraph.svg" width="475" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_acdab84246959258bbde6eb050d340e67_icgraph.svg" width="654" height="163"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -383,7 +465,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00046">46</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00055">55</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
 
 </div>
 </div>
@@ -409,6 +491,14 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_a6e72257974226d31517a5d62424f0ed4_icgraph.svg" width="654" height="226"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a9f365fe7550acb05cb6de6813035d780"></a>
@@ -432,12 +522,13 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00048">48</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00057">57</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_a9f365fe7550acb05cb6de6813035d780_icgraph.svg" width="462" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_a9f365fe7550acb05cb6de6813035d780_icgraph.svg" width="608" height="163"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -465,7 +556,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00048">48</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00057">57</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
 
 </div>
 </div>
@@ -491,6 +582,58 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_af158c415c51de9bfb9f1173fe6267b98_icgraph.svg" width="651" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a422d0d3c1e343e794357669a34bb59e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Actor::setParent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_object.html">QObject</a> *&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="class_geo_base.html#a357c5534b7ac40df29f504c0e988e52e">GeoBase</a>, et <a class="el" href="class_light.html#ab89261d1fa4fbbeaa61988502da207d3">Light</a>.</p>
+
+<p>Définition à la ligne <a class="el" href="actor_8cpp_source.html#l00019">19</a> du fichier <a class="el" href="actor_8cpp_source.html">actor.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_a422d0d3c1e343e794357669a34bb59e1_cgraph.svg" width="528" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_a422d0d3c1e343e794357669a34bb59e1_icgraph.svg" width="504" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="abbf942f60996c5df2a8c0a832bd91abc"></a>
@@ -514,7 +657,9 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="actor_8cpp_source.html#l00008">8</a> du fichier <a class="el" href="actor_8cpp_source.html">actor.cpp</a>.</p>
+<p>Réimplémentée dans <a class="el" href="class_line.html#a1a11432f5239ebf18316369a400a9893">Line</a>.</p>
+
+<p>Définition à la ligne <a class="el" href="actor_8cpp_source.html#l00011">11</a> du fichier <a class="el" href="actor_8cpp_source.html">actor.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -526,7 +671,41 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_abbf942f60996c5df2a8c0a832bd91abc_icgraph.svg" width="320" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_abbf942f60996c5df2a8c0a832bd91abc_icgraph.svg" width="467" height="163"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3cce8c86e60c6b808ccd7732770f2cb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_viewport.html">Viewport</a> * Actor::viewport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="actor_8cpp_source.html#l00049">49</a> du fichier <a class="el" href="actor_8cpp_source.html">actor.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_actor_ab3cce8c86e60c6b808ccd7732770f2cb_icgraph.svg" width="499" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -551,7 +730,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00046">46</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00055">55</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
 
 </div>
 </div>
@@ -573,7 +752,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00046">46</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00055">55</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
 
 </div>
 </div>
@@ -595,7 +774,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00047">47</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="actor_8hpp_source.html#l00056">56</a> du fichier <a class="el" href="actor_8hpp_source.html">actor.hpp</a>.</p>
 
 </div>
 </div>
@@ -606,7 +785,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Mercredi 10 Juin 2015 15:31:15 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi 13 Juin 2015 14:52:56 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

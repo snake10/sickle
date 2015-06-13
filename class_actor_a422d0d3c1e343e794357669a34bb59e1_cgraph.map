@@ -1,0 +1,6 @@
+<map id="Actor::setParent" name="Actor::setParent">
+<area shape="rect" id="node3" href="$class_viewport.html#a5acb57e1d34f591dab00a8a40cd21855" title="Viewport::updateLights" alt="" coords="171,59,325,88"/>
+<area shape="rect" id="node5" href="$class_world.html#a45fac3748d15198a09ce257da35e6fcf" title="World::zoneList" alt="" coords="392,5,504,35"/>
+<area shape="rect" id="node7" href="$class_world.html#a664cd2c63ef6c7979736cd454b31eb1c" title="World::currentZone" alt="" coords="381,59,515,88"/>
+<area shape="rect" id="node9" href="$class_viewport.html#ae2666049736ca227e0ddc0d23c431d96" title="Viewport::updateLight" alt="" coords="375,112,521,141"/>
+</map>

@@ -1,6 +1,7 @@
 <map id="src/cube.cpp" name="src/cube.cpp">
-<area shape="rect" id="node3" href="$cube_8hpp.html" title="cube.hpp" alt="" coords="817,83,892,112"/>
-<area shape="rect" id="node5" href="$geometry_8hpp.html" title="geometry.hpp" alt="" coords="663,160,764,189"/>
-<area shape="rect" id="node19" href="$globals_8hpp.html" title="Definitions globales. " alt="" coords="709,315,797,344"/>
-<area shape="rect" id="node21" href="$actor_8hpp.html" title="actor.hpp" alt="" coords="345,237,420,267"/>
+<area shape="rect" id="node3" href="$cube_8hpp.html" title="cube.hpp" alt="" coords="1193,83,1268,112"/>
+<area shape="rect" id="node5" href="$geometry_8hpp.html" title="geometry.hpp" alt="" coords="797,160,898,189"/>
+<area shape="rect" id="node21" href="$globals_8hpp.html" title="Definitions globales. " alt="" coords="909,315,997,344"/>
+<area shape="rect" id="node29" href="$actor_8hpp.html" title="actor.hpp" alt="" coords="129,237,204,267"/>
+<area shape="rect" id="node37" href="$material_8hpp.html" title="material.hpp" alt="" coords="990,237,1084,267"/>
 </map>

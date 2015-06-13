@@ -1,0 +1,11 @@
+<map id="Viewport::renderQuad" name="Viewport::renderQuad">
+<area shape="rect" id="node3" href="$class_world.html#a664cd2c63ef6c7979736cd454b31eb1c" title="World::currentZone" alt="" coords="203,5,336,35"/>
+<area shape="rect" id="node5" href="$class_light.html#ac5414b33c1c3cf0940f9979dceb60087" title="Light::getTexture" alt="" coords="209,59,329,88"/>
+<area shape="rect" id="node7" href="$viewport_8cpp.html#ae7e24b600e4b06fe95d062b8fb71bc7a" title="toVector" alt="" coords="235,112,304,141"/>
+<area shape="rect" id="node9" href="$class_light.html#a268d5bc710788f8457c1efc6038ea0a0" title="Light::type" alt="" coords="228,165,311,195"/>
+<area shape="rect" id="node11" href="$class_light.html#ab689087cc07b95273f6daae900a42010" title="Light::direction" alt="" coords="216,219,323,248"/>
+<area shape="rect" id="node15" href="$class_light.html#a747a809f8abf05f41143279abb78df13" title="Light::view" alt="" coords="227,272,312,301"/>
+<area shape="rect" id="node17" href="$class_light.html#ae15381dfe25ed67531fa7b2a530399ad" title="Light::projection" alt="" coords="212,325,327,355"/>
+<area shape="rect" id="node19" href="$class_camera.html#a7276761c5214ec94f6ac35e5804f6719" title="Camera::direction" alt="" coords="207,379,332,408"/>
+<area shape="rect" id="node13" href="$class_actor.html#a748e07c73196050bfb0d51a14608aeae" title="Actor::orientation" alt="" coords="385,219,505,248"/>
+</map>

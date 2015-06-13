@@ -1,4 +1,8 @@
 <map id="include/viewport.hpp" name="include/viewport.hpp">
-<area shape="rect" id="node3" href="$fileloader_8cpp.html" title="src/fileloader.cpp" alt="" coords="5,83,125,112"/>
-<area shape="rect" id="node5" href="$viewport_8cpp.html" title="src/viewport.cpp" alt="" coords="149,83,267,112"/>
+<area shape="rect" id="node3" href="$actor_8cpp.html" title="src/actor.cpp" alt="" coords="5,83,104,112"/>
+<area shape="rect" id="node5" href="$fileloader_8cpp.html" title="src/fileloader.cpp" alt="" coords="128,83,248,112"/>
+<area shape="rect" id="node7" href="$geometry_8cpp.html" title="src/geometry.cpp" alt="" coords="272,83,395,112"/>
+<area shape="rect" id="node9" href="$light_8cpp.html" title="src/light.cpp" alt="" coords="419,83,512,112"/>
+<area shape="rect" id="node11" href="$spotlight_8cpp.html" title="src/spotlight.cpp" alt="" coords="536,83,653,112"/>
+<area shape="rect" id="node13" href="$viewport_8cpp.html" title="src/viewport.cpp" alt="" coords="677,83,795,112"/>
 </map>

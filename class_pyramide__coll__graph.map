@@ -1,0 +1,7 @@
+<map id="Pyramide" name="Pyramide">
+<area shape="rect" id="node2" href="$class_geometry.html" title="Geometry\&lt; Pyramide \&gt;" alt="" coords="5,341,163,371"/>
+<area shape="rect" id="node4" href="$class_geo_base.html" title="Base pour la classe Geometry. " alt="" coords="27,165,101,195"/>
+<area shape="rect" id="node10" href="$class_geometry.html" title="Base de toutes les géometries. " alt="" coords="85,245,219,275"/>
+<area shape="rect" id="node6" href="$class_actor.html" title="Base de tous les objets de la scène. " alt="" coords="37,85,91,115"/>
+<area shape="rect" id="node8" href="$class_q_object.html" title="QObject" alt="" coords="29,5,99,35"/>
+</map>

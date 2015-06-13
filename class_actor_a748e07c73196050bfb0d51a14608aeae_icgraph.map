@@ -1,5 +1,15 @@
 <map id="Actor::orientation" name="Actor::orientation">
-<area shape="rect" id="node3" href="$class_actor.html#abbf942f60996c5df2a8c0a832bd91abc" title="Actor::transform" alt="" coords="177,44,292,73"/>
-<area shape="rect" id="node5" href="$class_geometry.html#aadfed02c20dfb9306bcf5616e7bf1f43" title="Geometry\&lt; Sphere \&gt;\l::draw" alt="" coords="341,5,485,51"/>
-<area shape="rect" id="node7" href="$class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2" title="Group::draw" alt="" coords="367,75,460,104"/>
+<area shape="rect" id="node3" href="$class_actor.html#abbf942f60996c5df2a8c0a832bd91abc" title="Actor::transform" alt="" coords="177,101,292,131"/>
+<area shape="rect" id="node13" href="$class_light.html#a30538cefe47541035db096b75133442d" title="Light::Light" alt="" coords="739,180,824,209"/>
+<area shape="rect" id="node15" href="$class_light.html#ab689087cc07b95273f6daae900a42010" title="Light::direction" alt="" coords="181,259,288,288"/>
+<area shape="rect" id="node5" href="$class_geometry.html#a7cb8ea5e505f3933367d7ff9c6439985" title="Geometry\&lt; Trigger \&gt;\l::draw" alt="" coords="345,5,487,51"/>
+<area shape="rect" id="node9" href="$class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2" title="Group::draw" alt="" coords="369,75,463,104"/>
+<area shape="rect" id="node11" href="$class_line.html#a1a11432f5239ebf18316369a400a9893" title="Line::transform" alt="" coords="361,128,471,157"/>
+<area shape="rect" id="node7" href="$class_trigger.html#ae3e4635086dd4d53bbdedd0b02525daa" title="Trigger::draw" alt="" coords="553,13,652,43"/>
+<area shape="rect" id="node17" href="$class_light.html#a123872c9df9d14ae79d4a76fee217e99" title="Light::updateView" alt="" coords="353,232,479,261"/>
+<area shape="rect" id="node24" href="$class_spotlight.html#a5901141395318038d54058bbbfc5b990" title="Spotlight::updateView" alt="" coords="341,285,491,315"/>
+<area shape="rect" id="node26" href="$class_viewport.html#aeb07f85bbe4f10ca8d8c7b46c8ebd23b" title="Viewport::renderQuad" alt="" coords="343,339,489,368"/>
+<area shape="rect" id="node19" href="$class_light.html#a295eaf1ef5ebd30fa4997d4f7ccbb7e1" title="Light::update" alt="" coords="555,232,651,261"/>
+<area shape="rect" id="node22" href="$class_spotlight.html#a00b11e643c97326edb0ab6b0dff3425a" title="Spotlight::Spotlight" alt="" coords="716,233,847,263"/>
+<area shape="rect" id="node28" href="$class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5" title="Viewport::paintGL" alt="" coords="540,339,665,368"/>
 </map>

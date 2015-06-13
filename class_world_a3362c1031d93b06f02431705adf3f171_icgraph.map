@@ -1,0 +1,5 @@
+<map id="World::setCurrentZoneId" name="World::setCurrentZoneId">
+<area shape="rect" id="node3" href="$class_world.html#ad705d80a512244721b55c69bccab5653" title="World::addZone" alt="" coords="219,32,333,61"/>
+<area shape="rect" id="node5" href="$class_viewport.html#a747eb6bce25dd9d205f3e5b99817d5cd" title="Viewport::initializeGL" alt="" coords="383,5,527,35"/>
+<area shape="rect" id="node7" href="$class_viewport.html#ab6bea61fac9caf74cf37fe91861b42e3" title="Viewport::clearLevel" alt="" coords="385,59,524,88"/>
+</map>

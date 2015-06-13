@@ -1,3 +1,10 @@
 <map id="GeoBase::GeoBase" name="GeoBase::GeoBase">
-<area shape="rect" id="node3" href="$class_geo_base.html#a16b4bc39e07b404fa613142e62a89238" title="GeoBase::material" alt="" coords="192,5,323,35"/>
+<area shape="rect" id="node3" href="$class_geo_base.html#a16b4bc39e07b404fa613142e62a89238" title="GeoBase::material" alt="" coords="197,31,328,60"/>
+<area shape="rect" id="node5" href="$class_geo_base.html#a357c5534b7ac40df29f504c0e988e52e" title="GeoBase::setParent" alt="" coords="193,84,332,113"/>
+<area shape="rect" id="node7" href="$class_actor.html#a422d0d3c1e343e794357669a34bb59e1" title="Actor::setParent" alt="" coords="381,32,499,61"/>
+<area shape="rect" id="node9" href="$class_viewport.html#a5acb57e1d34f591dab00a8a40cd21855" title="Viewport::updateLights" alt="" coords="547,59,701,88"/>
+<area shape="rect" id="node17" href="$class_actor.html#ab3cce8c86e60c6b808ccd7732770f2cb" title="Actor::viewport" alt="" coords="385,136,495,165"/>
+<area shape="rect" id="node11" href="$class_world.html#a45fac3748d15198a09ce257da35e6fcf" title="World::zoneList" alt="" coords="768,5,880,35"/>
+<area shape="rect" id="node13" href="$class_world.html#a664cd2c63ef6c7979736cd454b31eb1c" title="World::currentZone" alt="" coords="757,59,891,88"/>
+<area shape="rect" id="node15" href="$class_viewport.html#ae2666049736ca227e0ddc0d23c431d96" title="Viewport::updateLight" alt="" coords="751,112,897,141"/>
 </map>

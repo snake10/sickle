@@ -1,0 +1,10 @@
+<map id="Trigger::draw" name="Trigger::draw">
+<area shape="rect" id="node3" href="$class_geometry.html#a7cb8ea5e505f3933367d7ff9c6439985" title="Geometry\&lt; Trigger \&gt;\l::draw" alt="" coords="153,77,295,123"/>
+<area shape="rect" id="node5" href="$class_geo_base.html#a2a18462191f1a878d56f42dca28ea8be" title="GeoBase::castShadows" alt="" coords="344,5,507,35"/>
+<area shape="rect" id="node7" href="$class_geo_base.html#a64e242b389200b0dce495fd41c270da3" title="GeoBase::colors" alt="" coords="367,59,484,88"/>
+<area shape="rect" id="node9" href="$class_actor.html#abbf942f60996c5df2a8c0a832bd91abc" title="Actor::transform" alt="" coords="368,112,483,141"/>
+<area shape="rect" id="node17" href="$class_geo_base.html#a16b4bc39e07b404fa613142e62a89238" title="GeoBase::material" alt="" coords="360,165,491,195"/>
+<area shape="rect" id="node11" href="$class_actor.html#acdab84246959258bbde6eb050d340e67" title="Actor::position" alt="" coords="563,59,669,88"/>
+<area shape="rect" id="node13" href="$class_actor.html#a748e07c73196050bfb0d51a14608aeae" title="Actor::orientation" alt="" coords="556,112,676,141"/>
+<area shape="rect" id="node15" href="$class_actor.html#a9f365fe7550acb05cb6de6813035d780" title="Actor::scale" alt="" coords="571,165,661,195"/>
+</map>

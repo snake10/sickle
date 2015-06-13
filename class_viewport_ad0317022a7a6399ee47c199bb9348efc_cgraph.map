@@ -1,0 +1,11 @@
+<map id="Viewport::renderScene" name="Viewport::renderScene">
+<area shape="rect" id="node3" href="$class_viewport.html#a5760eeac13c59b34bd8cc5ba638f9cbd" title="Viewport::catchErrors" alt="" coords="209,5,356,35"/>
+<area shape="rect" id="node5" href="$class_camera.html#af81adf3ba7f63429a9d5356c218da78f" title="Camera::view" alt="" coords="232,59,333,88"/>
+<area shape="rect" id="node16" href="$class_world.html#a664cd2c63ef6c7979736cd454b31eb1c" title="World::currentZone" alt="" coords="216,112,349,141"/>
+<area shape="rect" id="node18" href="$class_zone.html#ab0e0091bda0819de6e848d647d14b1a0" title="Zone::draw" alt="" coords="240,165,325,195"/>
+<area shape="rect" id="node7" href="$class_camera.html#a4e6b5818c84025d176c13c84991ef568" title="Camera::position" alt="" coords="407,7,527,36"/>
+<area shape="rect" id="node9" href="$class_camera.html#a7276761c5214ec94f6ac35e5804f6719" title="Camera::direction" alt="" coords="576,59,701,88"/>
+<area shape="rect" id="node11" href="$class_camera.html#a9936c788ad482b40b5a3548bf5e97247" title="Camera::up" alt="" coords="421,111,512,140"/>
+<area shape="rect" id="node13" href="$class_camera.html#ac68fa914dd8737de1ec7558fc9281a68" title="Camera::right" alt="" coords="588,112,689,141"/>
+<area shape="rect" id="node20" href="$class_actor.html#ac35dab598ae9f9a936418ec22fadf138" title="Actor::draw" alt="" coords="423,165,511,195"/>
+</map>

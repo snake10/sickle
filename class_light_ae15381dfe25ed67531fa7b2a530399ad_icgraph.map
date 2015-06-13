@@ -1,0 +1,5 @@
+<map id="Light::projection" name="Light::projection">
+<area shape="rect" id="node3" href="$class_viewport.html#ae95938dedc43d6b36f2b85d4a226ffa1" title="Viewport::renderLight" alt="" coords="171,5,315,35"/>
+<area shape="rect" id="node7" href="$class_viewport.html#aeb07f85bbe4f10ca8d8c7b46c8ebd23b" title="Viewport::renderQuad" alt="" coords="169,59,316,88"/>
+<area shape="rect" id="node5" href="$class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5" title="Viewport::paintGL" alt="" coords="367,32,492,61"/>
+</map>

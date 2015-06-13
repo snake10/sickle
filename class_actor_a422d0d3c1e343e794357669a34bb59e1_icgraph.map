@@ -1,0 +1,8 @@
+<map id="Actor::setParent" name="Actor::setParent">
+<area shape="rect" id="node3" href="$class_actor.html#aa0fc674ef09b215b67ff2fff69b79459" title="Actor::Actor" alt="" coords="196,5,287,35"/>
+<area shape="rect" id="node5" href="$fileloader_8hpp.html#a48efbb80ebceb0d47fc8d9084562f597" title="operator\&gt;\&gt;" alt="" coords="199,59,284,88"/>
+<area shape="rect" id="node7" href="$class_geo_base.html#a357c5534b7ac40df29f504c0e988e52e" title="GeoBase::setParent" alt="" coords="172,112,311,141"/>
+<area shape="rect" id="node11" href="$class_light.html#ab89261d1fa4fbbeaa61988502da207d3" title="Light::setParent" alt="" coords="184,165,299,195"/>
+<area shape="rect" id="node9" href="$class_geo_base.html#a64d0302a4d85b1fe7946df7ebfaa2e33" title="GeoBase::GeoBase" alt="" coords="360,112,499,141"/>
+<area shape="rect" id="node13" href="$class_light.html#a30538cefe47541035db096b75133442d" title="Light::Light" alt="" coords="387,165,472,195"/>
+</map>

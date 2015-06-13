@@ -74,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,18 +104,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="dynheader">
 Graphe d'héritage de Viewport:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport__inherit__graph.svg" width="291" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport__inherit__graph.svg" width="304" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de Viewport:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport__coll__graph.svg" width="291" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport__coll__graph.svg" width="304" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Connecteurs publics</h2></td></tr>
 <tr class="memitem:ab6bea61fac9caf74cf37fe91861b42e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#ab6bea61fac9caf74cf37fe91861b42e3">clearLevel</a> ()</td></tr>
 <tr class="separator:ab6bea61fac9caf74cf37fe91861b42e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6f7525bd53d2a0d5905374042d43ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a0a6f7525bd53d2a0d5905374042d43ca">initLight</a> (<a class="el" href="class_light.html">Light</a> &amp;)</td></tr>
+<tr class="separator:a0a6f7525bd53d2a0d5905374042d43ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5acb57e1d34f591dab00a8a40cd21855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a5acb57e1d34f591dab00a8a40cd21855">updateLights</a> ()</td></tr>
+<tr class="separator:a5acb57e1d34f591dab00a8a40cd21855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2666049736ca227e0ddc0d23c431d96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#ae2666049736ca227e0ddc0d23c431d96">updateLight</a> (<a class="el" href="class_light.html">Light</a> *light)</td></tr>
+<tr class="separator:ae2666049736ca227e0ddc0d23c431d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae751e61662536f5dc15d1a505070c110"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#ae751e61662536f5dc15d1a505070c110">removeLight</a> (<a class="el" href="class_light.html">Light</a> *light)</td></tr>
+<tr class="separator:ae751e61662536f5dc15d1a505070c110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signaux</h2></td></tr>
@@ -123,13 +133,13 @@ Signaux</h2></td></tr>
 <tr class="separator:a2baca2288f55b0c118097e76abdd238d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4df59614a5201f8e2e5a63c2c0ec73e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#ab4df59614a5201f8e2e5a63c2c0ec73e">childAdded</a> (<a class="el" href="class_q_object.html">QObject</a> *child)</td></tr>
 <tr class="separator:ab4df59614a5201f8e2e5a63c2c0ec73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21406e867509e61fc731b62ceb84b37e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a21406e867509e61fc731b62ceb84b37e">zoneAdded</a> (int index)</td></tr>
+<tr class="separator:a21406e867509e61fc731b62ceb84b37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a8df3511c07ed30bada06ac942303f668"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a8df3511c07ed30bada06ac942303f668">Viewport</a> (<a class="el" href="class_q_widget.html">QWidget</a> *parent=nullptr)</td></tr>
 <tr class="separator:a8df3511c07ed30bada06ac942303f668"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e18a1ff4a52be33ef63d25034561850"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a1e18a1ff4a52be33ef63d25034561850">~Viewport</a> ()</td></tr>
-<tr class="separator:a1e18a1ff4a52be33ef63d25034561850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a441cdf7965dd99860d2e1cec72b71081"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a441cdf7965dd99860d2e1cec72b71081">minimumSizeHint</a> () const Q_DECL_OVERRIDE</td></tr>
 <tr class="separator:a441cdf7965dd99860d2e1cec72b71081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fba6e917c9da4d7edd9cef5d6f22be0"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a5fba6e917c9da4d7edd9cef5d6f22be0">sizeHint</a> () const Q_DECL_OVERRIDE</td></tr>
@@ -137,16 +147,38 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:ab3309b168e0513b488163d1f1d69984c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab3309b168e0513b488163d1f1d69984c"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_viewport.html#ab3309b168e0513b488163d1f1d69984c">addChild</a> ()</td></tr>
 <tr class="separator:ab3309b168e0513b488163d1f1d69984c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f371a037430f579d629dbdd11d1b62a"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a8f371a037430f579d629dbdd11d1b62a">programList</a> ()</td></tr>
+<tr class="separator:a8f371a037430f579d629dbdd11d1b62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b1a438a86e883c72d98feb3c3a658d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a4b1a438a86e883c72d98feb3c3a658d6">camera</a> () const </td></tr>
 <tr class="separator:a4b1a438a86e883c72d98feb3c3a658d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc07993d5b94463a1a23d0436842b59c"><td class="memItemLeft" align="right" valign="top">GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#abc07993d5b94463a1a23d0436842b59c">renderMode</a> () const </td></tr>
-<tr class="separator:abc07993d5b94463a1a23d0436842b59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67be1e5d617872c61c61afbf57d678d3"><td class="memItemLeft" align="right" valign="top">Q_SLOT GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a67be1e5d617872c61c61afbf57d678d3">renderMode</a> (GLenum val)</td></tr>
-<tr class="separator:a67be1e5d617872c61c61afbf57d678d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62399e89e032cac31006c5666cc3bbeb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a62399e89e032cac31006c5666cc3bbeb">isInitialized</a> () const </td></tr>
 <tr class="separator:a62399e89e032cac31006c5666cc3bbeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad38cf132acd6e0755c3abd9453d9c2e4"><td class="memItemLeft" align="right" valign="top">Q_SLOT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#ad38cf132acd6e0755c3abd9453d9c2e4">isInitialized</a> (bool val)</td></tr>
 <tr class="separator:ad38cf132acd6e0755c3abd9453d9c2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9062192da88f5586fe32758a5943bf30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a9062192da88f5586fe32758a5943bf30">showBuffers</a> () const </td></tr>
+<tr class="separator:a9062192da88f5586fe32758a5943bf30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12616ddec614903ff2835ef0e14c6518"><td class="memItemLeft" align="right" valign="top">Q_SLOT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a12616ddec614903ff2835ef0e14c6518">showBuffers</a> (bool val)</td></tr>
+<tr class="separator:a12616ddec614903ff2835ef0e14c6518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2943711480a4f79de798913d1d35f4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#af2943711480a4f79de798913d1d35f4e">showMaps</a> () const </td></tr>
+<tr class="separator:af2943711480a4f79de798913d1d35f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2e84acaa785a92365791dd30aa1b589"><td class="memItemLeft" align="right" valign="top">Q_SLOT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#aa2e84acaa785a92365791dd30aa1b589">showMaps</a> (bool val)</td></tr>
+<tr class="separator:aa2e84acaa785a92365791dd30aa1b589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab9987d64c99b9a4d819b5a2365c9a6"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a4ab9987d64c99b9a4d819b5a2365c9a6">program</a> () const </td></tr>
+<tr class="separator:a4ab9987d64c99b9a4d819b5a2365c9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248b15752a115057df55da938e3e5f87"><td class="memItemLeft" align="right" valign="top">Q_SLOT QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a248b15752a115057df55da938e3e5f87">program</a> (QString val)</td></tr>
+<tr class="separator:a248b15752a115057df55da938e3e5f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13c02ab9dcf9fc9fa0e2031ab1f76642"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a13c02ab9dcf9fc9fa0e2031ab1f76642">ambient</a> () const </td></tr>
+<tr class="separator:a13c02ab9dcf9fc9fa0e2031ab1f76642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b899ec9a3dfdad947bed93096c4a08"><td class="memItemLeft" align="right" valign="top">Q_SLOT QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#ad8b899ec9a3dfdad947bed93096c4a08">ambient</a> (QColor val)</td></tr>
+<tr class="separator:ad8b899ec9a3dfdad947bed93096c4a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7081dce7bcaeaabe0ffddbd532c5d347"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a7081dce7bcaeaabe0ffddbd532c5d347">bgColor</a> () const </td></tr>
+<tr class="separator:a7081dce7bcaeaabe0ffddbd532c5d347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a459c6a1a37e61fcaa866a73447a39b36"><td class="memItemLeft" align="right" valign="top">Q_SLOT QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a459c6a1a37e61fcaa866a73447a39b36">bgColor</a> (QColor val)</td></tr>
+<tr class="separator:a459c6a1a37e61fcaa866a73447a39b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3754be952a5e2e5731a03b6b42be475e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_world.html">World</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a3754be952a5e2e5731a03b6b42be475e">world</a> () const </td></tr>
+<tr class="separator:a3754be952a5e2e5731a03b6b42be475e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc02b4daf924be1b5c0f45782fff87a8"><td class="memItemLeft" align="right" valign="top">Q_SLOT <a class="el" href="class_world.html">World</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#acc02b4daf924be1b5c0f45782fff87a8">world</a> (<a class="el" href="class_world.html">World</a> *val)</td></tr>
+<tr class="separator:acc02b4daf924be1b5c0f45782fff87a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Fonctions membres protégées</h2></td></tr>
@@ -154,6 +186,16 @@ Fonctions membres protégées</h2></td></tr>
 <tr class="separator:a747eb6bce25dd9d205f3e5b99817d5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c2c4661eac1f6351392b8fe133423f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5">paintGL</a> () Q_DECL_OVERRIDE</td></tr>
 <tr class="separator:a3c2c4661eac1f6351392b8fe133423f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ac795014fc080ab40b39c39c9eab35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a21ac795014fc080ab40b39c39c9eab35">initScene</a> ()</td></tr>
+<tr class="separator:a21ac795014fc080ab40b39c39c9eab35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e17a431c26ab8790cb775e583135298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a6e17a431c26ab8790cb775e583135298">initQuad</a> ()</td></tr>
+<tr class="separator:a6e17a431c26ab8790cb775e583135298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae95938dedc43d6b36f2b85d4a226ffa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#ae95938dedc43d6b36f2b85d4a226ffa1">renderLight</a> (<a class="el" href="class_light.html">Light</a> *light)</td></tr>
+<tr class="separator:ae95938dedc43d6b36f2b85d4a226ffa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0317022a7a6399ee47c199bb9348efc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#ad0317022a7a6399ee47c199bb9348efc">renderScene</a> ()</td></tr>
+<tr class="separator:ad0317022a7a6399ee47c199bb9348efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb07f85bbe4f10ca8d8c7b46c8ebd23b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#aeb07f85bbe4f10ca8d8c7b46c8ebd23b">renderQuad</a> ()</td></tr>
+<tr class="separator:aeb07f85bbe4f10ca8d8c7b46c8ebd23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94dcf877f22c2977a58cd6789144d3ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a94dcf877f22c2977a58cd6789144d3ae">resizeGL</a> (int w, int h) Q_DECL_OVERRIDE</td></tr>
 <tr class="separator:a94dcf877f22c2977a58cd6789144d3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a884441d496cf615dcd1456df15db4f2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a884441d496cf615dcd1456df15db4f2a">wheelEvent</a> (QWheelEvent *event) Q_DECL_OVERRIDE</td></tr>
@@ -170,21 +212,33 @@ Fonctions membres protégées</h2></td></tr>
 <tr class="separator:a76398c42a636bc05e388b307155080d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f35cf38abecb45d9cb61605ef2cd52c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a5f35cf38abecb45d9cb61605ef2cd52c">hasHeightForWidth</a> () const </td></tr>
 <tr class="separator:a5f35cf38abecb45d9cb61605ef2cd52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5760eeac13c59b34bd8cc5ba638f9cbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a5760eeac13c59b34bd8cc5ba638f9cbd">catchErrors</a> ()</td></tr>
+<tr class="separator:a5760eeac13c59b34bd8cc5ba638f9cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Propriétés</h2></td></tr>
 <tr class="memitem:ac0af7e2bd057631a4c4798f214893925"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera.html">Camera</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#ac0af7e2bd057631a4c4798f214893925">camera</a></td></tr>
 <tr class="separator:ac0af7e2bd057631a4c4798f214893925"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22094a6d9a518b12832d078cf2af2373"><td class="memItemLeft" align="right" valign="top">GLenum&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a22094a6d9a518b12832d078cf2af2373">renderMode</a></td></tr>
-<tr class="separator:a22094a6d9a518b12832d078cf2af2373"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae366735439e3621c6576dec6b9a3ca29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#ae366735439e3621c6576dec6b9a3ca29">isInitialized</a></td></tr>
 <tr class="separator:ae366735439e3621c6576dec6b9a3ca29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa950620b5fdadde9ddadb449b6adb9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#aaa950620b5fdadde9ddadb449b6adb9f">showBuffers</a></td></tr>
+<tr class="separator:aaa950620b5fdadde9ddadb449b6adb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93694ba9ae89f5af5f2a7b7412206d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#ac93694ba9ae89f5af5f2a7b7412206d6">showMaps</a></td></tr>
+<tr class="separator:ac93694ba9ae89f5af5f2a7b7412206d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a443c9cbd468b28ff57691bad3048895d"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a443c9cbd468b28ff57691bad3048895d">program</a></td></tr>
+<tr class="separator:a443c9cbd468b28ff57691bad3048895d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe603805ca9d02e5959433f9c65dc623"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#afe603805ca9d02e5959433f9c65dc623">ambient</a></td></tr>
+<tr class="separator:afe603805ca9d02e5959433f9c65dc623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60aabdbf3edc3d0ba70080d755a99e5e"><td class="memItemLeft" align="right" valign="top">QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a60aabdbf3edc3d0ba70080d755a99e5e">bgColor</a></td></tr>
+<tr class="separator:a60aabdbf3edc3d0ba70080d755a99e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f2a69ed04e0ec3d7ec001d227c678e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_world.html">World</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_viewport.html#a25f2a69ed04e0ec3d7ec001d227c678e">world</a></td></tr>
+<tr class="separator:a25f2a69ed04e0ec3d7ec001d227c678e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Cadre de vue 3D. </p>
 <p>Ce widget affiche une scène en 3D composée de géometries a partir d'une caméra. </p>
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00018">18</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00026">26</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="a8df3511c07ed30bada06ac942303f668"></a>
 <div class="memitem">
@@ -208,24 +262,7 @@ Propriétés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00006">6</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1e18a1ff4a52be33ef63d25034561850"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Viewport::~Viewport </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00022">22</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00013">13</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
 
 </div>
 </div>
@@ -253,7 +290,125 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00034">34</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00041">41</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_ab3309b168e0513b488163d1f1d69984c_cgraph.svg" width="326" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8b899ec9a3dfdad947bed93096c4a08"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SLOT QColor Viewport::ambient </td>
+          <td>(</td>
+          <td class="paramtype">QColor&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00063">63</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a13c02ab9dcf9fc9fa0e2031ab1f76642"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor Viewport::ambient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00063">63</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a13c02ab9dcf9fc9fa0e2031ab1f76642_icgraph.svg" width="334" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7081dce7bcaeaabe0ffddbd532c5d347"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor Viewport::bgColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00064">64</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a459c6a1a37e61fcaa866a73447a39b36"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SLOT QColor Viewport::bgColor </td>
+          <td>(</td>
+          <td class="paramtype">QColor&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00064">64</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -278,7 +433,40 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00042">42</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00058">58</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5760eeac13c59b34bd8cc5ba638f9cbd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Viewport::catchErrors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00139">139</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a5760eeac13c59b34bd8cc5ba638f9cbd_icgraph.svg" width="539" height="251"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -334,7 +522,15 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00133">133</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00507">507</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_ab6bea61fac9caf74cf37fe91861b42e3_cgraph.svg" width="528" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -359,7 +555,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00070">70</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00101">101</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -385,7 +581,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00069">69</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00100">100</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -411,13 +607,6 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Voici le graphe des appelants de cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a2baca2288f55b0c118097e76abdd238d_icgraph.svg" width="376" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a747eb6bce25dd9d205f3e5b99817d5cd"></a>
@@ -441,12 +630,145 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00026">26</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00112">112</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a747eb6bce25dd9d205f3e5b99817d5cd_cgraph.svg" width="352" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a747eb6bce25dd9d205f3e5b99817d5cd_cgraph.svg" width="574" height="467"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a6f7525bd53d2a0d5905374042d43ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Viewport::initLight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light.html">Light</a> &amp;&#160;</td>
+          <td class="paramname"><em>light</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00042">42</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a0a6f7525bd53d2a0d5905374042d43ca_cgraph.svg" width="307" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e17a431c26ab8790cb775e583135298"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Viewport::initQuad </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00080">80</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a6e17a431c26ab8790cb775e583135298_icgraph.svg" width="336" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a21ac795014fc080ab40b39c39c9eab35"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Viewport::initScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00061">61</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a21ac795014fc080ab40b39c39c9eab35_icgraph.svg" width="342" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a62399e89e032cac31006c5666cc3bbeb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Viewport::isInitialized </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00059">59</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a62399e89e032cac31006c5666cc3bbeb_icgraph.svg" width="352" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -474,39 +796,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00044">44</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a62399e89e032cac31006c5666cc3bbeb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Viewport::isInitialized </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00044">44</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
-
-<p><div class="dynheader">
-Voici le graphe des appelants de cette fonction :</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a62399e89e032cac31006c5666cc3bbeb_icgraph.svg" width="352" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00059">59</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -532,7 +822,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00069">69</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00443">443</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -564,7 +854,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00025">25</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00032">32</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -590,7 +880,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00123">123</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00497">497</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
 
 </div>
 </div>
@@ -616,7 +906,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00107">107</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00481">481</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -649,7 +939,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00116">116</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00490">490</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
 
 </div>
 </div>
@@ -674,18 +964,19 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00045">45</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00390">390</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a3c2c4661eac1f6351392b8fe133423f5_cgraph.svg" width="635" height="146"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_viewport_a3c2c4661eac1f6351392b8fe133423f5_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="abc07993d5b94463a1a23d0436842b59c"></a>
+<a class="anchor" id="a4ab9987d64c99b9a4d819b5a2365c9a6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -693,7 +984,7 @@ Voici le graphe d'appel pour cette fonction :</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GLenum Viewport::renderMode </td>
+          <td class="memname">QString Viewport::program </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -706,11 +997,19 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00043">43</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00062">62</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a4ab9987d64c99b9a4d819b5a2365c9a6_icgraph.svg" width="334" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="a67be1e5d617872c61c61afbf57d678d3"></a>
+<a class="anchor" id="a248b15752a115057df55da938e3e5f87"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -718,9 +1017,9 @@ Voici le graphe d'appel pour cette fonction :</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Q_SLOT GLenum Viewport::renderMode </td>
+          <td class="memname">Q_SLOT QString Viewport::program </td>
           <td>(</td>
-          <td class="paramtype">GLenum&#160;</td>
+          <td class="paramtype">QString&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
         </tr>
@@ -732,7 +1031,182 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00043">43</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00062">62</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f371a037430f579d629dbdd11d1b62a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList Viewport::programList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00049">49</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae751e61662536f5dc15d1a505070c110"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Viewport::removeLight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light.html">Light</a> *&#160;</td>
+          <td class="paramname"><em>light</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00439">439</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae95938dedc43d6b36f2b85d4a226ffa1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Viewport::renderLight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light.html">Light</a> *&#160;</td>
+          <td class="paramname"><em>light</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00146">146</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_ae95938dedc43d6b36f2b85d4a226ffa1_cgraph.svg" width="494" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_ae95938dedc43d6b36f2b85d4a226ffa1_icgraph.svg" width="334" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb07f85bbe4f10ca8d8c7b46c8ebd23b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Viewport::renderQuad </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00219">219</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_aeb07f85bbe4f10ca8d8c7b46c8ebd23b_cgraph.svg" width="512" height="414"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_aeb07f85bbe4f10ca8d8c7b46c8ebd23b_icgraph.svg" width="336" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad0317022a7a6399ee47c199bb9348efc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Viewport::renderScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00175">175</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_viewport_ad0317022a7a6399ee47c199bb9348efc_cgraph.svg" width="100%" height="450"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_ad0317022a7a6399ee47c199bb9348efc_icgraph.svg" width="342" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -768,7 +1242,133 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00057">57</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00406">406</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a94dcf877f22c2977a58cd6789144d3ae_cgraph.svg" width="342" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9062192da88f5586fe32758a5943bf30"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Viewport::showBuffers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00060">60</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a9062192da88f5586fe32758a5943bf30_icgraph.svg" width="360" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a12616ddec614903ff2835ef0e14c6518"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SLOT bool Viewport::showBuffers </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00060">60</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af2943711480a4f79de798913d1d35f4e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Viewport::showMaps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00061">61</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_af2943711480a4f79de798913d1d35f4e_icgraph.svg" width="350" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2e84acaa785a92365791dd30aa1b589"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SLOT bool Viewport::showMaps </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00061">61</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -793,7 +1393,82 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00029">29</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00036">36</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae2666049736ca227e0ddc0d23c431d96"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Viewport::updateLight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_light.html">Light</a> *&#160;</td>
+          <td class="paramname"><em>light</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00434">434</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_viewport_ae2666049736ca227e0ddc0d23c431d96_icgraph.svg" width="100%" height="450"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5acb57e1d34f591dab00a8a40cd21855"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Viewport::updateLights </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00426">426</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a5acb57e1d34f591dab00a8a40cd21855_cgraph.svg" width="363" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_viewport_a5acb57e1d34f591dab00a8a40cd21855_icgraph.svg" width="100%" height="450"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -819,7 +1494,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00063">63</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8cpp_source.html#l00420">420</a> du fichier <a class="el" href="viewport_8cpp_source.html">viewport.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -830,7 +1505,134 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a3754be952a5e2e5731a03b6b42be475e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_world.html">World</a>* Viewport::world </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00065">65</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acc02b4daf924be1b5c0f45782fff87a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SLOT <a class="el" href="class_world.html">World</a>* Viewport::world </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_world.html">World</a> *&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00065">65</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a21406e867509e61fc731b62ceb84b37e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Viewport::zoneAdded </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_viewport_a21406e867509e61fc731b62ceb84b37e_icgraph.svg" width="347" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <h2 class="groupheader">Documentation des propriétés</h2>
+<a class="anchor" id="afe603805ca9d02e5959433f9c65dc623"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor Viewport::ambient</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00062">62</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a60aabdbf3edc3d0ba70080d755a99e5e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor Viewport::bgColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00063">63</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac0af7e2bd057631a4c4798f214893925"></a>
 <div class="memitem">
 <div class="memproto">
@@ -849,7 +1651,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00042">42</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00058">58</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -871,11 +1673,11 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00043">43</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00058">58</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a22094a6d9a518b12832d078cf2af2373"></a>
+<a class="anchor" id="a443c9cbd468b28ff57691bad3048895d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -883,7 +1685,7 @@ Voici le graphe d'appel pour cette fonction :</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GLenum Viewport::renderMode</td>
+          <td class="memname">QString Viewport::program</td>
         </tr>
       </table>
   </td>
@@ -893,7 +1695,73 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00042">42</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00061">61</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa950620b5fdadde9ddadb449b6adb9f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Viewport::showBuffers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00059">59</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac93694ba9ae89f5af5f2a7b7412206d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Viewport::showMaps</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00060">60</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a25f2a69ed04e0ec3d7ec001d227c678e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_world.html">World</a> Viewport::world</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="viewport_8hpp_source.html#l00064">64</a> du fichier <a class="el" href="viewport_8hpp_source.html">viewport.hpp</a>.</p>
 
 </div>
 </div>
@@ -904,7 +1772,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Mercredi 10 Juin 2015 15:31:15 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi 13 Juin 2015 14:52:56 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

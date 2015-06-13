@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sphere',['Sphere',['../class_sphere.html',1,'']]]
+  ['pyramide',['Pyramide',['../class_pyramide.html',1,'']]]
 ];

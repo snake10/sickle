@@ -1,0 +1,9 @@
+<map id="Light::setParent" name="Light::setParent">
+<area shape="rect" id="node3" href="$class_actor.html#a422d0d3c1e343e794357669a34bb59e1" title="Actor::setParent" alt="" coords="168,59,285,88"/>
+<area shape="rect" id="node13" href="$class_light.html#a747a809f8abf05f41143279abb78df13" title="Light::view" alt="" coords="184,112,269,141"/>
+<area shape="rect" id="node15" href="$class_actor.html#ab3cce8c86e60c6b808ccd7732770f2cb" title="Actor::viewport" alt="" coords="172,165,281,195"/>
+<area shape="rect" id="node5" href="$class_viewport.html#a5acb57e1d34f591dab00a8a40cd21855" title="Viewport::updateLights" alt="" coords="333,59,488,88"/>
+<area shape="rect" id="node7" href="$class_world.html#a45fac3748d15198a09ce257da35e6fcf" title="World::zoneList" alt="" coords="555,5,667,35"/>
+<area shape="rect" id="node9" href="$class_world.html#a664cd2c63ef6c7979736cd454b31eb1c" title="World::currentZone" alt="" coords="544,59,677,88"/>
+<area shape="rect" id="node11" href="$class_viewport.html#ae2666049736ca227e0ddc0d23c431d96" title="Viewport::updateLight" alt="" coords="537,112,684,141"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Viewport::updateLights" name="Viewport::updateLights">
+<area shape="rect" id="node3" href="$class_actor.html#a422d0d3c1e343e794357669a34bb59e1" title="Actor::setParent" alt="" coords="208,112,325,141"/>
+<area shape="rect" id="node9" href="$class_geo_base.html#a357c5534b7ac40df29f504c0e988e52e" title="GeoBase::setParent" alt="" coords="375,165,513,195"/>
+<area shape="rect" id="node5" href="$class_actor.html#aa0fc674ef09b215b67ff2fff69b79459" title="Actor::Actor" alt="" coords="399,59,489,88"/>
+<area shape="rect" id="node7" href="$fileloader_8hpp.html#a48efbb80ebceb0d47fc8d9084562f597" title="operator\&gt;\&gt;" alt="" coords="401,112,487,141"/>
+<area shape="rect" id="node13" href="$class_light.html#ab89261d1fa4fbbeaa61988502da207d3" title="Light::setParent" alt="" coords="387,5,501,35"/>
+<area shape="rect" id="node11" href="$class_geo_base.html#a64d0302a4d85b1fe7946df7ebfaa2e33" title="GeoBase::GeoBase" alt="" coords="563,165,701,195"/>
+<area shape="rect" id="node15" href="$class_light.html#a30538cefe47541035db096b75133442d" title="Light::Light" alt="" coords="589,5,675,35"/>
+</map>

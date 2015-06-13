@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Sickle:  Fichier source de src/spotlight.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Sickle
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">L&#39;editeur de monde du proletariat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">spotlight.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="spotlight_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2015 PsychoLama</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="spotlight_8hpp.html">spotlight.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="viewport_8hpp.html">viewport.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_spotlight.html#a00b11e643c97326edb0ab6b0dff3425a">    6</a></span>&#160;<a class="code" href="class_spotlight.html#a00b11e643c97326edb0ab6b0dff3425a">Spotlight::Spotlight</a>(<a class="code" href="class_q_object.html">QObject</a>* parent) : <a class="code" href="class_light.html">Light</a>(parent) {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_light.html#adca0c1a95ed27e38676aee853420dced">nearZ</a>(2.0f);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_light.html#accf379b557fa086c827bae45cd141f3c">farZ</a>(50.0f);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_spotlight.html#af8c0a59e8c0814ed2ba49135cf0a592a">outerAngle</a>(90.0f);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_spotlight.html#acc96169c59f1e1cf30384f2414350916">innerAngle</a>(45.0f);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    setObjectName(tr(<span class="stringliteral">&quot;New Spotlight&quot;</span>));</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    connect(<span class="keyword">this</span>, &amp;<a class="code" href="class_spotlight.html#a5edc7d9ae6c72230e749d5ece98b163e">Spotlight::outerAngleChanged</a>, <span class="keyword">this</span>, &amp;<a class="code" href="class_light.html#a295eaf1ef5ebd30fa4997d4f7ccbb7e1">Light::update</a>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    connect(<span class="keyword">this</span>, &amp;<a class="code" href="class_spotlight.html#aa7c89963fc17096a4ab155ea1b4b01a3">Spotlight::innerAngleChanged</a>, <span class="keyword">this</span>, &amp;<a class="code" href="class_light.html#a295eaf1ef5ebd30fa4997d4f7ccbb7e1">Light::update</a>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_spotlight.html#a5901141395318038d54058bbbfc5b990">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_spotlight.html#a5901141395318038d54058bbbfc5b990">Spotlight::updateView</a>() {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_light.html#a2d15d31e8d64dfe6726c6b06e4d57387">m_view</a>.setToIdentity();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_light.html#a2d15d31e8d64dfe6726c6b06e4d57387">m_view</a>.lookAt(<a class="code" href="class_actor.html#acdab84246959258bbde6eb050d340e67">position</a>(), <a class="code" href="class_actor.html#acdab84246959258bbde6eb050d340e67">position</a>() - <a class="code" href="class_light.html#ab689087cc07b95273f6daae900a42010">direction</a>(), QVector3D(0, 1, 0));</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_spotlight.html#a516543f0f12a955076e2b39446b88bb0">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_spotlight.html#a516543f0f12a955076e2b39446b88bb0">Spotlight::updateProj</a>() {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_light.html#a8881ba22d6a024d0941901a3d464222c">m_projection</a>.setToIdentity();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_light.html#a8881ba22d6a024d0941901a3d464222c">m_projection</a>.perspective(2.0f * m_outerAngle, 1.0f, <a class="code" href="class_light.html#adca0c1a95ed27e38676aee853420dced">nearZ</a>(), <a class="code" href="class_light.html#accf379b557fa086c827bae45cd141f3c">farZ</a>());</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="ttc" id="class_spotlight_html_a516543f0f12a955076e2b39446b88bb0"><div class="ttname"><a href="class_spotlight.html#a516543f0f12a955076e2b39446b88bb0">Spotlight::updateProj</a></div><div class="ttdeci">virtual void updateProj()</div><div class="ttdef"><b>Definition:</b> <a href="spotlight_8cpp_source.html#l00022">spotlight.cpp:22</a></div></div>
+<div class="ttc" id="class_light_html_ab689087cc07b95273f6daae900a42010"><div class="ttname"><a href="class_light.html#ab689087cc07b95273f6daae900a42010">Light::direction</a></div><div class="ttdeci">QVector3D direction()</div><div class="ttdef"><b>Definition:</b> <a href="light_8cpp_source.html#l00059">light.cpp:59</a></div></div>
+<div class="ttc" id="class_light_html"><div class="ttname"><a href="class_light.html">Light</a></div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00011">light.hpp:11</a></div></div>
+<div class="ttc" id="class_spotlight_html_af8c0a59e8c0814ed2ba49135cf0a592a"><div class="ttname"><a href="class_spotlight.html#af8c0a59e8c0814ed2ba49135cf0a592a">Spotlight::outerAngle</a></div><div class="ttdeci">float outerAngle() const </div><div class="ttdef"><b>Definition:</b> <a href="spotlight_8hpp_source.html#l00018">spotlight.hpp:18</a></div></div>
+<div class="ttc" id="class_actor_html_acdab84246959258bbde6eb050d340e67"><div class="ttname"><a href="class_actor.html#acdab84246959258bbde6eb050d340e67">Actor::position</a></div><div class="ttdeci">QVector3D position() const </div><div class="ttdef"><b>Definition:</b> <a href="actor_8hpp_source.html#l00055">actor.hpp:55</a></div></div>
+<div class="ttc" id="class_spotlight_html_acc96169c59f1e1cf30384f2414350916"><div class="ttname"><a href="class_spotlight.html#acc96169c59f1e1cf30384f2414350916">Spotlight::innerAngle</a></div><div class="ttdeci">float innerAngle() const </div><div class="ttdef"><b>Definition:</b> <a href="spotlight_8hpp_source.html#l00019">spotlight.hpp:19</a></div></div>
+<div class="ttc" id="class_spotlight_html_a00b11e643c97326edb0ab6b0dff3425a"><div class="ttname"><a href="class_spotlight.html#a00b11e643c97326edb0ab6b0dff3425a">Spotlight::Spotlight</a></div><div class="ttdeci">Spotlight(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="spotlight_8cpp_source.html#l00006">spotlight.cpp:6</a></div></div>
+<div class="ttc" id="class_spotlight_html_a5edc7d9ae6c72230e749d5ece98b163e"><div class="ttname"><a href="class_spotlight.html#a5edc7d9ae6c72230e749d5ece98b163e">Spotlight::outerAngleChanged</a></div><div class="ttdeci">void outerAngleChanged(const float &amp;)</div></div>
+<div class="ttc" id="spotlight_8hpp_html"><div class="ttname"><a href="spotlight_8hpp.html">spotlight.hpp</a></div></div>
+<div class="ttc" id="class_light_html_adca0c1a95ed27e38676aee853420dced"><div class="ttname"><a href="class_light.html#adca0c1a95ed27e38676aee853420dced">Light::nearZ</a></div><div class="ttdeci">float nearZ() const </div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00024">light.hpp:24</a></div></div>
+<div class="ttc" id="class_light_html_a8881ba22d6a024d0941901a3d464222c"><div class="ttname"><a href="class_light.html#a8881ba22d6a024d0941901a3d464222c">Light::m_projection</a></div><div class="ttdeci">QMatrix4x4 m_projection</div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00058">light.hpp:58</a></div></div>
+<div class="ttc" id="class_spotlight_html_a5901141395318038d54058bbbfc5b990"><div class="ttname"><a href="class_spotlight.html#a5901141395318038d54058bbbfc5b990">Spotlight::updateView</a></div><div class="ttdeci">virtual void updateView()</div><div class="ttdef"><b>Definition:</b> <a href="spotlight_8cpp_source.html#l00017">spotlight.cpp:17</a></div></div>
+<div class="ttc" id="class_light_html_a295eaf1ef5ebd30fa4997d4f7ccbb7e1"><div class="ttname"><a href="class_light.html#a295eaf1ef5ebd30fa4997d4f7ccbb7e1">Light::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition:</b> <a href="light_8cpp_source.html#l00042">light.cpp:42</a></div></div>
+<div class="ttc" id="class_spotlight_html_aa7c89963fc17096a4ab155ea1b4b01a3"><div class="ttname"><a href="class_spotlight.html#aa7c89963fc17096a4ab155ea1b4b01a3">Spotlight::innerAngleChanged</a></div><div class="ttdeci">void innerAngleChanged(const float &amp;)</div></div>
+<div class="ttc" id="class_light_html_a2d15d31e8d64dfe6726c6b06e4d57387"><div class="ttname"><a href="class_light.html#a2d15d31e8d64dfe6726c6b06e4d57387">Light::m_view</a></div><div class="ttdeci">QMatrix4x4 m_view</div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00059">light.hpp:59</a></div></div>
+<div class="ttc" id="class_q_object_html"><div class="ttname"><a href="class_q_object.html">QObject</a></div></div>
+<div class="ttc" id="viewport_8hpp_html"><div class="ttname"><a href="viewport_8hpp.html">viewport.hpp</a></div></div>
+<div class="ttc" id="class_light_html_accf379b557fa086c827bae45cd141f3c"><div class="ttname"><a href="class_light.html#accf379b557fa086c827bae45cd141f3c">Light::farZ</a></div><div class="ttdeci">float farZ() const </div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00025">light.hpp:25</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Samedi 13 Juin 2015 14:52:56 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

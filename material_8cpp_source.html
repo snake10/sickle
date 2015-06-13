@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Sickle:  Fichier source de src/material.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Sickle
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">L&#39;editeur de monde du proletariat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">material.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="material_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2015 PsychoLama</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="material_8hpp.html">material.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_material.html#ab1be5285a5289d5a6ed07cfb26801f5d">    5</a></span>&#160;<a class="code" href="class_material.html#ab1be5285a5289d5a6ed07cfb26801f5d">Material::Material</a>(<a class="code" href="class_q_object.html">QObject</a> *parent) : <a class="code" href="class_q_object.html">QObject</a>(parent) {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="class_material.html#a6fcaf0217d837a565a1f01392ebeffc0">metallic</a>(0);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_material.html#afd4490f8191f989d10ad77b5b7fed54e">subsurface</a>(0);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_material.html#a8830760a0824b92e2a5151642a5e011c">specular</a>(50);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_material.html#a051abec46a2846d2a1797c1bc38f8fff">roughness</a>(50);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_material.html#ada089be63cad34944a1ee4ecfe932041">specularTint</a>(0);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_material.html#a8ae1e7ea8ead043fc3e23614b9e779c9">anisotropic</a>(0);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_material.html#a653591d22bc43838513f7f07a2795a91">sheen</a>(0);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_material.html#af58edf39cd7d361dd313198c5cff895e">sheenTint</a>(50);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_material.html#a37c6662da47fb03eb3f473684eb178c5">clearcoat</a>(0);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_material.html#af681093095dfcf0d30b7c167b65bec68">clearcoatGloss</a>(100);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="ttc" id="class_material_html_a653591d22bc43838513f7f07a2795a91"><div class="ttname"><a href="class_material.html#a653591d22bc43838513f7f07a2795a91">Material::sheen</a></div><div class="ttdeci">float sheen() const </div><div class="ttdef"><b>Definition:</b> <a href="material_8hpp_source.html#l00034">material.hpp:34</a></div></div>
+<div class="ttc" id="class_material_html_a6fcaf0217d837a565a1f01392ebeffc0"><div class="ttname"><a href="class_material.html#a6fcaf0217d837a565a1f01392ebeffc0">Material::metallic</a></div><div class="ttdeci">float metallic() const </div><div class="ttdef"><b>Definition:</b> <a href="material_8hpp_source.html#l00028">material.hpp:28</a></div></div>
+<div class="ttc" id="class_material_html_a8830760a0824b92e2a5151642a5e011c"><div class="ttname"><a href="class_material.html#a8830760a0824b92e2a5151642a5e011c">Material::specular</a></div><div class="ttdeci">float specular() const </div><div class="ttdef"><b>Definition:</b> <a href="material_8hpp_source.html#l00030">material.hpp:30</a></div></div>
+<div class="ttc" id="class_material_html_a051abec46a2846d2a1797c1bc38f8fff"><div class="ttname"><a href="class_material.html#a051abec46a2846d2a1797c1bc38f8fff">Material::roughness</a></div><div class="ttdeci">float roughness() const </div><div class="ttdef"><b>Definition:</b> <a href="material_8hpp_source.html#l00031">material.hpp:31</a></div></div>
+<div class="ttc" id="material_8hpp_html"><div class="ttname"><a href="material_8hpp.html">material.hpp</a></div></div>
+<div class="ttc" id="class_material_html_ab1be5285a5289d5a6ed07cfb26801f5d"><div class="ttname"><a href="class_material.html#ab1be5285a5289d5a6ed07cfb26801f5d">Material::Material</a></div><div class="ttdeci">Material(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="material_8cpp_source.html#l00005">material.cpp:5</a></div></div>
+<div class="ttc" id="class_material_html_af58edf39cd7d361dd313198c5cff895e"><div class="ttname"><a href="class_material.html#af58edf39cd7d361dd313198c5cff895e">Material::sheenTint</a></div><div class="ttdeci">float sheenTint() const </div><div class="ttdef"><b>Definition:</b> <a href="material_8hpp_source.html#l00035">material.hpp:35</a></div></div>
+<div class="ttc" id="class_material_html_a37c6662da47fb03eb3f473684eb178c5"><div class="ttname"><a href="class_material.html#a37c6662da47fb03eb3f473684eb178c5">Material::clearcoat</a></div><div class="ttdeci">float clearcoat() const </div><div class="ttdef"><b>Definition:</b> <a href="material_8hpp_source.html#l00036">material.hpp:36</a></div></div>
+<div class="ttc" id="class_material_html_afd4490f8191f989d10ad77b5b7fed54e"><div class="ttname"><a href="class_material.html#afd4490f8191f989d10ad77b5b7fed54e">Material::subsurface</a></div><div class="ttdeci">float subsurface() const </div><div class="ttdef"><b>Definition:</b> <a href="material_8hpp_source.html#l00029">material.hpp:29</a></div></div>
+<div class="ttc" id="class_material_html_ada089be63cad34944a1ee4ecfe932041"><div class="ttname"><a href="class_material.html#ada089be63cad34944a1ee4ecfe932041">Material::specularTint</a></div><div class="ttdeci">float specularTint() const </div><div class="ttdef"><b>Definition:</b> <a href="material_8hpp_source.html#l00032">material.hpp:32</a></div></div>
+<div class="ttc" id="class_material_html_a8ae1e7ea8ead043fc3e23614b9e779c9"><div class="ttname"><a href="class_material.html#a8ae1e7ea8ead043fc3e23614b9e779c9">Material::anisotropic</a></div><div class="ttdeci">float anisotropic() const </div><div class="ttdef"><b>Definition:</b> <a href="material_8hpp_source.html#l00033">material.hpp:33</a></div></div>
+<div class="ttc" id="class_q_object_html"><div class="ttname"><a href="class_q_object.html">QObject</a></div></div>
+<div class="ttc" id="class_material_html_af681093095dfcf0d30b7c167b65bec68"><div class="ttname"><a href="class_material.html#af681093095dfcf0d30b7c167b65bec68">Material::clearcoatGloss</a></div><div class="ttdeci">float clearcoatGloss() const </div><div class="ttdef"><b>Definition:</b> <a href="material_8hpp_source.html#l00037">material.hpp:37</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Samedi 13 Juin 2015 14:52:56 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

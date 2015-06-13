@@ -1,0 +1,5 @@
+<map id="Light::nearZ" name="Light::nearZ">
+<area shape="rect" id="node3" href="$class_light.html#a30538cefe47541035db096b75133442d" title="Light::Light" alt="" coords="173,5,259,35"/>
+<area shape="rect" id="node5" href="$class_spotlight.html#a00b11e643c97326edb0ab6b0dff3425a" title="Spotlight::Spotlight" alt="" coords="151,59,281,88"/>
+<area shape="rect" id="node7" href="$class_spotlight.html#a516543f0f12a955076e2b39446b88bb0" title="Spotlight::updateProj" alt="" coords="145,112,287,141"/>
+</map>

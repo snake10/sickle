@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['operator_3c_3c',['operator&lt;&lt;',['../fileloader_8cpp.html#aaf60c2d4feac61526a52675bc794465c',1,'operator&lt;&lt;(QDataStream &amp;stream, const QObject &amp;obj):&#160;fileloader.cpp'],['../fileloader_8hpp.html#a01cf740c5e20abbb6aa4ccf17236cd8b',1,'operator&lt;&lt;(QDataStream &amp;, const QObject &amp;):&#160;fileloader.cpp']]],
-  ['operator_3e_3e',['operator&gt;&gt;',['../fileloader_8cpp.html#a58818c50613f41b12137dac46d31cf86',1,'operator&gt;&gt;(QDataStream &amp;stream, QObject &amp;obj):&#160;fileloader.cpp'],['../fileloader_8hpp.html#a48efbb80ebceb0d47fc8d9084562f597',1,'operator&gt;&gt;(QDataStream &amp;, QObject &amp;):&#160;fileloader.cpp']]],
-  ['orientation',['orientation',['../class_actor.html#a748e07c73196050bfb0d51a14608aeae',1,'Actor::orientation() const '],['../class_actor.html#ac087d70de7b98ed01967c237ebdbdf16',1,'Actor::orientation(QQuaternion val)'],['../class_camera.html#a37709eb62bc8b5ff7fd3087b891fcdf6',1,'Camera::orientation()']]]
+  ['light',['Light',['../class_light.html#a30538cefe47541035db096b75133442d',1,'Light']]],
+  ['line',['Line',['../class_line.html#a7a071c7cde9102435f12791cdb8f44a7',1,'Line']]],
+  ['load',['load',['../class_file_loader.html#aac40f8fd94ed92bff539c65eecb8a53f',1,'FileLoader::load()'],['../fileloader_8hpp.html#a3606f281bba1aa03311e06a04abd83f8',1,'load():&#160;fileloader.hpp']]]
 ];

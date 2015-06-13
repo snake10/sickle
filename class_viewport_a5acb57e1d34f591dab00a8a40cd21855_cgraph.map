@@ -1,0 +1,5 @@
+<map id="Viewport::updateLights" name="Viewport::updateLights">
+<area shape="rect" id="node3" href="$class_world.html#a45fac3748d15198a09ce257da35e6fcf" title="World::zoneList" alt="" coords="227,5,339,35"/>
+<area shape="rect" id="node5" href="$class_world.html#a664cd2c63ef6c7979736cd454b31eb1c" title="World::currentZone" alt="" coords="216,59,349,88"/>
+<area shape="rect" id="node7" href="$class_viewport.html#ae2666049736ca227e0ddc0d23c431d96" title="Viewport::updateLight" alt="" coords="209,112,356,141"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="GeoBase::setParent" name="GeoBase::setParent">
+<area shape="rect" id="node3" href="$class_actor.html#a422d0d3c1e343e794357669a34bb59e1" title="Actor::setParent" alt="" coords="195,32,312,61"/>
+<area shape="rect" id="node5" href="$class_viewport.html#a5acb57e1d34f591dab00a8a40cd21855" title="Viewport::updateLights" alt="" coords="360,59,515,88"/>
+<area shape="rect" id="node13" href="$class_actor.html#ab3cce8c86e60c6b808ccd7732770f2cb" title="Actor::viewport" alt="" coords="199,136,308,165"/>
+<area shape="rect" id="node7" href="$class_world.html#a45fac3748d15198a09ce257da35e6fcf" title="World::zoneList" alt="" coords="581,5,693,35"/>
+<area shape="rect" id="node9" href="$class_world.html#a664cd2c63ef6c7979736cd454b31eb1c" title="World::currentZone" alt="" coords="571,59,704,88"/>
+<area shape="rect" id="node11" href="$class_viewport.html#ae2666049736ca227e0ddc0d23c431d96" title="Viewport::updateLight" alt="" coords="564,112,711,141"/>
+</map>

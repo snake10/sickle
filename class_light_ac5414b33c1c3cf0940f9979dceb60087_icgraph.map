@@ -1,0 +1,6 @@
+<map id="Light::getTexture" name="Light::getTexture">
+<area shape="rect" id="node3" href="$class_viewport.html#a0a6f7525bd53d2a0d5905374042d43ca" title="Viewport::initLight" alt="" coords="185,5,311,35"/>
+<area shape="rect" id="node5" href="$class_viewport.html#ae95938dedc43d6b36f2b85d4a226ffa1" title="Viewport::renderLight" alt="" coords="176,59,320,88"/>
+<area shape="rect" id="node9" href="$class_viewport.html#aeb07f85bbe4f10ca8d8c7b46c8ebd23b" title="Viewport::renderQuad" alt="" coords="175,112,321,141"/>
+<area shape="rect" id="node7" href="$class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5" title="Viewport::paintGL" alt="" coords="372,85,497,115"/>
+</map>

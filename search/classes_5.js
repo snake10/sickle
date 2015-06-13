@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['mainwindow',['MainWindow',['../class_main_window.html',1,'']]],
-  ['material',['Material',['../struct_material.html',1,'']]]
+  ['light',['Light',['../class_light.html',1,'']]],
+  ['line',['Line',['../class_line.html',1,'']]]
 ];

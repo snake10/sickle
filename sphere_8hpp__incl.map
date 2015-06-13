@@ -1,5 +1,6 @@
 <map id="include/sphere.hpp" name="include/sphere.hpp">
-<area shape="rect" id="node3" href="$geometry_8hpp.html" title="geometry.hpp" alt="" coords="713,83,815,112"/>
-<area shape="rect" id="node17" href="$globals_8hpp.html" title="Definitions globales. " alt="" coords="5,237,93,267"/>
-<area shape="rect" id="node19" href="$actor_8hpp.html" title="actor.hpp" alt="" coords="87,160,161,189"/>
+<area shape="rect" id="node3" href="$geometry_8hpp.html" title="geometry.hpp" alt="" coords="732,83,833,112"/>
+<area shape="rect" id="node19" href="$globals_8hpp.html" title="Definitions globales. " alt="" coords="219,237,307,267"/>
+<area shape="rect" id="node27" href="$actor_8hpp.html" title="actor.hpp" alt="" coords="257,160,332,189"/>
+<area shape="rect" id="node35" href="$material_8hpp.html" title="material.hpp" alt="" coords="89,160,183,189"/>
 </map>

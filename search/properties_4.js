@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['material',['material',['../class_geo_base.html#a03c962245decd8e1b69b20f672355e8d',1,'GeoBase']]],
-  ['metallic',['metallic',['../struct_material.html#a97fc4551763505f23dac24a9901cee88',1,'Material']]]
+  ['hangle',['hAngle',['../class_camera.html#abb4ab973081a379e31ca4934dbb46f39',1,'Camera']]],
+  ['hbias',['hBias',['../class_camera.html#a6539a2a1696bd797c789a74fc0127269',1,'Camera']]]
 ];

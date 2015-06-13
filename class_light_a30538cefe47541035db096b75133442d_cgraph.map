@@ -1,0 +1,21 @@
+<map id="Light::Light" name="Light::Light">
+<area shape="rect" id="node3" href="$class_light.html#adca0c1a95ed27e38676aee853420dced" title="Light::nearZ" alt="" coords="153,5,244,35"/>
+<area shape="rect" id="node5" href="$class_light.html#accf379b557fa086c827bae45cd141f3c" title="Light::farZ" alt="" coords="159,59,239,88"/>
+<area shape="rect" id="node7" href="$class_light.html#a43c3217b456a8548bdb32d6f20aff6d7" title="Light::power" alt="" coords="152,112,245,141"/>
+<area shape="rect" id="node9" href="$class_light.html#ae0d8301825a598389a6031c1f21a1d59" title="Light::color" alt="" coords="156,165,241,195"/>
+<area shape="rect" id="node11" href="$class_light.html#a919e21c240bd387d7b96259acad71fdd" title="Light::mapSize" alt="" coords="144,219,253,248"/>
+<area shape="rect" id="node13" href="$class_actor.html#a748e07c73196050bfb0d51a14608aeae" title="Actor::orientation" alt="" coords="697,297,817,327"/>
+<area shape="rect" id="node15" href="$global_8cpp.html#a3177875391ecce9d9e3f9a481c59c467" title="fromEuler" alt="" coords="160,483,237,512"/>
+<area shape="rect" id="node17" href="$class_light.html#a295eaf1ef5ebd30fa4997d4f7ccbb7e1" title="Light::update" alt="" coords="151,376,247,405"/>
+<area shape="rect" id="node30" href="$class_light.html#ab89261d1fa4fbbeaa61988502da207d3" title="Light::setParent" alt="" coords="141,429,256,459"/>
+<area shape="rect" id="node19" href="$class_light.html#afc11082a5405572dbec76735e73b6647" title="Light::updateProj" alt="" coords="308,376,428,405"/>
+<area shape="rect" id="node21" href="$class_light.html#a123872c9df9d14ae79d4a76fee217e99" title="Light::updateView" alt="" coords="305,323,431,352"/>
+<area shape="rect" id="node26" href="$class_light.html#a747a809f8abf05f41143279abb78df13" title="Light::view" alt="" coords="325,429,411,459"/>
+<area shape="rect" id="node28" href="$class_actor.html#ab3cce8c86e60c6b808ccd7732770f2cb" title="Actor::viewport" alt="" coords="313,483,423,512"/>
+<area shape="rect" id="node23" href="$class_light.html#ab689087cc07b95273f6daae900a42010" title="Light::direction" alt="" coords="504,323,611,352"/>
+<area shape="rect" id="node32" href="$class_actor.html#a422d0d3c1e343e794357669a34bb59e1" title="Actor::setParent" alt="" coords="309,536,427,565"/>
+<area shape="rect" id="node34" href="$class_viewport.html#a5acb57e1d34f591dab00a8a40cd21855" title="Viewport::updateLights" alt="" coords="480,536,635,565"/>
+<area shape="rect" id="node36" href="$class_world.html#a45fac3748d15198a09ce257da35e6fcf" title="World::zoneList" alt="" coords="701,483,813,512"/>
+<area shape="rect" id="node38" href="$class_world.html#a664cd2c63ef6c7979736cd454b31eb1c" title="World::currentZone" alt="" coords="691,536,824,565"/>
+<area shape="rect" id="node40" href="$class_viewport.html#ae2666049736ca227e0ddc0d23c431d96" title="Viewport::updateLight" alt="" coords="684,589,831,619"/>
+</map>

@@ -1,4 +1,7 @@
 <map id="Actor::draw" name="Actor::draw">
-<area shape="rect" id="node3" href="$class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2" title="Group::draw" alt="" coords="161,5,255,35"/>
-<area shape="rect" id="node5" href="$class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5" title="Viewport::paintGL" alt="" coords="145,59,271,88"/>
+<area shape="rect" id="node3" href="$class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2" title="Group::draw" alt="" coords="144,5,237,35"/>
+<area shape="rect" id="node5" href="$class_zone.html#ab0e0091bda0819de6e848d647d14b1a0" title="Zone::draw" alt="" coords="148,59,233,88"/>
+<area shape="rect" id="node7" href="$class_viewport.html#ae95938dedc43d6b36f2b85d4a226ffa1" title="Viewport::renderLight" alt="" coords="291,32,435,61"/>
+<area shape="rect" id="node11" href="$class_viewport.html#ad0317022a7a6399ee47c199bb9348efc" title="Viewport::renderScene" alt="" coords="285,85,440,115"/>
+<area shape="rect" id="node9" href="$class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5" title="Viewport::paintGL" alt="" coords="489,59,615,88"/>
 </map>

@@ -16,15 +16,15 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="class_geometry.html#abd87f05d818b3653f856813b32677494" target="_top" xlink:title="Geometry\&lt; Sphere \&gt;\l::Geometry">
-<polygon fill="white" stroke="black" points="152,-0 152,-34 260,-34 260,-0 152,-0"/>
-<text text-anchor="start" x="160" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry&lt; Sphere &gt;</text>
+<a xlink:href="class_geometry.html#abd87f05d818b3653f856813b32677494" target="_top" xlink:title="Geometry\&lt; Trigger \&gt;\l::Geometry">
+<polygon fill="white" stroke="black" points="152.5,-0 152.5,-34 259.5,-34 259.5,-0 152.5,-0"/>
+<text text-anchor="start" x="160.5" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry&lt; Trigger &gt;</text>
 <text text-anchor="middle" x="206" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::Geometry</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M125.754,-17C134.435,-17 143.232,-17 151.662,-17"/>
+<path fill="none" stroke="midnightblue" d="M125.893,-17C134.695,-17 143.612,-17 152.143,-17"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="125.644,-13.5001 115.644,-17 125.644,-20.5001 125.644,-13.5001"/>
 </g>
 </g>

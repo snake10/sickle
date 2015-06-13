@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Sickle:  Fichier source de include/light.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Sickle
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">L&#39;editeur de monde du proletariat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">light.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="light_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2015 PsychoLama</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef LIGHT_HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LIGHT_HPP</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QColor&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="actor_8hpp.html">actor.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_viewport.html">Viewport</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_light.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_light.html">Light</a> : <span class="keyword">public</span> <a class="code" href="class_actor.html">Actor</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_light.html#a30538cefe47541035db096b75133442d">Light</a>(<a class="code" href="class_q_object.html">QObject</a>* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_light.html#ad0e59fad13bb6cfadc25b2c477e9ddc7">~Light</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_light.html#ab89261d1fa4fbbeaa61988502da207d3">setParent</a>(<a class="code" href="class_q_object.html">QObject</a>* parent);</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_light.html#a5e73b5bef89a0859db55a8dee401f964">   18</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_light.html#a5e73b5bef89a0859db55a8dee401f964">draw</a>(<span class="keyword">const</span> <a class="code" href="struct_draw_info.html">DrawInfo</a>&amp; info) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        Q_UNUSED(info)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_light.html#a45eee372771065e9161da05dfe098548">   22</a></span>&#160;    <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008">prop</a>(<span class="keywordtype">float</span>, <a class="code" href="class_light.html#a43c3217b456a8548bdb32d6f20aff6d7">power</a>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_light.html#a0e9f59bcd76e64c725f1afcb7a11cd17">   23</a></span>&#160;    <a class="code" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008">prop</a>(QColor, <a class="code" href="class_light.html#ae0d8301825a598389a6031c1f21a1d59">color</a>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_light.html#aca82a80d8ecc64f9faef87c68da795ca">   24</a></span>&#160;    <a class="code" href="globals_8hpp.html#a3817105a974eac78f8920257881698a4">propSig</a>(<span class="keywordtype">float</span>, <a class="code" href="class_light.html#adca0c1a95ed27e38676aee853420dced">nearZ</a>, <a class="code" href="class_light.html#a2f86f8b9b8251c34cce8383b08ba70fc">nearZChanged</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_light.html#ade296835a5611c532516c184063aad0e">   25</a></span>&#160;    <a class="code" href="globals_8hpp.html#a3817105a974eac78f8920257881698a4">propSig</a>(<span class="keywordtype">float</span>, <a class="code" href="class_light.html#accf379b557fa086c827bae45cd141f3c">farZ</a>, <a class="code" href="class_light.html#ad1275a61d3da17bd15185a3a2481d6bd">farZChanged</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_light.html#a025c3f104cf3a7cb0484755d765c9078">   26</a></span>&#160;    <a class="code" href="globals_8hpp.html#a3817105a974eac78f8920257881698a4">propSig</a>(QSize, <a class="code" href="class_light.html#a919e21c240bd387d7b96259acad71fdd">mapSize</a>, <a class="code" href="class_light.html#a4f7326617c78035e0221a22a0924d42d">mapSizeChanged</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    QVector3D <a class="code" href="class_light.html#ab689087cc07b95273f6daae900a42010">direction</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    QMatrix4x4 <a class="code" href="class_light.html#a444a10fc5ea8527831928d1c486f32cd">depth</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_light.html#a5466743e73bc1f6e0dd198baf7697ed5">   31</a></span>&#160;    GLuint&amp; <a class="code" href="class_light.html#a5466743e73bc1f6e0dd198baf7697ed5">getBuffer</a>() {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_light.html#adc54718834ba59d73b33a5222d6c6e19">m_buffer</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_light.html#ac5414b33c1c3cf0940f9979dceb60087">   35</a></span>&#160;    GLuint&amp; <a class="code" href="class_light.html#ac5414b33c1c3cf0940f9979dceb60087">getTexture</a>() {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_light.html#a2f95d0a5ffdc28faeeb112ca2f839477">m_texture</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_light.html#ae15381dfe25ed67531fa7b2a530399ad">   39</a></span>&#160;    QMatrix4x4 <a class="code" href="class_light.html#ae15381dfe25ed67531fa7b2a530399ad">projection</a>() {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_light.html#a8881ba22d6a024d0941901a3d464222c">m_projection</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_light.html#a747a809f8abf05f41143279abb78df13">   43</a></span>&#160;    QMatrix4x4 <a class="code" href="class_light.html#a747a809f8abf05f41143279abb78df13">view</a>() {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_light.html#a2d15d31e8d64dfe6726c6b06e4d57387">m_view</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_light.html#a268d5bc710788f8457c1efc6038ea0a0">   47</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_light.html#a268d5bc710788f8457c1efc6038ea0a0">type</a>() {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_light.html#afc11082a5405572dbec76735e73b6647">updateProj</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_light.html#a123872c9df9d14ae79d4a76fee217e99">updateView</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_light.html#a295eaf1ef5ebd30fa4997d4f7ccbb7e1">update</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_light.html#a8881ba22d6a024d0941901a3d464222c">   58</a></span>&#160;    QMatrix4x4 <a class="code" href="class_light.html#a8881ba22d6a024d0941901a3d464222c">m_projection</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_light.html#a2d15d31e8d64dfe6726c6b06e4d57387">   59</a></span>&#160;    QMatrix4x4 <a class="code" href="class_light.html#a2d15d31e8d64dfe6726c6b06e4d57387">m_view</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_light.html#adc54718834ba59d73b33a5222d6c6e19">   60</a></span>&#160;    GLuint <a class="code" href="class_light.html#adc54718834ba59d73b33a5222d6c6e19">m_buffer</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_light.html#a2f95d0a5ffdc28faeeb112ca2f839477">   61</a></span>&#160;    GLuint <a class="code" href="class_light.html#a2f95d0a5ffdc28faeeb112ca2f839477">m_texture</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="class_light.html">Light</a>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif  // LIGHT_HPP</span></div>
+<div class="ttc" id="class_light_html_ad1275a61d3da17bd15185a3a2481d6bd"><div class="ttname"><a href="class_light.html#ad1275a61d3da17bd15185a3a2481d6bd">Light::farZChanged</a></div><div class="ttdeci">void farZChanged(const float &amp;)</div></div>
+<div class="ttc" id="class_viewport_html"><div class="ttname"><a href="class_viewport.html">Viewport</a></div><div class="ttdoc">Cadre de vue 3D. </div><div class="ttdef"><b>Definition:</b> <a href="viewport_8hpp_source.html#l00026">viewport.hpp:26</a></div></div>
+<div class="ttc" id="class_light_html_ab689087cc07b95273f6daae900a42010"><div class="ttname"><a href="class_light.html#ab689087cc07b95273f6daae900a42010">Light::direction</a></div><div class="ttdeci">QVector3D direction()</div><div class="ttdef"><b>Definition:</b> <a href="light_8cpp_source.html#l00059">light.cpp:59</a></div></div>
+<div class="ttc" id="class_light_html_ae15381dfe25ed67531fa7b2a530399ad"><div class="ttname"><a href="class_light.html#ae15381dfe25ed67531fa7b2a530399ad">Light::projection</a></div><div class="ttdeci">QMatrix4x4 projection()</div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00039">light.hpp:39</a></div></div>
+<div class="ttc" id="class_light_html"><div class="ttname"><a href="class_light.html">Light</a></div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00011">light.hpp:11</a></div></div>
+<div class="ttc" id="class_light_html_a4f7326617c78035e0221a22a0924d42d"><div class="ttname"><a href="class_light.html#a4f7326617c78035e0221a22a0924d42d">Light::mapSizeChanged</a></div><div class="ttdeci">void mapSizeChanged(const QSize &amp;)</div></div>
+<div class="ttc" id="class_light_html_adc54718834ba59d73b33a5222d6c6e19"><div class="ttname"><a href="class_light.html#adc54718834ba59d73b33a5222d6c6e19">Light::m_buffer</a></div><div class="ttdeci">GLuint m_buffer</div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00060">light.hpp:60</a></div></div>
+<div class="ttc" id="class_light_html_a2f95d0a5ffdc28faeeb112ca2f839477"><div class="ttname"><a href="class_light.html#a2f95d0a5ffdc28faeeb112ca2f839477">Light::m_texture</a></div><div class="ttdeci">GLuint m_texture</div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00061">light.hpp:61</a></div></div>
+<div class="ttc" id="class_light_html_a30538cefe47541035db096b75133442d"><div class="ttname"><a href="class_light.html#a30538cefe47541035db096b75133442d">Light::Light</a></div><div class="ttdeci">Light(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="light_8cpp_source.html#l00006">light.cpp:6</a></div></div>
+<div class="ttc" id="class_light_html_a123872c9df9d14ae79d4a76fee217e99"><div class="ttname"><a href="class_light.html#a123872c9df9d14ae79d4a76fee217e99">Light::updateView</a></div><div class="ttdeci">virtual void updateView()</div><div class="ttdef"><b>Definition:</b> <a href="light_8cpp_source.html#l00037">light.cpp:37</a></div></div>
+<div class="ttc" id="struct_draw_info_html"><div class="ttname"><a href="struct_draw_info.html">DrawInfo</a></div><div class="ttdoc">Structure contenant les infos sur la frame courante. </div><div class="ttdef"><b>Definition:</b> <a href="actor_8hpp_source.html#l00026">actor.hpp:26</a></div></div>
+<div class="ttc" id="class_light_html_a919e21c240bd387d7b96259acad71fdd"><div class="ttname"><a href="class_light.html#a919e21c240bd387d7b96259acad71fdd">Light::mapSize</a></div><div class="ttdeci">QSize mapSize() const </div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00026">light.hpp:26</a></div></div>
+<div class="ttc" id="actor_8hpp_html"><div class="ttname"><a href="actor_8hpp.html">actor.hpp</a></div></div>
+<div class="ttc" id="class_light_html_ad0e59fad13bb6cfadc25b2c477e9ddc7"><div class="ttname"><a href="class_light.html#ad0e59fad13bb6cfadc25b2c477e9ddc7">Light::~Light</a></div><div class="ttdeci">~Light()</div><div class="ttdef"><b>Definition:</b> <a href="light_8cpp_source.html#l00026">light.cpp:26</a></div></div>
+<div class="ttc" id="class_light_html_a43c3217b456a8548bdb32d6f20aff6d7"><div class="ttname"><a href="class_light.html#a43c3217b456a8548bdb32d6f20aff6d7">Light::power</a></div><div class="ttdeci">float power() const </div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00022">light.hpp:22</a></div></div>
+<div class="ttc" id="class_light_html_ab89261d1fa4fbbeaa61988502da207d3"><div class="ttname"><a href="class_light.html#ab89261d1fa4fbbeaa61988502da207d3">Light::setParent</a></div><div class="ttdeci">virtual void setParent(QObject *parent)</div><div class="ttdef"><b>Definition:</b> <a href="light_8cpp_source.html#l00050">light.cpp:50</a></div></div>
+<div class="ttc" id="class_actor_html"><div class="ttname"><a href="class_actor.html">Actor</a></div><div class="ttdoc">Base de tous les objets de la scène. </div><div class="ttdef"><b>Definition:</b> <a href="actor_8hpp_source.html#l00039">actor.hpp:39</a></div></div>
+<div class="ttc" id="class_light_html_afc11082a5405572dbec76735e73b6647"><div class="ttname"><a href="class_light.html#afc11082a5405572dbec76735e73b6647">Light::updateProj</a></div><div class="ttdeci">virtual void updateProj()</div><div class="ttdef"><b>Definition:</b> <a href="light_8cpp_source.html#l00031">light.cpp:31</a></div></div>
+<div class="ttc" id="class_light_html_a5466743e73bc1f6e0dd198baf7697ed5"><div class="ttname"><a href="class_light.html#a5466743e73bc1f6e0dd198baf7697ed5">Light::getBuffer</a></div><div class="ttdeci">GLuint &amp; getBuffer()</div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00031">light.hpp:31</a></div></div>
+<div class="ttc" id="class_light_html_ac5414b33c1c3cf0940f9979dceb60087"><div class="ttname"><a href="class_light.html#ac5414b33c1c3cf0940f9979dceb60087">Light::getTexture</a></div><div class="ttdeci">GLuint &amp; getTexture()</div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00035">light.hpp:35</a></div></div>
+<div class="ttc" id="class_light_html_a747a809f8abf05f41143279abb78df13"><div class="ttname"><a href="class_light.html#a747a809f8abf05f41143279abb78df13">Light::view</a></div><div class="ttdeci">QMatrix4x4 view()</div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00043">light.hpp:43</a></div></div>
+<div class="ttc" id="class_light_html_adca0c1a95ed27e38676aee853420dced"><div class="ttname"><a href="class_light.html#adca0c1a95ed27e38676aee853420dced">Light::nearZ</a></div><div class="ttdeci">float nearZ() const </div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00024">light.hpp:24</a></div></div>
+<div class="ttc" id="class_light_html_a444a10fc5ea8527831928d1c486f32cd"><div class="ttname"><a href="class_light.html#a444a10fc5ea8527831928d1c486f32cd">Light::depth</a></div><div class="ttdeci">QMatrix4x4 depth()</div><div class="ttdef"><b>Definition:</b> <a href="light_8cpp_source.html#l00066">light.cpp:66</a></div></div>
+<div class="ttc" id="class_light_html_a8881ba22d6a024d0941901a3d464222c"><div class="ttname"><a href="class_light.html#a8881ba22d6a024d0941901a3d464222c">Light::m_projection</a></div><div class="ttdeci">QMatrix4x4 m_projection</div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00058">light.hpp:58</a></div></div>
+<div class="ttc" id="class_light_html_ae0d8301825a598389a6031c1f21a1d59"><div class="ttname"><a href="class_light.html#ae0d8301825a598389a6031c1f21a1d59">Light::color</a></div><div class="ttdeci">QColor color() const </div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00023">light.hpp:23</a></div></div>
+<div class="ttc" id="globals_8hpp_html_a41eb4920cf776a8865a18986f8ae6008"><div class="ttname"><a href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008">prop</a></div><div class="ttdeci">#define prop(TYPE, NAME)</div><div class="ttdoc">Declare une propriété </div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00068">globals.hpp:68</a></div></div>
+<div class="ttc" id="globals_8hpp_html_a3817105a974eac78f8920257881698a4"><div class="ttname"><a href="globals_8hpp.html#a3817105a974eac78f8920257881698a4">propSig</a></div><div class="ttdeci">#define propSig(TYPE, NAME, SIG)</div><div class="ttdoc">Declare une propriété emettant un signal quand modifiée. </div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00072">globals.hpp:72</a></div></div>
+<div class="ttc" id="class_light_html_a295eaf1ef5ebd30fa4997d4f7ccbb7e1"><div class="ttname"><a href="class_light.html#a295eaf1ef5ebd30fa4997d4f7ccbb7e1">Light::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition:</b> <a href="light_8cpp_source.html#l00042">light.cpp:42</a></div></div>
+<div class="ttc" id="class_light_html_a268d5bc710788f8457c1efc6038ea0a0"><div class="ttname"><a href="class_light.html#a268d5bc710788f8457c1efc6038ea0a0">Light::type</a></div><div class="ttdeci">virtual int type()</div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00047">light.hpp:47</a></div></div>
+<div class="ttc" id="class_light_html_a2d15d31e8d64dfe6726c6b06e4d57387"><div class="ttname"><a href="class_light.html#a2d15d31e8d64dfe6726c6b06e4d57387">Light::m_view</a></div><div class="ttdeci">QMatrix4x4 m_view</div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00059">light.hpp:59</a></div></div>
+<div class="ttc" id="class_light_html_a2f86f8b9b8251c34cce8383b08ba70fc"><div class="ttname"><a href="class_light.html#a2f86f8b9b8251c34cce8383b08ba70fc">Light::nearZChanged</a></div><div class="ttdeci">void nearZChanged(const float &amp;)</div></div>
+<div class="ttc" id="class_q_object_html"><div class="ttname"><a href="class_q_object.html">QObject</a></div></div>
+<div class="ttc" id="class_light_html_a5e73b5bef89a0859db55a8dee401f964"><div class="ttname"><a href="class_light.html#a5e73b5bef89a0859db55a8dee401f964">Light::draw</a></div><div class="ttdeci">virtual void draw(const DrawInfo &amp;info)</div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00018">light.hpp:18</a></div></div>
+<div class="ttc" id="class_light_html_accf379b557fa086c827bae45cd141f3c"><div class="ttname"><a href="class_light.html#accf379b557fa086c827bae45cd141f3c">Light::farZ</a></div><div class="ttdeci">float farZ() const </div><div class="ttdef"><b>Definition:</b> <a href="light_8hpp_source.html#l00025">light.hpp:25</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Samedi 13 Juin 2015 14:52:56 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

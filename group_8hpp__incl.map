@@ -1,5 +1,6 @@
 <map id="include/group.hpp" name="include/group.hpp">
-<area shape="rect" id="node5" href="$geometry_8hpp.html" title="geometry.hpp" alt="" coords="369,83,471,112"/>
-<area shape="rect" id="node19" href="$globals_8hpp.html" title="Definitions globales. " alt="" coords="265,237,353,267"/>
-<area shape="rect" id="node21" href="$actor_8hpp.html" title="actor.hpp" alt="" coords="309,160,384,189"/>
+<area shape="rect" id="node5" href="$geometry_8hpp.html" title="geometry.hpp" alt="" coords="705,83,806,112"/>
+<area shape="rect" id="node21" href="$globals_8hpp.html" title="Definitions globales. " alt="" coords="777,237,865,267"/>
+<area shape="rect" id="node29" href="$actor_8hpp.html" title="actor.hpp" alt="" coords="82,160,157,189"/>
+<area shape="rect" id="node37" href="$material_8hpp.html" title="material.hpp" alt="" coords="861,160,954,189"/>
 </map>

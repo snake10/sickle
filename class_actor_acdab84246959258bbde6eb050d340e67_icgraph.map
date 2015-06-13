@@ -1,5 +1,8 @@
 <map id="Actor::position" name="Actor::position">
-<area shape="rect" id="node3" href="$class_actor.html#abbf942f60996c5df2a8c0a832bd91abc" title="Actor::transform" alt="" coords="161,44,276,73"/>
-<area shape="rect" id="node5" href="$class_geometry.html#aadfed02c20dfb9306bcf5616e7bf1f43" title="Geometry\&lt; Sphere \&gt;\l::draw" alt="" coords="325,5,469,51"/>
-<area shape="rect" id="node7" href="$class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2" title="Group::draw" alt="" coords="351,75,444,104"/>
+<area shape="rect" id="node3" href="$class_actor.html#abbf942f60996c5df2a8c0a832bd91abc" title="Actor::transform" alt="" coords="177,75,292,104"/>
+<area shape="rect" id="node13" href="$class_spotlight.html#a5901141395318038d54058bbbfc5b990" title="Spotlight::updateView" alt="" coords="160,128,309,157"/>
+<area shape="rect" id="node5" href="$class_geometry.html#a7cb8ea5e505f3933367d7ff9c6439985" title="Geometry\&lt; Trigger \&gt;\l::draw" alt="" coords="359,5,500,51"/>
+<area shape="rect" id="node9" href="$class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2" title="Group::draw" alt="" coords="383,75,476,104"/>
+<area shape="rect" id="node11" href="$class_line.html#a1a11432f5239ebf18316369a400a9893" title="Line::transform" alt="" coords="375,128,484,157"/>
+<area shape="rect" id="node7" href="$class_trigger.html#ae3e4635086dd4d53bbdedd0b02525daa" title="Trigger::draw" alt="" coords="549,13,648,43"/>
 </map>

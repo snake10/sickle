@@ -1,0 +1,5 @@
+<map id="AmbientOcclusion::AmbientOcclusion" name="AmbientOcclusion::AmbientOcclusion">
+<area shape="rect" id="node3" href="$struct_ambient_occlusion.html#a32cac87cc3781cb3d0ea99274214d0d3" title="AmbientOcclusion::kernelSize" alt="" coords="237,5,435,35"/>
+<area shape="rect" id="node5" href="$struct_ambient_occlusion.html#a8edce8016c299bd51201efd607ede70a" title="AmbientOcclusion::maxDist" alt="" coords="244,59,428,88"/>
+<area shape="rect" id="node7" href="$struct_ambient_occlusion.html#a570aad87dce4c95dceb896210574a288" title="AmbientOcclusion::threshold" alt="" coords="241,112,431,141"/>
+</map>

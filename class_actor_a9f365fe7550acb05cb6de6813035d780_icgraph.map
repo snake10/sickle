@@ -1,5 +1,7 @@
 <map id="Actor::scale" name="Actor::scale">
-<area shape="rect" id="node3" href="$class_actor.html#abbf942f60996c5df2a8c0a832bd91abc" title="Actor::transform" alt="" coords="148,44,263,73"/>
-<area shape="rect" id="node5" href="$class_geometry.html#aadfed02c20dfb9306bcf5616e7bf1f43" title="Geometry\&lt; Sphere \&gt;\l::draw" alt="" coords="312,5,456,51"/>
-<area shape="rect" id="node7" href="$class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2" title="Group::draw" alt="" coords="337,75,431,104"/>
+<area shape="rect" id="node3" href="$class_actor.html#abbf942f60996c5df2a8c0a832bd91abc" title="Actor::transform" alt="" coords="148,75,263,104"/>
+<area shape="rect" id="node5" href="$class_geometry.html#a7cb8ea5e505f3933367d7ff9c6439985" title="Geometry\&lt; Trigger \&gt;\l::draw" alt="" coords="313,5,455,51"/>
+<area shape="rect" id="node9" href="$class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2" title="Group::draw" alt="" coords="337,75,431,104"/>
+<area shape="rect" id="node11" href="$class_line.html#a1a11432f5239ebf18316369a400a9893" title="Line::transform" alt="" coords="329,128,439,157"/>
+<area shape="rect" id="node7" href="$class_trigger.html#ae3e4635086dd4d53bbdedd0b02525daa" title="Trigger::draw" alt="" coords="504,13,603,43"/>
 </map>

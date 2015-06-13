@@ -1,0 +1,7 @@
+<map id="Line" name="Line">
+<area shape="rect" id="node2" href="$class_geometry.html" title="Geometry\&lt; Line \&gt;" alt="" coords="5,341,131,371"/>
+<area shape="rect" id="node4" href="$class_geo_base.html" title="Base pour la classe Geometry. " alt="" coords="11,165,85,195"/>
+<area shape="rect" id="node10" href="$class_geometry.html" title="Base de toutes les géometries. " alt="" coords="69,245,203,275"/>
+<area shape="rect" id="node6" href="$class_actor.html" title="Base de tous les objets de la scène. " alt="" coords="21,85,75,115"/>
+<area shape="rect" id="node8" href="$class_q_object.html" title="QObject" alt="" coords="13,5,83,35"/>
+</map>

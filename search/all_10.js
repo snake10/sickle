@@ -1,8 +1,17 @@
 var searchData=
 [
-  ['tbase',['tBase',['../class_cube.html#af832047631c3682aabab3c62d0e01e5e',1,'Cube::tBase()'],['../class_sphere.html#ae204d79ed03729de2c7d9d93285db002',1,'Sphere::tBase()']]],
-  ['toeuler',['toEuler',['../mainwindow_8cpp.html#a3ed8a1338f74af6075250d4bb6755364',1,'mainwindow.cpp']]],
-  ['tostring',['toString',['../mainwindow_8cpp.html#a44233f9cd2c7740a27db2cb9bcdc51b2',1,'mainwindow.cpp']]],
-  ['transform',['transform',['../class_actor.html#abbf942f60996c5df2a8c0a832bd91abc',1,'Actor']]],
-  ['triangle',['triangle',['../class_geometry.html#ad5f42e98b617f4d758a79963385a58e3',1,'Geometry']]]
+  ['rb_5fdepth',['RB_DEPTH',['../actor_8hpp.html#a413cc31c82881e5279a0f9332f3f095ca536d1ed31f89edba77e0fcc67b3c50a9',1,'actor.hpp']]],
+  ['rb_5fscene',['RB_SCENE',['../actor_8hpp.html#a413cc31c82881e5279a0f9332f3f095cad912fca3acc4101c9ad23457f75ce815',1,'actor.hpp']]],
+  ['removelight',['removeLight',['../class_viewport.html#ae751e61662536f5dc15d1a505070c110',1,'Viewport']]],
+  ['removezone',['removeZone',['../class_world.html#ab3dbc3b7e6b0c783b15757f15fe3b44b',1,'World']]],
+  ['renderbuffer',['RenderBuffer',['../actor_8hpp.html#a413cc31c82881e5279a0f9332f3f095c',1,'actor.hpp']]],
+  ['renderlight',['renderLight',['../class_viewport.html#ae95938dedc43d6b36f2b85d4a226ffa1',1,'Viewport']]],
+  ['renderquad',['renderQuad',['../class_viewport.html#aeb07f85bbe4f10ca8d8c7b46c8ebd23b',1,'Viewport']]],
+  ['renderscene',['renderScene',['../class_viewport.html#ad0317022a7a6399ee47c199bb9348efc',1,'Viewport']]],
+  ['resetbias',['resetBias',['../class_camera.html#ae068edc8a9da46c0062af05b2434fb63',1,'Camera']]],
+  ['resizegl',['resizeGL',['../class_viewport.html#a94dcf877f22c2977a58cd6789144d3ae',1,'Viewport']]],
+  ['right',['right',['../class_camera.html#ac68fa914dd8737de1ec7558fc9281a68',1,'Camera']]],
+  ['rings',['rings',['../sphere_8cpp.html#a3bfde21367d37d607e61ff5781ad0a99',1,'sphere.cpp']]],
+  ['rotated',['rotated',['../class_actor.html#a6e72257974226d31517a5d62424f0ed4',1,'Actor']]],
+  ['roughness',['roughness',['../class_material.html#abbaeac8374986ca82670ff0d7749c566',1,'Material::roughness()'],['../class_material.html#a051abec46a2846d2a1797c1bc38f8fff',1,'Material::roughness() const '],['../class_material.html#ae4d889db2c61ec10c99f4e85aa8e3d4c',1,'Material::roughness(float val)']]]
 ];

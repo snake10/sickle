@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Sickle:  Fichier source de src/world.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Sickle
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">L&#39;editeur de monde du proletariat</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">world.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="world_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2015 PsychoLama</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="world_8hpp.html">world.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="sphere_8hpp.html">sphere.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cube_8hpp.html">cube.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="light_8hpp.html">light.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="group_8hpp.html">group.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_zone.html#aac03cddd733024aa414c6ba2166a2c8b">    9</a></span>&#160;<a class="code" href="class_zone.html#aac03cddd733024aa414c6ba2166a2c8b">Zone::Zone</a>(<a class="code" href="class_q_object.html">QObject</a> *parent) : <a class="code" href="class_q_object.html">QObject</a>(parent) {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">// NOOP</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_zone.html#a0b653f0fb1860fd4e1a2c94e3c1f7708">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_zone.html#a0b653f0fb1860fd4e1a2c94e3c1f7708">Zone::addBaseProps</a>() {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">auto</span> sky = addChild&lt;Sphere&gt;();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    sky-&gt;setObjectName(tr(<span class="stringliteral">&quot;Sky&quot;</span>));</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    sky-&gt;setColor(0, QColor(0, 255, 255));</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    sky-&gt;scale(QVector3D(-1, -1, -1));</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    sky-&gt;castShadows(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">auto</span> ground = addChild&lt;Cube&gt;();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    ground-&gt;setObjectName(tr(<span class="stringliteral">&quot;Ground&quot;</span>));</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    ground-&gt;scale(QVector3D(1, 1.0f / 50, 1));</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    qobject_cast&lt;<a class="code" href="class_material.html">Material</a>*&gt;(ground-&gt;material())-&gt;roughness(100);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 6; i++)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        ground-&gt;setColor(i, QColor(185, 150, 110));</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">auto</span> group = addChild&lt;Group&gt;();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    group-&gt;setObjectName(tr(<span class="stringliteral">&quot;Scenery&quot;</span>));</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    group-&gt;position(QVector3D(0, -2, 0));</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    group-&gt;scale(QVector3D(50, 50, 50));</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    sky-&gt;setParent(group);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    ground-&gt;setParent(group);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">auto</span> light = addChild&lt;Light&gt;();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    light-&gt;setObjectName(tr(<span class="stringliteral">&quot;Sunlight&quot;</span>));</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    light-&gt;orientation(<a class="code" href="global_8cpp.html#a3177875391ecce9d9e3f9a481c59c467">fromEuler</a>(QVector3D(-45, 0, -45)));</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_zone.html#ab0e0091bda0819de6e848d647d14b1a0">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_zone.html#ab0e0091bda0819de6e848d647d14b1a0">Zone::draw</a>(<span class="keyword">const</span> <a class="code" href="struct_draw_info.html">DrawInfo</a>&amp; info) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : children()) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">auto</span> child = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_actor.html">Actor</a>*<span class="keyword">&gt;</span>(i);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span> (child) child-&gt;<a class="code" href="class_actor.html#ac35dab598ae9f9a936418ec22fadf138">draw</a>(info);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_world.html#a6897ec9711bdab0784cc2df67fa4b788">   46</a></span>&#160;<a class="code" href="class_world.html#a6897ec9711bdab0784cc2df67fa4b788">World::World</a>(<a class="code" href="class_q_object.html">QObject</a>* parent) : <a class="code" href="class_q_object.html">QObject</a>(parent), m_currentZone(0) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_AO = <span class="keyword">new</span> <a class="code" href="struct_ambient_occlusion.html">AmbientOcclusion</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_world.html#a3362c1031d93b06f02431705adf3f171">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_world.html#a3362c1031d93b06f02431705adf3f171">World::setCurrentZoneId</a>(<span class="keywordtype">int</span> zone) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    m_currentZone = qMax(0, qMin(zone, m_zones.size() - 1));</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_world.html#a664cd2c63ef6c7979736cd454b31eb1c">   54</a></span>&#160;<a class="code" href="class_zone.html">Zone</a>* <a class="code" href="class_world.html#a664cd2c63ef6c7979736cd454b31eb1c">World::currentZone</a>() {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> m_zones.at(m_currentZone);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_world.html#ad705d80a512244721b55c69bccab5653">   58</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_world.html#ad705d80a512244721b55c69bccab5653">World::addZone</a>() {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">auto</span> zone = <span class="keyword">new</span> <a class="code" href="class_zone.html">Zone</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    zone-&gt;addBaseProps();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    m_zones.append(zone);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">auto</span> index = m_zones.size() - 1;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_world.html#a3362c1031d93b06f02431705adf3f171">setCurrentZoneId</a>(index);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_world.html#a514610a975bd4369c8d36f030ab76e00">zoneAdded</a>(index);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> index;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="ttc" id="class_world_html_a664cd2c63ef6c7979736cd454b31eb1c"><div class="ttname"><a href="class_world.html#a664cd2c63ef6c7979736cd454b31eb1c">World::currentZone</a></div><div class="ttdeci">Zone * currentZone()</div><div class="ttdef"><b>Definition:</b> <a href="world_8cpp_source.html#l00054">world.cpp:54</a></div></div>
+<div class="ttc" id="class_world_html_a6897ec9711bdab0784cc2df67fa4b788"><div class="ttname"><a href="class_world.html#a6897ec9711bdab0784cc2df67fa4b788">World::World</a></div><div class="ttdeci">World(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="world_8cpp_source.html#l00046">world.cpp:46</a></div></div>
+<div class="ttc" id="struct_draw_info_html"><div class="ttname"><a href="struct_draw_info.html">DrawInfo</a></div><div class="ttdoc">Structure contenant les infos sur la frame courante. </div><div class="ttdef"><b>Definition:</b> <a href="actor_8hpp_source.html#l00026">actor.hpp:26</a></div></div>
+<div class="ttc" id="class_actor_html_ac35dab598ae9f9a936418ec22fadf138"><div class="ttname"><a href="class_actor.html#ac35dab598ae9f9a936418ec22fadf138">Actor::draw</a></div><div class="ttdeci">virtual void draw(const DrawInfo &amp;info)=0</div></div>
+<div class="ttc" id="class_material_html"><div class="ttname"><a href="class_material.html">Material</a></div><div class="ttdoc">Définit les propriétés d&#39;un materiau. </div><div class="ttdef"><b>Definition:</b> <a href="material_8hpp_source.html#l00015">material.hpp:15</a></div></div>
+<div class="ttc" id="class_actor_html"><div class="ttname"><a href="class_actor.html">Actor</a></div><div class="ttdoc">Base de tous les objets de la scène. </div><div class="ttdef"><b>Definition:</b> <a href="actor_8hpp_source.html#l00039">actor.hpp:39</a></div></div>
+<div class="ttc" id="world_8hpp_html"><div class="ttname"><a href="world_8hpp.html">world.hpp</a></div></div>
+<div class="ttc" id="global_8cpp_html_a3177875391ecce9d9e3f9a481c59c467"><div class="ttname"><a href="global_8cpp.html#a3177875391ecce9d9e3f9a481c59c467">fromEuler</a></div><div class="ttdeci">QQuaternion fromEuler(const QVector3D &amp;euler)</div><div class="ttdef"><b>Definition:</b> <a href="global_8cpp_source.html#l00006">global.cpp:6</a></div></div>
+<div class="ttc" id="class_world_html_a514610a975bd4369c8d36f030ab76e00"><div class="ttname"><a href="class_world.html#a514610a975bd4369c8d36f030ab76e00">World::zoneAdded</a></div><div class="ttdeci">void zoneAdded(int index)</div></div>
+<div class="ttc" id="light_8hpp_html"><div class="ttname"><a href="light_8hpp.html">light.hpp</a></div></div>
+<div class="ttc" id="cube_8hpp_html"><div class="ttname"><a href="cube_8hpp.html">cube.hpp</a></div></div>
+<div class="ttc" id="class_world_html_a3362c1031d93b06f02431705adf3f171"><div class="ttname"><a href="class_world.html#a3362c1031d93b06f02431705adf3f171">World::setCurrentZoneId</a></div><div class="ttdeci">void setCurrentZoneId(int zone)</div><div class="ttdef"><b>Definition:</b> <a href="world_8cpp_source.html#l00050">world.cpp:50</a></div></div>
+<div class="ttc" id="class_zone_html"><div class="ttname"><a href="class_zone.html">Zone</a></div><div class="ttdef"><b>Definition:</b> <a href="world_8hpp_source.html#l00011">world.hpp:11</a></div></div>
+<div class="ttc" id="class_world_html_ad705d80a512244721b55c69bccab5653"><div class="ttname"><a href="class_world.html#ad705d80a512244721b55c69bccab5653">World::addZone</a></div><div class="ttdeci">int addZone()</div><div class="ttdef"><b>Definition:</b> <a href="world_8cpp_source.html#l00058">world.cpp:58</a></div></div>
+<div class="ttc" id="class_q_object_html"><div class="ttname"><a href="class_q_object.html">QObject</a></div></div>
+<div class="ttc" id="group_8hpp_html"><div class="ttname"><a href="group_8hpp.html">group.hpp</a></div></div>
+<div class="ttc" id="class_zone_html_a0b653f0fb1860fd4e1a2c94e3c1f7708"><div class="ttname"><a href="class_zone.html#a0b653f0fb1860fd4e1a2c94e3c1f7708">Zone::addBaseProps</a></div><div class="ttdeci">void addBaseProps()</div><div class="ttdef"><b>Definition:</b> <a href="world_8cpp_source.html#l00013">world.cpp:13</a></div></div>
+<div class="ttc" id="class_zone_html_aac03cddd733024aa414c6ba2166a2c8b"><div class="ttname"><a href="class_zone.html#aac03cddd733024aa414c6ba2166a2c8b">Zone::Zone</a></div><div class="ttdeci">Zone(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="world_8cpp_source.html#l00009">world.cpp:9</a></div></div>
+<div class="ttc" id="class_zone_html_ab0e0091bda0819de6e848d647d14b1a0"><div class="ttname"><a href="class_zone.html#ab0e0091bda0819de6e848d647d14b1a0">Zone::draw</a></div><div class="ttdeci">void draw(const DrawInfo &amp;info)</div><div class="ttdef"><b>Definition:</b> <a href="world_8cpp_source.html#l00039">world.cpp:39</a></div></div>
+<div class="ttc" id="sphere_8hpp_html"><div class="ttname"><a href="sphere_8hpp.html">sphere.hpp</a></div></div>
+<div class="ttc" id="struct_ambient_occlusion_html"><div class="ttname"><a href="struct_ambient_occlusion.html">AmbientOcclusion</a></div><div class="ttdef"><b>Definition:</b> <a href="world_8hpp_source.html#l00025">world.hpp:25</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Samedi 13 Juin 2015 14:52:56 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

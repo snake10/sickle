@@ -1,0 +1,12 @@
+<map id="Material::Material" name="Material::Material">
+<area shape="rect" id="node3" href="$class_material.html#a6fcaf0217d837a565a1f01392ebeffc0" title="Material::metallic" alt="" coords="197,5,317,35"/>
+<area shape="rect" id="node5" href="$class_material.html#afd4490f8191f989d10ad77b5b7fed54e" title="Material::subsurface" alt="" coords="188,59,327,88"/>
+<area shape="rect" id="node7" href="$class_material.html#a8830760a0824b92e2a5151642a5e011c" title="Material::specular" alt="" coords="195,112,320,141"/>
+<area shape="rect" id="node9" href="$class_material.html#a051abec46a2846d2a1797c1bc38f8fff" title="Material::roughness" alt="" coords="189,165,325,195"/>
+<area shape="rect" id="node11" href="$class_material.html#ada089be63cad34944a1ee4ecfe932041" title="Material::specularTint" alt="" coords="184,219,331,248"/>
+<area shape="rect" id="node13" href="$class_material.html#a8ae1e7ea8ead043fc3e23614b9e779c9" title="Material::anisotropic" alt="" coords="188,272,327,301"/>
+<area shape="rect" id="node15" href="$class_material.html#a653591d22bc43838513f7f07a2795a91" title="Material::sheen" alt="" coords="203,325,312,355"/>
+<area shape="rect" id="node17" href="$class_material.html#af58edf39cd7d361dd313198c5cff895e" title="Material::sheenTint" alt="" coords="191,379,324,408"/>
+<area shape="rect" id="node19" href="$class_material.html#a37c6662da47fb03eb3f473684eb178c5" title="Material::clearcoat" alt="" coords="193,432,321,461"/>
+<area shape="rect" id="node21" href="$class_material.html#af681093095dfcf0d30b7c167b65bec68" title="Material::clearcoatGloss" alt="" coords="176,485,339,515"/>
+</map>

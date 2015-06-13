@@ -1,0 +1,4 @@
+<map id="Viewport::clearLevel" name="Viewport::clearLevel">
+<area shape="rect" id="node3" href="$class_world.html#ad705d80a512244721b55c69bccab5653" title="World::addZone" alt="" coords="195,5,309,35"/>
+<area shape="rect" id="node5" href="$class_world.html#a3362c1031d93b06f02431705adf3f171" title="World::setCurrentZoneId" alt="" coords="357,5,523,35"/>
+</map>

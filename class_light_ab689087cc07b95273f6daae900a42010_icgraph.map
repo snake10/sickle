@@ -1,0 +1,9 @@
+<map id="Light::direction" name="Light::direction">
+<area shape="rect" id="node3" href="$class_light.html#a123872c9df9d14ae79d4a76fee217e99" title="Light::updateView" alt="" coords="172,32,297,61"/>
+<area shape="rect" id="node11" href="$class_spotlight.html#a5901141395318038d54058bbbfc5b990" title="Spotlight::updateView" alt="" coords="160,85,309,115"/>
+<area shape="rect" id="node13" href="$class_viewport.html#aeb07f85bbe4f10ca8d8c7b46c8ebd23b" title="Viewport::renderQuad" alt="" coords="161,139,308,168"/>
+<area shape="rect" id="node5" href="$class_light.html#a295eaf1ef5ebd30fa4997d4f7ccbb7e1" title="Light::update" alt="" coords="373,32,469,61"/>
+<area shape="rect" id="node7" href="$class_light.html#a30538cefe47541035db096b75133442d" title="Light::Light" alt="" coords="557,5,643,35"/>
+<area shape="rect" id="node9" href="$class_spotlight.html#a00b11e643c97326edb0ab6b0dff3425a" title="Spotlight::Spotlight" alt="" coords="535,59,665,88"/>
+<area shape="rect" id="node15" href="$class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5" title="Viewport::paintGL" alt="" coords="359,139,484,168"/>
+</map>

@@ -74,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,7 +86,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#signals">Signaux</a> &#124;
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-static-attribs">Attributs publics statiques</a> &#124;
 <a href="#properties">Propriétés</a> &#124;
 <a href="class_geo_base-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
@@ -101,7 +103,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="dynheader">
 Graphe d'héritage de GeoBase:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_geo_base__inherit__graph.svg" width="332" height="456"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_geo_base__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de GeoBase:</div>
@@ -109,14 +112,34 @@ Graphe de collaboration de GeoBase:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="class_geo_base__coll__graph.svg" width="86" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signaux</h2></td></tr>
+<tr class="memitem:a1d129e65503ed1ad9ccd1e7676ddc54c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geo_base.html#a1d129e65503ed1ad9ccd1e7676ddc54c">shadowChanged</a> (const bool &amp;)</td></tr>
+<tr class="separator:a1d129e65503ed1ad9ccd1e7676ddc54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header signals_class_actor"><td colspan="2" onclick="javascript:toggleInherit('signals_class_actor')"><img src="closed.png" alt="-"/>&#160;Signaux hérités de <a class="el" href="class_actor.html">Actor</a></td></tr>
+<tr class="memitem:abefffb24b0c7ebd4a48e13cf7817bb45 inherit signals_class_actor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#abefffb24b0c7ebd4a48e13cf7817bb45">moved</a> (const QVector3D &amp;)</td></tr>
+<tr class="separator:abefffb24b0c7ebd4a48e13cf7817bb45 inherit signals_class_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e72257974226d31517a5d62424f0ed4 inherit signals_class_actor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a6e72257974226d31517a5d62424f0ed4">rotated</a> (const QQuaternion &amp;)</td></tr>
+<tr class="separator:a6e72257974226d31517a5d62424f0ed4 inherit signals_class_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af158c415c51de9bfb9f1173fe6267b98 inherit signals_class_actor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#af158c415c51de9bfb9f1173fe6267b98">scaled</a> (const QVector3D &amp;)</td></tr>
+<tr class="separator:af158c415c51de9bfb9f1173fe6267b98 inherit signals_class_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a64d0302a4d85b1fe7946df7ebfaa2e33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geo_base.html#a64d0302a4d85b1fe7946df7ebfaa2e33">GeoBase</a> (<a class="el" href="class_q_object.html">QObject</a> *parent=nullptr)</td></tr>
 <tr class="separator:a64d0302a4d85b1fe7946df7ebfaa2e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a357c5534b7ac40df29f504c0e988e52e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geo_base.html#a357c5534b7ac40df29f504c0e988e52e">setParent</a> (<a class="el" href="class_q_object.html">QObject</a> *parent)</td></tr>
+<tr class="separator:a357c5534b7ac40df29f504c0e988e52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64e242b389200b0dce495fd41c270da3"><td class="memItemLeft" align="right" valign="top">QVariantList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geo_base.html#a64e242b389200b0dce495fd41c270da3">colors</a> () const </td></tr>
 <tr class="separator:a64e242b389200b0dce495fd41c270da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aefb0c12c462fe5036fff384d5017a3"><td class="memItemLeft" align="right" valign="top">Q_SLOT QVariantList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geo_base.html#a9aefb0c12c462fe5036fff384d5017a3">colors</a> (QVariantList val)</td></tr>
 <tr class="separator:a9aefb0c12c462fe5036fff384d5017a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5823ad25d01d391d2683205ea5c4d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geo_base.html#a7d5823ad25d01d391d2683205ea5c4d8">setColor</a> (int index, const QColor &amp;color)</td></tr>
+<tr class="separator:a7d5823ad25d01d391d2683205ea5c4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a18462191f1a878d56f42dca28ea8be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geo_base.html#a2a18462191f1a878d56f42dca28ea8be">castShadows</a> () const </td></tr>
+<tr class="separator:a2a18462191f1a878d56f42dca28ea8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a10a2e82284da6005ed76041ed0c0c4"><td class="memItemLeft" align="right" valign="top">Q_SLOT bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geo_base.html#a2a10a2e82284da6005ed76041ed0c0c4">castShadows</a> (bool val)</td></tr>
+<tr class="separator:a2a10a2e82284da6005ed76041ed0c0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16b4bc39e07b404fa613142e62a89238"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_object.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geo_base.html#a16b4bc39e07b404fa613142e62a89238">material</a> () const </td></tr>
 <tr class="separator:a16b4bc39e07b404fa613142e62a89238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bf3bb1dc75c020d6e1759080c1d888f"><td class="memItemLeft" align="right" valign="top">Q_SLOT <a class="el" href="class_q_object.html">QObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geo_base.html#a6bf3bb1dc75c020d6e1759080c1d888f">material</a> (<a class="el" href="class_q_object.html">QObject</a> *val)</td></tr>
@@ -128,6 +151,8 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="separator:aefb2c1d280c3db70df28a59b50a32294 inherit pub_methods_class_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac35dab598ae9f9a936418ec22fadf138 inherit pub_methods_class_actor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#ac35dab598ae9f9a936418ec22fadf138">draw</a> (const <a class="el" href="struct_draw_info.html">DrawInfo</a> &amp;info)=0</td></tr>
 <tr class="separator:ac35dab598ae9f9a936418ec22fadf138 inherit pub_methods_class_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad56a870008aaf5dd5a86945918c5ee6a inherit pub_methods_class_actor"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#ad56a870008aaf5dd5a86945918c5ee6a">event</a> (QEvent *event)</td></tr>
+<tr class="separator:ad56a870008aaf5dd5a86945918c5ee6a inherit pub_methods_class_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdab84246959258bbde6eb050d340e67 inherit pub_methods_class_actor"><td class="memItemLeft" align="right" valign="top">QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#acdab84246959258bbde6eb050d340e67">position</a> () const </td></tr>
 <tr class="separator:acdab84246959258bbde6eb050d340e67 inherit pub_methods_class_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a818360ae5b810a9cece29c573cf66e60 inherit pub_methods_class_actor"><td class="memItemLeft" align="right" valign="top">Q_SLOT QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a818360ae5b810a9cece29c573cf66e60">position</a> (QVector3D val)</td></tr>
@@ -141,10 +166,17 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a3329b9736b983c9b2f3d886d47567c26 inherit pub_methods_class_actor"><td class="memItemLeft" align="right" valign="top">Q_SLOT QVector3D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a3329b9736b983c9b2f3d886d47567c26">scale</a> (QVector3D val)</td></tr>
 <tr class="separator:a3329b9736b983c9b2f3d886d47567c26 inherit pub_methods_class_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Attributs publics statiques</h2></td></tr>
+<tr class="memitem:a94ce166ac88248c075d8b641ffb8b203"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="geometry_8hpp.html#aa636881723e69c54383454961257b41a">ShaderList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geo_base.html#a94ce166ac88248c075d8b641ffb8b203">s_shaderList</a></td></tr>
+<tr class="separator:a94ce166ac88248c075d8b641ffb8b203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Propriétés</h2></td></tr>
 <tr class="memitem:ab15ac6a427809ae15818b6598ea1f941"><td class="memItemLeft" align="right" valign="top">QVariantList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geo_base.html#ab15ac6a427809ae15818b6598ea1f941">colors</a></td></tr>
 <tr class="separator:ab15ac6a427809ae15818b6598ea1f941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3926f5a55119c9f20e24a74ff3e05a0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geo_base.html#a3926f5a55119c9f20e24a74ff3e05a0b">castShadows</a></td></tr>
+<tr class="separator:a3926f5a55119c9f20e24a74ff3e05a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03c962245decd8e1b69b20f672355e8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_q_object.html">QObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geo_base.html#a03c962245decd8e1b69b20f672355e8d">material</a></td></tr>
 <tr class="separator:a03c962245decd8e1b69b20f672355e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_actor"><td colspan="2" onclick="javascript:toggleInherit('properties_class_actor')"><img src="closed.png" alt="-"/>&#160;Propriétés hérités de <a class="el" href="class_actor.html">Actor</a></td></tr>
@@ -157,22 +189,20 @@ Propriétés</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Membres hérités additionnels</h2></td></tr>
-<tr class="inherit_header signals_class_actor"><td colspan="2" onclick="javascript:toggleInherit('signals_class_actor')"><img src="closed.png" alt="-"/>&#160;Signaux hérités de <a class="el" href="class_actor.html">Actor</a></td></tr>
-<tr class="memitem:abefffb24b0c7ebd4a48e13cf7817bb45 inherit signals_class_actor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#abefffb24b0c7ebd4a48e13cf7817bb45">moved</a> (const QVector3D &amp;)</td></tr>
-<tr class="separator:abefffb24b0c7ebd4a48e13cf7817bb45 inherit signals_class_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e72257974226d31517a5d62424f0ed4 inherit signals_class_actor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#a6e72257974226d31517a5d62424f0ed4">rotated</a> (const QQuaternion &amp;)</td></tr>
-<tr class="separator:a6e72257974226d31517a5d62424f0ed4 inherit signals_class_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af158c415c51de9bfb9f1173fe6267b98 inherit signals_class_actor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#af158c415c51de9bfb9f1173fe6267b98">scaled</a> (const QVector3D &amp;)</td></tr>
-<tr class="separator:af158c415c51de9bfb9f1173fe6267b98 inherit signals_class_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_actor"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_actor')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el" href="class_actor.html">Actor</a></td></tr>
 <tr class="memitem:abbf942f60996c5df2a8c0a832bd91abc inherit pro_methods_class_actor"><td class="memItemLeft" align="right" valign="top">virtual QMatrix4x4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#abbf942f60996c5df2a8c0a832bd91abc">transform</a> ()</td></tr>
 <tr class="separator:abbf942f60996c5df2a8c0a832bd91abc inherit pro_methods_class_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec7bf11dc8329266433454177c1b56e inherit pro_methods_class_actor"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2ec7bf11dc8329266433454177c1b56e inherit pro_methods_class_actor"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_actor.html#a2ec7bf11dc8329266433454177c1b56e">findParent</a> ()</td></tr>
+<tr class="separator:a2ec7bf11dc8329266433454177c1b56e inherit pro_methods_class_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3cce8c86e60c6b808ccd7732770f2cb inherit pro_methods_class_actor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_viewport.html">Viewport</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_actor.html#ab3cce8c86e60c6b808ccd7732770f2cb">viewport</a> ()</td></tr>
+<tr class="separator:ab3cce8c86e60c6b808ccd7732770f2cb inherit pro_methods_class_actor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Base pour la classe <a class="el" href="class_geometry.html" title="Base de toutes les géometries. ">Geometry</a>. </p>
 <p>Cette classe sert de base a la classe <a class="el" href="class_geometry.html" title="Base de toutes les géometries. ">Geometry</a>. Elle est nécéssaire car la système de meta-objet de Qt ne supporte pas les classes template, toutes les propriétés de la classe <a class="el" href="class_geometry.html" title="Base de toutes les géometries. ">Geometry</a> sont donc déclarées ici. </p>
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00048">48</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00029">29</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="a64d0302a4d85b1fe7946df7ebfaa2e33"></a>
 <div class="memitem">
@@ -191,23 +221,83 @@ Membres hérités additionnels</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00052">52</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8cpp_source.html#l00006">6</a> du fichier <a class="el" href="geometry_8cpp_source.html">geometry.cpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_geo_base_a64d0302a4d85b1fe7946df7ebfaa2e33_cgraph.svg" width="328" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_geo_base_a64d0302a4d85b1fe7946df7ebfaa2e33_cgraph.svg" width="100%" height="428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a2a18462191f1a878d56f42dca28ea8be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GeoBase::castShadows </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00046">46</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_geo_base_a2a18462191f1a878d56f42dca28ea8be_icgraph.svg" width="512" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a10a2e82284da6005ed76041ed0c0c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SLOT bool GeoBase::castShadows </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00046">46</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a64e242b389200b0dce495fd41c270da3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -229,12 +319,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00060">60</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00041">41</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_geo_base_a64e242b389200b0dce495fd41c270da3_icgraph.svg" width="291" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_geo_base_a64e242b389200b0dce495fd41c270da3_icgraph.svg" width="470" height="376"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -262,7 +353,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00060">60</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00041">41</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -287,12 +378,13 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00066">66</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00053">53</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_geo_base_a16b4bc39e07b404fa613142e62a89238_icgraph.svg" width="334" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_geo_base_a16b4bc39e07b404fa613142e62a89238_icgraph.svg" width="480" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -320,11 +412,172 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00066">66</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00053">53</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d5823ad25d01d391d2683205ea5c4d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoBase::setColor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QColor &amp;&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00042">42</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a357c5534b7ac40df29f504c0e988e52e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoBase::setParent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_q_object.html">QObject</a> *&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réimplémentée à partir de <a class="el" href="class_actor.html#a422d0d3c1e343e794357669a34bb59e1">Actor</a>.</p>
+
+<p>Définition à la ligne <a class="el" href="geometry_8cpp_source.html#l00013">13</a> du fichier <a class="el" href="geometry_8cpp_source.html">geometry.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_geo_base_a357c5534b7ac40df29f504c0e988e52e_cgraph.svg" width="100%" height="428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_geo_base_a357c5534b7ac40df29f504c0e988e52e_icgraph.svg" width="339" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d129e65503ed1ad9ccd1e7676ddc54c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoBase::shadowChanged </td>
+          <td>(</td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_geo_base_a1d129e65503ed1ad9ccd1e7676ddc54c_icgraph.svg" width="568" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a94ce166ac88248c075d8b641ffb8b203"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="geometry_8hpp.html#aa636881723e69c54383454961257b41a">ShaderList</a> GeoBase::s_shaderList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code" href="geometry_8hpp.html#a040438ad60d14e3aa18163cd1653b23a">ShaderInfo</a>{<a class="code" href="actor_8hpp.html#a413cc31c82881e5279a0f9332f3f095ca536d1ed31f89edba77e0fcc67b3c50a9">RB_DEPTH</a>, <span class="stringliteral">&quot;:/shaders/scene.vert&quot;</span>, QString()},</div>
+<div class="line">    <a class="code" href="geometry_8hpp.html#a040438ad60d14e3aa18163cd1653b23a">ShaderInfo</a>{<a class="code" href="actor_8hpp.html#a413cc31c82881e5279a0f9332f3f095cad912fca3acc4101c9ad23457f75ce815">RB_SCENE</a>, <span class="stringliteral">&quot;:/shaders/scene.vert&quot;</span>, <span class="stringliteral">&quot;:/shaders/buffer.frag&quot;</span>}</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00053">53</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Documentation des propriétés</h2>
+<a class="anchor" id="a3926f5a55119c9f20e24a74ff3e05a0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GeoBase::castShadows</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00046">46</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ab15ac6a427809ae15818b6598ea1f941"></a>
 <div class="memitem">
 <div class="memproto">
@@ -343,7 +596,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00060">60</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00041">41</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
@@ -365,17 +618,18 @@ Voici le graphe des appelants de cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00066">66</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="geometry_8hpp_source.html#l00053">53</a> du fichier <a class="el" href="geometry_8hpp_source.html">geometry.hpp</a>.</p>
 
 </div>
 </div>
-<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li>include/<a class="el" href="geometry_8hpp_source.html">geometry.hpp</a></li>
+<li>src/<a class="el" href="geometry_8cpp_source.html">geometry.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Mercredi 10 Juin 2015 15:31:15 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi 13 Juin 2015 14:52:56 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

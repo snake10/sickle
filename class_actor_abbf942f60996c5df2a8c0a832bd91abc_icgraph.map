@@ -1,4 +1,6 @@
 <map id="Actor::transform" name="Actor::transform">
-<area shape="rect" id="node3" href="$class_geometry.html#aadfed02c20dfb9306bcf5616e7bf1f43" title="Geometry\&lt; Sphere \&gt;\l::draw" alt="" coords="171,5,315,51"/>
-<area shape="rect" id="node5" href="$class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2" title="Group::draw" alt="" coords="196,75,289,104"/>
+<area shape="rect" id="node3" href="$class_geometry.html#a7cb8ea5e505f3933367d7ff9c6439985" title="Geometry\&lt; Trigger \&gt;\l::draw" alt="" coords="172,5,313,51"/>
+<area shape="rect" id="node7" href="$class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2" title="Group::draw" alt="" coords="196,75,289,104"/>
+<area shape="rect" id="node9" href="$class_line.html#a1a11432f5239ebf18316369a400a9893" title="Line::transform" alt="" coords="188,128,297,157"/>
+<area shape="rect" id="node5" href="$class_trigger.html#ae3e4635086dd4d53bbdedd0b02525daa" title="Trigger::draw" alt="" coords="363,13,461,43"/>
 </map>

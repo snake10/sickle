@@ -5,5 +5,6 @@
 <area shape="rect" id="node13" href="$class_camera.html#af81adf3ba7f63429a9d5356c218da78f" title="Camera::view" alt="" coords="187,165,288,195"/>
 <area shape="rect" id="node7" href="$class_viewport.html#a884441d496cf615dcd1456df15db4f2a" title="Viewport::wheelEvent" alt="" coords="357,59,507,88"/>
 <area shape="rect" id="node11" href="$class_viewport.html#ae3b6b681561ee1ef2bdb96d27bd2a1f0" title="Viewport::keyPressEvent" alt="" coords="347,112,517,141"/>
-<area shape="rect" id="node15" href="$class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5" title="Viewport::paintGL" alt="" coords="369,165,495,195"/>
+<area shape="rect" id="node15" href="$class_viewport.html#ad0317022a7a6399ee47c199bb9348efc" title="Viewport::renderScene" alt="" coords="355,165,509,195"/>
+<area shape="rect" id="node17" href="$class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5" title="Viewport::paintGL" alt="" coords="567,165,692,195"/>
 </map>

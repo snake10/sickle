@@ -1,0 +1,10 @@
+<map id="Viewport::renderLight" name="Viewport::renderLight">
+<area shape="rect" id="node3" href="$class_light.html#a5466743e73bc1f6e0dd198baf7697ed5" title="Light::getBuffer" alt="" coords="220,5,329,35"/>
+<area shape="rect" id="node5" href="$class_light.html#ac5414b33c1c3cf0940f9979dceb60087" title="Light::getTexture" alt="" coords="215,59,335,88"/>
+<area shape="rect" id="node7" href="$class_viewport.html#a5760eeac13c59b34bd8cc5ba638f9cbd" title="Viewport::catchErrors" alt="" coords="201,112,348,141"/>
+<area shape="rect" id="node9" href="$class_light.html#ae15381dfe25ed67531fa7b2a530399ad" title="Light::projection" alt="" coords="217,165,332,195"/>
+<area shape="rect" id="node11" href="$class_light.html#a747a809f8abf05f41143279abb78df13" title="Light::view" alt="" coords="232,219,317,248"/>
+<area shape="rect" id="node13" href="$class_world.html#a664cd2c63ef6c7979736cd454b31eb1c" title="World::currentZone" alt="" coords="208,272,341,301"/>
+<area shape="rect" id="node15" href="$class_zone.html#ab0e0091bda0819de6e848d647d14b1a0" title="Zone::draw" alt="" coords="232,325,317,355"/>
+<area shape="rect" id="node17" href="$class_actor.html#ac35dab598ae9f9a936418ec22fadf138" title="Actor::draw" alt="" coords="399,325,487,355"/>
+</map>

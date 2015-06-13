@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,7 +88,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
   <div class="headertitle">
 <div class="title">Référence du fichier globals.hpp</div>  </div>
 </div><!--header-->
@@ -96,10 +97,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 <p>Definitions globales.  
 <a href="#details">Plus de détails...</a></p>
-<div class="textblock"><div class="dynheader">
+<div class="textblock"><code>#include &lt;QObject&gt;</code><br/>
+<code>#include &lt;QQuaternion&gt;</code><br/>
+<code>#include &lt;QVector3D&gt;</code><br/>
+<code>#include &lt;QtMath&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de globals.hpp:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="globals_8hpp__incl.svg" width="395" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><div class="textblock"><div class="dynheader">
 Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="globals_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="globals_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </div>
 <p><a href="globals_8hpp_source.html">Aller au code source de ce fichier.</a></p>
@@ -136,6 +148,13 @@ Macros</h2></td></tr>
 <tr class="memitem:afb04fed0d9040c896727b9326d634570"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="globals_8hpp.html#afb04fed0d9040c896727b9326d634570">noinline</a></td></tr>
 <tr class="memdesc:afb04fed0d9040c896727b9326d634570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empeche une fonction d'être inlinée.  <a href="#afb04fed0d9040c896727b9326d634570">Plus de détails...</a><br/></td></tr>
 <tr class="separator:afb04fed0d9040c896727b9326d634570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a3177875391ecce9d9e3f9a481c59c467"><td class="memItemLeft" align="right" valign="top">QQuaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="globals_8hpp.html#a3177875391ecce9d9e3f9a481c59c467">fromEuler</a> (const QVector3D &amp;euler)</td></tr>
+<tr class="separator:a3177875391ecce9d9e3f9a481c59c467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ed8a1338f74af6075250d4bb6755364"><td class="memItemLeft" align="right" valign="top">QVector3D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="globals_8hpp.html#a3ed8a1338f74af6075250d4bb6755364">toEuler</a> (const QQuaternion &amp;quat)</td></tr>
+<tr class="separator:a3ed8a1338f74af6075250d4bb6755364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Definitions globales. </p>
@@ -171,7 +190,7 @@ Macros</h2></td></tr>
 </div><!-- fragment -->
 <p>Déclare une variable membre privée. </p>
 
-<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00030">30</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00035">35</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
 
 </div>
 </div>
@@ -185,7 +204,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00027">27</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00032">32</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
 
 </div>
 </div>
@@ -215,7 +234,7 @@ Macros</h2></td></tr>
 
 <p>Déclare un getter pour une variable membre. </p>
 
-<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00045">45</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00050">50</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
 
 </div>
 </div>
@@ -232,7 +251,7 @@ Macros</h2></td></tr>
 <p>Empeche une fonction d'être inlinée. </p>
 <p>Cette macro force une fonction a ne pas être compilée en mode inline lorsque le compileur le permet. Inliner des fonctions de petites taille peut constituer une optimisation, mais il est parfois préférable d'éviter d'inliner des fonctions de grande taille comme <a class="el" href="class_geometry.html#a4b8cfb9c3dfbd615983b43a3386f2b0a" title="Initialise les shaders et alloue les buffer. ">Geometry::initProgram</a> pour diminuer la taille du programme. </p>
 
-<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00094">94</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00102">102</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
 
 </div>
 </div>
@@ -262,13 +281,13 @@ Macros</h2></td></tr>
 <b>Valeur :</b><div class="fragment"><div class="line">Q_PROPERTY(TYPE NAME WRITE NAME READ NAME); <a class="code" href="globals_8hpp.html#a2f4101a13cfefe3f12e4e9564e8449e0">\</a></div>
 <div class="line"><a class="code" href="globals_8hpp.html#a2f4101a13cfefe3f12e4e9564e8449e0">	propBase</a>(TYPE, NAME);                       <a class="code" href="globals_8hpp.html#ae5093ebfe19de9457dd90298ce5aed2e">\</a></div>
 <div class="line"><a class="code" href="globals_8hpp.html#ae5093ebfe19de9457dd90298ce5aed2e">	setter</a>(TYPE, NAME)</div>
-<div class="ttc" id="globals_8hpp_html_ae5093ebfe19de9457dd90298ce5aed2e"><div class="ttname"><a href="globals_8hpp.html#ae5093ebfe19de9457dd90298ce5aed2e">setter</a></div><div class="ttdeci">#define setter(TYPE, NAME)</div><div class="ttdoc">Déclare un setter pour une variable membre. </div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00040">globals.hpp:40</a></div></div>
-<div class="ttc" id="globals_8hpp_html_a2f4101a13cfefe3f12e4e9564e8449e0"><div class="ttname"><a href="globals_8hpp.html#a2f4101a13cfefe3f12e4e9564e8449e0">propBase</a></div><div class="ttdeci">#define propBase(TYPE, NAME)</div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00062">globals.hpp:62</a></div></div>
+<div class="ttc" id="globals_8hpp_html_ae5093ebfe19de9457dd90298ce5aed2e"><div class="ttname"><a href="globals_8hpp.html#ae5093ebfe19de9457dd90298ce5aed2e">setter</a></div><div class="ttdeci">#define setter(TYPE, NAME)</div><div class="ttdoc">Déclare un setter pour une variable membre. </div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00045">globals.hpp:45</a></div></div>
+<div class="ttc" id="globals_8hpp_html_a2f4101a13cfefe3f12e4e9564e8449e0"><div class="ttname"><a href="globals_8hpp.html#a2f4101a13cfefe3f12e4e9564e8449e0">propBase</a></div><div class="ttdeci">#define propBase(TYPE, NAME)</div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00067">globals.hpp:67</a></div></div>
 </div><!-- fragment -->
 <p>Declare une propriété </p>
 <p>Déclare une variable membre avec le type TYPE et le nom NAME, ainsi qu'un getter et un setter du même nom. Cette propriété est déclarée dans le système de meta-objet de Qt. </p>
 
-<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00063">63</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00068">68</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
 
 </div>
 </div>
@@ -296,7 +315,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00062">62</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00067">67</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
 
 </div>
 </div>
@@ -326,11 +345,11 @@ Macros</h2></td></tr>
 <b>Valeur :</b><div class="fragment"><div class="line"><span class="keyword">private</span>:                             \</div>
 <div class="line">    Q_PROPERTY(TYPE NAME READ NAME); <a class="code" href="globals_8hpp.html#a2f4101a13cfefe3f12e4e9564e8449e0">\</a></div>
 <div class="line"><a class="code" href="globals_8hpp.html#a2f4101a13cfefe3f12e4e9564e8449e0">	propBase</a>(TYPE, NAME)</div>
-<div class="ttc" id="globals_8hpp_html_a2f4101a13cfefe3f12e4e9564e8449e0"><div class="ttname"><a href="globals_8hpp.html#a2f4101a13cfefe3f12e4e9564e8449e0">propBase</a></div><div class="ttdeci">#define propBase(TYPE, NAME)</div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00062">globals.hpp:62</a></div></div>
+<div class="ttc" id="globals_8hpp_html_a2f4101a13cfefe3f12e4e9564e8449e0"><div class="ttname"><a href="globals_8hpp.html#a2f4101a13cfefe3f12e4e9564e8449e0">propBase</a></div><div class="ttdeci">#define propBase(TYPE, NAME)</div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00067">globals.hpp:67</a></div></div>
 </div><!-- fragment -->
 <p>Déclare une variable membre et un getter, mais pas de setter (RO: Read-only) </p>
 
-<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00075">75</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00080">80</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
 
 </div>
 </div>
@@ -369,13 +388,13 @@ Macros</h2></td></tr>
 <div class="line">    void SIG(<span class="keyword">const</span> TYPE&amp;);                                                             \</div>
 <div class="line">                                                                                \</div>
 <div class="line">public:</div>
-<div class="ttc" id="globals_8hpp_html_a2f4101a13cfefe3f12e4e9564e8449e0"><div class="ttname"><a href="globals_8hpp.html#a2f4101a13cfefe3f12e4e9564e8449e0">propBase</a></div><div class="ttdeci">#define propBase(TYPE, NAME)</div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00062">globals.hpp:62</a></div></div>
-<div class="ttc" id="globals_8hpp_html_aaee98f184e3c8496d8198325f04443dc"><div class="ttname"><a href="globals_8hpp.html#aaee98f184e3c8496d8198325f04443dc">setterSig</a></div><div class="ttdeci">#define setterSig(TYPE, NAME, SIG)</div><div class="ttdoc">Déclare un setter emettant un evenement. </div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00042">globals.hpp:42</a></div></div>
+<div class="ttc" id="globals_8hpp_html_a2f4101a13cfefe3f12e4e9564e8449e0"><div class="ttname"><a href="globals_8hpp.html#a2f4101a13cfefe3f12e4e9564e8449e0">propBase</a></div><div class="ttdeci">#define propBase(TYPE, NAME)</div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00067">globals.hpp:67</a></div></div>
+<div class="ttc" id="globals_8hpp_html_aaee98f184e3c8496d8198325f04443dc"><div class="ttname"><a href="globals_8hpp.html#aaee98f184e3c8496d8198325f04443dc">setterSig</a></div><div class="ttdeci">#define setterSig(TYPE, NAME, SIG)</div><div class="ttdoc">Déclare un setter emettant un evenement. </div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00047">globals.hpp:47</a></div></div>
 </div><!-- fragment -->
 <p>Declare une propriété emettant un signal quand modifiée. </p>
 <p>Fonctionne de manière similaire a prop, mais la classe emettra le signal SIG lorsque le getter est appelé. Le signal prend la nouvelle valeur en paramètre. </p>
 
-<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00067">67</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00072">72</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
 
 </div>
 </div>
@@ -405,7 +424,7 @@ Macros</h2></td></tr>
 
 <p>Déclare un setter pour une variable membre. </p>
 
-<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00040">40</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00045">45</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
 
 </div>
 </div>
@@ -443,7 +462,7 @@ Macros</h2></td></tr>
 <div class="line">        COMMAND <span class="keywordflow">return</span> NAME();          \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
-<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00034">34</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00039">39</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
 
 </div>
 </div>
@@ -479,14 +498,59 @@ Macros</h2></td></tr>
 
 <p>Déclare un setter emettant un evenement. </p>
 
-<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00042">42</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
+<p>Définition à la ligne <a class="el" href="globals_8hpp_source.html#l00047">47</a> du fichier <a class="el" href="globals_8hpp_source.html">globals.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="a3177875391ecce9d9e3f9a481c59c467"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QQuaternion fromEuler </td>
+          <td>(</td>
+          <td class="paramtype">const QVector3D &amp;&#160;</td>
+          <td class="paramname"><em>euler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="global_8cpp_source.html#l00006">6</a> du fichier <a class="el" href="global_8cpp_source.html">global.cpp</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="globals_8hpp_a3177875391ecce9d9e3f9a481c59c467_icgraph.svg" width="283" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ed8a1338f74af6075250d4bb6755364"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector3D* toEuler </td>
+          <td>(</td>
+          <td class="paramtype">const QQuaternion &amp;&#160;</td>
+          <td class="paramname"><em>quat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="global_8cpp_source.html#l00015">15</a> du fichier <a class="el" href="global_8cpp_source.html">global.cpp</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Mercredi 10 Juin 2015 15:31:15 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Samedi 13 Juin 2015 14:52:56 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

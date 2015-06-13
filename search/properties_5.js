@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['orientation',['orientation',['../class_actor.html#aa5ee88c6a64f6574b4d8d03db6e103b8',1,'Actor']]]
+  ['innerangle',['innerAngle',['../class_spotlight.html#a6b770682d2aab9e114ef90a27dbc576c',1,'Spotlight']]],
+  ['isinitialized',['isInitialized',['../class_viewport.html#ae366735439e3621c6576dec6b9a3ca29',1,'Viewport']]]
 ];

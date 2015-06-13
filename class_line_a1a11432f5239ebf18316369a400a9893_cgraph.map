@@ -1,0 +1,6 @@
+<map id="Line::transform" name="Line::transform">
+<area shape="rect" id="node3" href="$class_actor.html#abbf942f60996c5df2a8c0a832bd91abc" title="Actor::transform" alt="" coords="164,59,279,88"/>
+<area shape="rect" id="node5" href="$class_actor.html#acdab84246959258bbde6eb050d340e67" title="Actor::position" alt="" coords="336,5,443,35"/>
+<area shape="rect" id="node7" href="$class_actor.html#a748e07c73196050bfb0d51a14608aeae" title="Actor::orientation" alt="" coords="329,59,449,88"/>
+<area shape="rect" id="node9" href="$class_actor.html#a9f365fe7550acb05cb6de6813035d780" title="Actor::scale" alt="" coords="344,112,435,141"/>
+</map>

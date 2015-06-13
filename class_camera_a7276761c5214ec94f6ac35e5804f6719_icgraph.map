@@ -1,8 +1,10 @@
 <map id="Camera::direction" name="Camera::direction">
-<area shape="rect" id="node3" href="$class_camera.html#a9936c788ad482b40b5a3548bf5e97247" title="Camera::up" alt="" coords="208,101,299,131"/>
-<area shape="rect" id="node5" href="$class_camera.html#a37709eb62bc8b5ff7fd3087b891fcdf6" title="Camera::orientation" alt="" coords="393,5,529,35"/>
-<area shape="rect" id="node7" href="$class_camera.html#af81adf3ba7f63429a9d5356c218da78f" title="Camera::view" alt="" coords="411,64,512,93"/>
-<area shape="rect" id="node11" href="$class_viewport.html#ae3b6b681561ee1ef2bdb96d27bd2a1f0" title="Viewport::keyPressEvent" alt="" coords="376,129,547,159"/>
-<area shape="rect" id="node15" href="$class_viewport.html#a884441d496cf615dcd1456df15db4f2a" title="Viewport::wheelEvent" alt="" coords="179,205,328,235"/>
-<area shape="rect" id="node9" href="$class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5" title="Viewport::paintGL" alt="" coords="596,64,721,93"/>
+<area shape="rect" id="node3" href="$class_camera.html#a9936c788ad482b40b5a3548bf5e97247" title="Camera::up" alt="" coords="208,39,299,68"/>
+<area shape="rect" id="node5" href="$class_camera.html#a37709eb62bc8b5ff7fd3087b891fcdf6" title="Camera::orientation" alt="" coords="393,11,529,40"/>
+<area shape="rect" id="node7" href="$class_camera.html#af81adf3ba7f63429a9d5356c218da78f" title="Camera::view" alt="" coords="411,87,512,116"/>
+<area shape="rect" id="node13" href="$class_viewport.html#ae3b6b681561ee1ef2bdb96d27bd2a1f0" title="Viewport::keyPressEvent" alt="" coords="376,140,547,169"/>
+<area shape="rect" id="node17" href="$class_viewport.html#aeb07f85bbe4f10ca8d8c7b46c8ebd23b" title="Viewport::renderQuad" alt="" coords="599,167,745,196"/>
+<area shape="rect" id="node20" href="$class_viewport.html#a884441d496cf615dcd1456df15db4f2a" title="Viewport::wheelEvent" alt="" coords="179,244,328,273"/>
+<area shape="rect" id="node9" href="$class_viewport.html#ad0317022a7a6399ee47c199bb9348efc" title="Viewport::renderScene" alt="" coords="595,100,749,129"/>
+<area shape="rect" id="node11" href="$class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5" title="Viewport::paintGL" alt="" coords="799,133,924,163"/>
 </map>
