@@ -1,17 +1,19 @@
 <map id="Geometry&lt; Child &gt;" name="Geometry&lt; Child &gt;">
 <area shape="rect" id="node9" href="$class_geometry.html" title="Geometry\&lt; Cube \&gt;" alt="" coords="640,5,773,35"/>
 <area shape="rect" id="node13" href="$class_geometry.html" title="Geometry\&lt; Line \&gt;" alt="" coords="644,59,769,88"/>
-<area shape="rect" id="node17" href="$class_geometry.html" title="Geometry\&lt; Sphere \&gt;" alt="" coords="635,112,779,141"/>
-<area shape="rect" id="node21" href="$class_geometry.html" title="Geometry\&lt; Cylinder \&gt;" alt="" coords="632,165,781,195"/>
-<area shape="rect" id="node25" href="$class_geometry.html" title="Geometry\&lt; Pyramide \&gt;" alt="" coords="628,219,785,248"/>
-<area shape="rect" id="node29" href="$class_geometry.html" title="Geometry\&lt; Trigger \&gt;" alt="" coords="636,272,777,301"/>
-<area shape="rect" id="node2" href="$class_geo_base.html" title="Base pour la classe Geometry. " alt="" coords="233,140,308,169"/>
-<area shape="rect" id="node4" href="$class_actor.html" title="Base de tous les objets de la scène. " alt="" coords="128,140,181,169"/>
-<area shape="rect" id="node6" href="$class_q_object.html" title="QObject" alt="" coords="7,140,76,169"/>
+<area shape="rect" id="node17" href="$class_geometry.html" title="Geometry\&lt; Rect \&gt;" alt="" coords="641,112,772,141"/>
+<area shape="rect" id="node21" href="$class_geometry.html" title="Geometry\&lt; Sphere \&gt;" alt="" coords="635,165,779,195"/>
+<area shape="rect" id="node25" href="$class_geometry.html" title="Geometry\&lt; Cylinder \&gt;" alt="" coords="632,219,781,248"/>
+<area shape="rect" id="node29" href="$class_geometry.html" title="Geometry\&lt; Pyramide \&gt;" alt="" coords="628,272,785,301"/>
+<area shape="rect" id="node33" href="$class_geometry.html" title="Geometry\&lt; Trigger \&gt;" alt="" coords="636,325,777,355"/>
+<area shape="rect" id="node2" href="$class_geo_base.html" title="Base pour la classe Geometry. " alt="" coords="233,165,308,195"/>
+<area shape="rect" id="node4" href="$class_actor.html" title="Base de tous les objets de la scène. " alt="" coords="128,165,181,195"/>
+<area shape="rect" id="node6" href="$class_q_object.html" title="QObject" alt="" coords="7,165,76,195"/>
 <area shape="rect" id="node11" href="$class_cube.html" title="Un simple cube. " alt="" coords="849,5,903,35"/>
 <area shape="rect" id="node15" href="$class_line.html" title="Line" alt="" coords="853,59,899,88"/>
-<area shape="rect" id="node19" href="$class_sphere.html" title="Une simple sphere. " alt="" coords="845,112,907,141"/>
-<area shape="rect" id="node23" href="$class_cylinder.html" title="Cylinder" alt="" coords="841,165,911,195"/>
-<area shape="rect" id="node27" href="$class_pyramide.html" title="Pyramide" alt="" coords="837,219,915,248"/>
-<area shape="rect" id="node31" href="$class_trigger.html" title="Trigger" alt="" coords="845,272,907,301"/>
+<area shape="rect" id="node19" href="$class_rect.html" title="Rect" alt="" coords="851,112,901,141"/>
+<area shape="rect" id="node23" href="$class_sphere.html" title="Une simple sphere. " alt="" coords="845,165,907,195"/>
+<area shape="rect" id="node27" href="$class_cylinder.html" title="Cylinder" alt="" coords="841,219,911,248"/>
+<area shape="rect" id="node31" href="$class_pyramide.html" title="Pyramide" alt="" coords="837,272,915,301"/>
+<area shape="rect" id="node35" href="$class_trigger.html" title="Trigger" alt="" coords="845,325,907,355"/>
 </map>

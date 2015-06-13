@@ -1,18 +1,19 @@
 <map id="src/viewport.cpp" name="src/viewport.cpp">
-<area shape="rect" id="node3" href="$viewport_8hpp.html" title="viewport.hpp" alt="" coords="833,83,929,112"/>
-<area shape="rect" id="node94" href="$light_8hpp.html" title="light.hpp" alt="" coords="1247,256,1317,285"/>
-<area shape="rect" id="node98" href="$spotlight_8hpp.html" title="spotlight.hpp" alt="" coords="1222,83,1318,112"/>
-<area shape="rect" id="node101" href="$group_8hpp.html" title="group.hpp" alt="" coords="1515,83,1593,112"/>
-<area shape="rect" id="node106" href="$pyramide_8hpp.html" title="pyramide.hpp" alt="" coords="1393,83,1491,112"/>
-<area shape="rect" id="node109" href="$cylinder_8hpp.html" title="cylinder.hpp" alt="" coords="1617,83,1707,112"/>
-<area shape="rect" id="node112" href="$trigger_8hpp.html" title="trigger.hpp" alt="" coords="1731,83,1814,112"/>
-<area shape="rect" id="node115" href="$line_8hpp.html" title="line.hpp" alt="" coords="1838,83,1905,112"/>
-<area shape="rect" id="node23" href="$camera_8hpp.html" title="camera.hpp" alt="" coords="843,333,934,363"/>
-<area shape="rect" id="node43" href="$cube_8hpp.html" title="cube.hpp" alt="" coords="1393,169,1467,199"/>
-<area shape="rect" id="node80" href="$sphere_8hpp.html" title="sphere.hpp" alt="" coords="1059,169,1145,199"/>
-<area shape="rect" id="node85" href="$world_8hpp.html" title="world.hpp" alt="" coords="994,256,1071,285"/>
-<area shape="rect" id="node31" href="$globals_8hpp.html" title="Definitions globales. " alt="" coords="1283,411,1371,440"/>
-<area shape="rect" id="node45" href="$geometry_8hpp.html" title="geometry.hpp" alt="" coords="1649,256,1750,285"/>
-<area shape="rect" id="node59" href="$actor_8hpp.html" title="actor.hpp" alt="" coords="1189,333,1263,363"/>
-<area shape="rect" id="node65" href="$material_8hpp.html" title="material.hpp" alt="" coords="1506,333,1599,363"/>
+<area shape="rect" id="node3" href="$viewport_8hpp.html" title="viewport.hpp" alt="" coords="857,83,953,112"/>
+<area shape="rect" id="node94" href="$light_8hpp.html" title="light.hpp" alt="" coords="1280,256,1349,285"/>
+<area shape="rect" id="node98" href="$spotlight_8hpp.html" title="spotlight.hpp" alt="" coords="1352,83,1448,112"/>
+<area shape="rect" id="node101" href="$group_8hpp.html" title="group.hpp" alt="" coords="1472,83,1549,112"/>
+<area shape="rect" id="node106" href="$pyramide_8hpp.html" title="pyramide.hpp" alt="" coords="1787,83,1885,112"/>
+<area shape="rect" id="node109" href="$cylinder_8hpp.html" title="cylinder.hpp" alt="" coords="1909,83,2000,112"/>
+<area shape="rect" id="node112" href="$trigger_8hpp.html" title="trigger.hpp" alt="" coords="2024,83,2107,112"/>
+<area shape="rect" id="node115" href="$line_8hpp.html" title="line.hpp" alt="" coords="1573,83,1640,112"/>
+<area shape="rect" id="node118" href="$rectangle_8hpp.html" title="rectangle.hpp" alt="" coords="1664,83,1763,112"/>
+<area shape="rect" id="node23" href="$camera_8hpp.html" title="camera.hpp" alt="" coords="885,333,976,363"/>
+<area shape="rect" id="node43" href="$cube_8hpp.html" title="cube.hpp" alt="" coords="1403,169,1477,199"/>
+<area shape="rect" id="node80" href="$sphere_8hpp.html" title="sphere.hpp" alt="" coords="1019,169,1104,199"/>
+<area shape="rect" id="node85" href="$world_8hpp.html" title="world.hpp" alt="" coords="976,256,1053,285"/>
+<area shape="rect" id="node31" href="$globals_8hpp.html" title="Definitions globales. " alt="" coords="1359,411,1447,440"/>
+<area shape="rect" id="node45" href="$geometry_8hpp.html" title="geometry.hpp" alt="" coords="1663,256,1764,285"/>
+<area shape="rect" id="node59" href="$actor_8hpp.html" title="actor.hpp" alt="" coords="1229,333,1304,363"/>
+<area shape="rect" id="node65" href="$material_8hpp.html" title="material.hpp" alt="" coords="1723,333,1816,363"/>
 </map>

@@ -4,7 +4,8 @@
 <area shape="rect" id="node9" href="$class_cylinder.html#a1eb1ba8fde3ed150e1a9494865a23bc1" title="Cylinder::Cylinder" alt="" coords="183,128,308,157"/>
 <area shape="rect" id="node11" href="$class_line.html#a7a071c7cde9102435f12791cdb8f44a7" title="Line::Line" alt="" coords="207,181,284,211"/>
 <area shape="rect" id="node13" href="$class_pyramide.html#aa0bf3bafc7861697f987ecf0443fb418" title="Pyramide::Pyramide" alt="" coords="176,235,315,264"/>
-<area shape="rect" id="node15" href="$class_sphere.html#ad1e284dc3aef66be0a3962e82d3c9e60" title="Sphere::Sphere" alt="" coords="189,288,301,317"/>
-<area shape="rect" id="node17" href="$class_trigger.html#a2de1adfbfb4db8f7d1e1ec22cf4b6515" title="Trigger::Trigger" alt="" coords="191,341,300,371"/>
+<area shape="rect" id="node15" href="$class_rect.html#a3c3ad385bbab52efdb32de750912c638" title="Rect::Rect" alt="" coords="203,288,288,317"/>
+<area shape="rect" id="node17" href="$class_sphere.html#ad1e284dc3aef66be0a3962e82d3c9e60" title="Sphere::Sphere" alt="" coords="189,341,301,371"/>
+<area shape="rect" id="node19" href="$class_trigger.html#a2de1adfbfb4db8f7d1e1ec22cf4b6515" title="Trigger::Trigger" alt="" coords="191,395,300,424"/>
 <area shape="rect" id="node5" href="$class_trigger.html#ae3e4635086dd4d53bbdedd0b02525daa" title="Trigger::draw" alt="" coords="365,13,464,43"/>
 </map>

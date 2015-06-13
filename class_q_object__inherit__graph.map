@@ -1,30 +1,32 @@
 <map id="QObject" name="QObject">
-<area shape="rect" id="node3" href="$class_actor.html" title="Base de tous les objets de la scène. " alt="" coords="165,364,219,393"/>
-<area shape="rect" id="node45" href="$struct_ambient_occlusion.html" title="AmbientOcclusion" alt="" coords="128,417,256,447"/>
-<area shape="rect" id="node47" href="$class_camera.html" title="Gestion de la camera. " alt="" coords="159,471,225,500"/>
-<area shape="rect" id="node49" href="$class_material.html" title="Définit les propriétés d&#39;un materiau. " alt="" coords="159,524,225,553"/>
-<area shape="rect" id="node51" href="$class_q_widget.html" title="QWidget" alt="" coords="156,577,228,607"/>
-<area shape="rect" id="node61" href="$class_world.html" title="World" alt="" coords="164,631,220,660"/>
-<area shape="rect" id="node63" href="$class_zone.html" title="Zone" alt="" coords="167,684,217,713"/>
-<area shape="rect" id="node5" href="$class_geo_base.html" title="Base pour la classe Geometry. " alt="" coords="331,265,405,295"/>
-<area shape="rect" id="node39" href="$class_group.html" title="Groupe de geometries. " alt="" coords="340,364,396,393"/>
-<area shape="rect" id="node41" href="$class_light.html" title="Light" alt="" coords="343,455,393,484"/>
-<area shape="rect" id="node7" href="$class_geometry.html" title="Base de toutes les géometries. " alt="" coords="480,213,613,243"/>
-<area shape="rect" id="node9" href="$class_geometry.html" title="Geometry\&lt; Cube \&gt;" alt="" coords="760,219,893,248"/>
-<area shape="rect" id="node13" href="$class_geometry.html" title="Geometry\&lt; Line \&gt;" alt="" coords="764,5,889,35"/>
-<area shape="rect" id="node17" href="$class_geometry.html" title="Geometry\&lt; Sphere \&gt;" alt="" coords="755,72,899,101"/>
-<area shape="rect" id="node21" href="$class_geometry.html" title="Geometry\&lt; Cylinder \&gt;" alt="" coords="752,385,901,415"/>
-<area shape="rect" id="node25" href="$class_geometry.html" title="Geometry\&lt; Pyramide \&gt;" alt="" coords="748,283,905,312"/>
-<area shape="rect" id="node29" href="$class_geometry.html" title="Geometry\&lt; Trigger \&gt;" alt="" coords="756,152,897,181"/>
-<area shape="rect" id="node11" href="$class_cube.html" title="Un simple cube. " alt="" coords="969,219,1023,248"/>
-<area shape="rect" id="node15" href="$class_line.html" title="Line" alt="" coords="973,5,1019,35"/>
-<area shape="rect" id="node19" href="$class_sphere.html" title="Une simple sphere. " alt="" coords="965,72,1027,101"/>
-<area shape="rect" id="node23" href="$class_cylinder.html" title="Cylinder" alt="" coords="961,385,1031,415"/>
-<area shape="rect" id="node27" href="$class_pyramide.html" title="Pyramide" alt="" coords="957,283,1035,312"/>
-<area shape="rect" id="node31" href="$class_trigger.html" title="Trigger" alt="" coords="965,152,1027,181"/>
-<area shape="rect" id="node43" href="$class_spotlight.html" title="Spotlight" alt="" coords="511,480,583,509"/>
-<area shape="rect" id="node53" href="$class_q_main_window.html" title="QMainWindow" alt="" coords="315,599,421,628"/>
-<area shape="rect" id="node57" href="$class_q_open_g_l_widget.html" title="QOpenGLWidget" alt="" coords="308,545,428,575"/>
-<area shape="rect" id="node55" href="$class_main_window.html" title="Fenetre principale. " alt="" coords="499,599,595,628"/>
-<area shape="rect" id="node59" href="$class_viewport.html" title="Cadre de vue 3D. " alt="" coords="511,545,583,575"/>
+<area shape="rect" id="node3" href="$class_actor.html" title="Base de tous les objets de la scène. " alt="" coords="165,448,219,477"/>
+<area shape="rect" id="node50" href="$struct_ambient_occlusion.html" title="AmbientOcclusion" alt="" coords="128,501,256,531"/>
+<area shape="rect" id="node52" href="$class_camera.html" title="Gestion de la camera. " alt="" coords="159,555,225,584"/>
+<area shape="rect" id="node54" href="$class_material.html" title="Définit les propriétés d&#39;un materiau. " alt="" coords="159,608,225,637"/>
+<area shape="rect" id="node56" href="$class_q_widget.html" title="QWidget" alt="" coords="156,661,228,691"/>
+<area shape="rect" id="node66" href="$class_world.html" title="World" alt="" coords="164,715,220,744"/>
+<area shape="rect" id="node68" href="$class_zone.html" title="Zone" alt="" coords="167,768,217,797"/>
+<area shape="rect" id="node5" href="$class_geo_base.html" title="Base pour la classe Geometry. " alt="" coords="331,305,405,335"/>
+<area shape="rect" id="node44" href="$class_group.html" title="Groupe de geometries. " alt="" coords="340,448,396,477"/>
+<area shape="rect" id="node46" href="$class_light.html" title="Light" alt="" coords="343,541,393,571"/>
+<area shape="rect" id="node7" href="$class_geometry.html" title="Base de toutes les géometries. " alt="" coords="480,228,613,257"/>
+<area shape="rect" id="node9" href="$class_geometry.html" title="Geometry\&lt; Cube \&gt;" alt="" coords="760,5,893,35"/>
+<area shape="rect" id="node13" href="$class_geometry.html" title="Geometry\&lt; Line \&gt;" alt="" coords="764,152,889,181"/>
+<area shape="rect" id="node17" href="$class_geometry.html" title="Geometry\&lt; Rect \&gt;" alt="" coords="761,224,892,253"/>
+<area shape="rect" id="node21" href="$class_geometry.html" title="Geometry\&lt; Sphere \&gt;" alt="" coords="755,301,899,331"/>
+<area shape="rect" id="node25" href="$class_geometry.html" title="Geometry\&lt; Cylinder \&gt;" alt="" coords="752,377,901,407"/>
+<area shape="rect" id="node29" href="$class_geometry.html" title="Geometry\&lt; Pyramide \&gt;" alt="" coords="748,467,905,496"/>
+<area shape="rect" id="node33" href="$class_geometry.html" title="Geometry\&lt; Trigger \&gt;" alt="" coords="756,72,897,101"/>
+<area shape="rect" id="node11" href="$class_cube.html" title="Un simple cube. " alt="" coords="969,5,1023,35"/>
+<area shape="rect" id="node15" href="$class_line.html" title="Line" alt="" coords="973,152,1019,181"/>
+<area shape="rect" id="node19" href="$class_rect.html" title="Rect" alt="" coords="971,224,1021,253"/>
+<area shape="rect" id="node23" href="$class_sphere.html" title="Une simple sphere. " alt="" coords="965,301,1027,331"/>
+<area shape="rect" id="node27" href="$class_cylinder.html" title="Cylinder" alt="" coords="961,377,1031,407"/>
+<area shape="rect" id="node31" href="$class_pyramide.html" title="Pyramide" alt="" coords="957,467,1035,496"/>
+<area shape="rect" id="node35" href="$class_trigger.html" title="Trigger" alt="" coords="965,72,1027,101"/>
+<area shape="rect" id="node48" href="$class_spotlight.html" title="Spotlight" alt="" coords="511,561,583,591"/>
+<area shape="rect" id="node58" href="$class_q_main_window.html" title="QMainWindow" alt="" coords="315,679,421,708"/>
+<area shape="rect" id="node62" href="$class_q_open_g_l_widget.html" title="QOpenGLWidget" alt="" coords="308,625,428,655"/>
+<area shape="rect" id="node60" href="$class_main_window.html" title="Fenetre principale. " alt="" coords="499,679,595,708"/>
+<area shape="rect" id="node64" href="$class_viewport.html" title="Cadre de vue 3D. " alt="" coords="511,625,583,655"/>
 </map>
