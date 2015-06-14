@@ -126,49 +126,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> on_actionSaveAs_triggered();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> on_actionSave_triggered();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> on_viewport_childAdded(<a class="code" href="class_q_object.html">QObject</a> *obj);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> on_newCube_triggered();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> on_newSphere_triggered();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> on_showBuffers_toggled(<span class="keywordtype">bool</span> arg1);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> showProperties(<a class="code" href="class_q_object.html">QObject</a>* obj);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> on_actionWorldProp_triggered();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> on_newLight_triggered();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> on_showMaps_toggled(<span class="keywordtype">bool</span> arg1);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> on_newSpot_triggered();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> on_actorList_customContextMenuRequested(<span class="keyword">const</span> QPoint &amp;pos);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> on_actorList_itemSelectionChanged();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> on_actionGroup_triggered();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> on_newTrigger_triggered();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> on_newLine_triggered();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> on_newCylinder_triggered();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> on_newPyramide_triggered();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> on_actionNew_triggered();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> loadPlugins();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> updateTabs();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> updateTree();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> on_newRectangle_triggered();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    QTreeWidgetItem* addToTree(<a class="code" href="class_q_object.html">QObject</a>* obj, QTreeWidgetItem* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_q_object.html">QObject</a>* getObject(QTreeWidgetItem* item);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_q_widget.html">QWidget</a>* widgetForVariant(QTreeWidgetItem* line, <a class="code" href="mainwindow_8hpp.html#aeb7038d9fece71286bc08e7285cc1213">VarGetter</a> <span class="keyword">get</span>, <a class="code" href="mainwindow_8hpp.html#ad82da20360d3b356afc5989031c5d715">VarSetter</a> set);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">typedef</span> std::tuple&lt;QObject*, QJsonObject&gt; Plugin;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    QString m_lastFile;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    Ui::MainWindow* ui;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QList&lt;Plugin&gt; plugins;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    QStringList formats;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    QMap&lt;QString, FileLoader*&gt; loaders;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif  // TESTMAIN_H</span></div>
-<div class="ttc" id="class_main_window_html_ae98d00a93bc118200eeef9f9bba1dba7"><div class="ttname"><a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a></div><div class="ttdeci">~MainWindow()</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00153">mainwindow.cpp:153</a></div></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> on_showBuffers_toggled(<span class="keywordtype">bool</span> arg1);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> showProperties(<a class="code" href="class_q_object.html">QObject</a>* obj);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> on_actionWorldProp_triggered();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> on_showMaps_toggled(<span class="keywordtype">bool</span> arg1);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> on_actorList_customContextMenuRequested(<span class="keyword">const</span> QPoint &amp;pos);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> on_actorList_itemSelectionChanged();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> on_actionGroup_triggered();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> on_actionNew_triggered();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> loadPlugins();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> updateTabs();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> updateTree();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    QTreeWidgetItem* addToTree(<a class="code" href="class_q_object.html">QObject</a>* obj, QTreeWidgetItem* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_q_object.html">QObject</a>* getObject(QTreeWidgetItem* item);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_q_widget.html">QWidget</a>* widgetForVariant(QTreeWidgetItem* line, <a class="code" href="mainwindow_8hpp.html#aeb7038d9fece71286bc08e7285cc1213">VarGetter</a> <span class="keyword">get</span>, <a class="code" href="mainwindow_8hpp.html#ad82da20360d3b356afc5989031c5d715">VarSetter</a> set);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">typedef</span> std::tuple&lt;QObject*, QJsonObject&gt; Plugin;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    QString m_lastFile;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    Ui::MainWindow* ui;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    QList&lt;Plugin&gt; plugins;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    QStringList formats;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    QMap&lt;QString, FileLoader*&gt; loaders;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif  // TESTMAIN_H</span></div>
+<div class="ttc" id="class_main_window_html_ae98d00a93bc118200eeef9f9bba1dba7"><div class="ttname"><a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a></div><div class="ttdeci">~MainWindow()</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00176">mainwindow.cpp:176</a></div></div>
 <div class="ttc" id="mainwindow_8hpp_html_ad82da20360d3b356afc5989031c5d715"><div class="ttname"><a href="mainwindow_8hpp.html#ad82da20360d3b356afc5989031c5d715">VarSetter</a></div><div class="ttdeci">std::function&lt; void(const QVariant &amp;)&gt; VarSetter</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hpp_source.html#l00017">mainwindow.hpp:17</a></div></div>
 <div class="ttc" id="fileloader_8hpp_html"><div class="ttname"><a href="fileloader_8hpp.html">fileloader.hpp</a></div></div>
 <div class="ttc" id="class_q_main_window_html"><div class="ttname"><a href="class_q_main_window.html">QMainWindow</a></div></div>
-<div class="ttc" id="class_main_window_html_a8b244be8b7b7db1b08de2a2acb9409db"><div class="ttname"><a href="class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db">MainWindow::MainWindow</a></div><div class="ttdeci">MainWindow(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00029">mainwindow.cpp:29</a></div></div>
+<div class="ttc" id="class_main_window_html_a8b244be8b7b7db1b08de2a2acb9409db"><div class="ttname"><a href="class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db">MainWindow::MainWindow</a></div><div class="ttdeci">MainWindow(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8cpp_source.html#l00030">mainwindow.cpp:30</a></div></div>
 <div class="ttc" id="class_main_window_html_aae7d869ff89159371c34a0f3611b841c"><div class="ttname"><a href="class_main_window.html#aae7d869ff89159371c34a0f3611b841c">MainWindow::getUI</a></div><div class="ttdeci">Ui::MainWindow * getUI()</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hpp_source.html#l00033">mainwindow.hpp:33</a></div></div>
 <div class="ttc" id="mainwindow_8hpp_html_aeb7038d9fece71286bc08e7285cc1213"><div class="ttname"><a href="mainwindow_8hpp.html#aeb7038d9fece71286bc08e7285cc1213">VarGetter</a></div><div class="ttdeci">std::function&lt; QVariant(void)&gt; VarGetter</div><div class="ttdef"><b>Definition:</b> <a href="mainwindow_8hpp_source.html#l00016">mainwindow.hpp:16</a></div></div>
 <div class="ttc" id="class_q_object_html"><div class="ttname"><a href="class_q_object.html">QObject</a></div></div>
@@ -177,7 +167,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi 13 Juin 2015 20:50:28 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Dimanche 14 Juin 2015 13:55:17 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

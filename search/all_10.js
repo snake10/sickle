@@ -16,5 +16,5 @@ var searchData=
   ['right',['right',['../class_camera.html#ac68fa914dd8737de1ec7558fc9281a68',1,'Camera']]],
   ['rings',['rings',['../sphere_8cpp.html#a3bfde21367d37d607e61ff5781ad0a99',1,'sphere.cpp']]],
   ['rotated',['rotated',['../class_actor.html#a6e72257974226d31517a5d62424f0ed4',1,'Actor']]],
-  ['roughness',['roughness',['../class_material.html#abbaeac8374986ca82670ff0d7749c566',1,'Material::roughness()'],['../class_material.html#a051abec46a2846d2a1797c1bc38f8fff',1,'Material::roughness() const '],['../class_material.html#ae4d889db2c61ec10c99f4e85aa8e3d4c',1,'Material::roughness(float val)']]]
+  ['roughness',['roughness',['../class_material.html#af1af3770568672a62509a1f4f3a59ac9',1,'Material::roughness()'],['../class_material.html#a051abec46a2846d2a1797c1bc38f8fff',1,'Material::roughness() const '],['../class_material.html#ae4d889db2c61ec10c99f4e85aa8e3d4c',1,'Material::roughness(float val)']]]
 ];

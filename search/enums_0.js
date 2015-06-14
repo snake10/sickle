@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['renderbuffer',['RenderBuffer',['../actor_8hpp.html#a413cc31c82881e5279a0f9332f3f095c',1,'actor.hpp']]]
+  ['actortype',['ActorType',['../class_actor_builder.html#a2290b24b0486af3b611536effdbb13a9',1,'ActorBuilder']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nearz',['nearZ',['../class_light.html#a0e9f59bcd76e64c725f1afcb7a11cd17',1,'Light']]]
+  ['roughness',['roughness',['../class_material.html#af1af3770568672a62509a1f4f3a59ac9',1,'Material']]]
 ];

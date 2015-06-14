@@ -120,11 +120,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="globals_8hpp.html#a2f4101a13cfefe3f12e4e9564e8449e0">   67</a></span>&#160;<span class="preprocessor">#define propBase(TYPE, NAME) declare(TYPE, NAME) public : getter(TYPE, NAME)</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008">   68</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define prop(TYPE, NAME)                        \</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">    Q_PROPERTY(TYPE NAME WRITE NAME READ NAME); \</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">    Q_PROPERTY(TYPE QT_TR_NOOP(NAME) WRITE NAME READ NAME); \</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">    propBase(TYPE, NAME);                       \</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">    setter(TYPE, NAME)</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="globals_8hpp.html#a3817105a974eac78f8920257881698a4">   72</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define propSig(TYPE, NAME, SIG)                                                \</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">    Q_PROPERTY(TYPE NAME WRITE NAME READ NAME NOTIFY SIG) propBase(TYPE, NAME); \</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">    Q_PROPERTY(TYPE QT_TR_NOOP(NAME) WRITE NAME READ NAME NOTIFY SIG) propBase(TYPE, NAME); \</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">    setterSig(TYPE, NAME, SIG);                                                 \</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">    Q_SIGNALS:                                                                  \</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">    void SIG(const TYPE&amp;);                                                             \</span></div>
@@ -154,7 +154,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi 13 Juin 2015 20:50:28 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Dimanche 14 Juin 2015 13:55:17 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

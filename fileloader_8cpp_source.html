@@ -111,9 +111,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// Data</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    out &lt;&lt; *(view-&gt;<a class="code" href="class_viewport.html#ac0af7e2bd057631a4c4798f214893925">camera</a>());</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    out &lt;&lt; static_cast&lt;quint32&gt;(view-&gt;<a class="code" href="class_viewport.html#a25f2a69ed04e0ec3d7ec001d227c678e">world</a>()-&gt;<a class="code" href="class_world.html#a5385e0713b98b3a1e84ae134098894ac">currentZoneId</a>());</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    out &lt;&lt; static_cast&lt;quint32&gt;(view-&gt;<a class="code" href="class_viewport.html#a5d1ad97d606dd4ea2008f42d2e1de71b">world</a>()-&gt;currentZoneId());</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">auto</span> zones = view-&gt;<a class="code" href="class_viewport.html#a25f2a69ed04e0ec3d7ec001d227c678e">world</a>()-&gt;<a class="code" href="class_world.html#a45fac3748d15198a09ce257da35e6fcf">zoneList</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">auto</span> zones = view-&gt;<a class="code" href="class_viewport.html#a5d1ad97d606dd4ea2008f42d2e1de71b">world</a>()-&gt;zoneList();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    out &lt;&lt; static_cast&lt;quint32&gt;(zones.size());</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="class_zone.html">Zone</a>* zone : zones) {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">auto</span> childList = zone-&gt;findChildren&lt;<a class="code" href="class_actor.html">Actor</a>*&gt;(QString(), Qt::FindDirectChildrenOnly);</div>
@@ -165,7 +165,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    quint32 zoneCount;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    in &gt;&gt; zoneCount;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">for</span> (quint32 i = 0; i &lt; zoneCount; i++) {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">auto</span> zone = <span class="keyword">new</span> <a class="code" href="class_zone.html">Zone</a>(view-&gt;<a class="code" href="class_viewport.html#a25f2a69ed04e0ec3d7ec001d227c678e">world</a>());</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">auto</span> zone = <span class="keyword">new</span> <a class="code" href="class_zone.html">Zone</a>(view-&gt;<a class="code" href="class_viewport.html#a5d1ad97d606dd4ea2008f42d2e1de71b">world</a>());</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        quint32 size;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        in &gt;&gt; size;</div>
@@ -189,8 +189,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    view-&gt;doneCurrent();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    view-&gt;<a class="code" href="class_viewport.html#a25f2a69ed04e0ec3d7ec001d227c678e">world</a>()-&gt;<a class="code" href="class_world.html#ae619abaf5acdbaf930243bc49a1f2e07">setZoneList</a>(zones);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    view-&gt;<a class="code" href="class_viewport.html#a25f2a69ed04e0ec3d7ec001d227c678e">world</a>()-&gt;<a class="code" href="class_world.html#a3362c1031d93b06f02431705adf3f171">setCurrentZoneId</a>(curentZone);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    view-&gt;<a class="code" href="class_viewport.html#a5d1ad97d606dd4ea2008f42d2e1de71b">world</a>()-&gt;setZoneList(zones);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    view-&gt;<a class="code" href="class_viewport.html#a5d1ad97d606dd4ea2008f42d2e1de71b">world</a>()-&gt;setCurrentZoneId(curentZone);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
 <div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="fileloader_8hpp.html#a01cf740c5e20abbb6aa4ccf17236cd8b">  103</a></span>&#160;QDataStream&amp; <a class="code" href="fileloader_8cpp.html#aaf60c2d4feac61526a52675bc794465c">operator&lt;&lt;</a>(QDataStream&amp; stream, <span class="keyword">const</span> <a class="code" href="class_q_object.html">QObject</a>&amp; obj) {</div>
@@ -269,9 +269,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">return</span> stream;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
-<div class="ttc" id="class_viewport_html_a25f2a69ed04e0ec3d7ec001d227c678e"><div class="ttname"><a href="class_viewport.html#a25f2a69ed04e0ec3d7ec001d227c678e">Viewport::world</a></div><div class="ttdeci">World world</div><div class="ttdef"><b>Definition:</b> <a href="viewport_8hpp_source.html#l00064">viewport.hpp:64</a></div></div>
-<div class="ttc" id="class_world_html_ae619abaf5acdbaf930243bc49a1f2e07"><div class="ttname"><a href="class_world.html#ae619abaf5acdbaf930243bc49a1f2e07">World::setZoneList</a></div><div class="ttdeci">void setZoneList(const QList&lt; Zone * &gt; &amp;list)</div><div class="ttdef"><b>Definition:</b> <a href="world_8hpp_source.html#l00054">world.hpp:54</a></div></div>
 <div class="ttc" id="class_viewport_html"><div class="ttname"><a href="class_viewport.html">Viewport</a></div><div class="ttdoc">Cadre de vue 3D. </div><div class="ttdef"><b>Definition:</b> <a href="viewport_8hpp_source.html#l00026">viewport.hpp:26</a></div></div>
+<div class="ttc" id="class_viewport_html_a5d1ad97d606dd4ea2008f42d2e1de71b"><div class="ttname"><a href="class_viewport.html#a5d1ad97d606dd4ea2008f42d2e1de71b">Viewport::world</a></div><div class="ttdeci">WRITE world READ world</div><div class="ttdef"><b>Definition:</b> <a href="viewport_8hpp_source.html#l00065">viewport.hpp:65</a></div></div>
 <div class="ttc" id="fileloader_8cpp_html_aaf60c2d4feac61526a52675bc794465c"><div class="ttname"><a href="fileloader_8cpp.html#aaf60c2d4feac61526a52675bc794465c">operator&lt;&lt;</a></div><div class="ttdeci">QDataStream &amp; operator&lt;&lt;(QDataStream &amp;stream, const QObject &amp;obj)</div><div class="ttdef"><b>Definition:</b> <a href="fileloader_8cpp_source.html#l00103">fileloader.cpp:103</a></div></div>
 <div class="ttc" id="class_viewport_html_ab4df59614a5201f8e2e5a63c2c0ec73e"><div class="ttname"><a href="class_viewport.html#ab4df59614a5201f8e2e5a63c2c0ec73e">Viewport::childAdded</a></div><div class="ttdeci">void childAdded(QObject *child)</div></div>
 <div class="ttc" id="class_viewport_html_ac0af7e2bd057631a4c4798f214893925"><div class="ttname"><a href="class_viewport.html#ac0af7e2bd057631a4c4798f214893925">Viewport::camera</a></div><div class="ttdeci">Camera camera</div><div class="ttdef"><b>Definition:</b> <a href="viewport_8hpp_source.html#l00058">viewport.hpp:58</a></div></div>
@@ -279,19 +278,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="ttc" id="globals_8hpp_html_affcbaaa11cf85575200e4a78d1befe7c"><div class="ttname"><a href="globals_8hpp.html#affcbaaa11cf85575200e4a78d1befe7c">FILE_MAGIC</a></div><div class="ttdeci">#define FILE_MAGIC</div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00032">globals.hpp:32</a></div></div>
 <div class="ttc" id="fileloader_8hpp_html"><div class="ttname"><a href="fileloader_8hpp.html">fileloader.hpp</a></div></div>
 <div class="ttc" id="class_actor_html"><div class="ttname"><a href="class_actor.html">Actor</a></div><div class="ttdoc">Base de tous les objets de la scène. </div><div class="ttdef"><b>Definition:</b> <a href="actor_8hpp_source.html#l00039">actor.hpp:39</a></div></div>
-<div class="ttc" id="class_world_html_a5385e0713b98b3a1e84ae134098894ac"><div class="ttname"><a href="class_world.html#a5385e0713b98b3a1e84ae134098894ac">World::currentZoneId</a></div><div class="ttdeci">int currentZoneId()</div><div class="ttdef"><b>Definition:</b> <a href="world_8hpp_source.html#l00046">world.hpp:46</a></div></div>
 <div class="ttc" id="globals_8hpp_html_a41eb4920cf776a8865a18986f8ae6008"><div class="ttname"><a href="globals_8hpp.html#a41eb4920cf776a8865a18986f8ae6008">prop</a></div><div class="ttdeci">#define prop(TYPE, NAME)</div><div class="ttdoc">Declare une propriété </div><div class="ttdef"><b>Definition:</b> <a href="globals_8hpp_source.html#l00068">globals.hpp:68</a></div></div>
 <div class="ttc" id="fileloader_8cpp_html_a58818c50613f41b12137dac46d31cf86"><div class="ttname"><a href="fileloader_8cpp.html#a58818c50613f41b12137dac46d31cf86">operator&gt;&gt;</a></div><div class="ttdeci">QDataStream &amp; operator&gt;&gt;(QDataStream &amp;stream, QObject &amp;obj)</div><div class="ttdef"><b>Definition:</b> <a href="fileloader_8cpp_source.html#l00135">fileloader.cpp:135</a></div></div>
-<div class="ttc" id="class_world_html_a3362c1031d93b06f02431705adf3f171"><div class="ttname"><a href="class_world.html#a3362c1031d93b06f02431705adf3f171">World::setCurrentZoneId</a></div><div class="ttdeci">void setCurrentZoneId(int zone)</div><div class="ttdef"><b>Definition:</b> <a href="world_8cpp_source.html#l00050">world.cpp:50</a></div></div>
 <div class="ttc" id="class_zone_html"><div class="ttname"><a href="class_zone.html">Zone</a></div><div class="ttdef"><b>Definition:</b> <a href="world_8hpp_source.html#l00011">world.hpp:11</a></div></div>
 <div class="ttc" id="fileloader_8hpp_html_a3606f281bba1aa03311e06a04abd83f8"><div class="ttname"><a href="fileloader_8hpp.html#a3606f281bba1aa03311e06a04abd83f8">load</a></div><div class="ttdeci">virtual Q_DECLARE_INTERFACE(FileLoader,&quot;com.sup3asc2.sickle.FileLoader/1.0&quot;) class DefaultFileLoader void load(Viewport *, const QString &amp;)</div><div class="ttdoc">Chargeur de fichier par defaut. </div></div>
 <div class="ttc" id="class_q_object_html"><div class="ttname"><a href="class_q_object.html">QObject</a></div></div>
-<div class="ttc" id="class_world_html_a45fac3748d15198a09ce257da35e6fcf"><div class="ttname"><a href="class_world.html#a45fac3748d15198a09ce257da35e6fcf">World::zoneList</a></div><div class="ttdeci">QList&lt; Zone * &gt; zoneList()</div><div class="ttdef"><b>Definition:</b> <a href="world_8hpp_source.html#l00050">world.hpp:50</a></div></div>
 <div class="ttc" id="viewport_8hpp_html"><div class="ttname"><a href="viewport_8hpp.html">viewport.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Samedi 13 Juin 2015 20:50:28 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Dimanche 14 Juin 2015 13:55:17 pour Sickle par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

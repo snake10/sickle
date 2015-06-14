@@ -2,7 +2,7 @@
 <area shape="rect" id="node3" href="$class_viewport.html#a5760eeac13c59b34bd8cc5ba638f9cbd" title="Viewport::catchErrors" alt="" coords="385,5,532,35"/>
 <area shape="rect" id="node5" href="$class_viewport.html#ae95938dedc43d6b36f2b85d4a226ffa1" title="Viewport::renderLight" alt="" coords="187,192,331,221"/>
 <area shape="rect" id="node22" href="$class_viewport.html#ad0317022a7a6399ee47c199bb9348efc" title="Viewport::renderScene" alt="" coords="181,112,336,141"/>
-<area shape="rect" id="node38" href="$class_viewport.html#aeb07f85bbe4f10ca8d8c7b46c8ebd23b" title="Viewport::renderQuad" alt="" coords="185,379,332,408"/>
+<area shape="rect" id="node38" href="$class_viewport.html#aeb07f85bbe4f10ca8d8c7b46c8ebd23b" title="Viewport::renderQuad" alt="" coords="185,405,332,435"/>
 <area shape="rect" id="node7" href="$class_light.html#a5466743e73bc1f6e0dd198baf7697ed5" title="Light::getBuffer" alt="" coords="404,165,513,195"/>
 <area shape="rect" id="node9" href="$class_light.html#ac5414b33c1c3cf0940f9979dceb60087" title="Light::getTexture" alt="" coords="399,272,519,301"/>
 <area shape="rect" id="node12" href="$class_light.html#ae15381dfe25ed67531fa7b2a530399ad" title="Light::projection" alt="" coords="401,325,516,355"/>
@@ -15,8 +15,9 @@
 <area shape="rect" id="node29" href="$class_camera.html#a7276761c5214ec94f6ac35e5804f6719" title="Camera::direction" alt="" coords="752,112,877,141"/>
 <area shape="rect" id="node31" href="$class_camera.html#a9936c788ad482b40b5a3548bf5e97247" title="Camera::up" alt="" coords="597,59,688,88"/>
 <area shape="rect" id="node33" href="$class_camera.html#ac68fa914dd8737de1ec7558fc9281a68" title="Camera::right" alt="" coords="764,59,865,88"/>
-<area shape="rect" id="node42" href="$viewport_8cpp.html#ae7e24b600e4b06fe95d062b8fb71bc7a" title="toVector" alt="" coords="424,483,493,512"/>
-<area shape="rect" id="node44" href="$class_light.html#a268d5bc710788f8457c1efc6038ea0a0" title="Light::type" alt="" coords="417,536,500,565"/>
-<area shape="rect" id="node46" href="$class_light.html#ab689087cc07b95273f6daae900a42010" title="Light::direction" alt="" coords="405,589,512,619"/>
-<area shape="rect" id="node48" href="$class_actor.html#a748e07c73196050bfb0d51a14608aeae" title="Actor::orientation" alt="" coords="583,589,703,619"/>
+<area shape="rect" id="node42" href="$viewport_8cpp.html#ae7e24b600e4b06fe95d062b8fb71bc7a" title="toVector" alt="" coords="424,432,493,461"/>
+<area shape="rect" id="node44" href="$class_light.html#a268d5bc710788f8457c1efc6038ea0a0" title="Light::type" alt="" coords="417,485,500,515"/>
+<area shape="rect" id="node46" href="$class_light.html#ab689087cc07b95273f6daae900a42010" title="Light::direction" alt="" coords="405,643,512,672"/>
+<area shape="rect" id="node50" href="$class_actor.html#acdab84246959258bbde6eb050d340e67" title="Actor::position" alt="" coords="405,589,512,619"/>
+<area shape="rect" id="node48" href="$class_actor.html#a748e07c73196050bfb0d51a14608aeae" title="Actor::orientation" alt="" coords="583,643,703,672"/>
 </map>

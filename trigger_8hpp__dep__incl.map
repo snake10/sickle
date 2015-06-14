@@ -1,5 +1,6 @@
 <map id="include/trigger.hpp" name="include/trigger.hpp">
-<area shape="rect" id="node3" href="$mainwindow_8cpp.html" title="src/mainwindow.cpp" alt="" coords="5,83,147,112"/>
-<area shape="rect" id="node5" href="$trigger_8cpp.html" title="src/trigger.cpp" alt="" coords="171,83,275,112"/>
-<area shape="rect" id="node7" href="$viewport_8cpp.html" title="src/viewport.cpp" alt="" coords="299,83,416,112"/>
+<area shape="rect" id="node3" href="$actorbuilder_8cpp.html" title="src/actorbuilder.cpp" alt="" coords="5,83,141,112"/>
+<area shape="rect" id="node5" href="$mainwindow_8cpp.html" title="src/mainwindow.cpp" alt="" coords="165,83,307,112"/>
+<area shape="rect" id="node7" href="$trigger_8cpp.html" title="src/trigger.cpp" alt="" coords="331,83,435,112"/>
+<area shape="rect" id="node9" href="$viewport_8cpp.html" title="src/viewport.cpp" alt="" coords="459,83,576,112"/>
 </map>

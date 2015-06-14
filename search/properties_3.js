@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['farz',['farZ',['../class_light.html#af9e4044962059199d6be578e86afc35e',1,'Light']]]
+  ['hangle',['hAngle',['../class_camera.html#a8610f94851a4453bf6e948aa7d043859',1,'Camera']]],
+  ['hbias',['hBias',['../class_camera.html#af0f50744f048e5a3b857b7504717cc1c',1,'Camera']]]
 ];

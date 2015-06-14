@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['rb_5fdepth',['RB_DEPTH',['../actor_8hpp.html#a413cc31c82881e5279a0f9332f3f095ca536d1ed31f89edba77e0fcc67b3c50a9',1,'actor.hpp']]],
-  ['rb_5fscene',['RB_SCENE',['../actor_8hpp.html#a413cc31c82881e5279a0f9332f3f095cad912fca3acc4101c9ad23457f75ce815',1,'actor.hpp']]]
+  ['geometry_5f2d',['GEOMETRY_2D',['../class_actor_builder.html#a2290b24b0486af3b611536effdbb13a9ac2063a5b444d92c1f94af2a568f13e36',1,'ActorBuilder']]],
+  ['geometry_5f3d',['GEOMETRY_3D',['../class_actor_builder.html#a2290b24b0486af3b611536effdbb13a9ae9093fa55211eb5f1834a664f8047205',1,'ActorBuilder']]]
 ];

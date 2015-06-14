@@ -1,5 +1,6 @@
 <map id="include/line.hpp" name="include/line.hpp">
-<area shape="rect" id="node3" href="$line_8cpp.html" title="src/line.cpp" alt="" coords="5,83,93,112"/>
-<area shape="rect" id="node5" href="$mainwindow_8cpp.html" title="src/mainwindow.cpp" alt="" coords="117,83,259,112"/>
-<area shape="rect" id="node7" href="$viewport_8cpp.html" title="src/viewport.cpp" alt="" coords="283,83,400,112"/>
+<area shape="rect" id="node3" href="$actorbuilder_8cpp.html" title="src/actorbuilder.cpp" alt="" coords="5,83,141,112"/>
+<area shape="rect" id="node5" href="$line_8cpp.html" title="src/line.cpp" alt="" coords="165,83,253,112"/>
+<area shape="rect" id="node7" href="$mainwindow_8cpp.html" title="src/mainwindow.cpp" alt="" coords="277,83,419,112"/>
+<area shape="rect" id="node9" href="$viewport_8cpp.html" title="src/viewport.cpp" alt="" coords="443,83,560,112"/>
 </map>

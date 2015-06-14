@@ -1,10 +1,11 @@
 <map id="include/world.hpp" name="include/world.hpp">
-<area shape="rect" id="node3" href="$viewport_8hpp.html" title="include/viewport.hpp" alt="" coords="328,83,469,112"/>
-<area shape="rect" id="node17" href="$world_8cpp.html" title="src/world.cpp" alt="" coords="493,83,592,112"/>
+<area shape="rect" id="node3" href="$viewport_8hpp.html" title="include/viewport.hpp" alt="" coords="423,83,564,112"/>
+<area shape="rect" id="node19" href="$world_8cpp.html" title="src/world.cpp" alt="" coords="588,83,687,112"/>
 <area shape="rect" id="node5" href="$actor_8cpp.html" title="src/actor.cpp" alt="" coords="5,160,104,189"/>
-<area shape="rect" id="node7" href="$fileloader_8cpp.html" title="src/fileloader.cpp" alt="" coords="128,160,248,189"/>
-<area shape="rect" id="node9" href="$geometry_8cpp.html" title="src/geometry.cpp" alt="" coords="272,160,395,189"/>
-<area shape="rect" id="node11" href="$light_8cpp.html" title="src/light.cpp" alt="" coords="419,160,512,189"/>
-<area shape="rect" id="node13" href="$spotlight_8cpp.html" title="src/spotlight.cpp" alt="" coords="536,160,653,189"/>
-<area shape="rect" id="node15" href="$viewport_8cpp.html" title="src/viewport.cpp" alt="" coords="677,160,795,189"/>
+<area shape="rect" id="node7" href="$actorbuilder_8cpp.html" title="src/actorbuilder.cpp" alt="" coords="128,160,264,189"/>
+<area shape="rect" id="node9" href="$fileloader_8cpp.html" title="src/fileloader.cpp" alt="" coords="288,160,408,189"/>
+<area shape="rect" id="node11" href="$geometry_8cpp.html" title="src/geometry.cpp" alt="" coords="432,160,555,189"/>
+<area shape="rect" id="node13" href="$light_8cpp.html" title="src/light.cpp" alt="" coords="579,160,672,189"/>
+<area shape="rect" id="node15" href="$spotlight_8cpp.html" title="src/spotlight.cpp" alt="" coords="696,160,813,189"/>
+<area shape="rect" id="node17" href="$viewport_8cpp.html" title="src/viewport.cpp" alt="" coords="837,160,955,189"/>
 </map>

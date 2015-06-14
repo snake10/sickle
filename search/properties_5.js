@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['innerangle',['innerAngle',['../class_spotlight.html#a6b770682d2aab9e114ef90a27dbc576c',1,'Spotlight']]],
-  ['isinitialized',['isInitialized',['../class_viewport.html#ae366735439e3621c6576dec6b9a3ca29',1,'Viewport']]]
+  ['material',['material',['../class_geo_base.html#ad21c5a984b3ab362a7c46fa9c4d3975b',1,'GeoBase']]],
+  ['maxdist',['maxDist',['../struct_ambient_occlusion.html#a7cc1c521219b28a7082ceb139a222fba',1,'AmbientOcclusion']]],
+  ['metallic',['metallic',['../class_material.html#ac17e64a27c9783d2452d7bac35880ee2',1,'Material']]]
 ];

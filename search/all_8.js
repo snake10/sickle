@@ -6,7 +6,7 @@ var searchData=
   ['initprogram',['initProgram',['../class_geometry.html#a4b8cfb9c3dfbd615983b43a3386f2b0a',1,'Geometry']]],
   ['initquad',['initQuad',['../class_viewport.html#a6e17a431c26ab8790cb775e583135298',1,'Viewport']]],
   ['initscene',['initScene',['../class_viewport.html#a21ac795014fc080ab40b39c39c9eab35',1,'Viewport']]],
-  ['innerangle',['innerAngle',['../class_spotlight.html#a6b770682d2aab9e114ef90a27dbc576c',1,'Spotlight::innerAngle()'],['../class_spotlight.html#acc96169c59f1e1cf30384f2414350916',1,'Spotlight::innerAngle() const '],['../class_spotlight.html#ad7c963e984646ca5047bd2958b66cfdf',1,'Spotlight::innerAngle(float val)']]],
+  ['innerangle',['innerAngle',['../class_spotlight.html#acc96169c59f1e1cf30384f2414350916',1,'Spotlight::innerAngle() const '],['../class_spotlight.html#ad7c963e984646ca5047bd2958b66cfdf',1,'Spotlight::innerAngle(float val)']]],
   ['inneranglechanged',['innerAngleChanged',['../class_spotlight.html#aa7c89963fc17096a4ab155ea1b4b01a3',1,'Spotlight']]],
-  ['isinitialized',['isInitialized',['../class_viewport.html#ae366735439e3621c6576dec6b9a3ca29',1,'Viewport::isInitialized()'],['../class_viewport.html#a62399e89e032cac31006c5666cc3bbeb',1,'Viewport::isInitialized() const '],['../class_viewport.html#ad38cf132acd6e0755c3abd9453d9c2e4',1,'Viewport::isInitialized(bool val)']]]
+  ['isinitialized',['isInitialized',['../class_viewport.html#a62399e89e032cac31006c5666cc3bbeb',1,'Viewport::isInitialized() const '],['../class_viewport.html#ad38cf132acd6e0755c3abd9453d9c2e4',1,'Viewport::isInitialized(bool val)']]]
 ];

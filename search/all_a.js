@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['light',['Light',['../class_light.html',1,'Light'],['../class_light.html#a30538cefe47541035db096b75133442d',1,'Light::Light()']]],
+  ['light',['Light',['../class_light.html',1,'Light'],['../class_actor_builder.html#a2290b24b0486af3b611536effdbb13a9a9bc980d53d70b1a6e434f36a4a123324',1,'ActorBuilder::LIGHT()'],['../class_light.html#a30538cefe47541035db096b75133442d',1,'Light::Light()']]],
   ['light_2ecpp',['light.cpp',['../light_8cpp.html',1,'']]],
   ['light_2ehpp',['light.hpp',['../light_8hpp.html',1,'']]],
   ['line',['Line',['../class_line.html',1,'Line'],['../class_line.html#a7a071c7cde9102435f12791cdb8f44a7',1,'Line::Line()']]],

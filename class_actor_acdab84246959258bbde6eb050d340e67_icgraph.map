@@ -1,8 +1,10 @@
 <map id="Actor::position" name="Actor::position">
 <area shape="rect" id="node3" href="$class_actor.html#abbf942f60996c5df2a8c0a832bd91abc" title="Actor::transform" alt="" coords="177,75,292,104"/>
 <area shape="rect" id="node13" href="$class_spotlight.html#a5901141395318038d54058bbbfc5b990" title="Spotlight::updateView" alt="" coords="160,128,309,157"/>
+<area shape="rect" id="node15" href="$class_viewport.html#aeb07f85bbe4f10ca8d8c7b46c8ebd23b" title="Viewport::renderQuad" alt="" coords="161,181,308,211"/>
 <area shape="rect" id="node5" href="$class_geometry.html#a7cb8ea5e505f3933367d7ff9c6439985" title="Geometry\&lt; Trigger \&gt;\l::draw" alt="" coords="359,5,500,51"/>
 <area shape="rect" id="node9" href="$class_group.html#af8d7df31c5fe4f8e22bd022c8735b6b2" title="Group::draw" alt="" coords="383,75,476,104"/>
 <area shape="rect" id="node11" href="$class_line.html#a1a11432f5239ebf18316369a400a9893" title="Line::transform" alt="" coords="375,128,484,157"/>
 <area shape="rect" id="node7" href="$class_trigger.html#ae3e4635086dd4d53bbdedd0b02525daa" title="Trigger::draw" alt="" coords="549,13,648,43"/>
+<area shape="rect" id="node17" href="$class_viewport.html#a3c2c4661eac1f6351392b8fe133423f5" title="Viewport::paintGL" alt="" coords="367,181,492,211"/>
 </map>

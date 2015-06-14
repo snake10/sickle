@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['farz',['farZ',['../class_light.html#af9e4044962059199d6be578e86afc35e',1,'Light::farZ()'],['../class_light.html#accf379b557fa086c827bae45cd141f3c',1,'Light::farZ() const '],['../class_light.html#ae3ff1743364a96d297d8ae90f6bac30e',1,'Light::farZ(float val)']]],
+  ['farz',['farZ',['../class_light.html#accf379b557fa086c827bae45cd141f3c',1,'Light::farZ() const '],['../class_light.html#ae3ff1743364a96d297d8ae90f6bac30e',1,'Light::farZ(float val)']]],
   ['farzchanged',['farZChanged',['../class_light.html#ad1275a61d3da17bd15185a3a2481d6bd',1,'Light']]],
   ['file_5fmagic',['FILE_MAGIC',['../globals_8hpp.html#affcbaaa11cf85575200e4a78d1befe7c',1,'globals.hpp']]],
   ['fileloader',['FileLoader',['../class_file_loader.html',1,'']]],
